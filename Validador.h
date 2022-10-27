@@ -15,7 +15,7 @@ class Validador {
     virtual void iniciarReglas() = 0;
     // virtual void validarReglas(vector<Jugadores>) = 0;
     virtual void validarJugada() = 0;
-    vector<Regla> obtenerReglas() { return reglas };
+    vector<Regla> obtenerReglas() { return reglas; };
 
 };
 
