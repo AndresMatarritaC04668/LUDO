@@ -9,12 +9,14 @@ FichaLudo::FichaLudo() {
     this->pasosDados = 0;
 }
 
-FichaLudo::FichaLudo(std::string color, int pos, int estado) {
+FichaLudo::FichaLudo(std::string color, int zonaSegura) {
     this->color = color;
-    this->pos = pos;
-    this->activo = estado;
+    this->pos = zonaSegura;
+    this->activo = false;
     this->finalizado = false;
     this->pasosDados = 0;
+    this->zonaSegura = zonaSegura;
+    this->caminoFinal = 0;
 }
 
 std::string FichaLudo::getColor() {
@@ -39,5 +41,9 @@ void FichaLudo::setPasosDados(int pasosDados){
 
 void FichaLudo::setPosicion(int posicion){
      this->pos = posicion;
+}
+
+int FichaLudo::getPasosDados(){
+    return this->pasosDados;
 }
 

@@ -10,6 +10,7 @@
         this->setNombre(nombre);
         this->esGanador = false;
         this->color = color;
+        this->cantidadDados = 1;
     }
 
     JugadorLudo::~JugadorLudo() {
@@ -33,20 +34,45 @@
             return this->esGanador;
         }
 
-    int  JugadorLudo::lanzarDado(Dado* dado) {
-            return dado->lanzar();
-    }
-
     void JugadorLudo::moverFicha(FichaAbstracta * ficha,int pasos){
-
+        FichaLudo * fichaLudo = dynamic_cast< FichaLudo *>(ficha);
+        if(fichaLudo){
+          pasos += fichaLudo->getPasosDados();
+          fichaLudo->setPosicion(pasos);
+        }
+        
     }
 
     void JugadorLudo::crearFichas(int cantidadFichas){
 
         for(int i = 0 ; i < cantidadFichas ; i++){
 
-            FichaLudo * ficha = new FichaLudo(this->color,0,0);
+            FichaLudo * ficha = new FichaLudo(this->color,0);
 
         }
 
+    }
+
+    int JugadorLudo::lanzarDado(){
+        Dado  dado;
+        int darPasos = 0;
+        for(int i = 0 ; i<cantidadDados ; i++){
+          darPasos+= dado.lanzar();
+        }
+        return darPasos;
+    }
+
+    FichaAbstracta * JugadorLudo::elegirFicha(){
+       while(1){
+         cout<< "Que numero de ficha desea elegir: 1,2,3 o 4";
+         cout<< "\nDigite el numero de ficha que desea mover: ";
+         int opcion = 0;
+         cin>>opcion;
+         
+         if(opcion >=1 && opcion <=4 ){
+            return fichas[opcion+1];
+         } else {
+            cout << "Numero de ficha incorrecto";
+         }
+       }
     }

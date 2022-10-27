@@ -7,9 +7,9 @@ class JugadorLudo : Jugador {
 
     private:
         std::string nombre;
-        std::vector<FichaAbstracta *> fichas;
         bool esGanador;
         string color;
+        std::vector<FichaAbstracta *> fichas;
 
     public :
         JugadorLudo();
@@ -19,9 +19,10 @@ class JugadorLudo : Jugador {
         std::string getNombre() override;
         std::vector<FichaAbstracta *> getFichas();
         bool getEsGanador()override;
-        int lanzarDado(Dado* dado)override;
         void moverFicha(FichaAbstracta * ficha,int pasos) override;    
-        void crearFichas(int cantidadFichas)override;  
+        void crearFichas(int cantidadFichas)override; 
+        int lanzarDado()override;
+        FichaAbstracta * elegirFicha()override;
 
 };
 
