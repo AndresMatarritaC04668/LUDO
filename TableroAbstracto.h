@@ -1,6 +1,7 @@
 #ifndef MI_TABLEROABSTRACTO
 #define MI_TABLEROABSTRACTO
 using namespace std;
+#include "Dado.h"
 
 
 class TableroAbstracto
@@ -26,12 +27,15 @@ public:
 	void obtenerJugadorActual(){}
     void asignarJugadorActual(/*jugador actual*/){}
 	void obtenerJugadores(){}
+	int lanzarDado(){
+      return dado.lanzar();
+	}
     
 
 	private:
 	// vector  *jugadores
 	// jugador actual
-    // Dado * dado
+    Dado  dado;
     int juegoTerminado;
 };
 
