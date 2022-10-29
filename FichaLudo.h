@@ -23,6 +23,7 @@ class FichaLudo : public FichaAbstracta {
         int getEstado()override;
         bool getFinalizado()override;
         int getPasosDados();
+        int getZonaSegura();
         void setPasosDados(int pasos);
         void setPosicion(int posicion)override;
 

@@ -5,16 +5,21 @@
 #include "TableroAbstracto.h"
 #include "tableroLUDO.h"
 #include "Jugador.h"
+#include "FichaLudo.h"
+#include "FichaAbstracta.h"
 
-class ValidadorLudo : Validador {
+class ValidadorLudo : public Validador {
     private:
         TableroLudo * mesaLudo;
     public:
         ValidadorLudo();
         ValidadorLudo(TableroAbstracto * mesa);
         void iniciarReglas() override;
-        void validarJugada(Jugador * jugador) override;
+        int validarJugada(int posicion, FichaAbstracta * mover) override;
         bool verificarBloqueo();
+        void castTable();
+        bool reglaOcho(int posicion, FichaLudo * mover);
+        bool verifComer(int posicion, FichaLudo * mover);
 };
 
 #endif

@@ -47,3 +47,7 @@ int FichaLudo::getPasosDados(){
     return this->pasosDados;
 }
 
+int FichaLudo::getZonaSegura() {
+    return this->zonaSegura;
+}
+
