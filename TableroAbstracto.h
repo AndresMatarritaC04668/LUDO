@@ -21,8 +21,9 @@ public:
     // dado = new dado()
 
     }
-    virtual void pasarTurno() = 0; //Cambia al jugador actual
-    virtual void jugarTurno() = 0;      // Tira dado y ubica las fichas
+    virtual void pasarTurno() = 0; //Cambia al jugador actual //controlador 
+    virtual void jugarTurno() = 0;      // Tira dado y ubica las fichas  // controlador
+	
 	void obtenerJugador(/*color jugador*/){}
 	void obtenerJugadorActual(){}
     void asignarJugadorActual(/*jugador actual*/){}

@@ -9,10 +9,11 @@ int main(){
   int mover = tablero->lanzarDado();
   
   FichaLudo * ficha = new FichaLudo("AZUL",0);
-  tablero->tablero[0][ficha->getPos()+mover%52] = ficha->getColor();
+  
+
   for(int i = 0 ; i < 52 ; i++){
 
-    cout<<  tablero->tablero[0][i] << tablero->tablero[1][i]<<endl;
+    cout<<  tablero->tablero[0][i]->getColor() << tablero->tablero[1][i]->getColor()<<endl;
   }
 
   return 0;

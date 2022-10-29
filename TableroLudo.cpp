@@ -2,9 +2,9 @@
 
 TableroLudo::TableroLudo(){
   for(int i = 0 ; i < 52 ; i++){
-    this->tablero[0][i] = "_";
-    this->tablero[1][i] = "_";
-    cout<<  this->tablero[0][i] << this->tablero[1][i]<<endl;
+    this->tablero[0][i] = nullptr;
+    this->tablero[1][i] = nullptr;
+   
   }
 }
 
