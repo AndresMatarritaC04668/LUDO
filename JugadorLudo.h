@@ -3,15 +3,16 @@
 #include<iostream>
 #include "Jugador.h"
 using namespace std;
-class JugadorLudo : Jugador {
+class JugadorLudo : public Jugador {
 
     private:
         std::string nombre;
-        bool esGanador;
+        int esGanador;
         string color;
-        std::vector<FichaAbstracta *> fichas;
+        
 
     public :
+        JugadorLudo(string color,int zonaSegura);
         JugadorLudo();
         JugadorLudo(std::string nombre , string color);
         ~JugadorLudo();

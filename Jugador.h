@@ -6,6 +6,7 @@
 #include <vector>
 #include <stdbool.h>
 #include <iostream>
+
 using namespace std;
 
 class Jugador {
@@ -39,6 +40,8 @@ class Jugador {
     
     protected:
        int cantidadDados;
+       std::vector<FichaAbstracta *> fichas;
+
 };
 
 

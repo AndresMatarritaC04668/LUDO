@@ -13,7 +13,7 @@ class Regla {
     Regla();
     Regla(string);
     string obtenerNombre();
-    virtual int validarRegla() = 0; // ? Venia en el diagrama, la verdad no se que hace.
+    
 };
 
 #endif

@@ -13,6 +13,20 @@
         this->cantidadDados = 1;
     }
 
+    JugadorLudo::JugadorLudo(string color,int zonaSegura){
+        this->cantidadDados = 1;
+        FichaLudo * ficha1 = new FichaLudo(color,zonaSegura);
+        fichas.push_back(ficha1);
+        FichaLudo * ficha2 = new FichaLudo(color,zonaSegura);
+        fichas.push_back(ficha2);
+        FichaLudo * ficha3 = new FichaLudo(color,zonaSegura);
+        fichas.push_back(ficha3);
+        FichaLudo * ficha4 = new FichaLudo(color,zonaSegura);
+        fichas.push_back(ficha4);
+        this->esGanador = 0;
+        this->color = color;
+    }
+
     JugadorLudo::~JugadorLudo() {
             for (auto i: fichas)
                 delete i;

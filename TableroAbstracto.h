@@ -2,6 +2,8 @@
 #define MI_TABLEROABSTRACTO
 using namespace std;
 #include "Dado.h"
+#include "Jugador.h"
+#include <vector>
 
 
 class TableroAbstracto
@@ -14,7 +16,7 @@ public:
     };
     
 
-	virtual void asignarJugadores(int cantidadJugadores) = 0; 
+	virtual void asignarCantidadJugadores(int ) = 0; 
 	virtual void ubicarJugadores()= 0; // Fichas enel vector zona segurado
 	virtual void iniciarPartida(){
     
@@ -33,11 +35,11 @@ public:
 	}
     
 
-	private:
-	// vector  *jugadores
-	// jugador actual
-    Dado  dado;
-    int juegoTerminado;
+	protected:
+	  vector<Jugador*> jugadores;
+	  Jugador * jugadorActual;
+      Dado  dado;
+      int juegoTerminado;
 };
 
 #endif
