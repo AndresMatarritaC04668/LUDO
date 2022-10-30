@@ -3,6 +3,7 @@
 
 #include "Dado.h"
 #include "FichaAbstracta.h"
+#include "TableroAbstracto.h"
 #include <vector>
 #include <stdbool.h>
 #include <iostream>
@@ -26,7 +27,7 @@ class Jugador {
 
         
 
-        virtual void moverFicha(FichaAbstracta * ficha , int pasos) = 0;
+        virtual void moverFicha(FichaAbstracta * ficha , int pasos, TableroAbstracto* tablero) = 0;
 
         virtual FichaAbstracta * elegirFicha() = 0;
 
@@ -37,7 +38,7 @@ class Jugador {
             cin.get();
             int darPasos = lanzarDado();
             FichaAbstracta * ficha = elegirFicha();
-            moverFicha(ficha , darPasos);         
+            moverFicha(ficha , darPasos, nullptr);         
         }
 
         virtual int lanzarDado() = 0;

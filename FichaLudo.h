@@ -26,6 +26,8 @@ class FichaLudo : public FichaAbstracta {
         int getZonaSegura();
         void setPasosDados(int pasos);
         void setPosicion(int posicion)override;
+        void activarFicha();
+        void desactivarFicha();
 
 };
 

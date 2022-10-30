@@ -2,6 +2,7 @@
 #define _JUGADOR_LUDO
 #include<iostream>
 #include "Jugador.h"
+#include "tableroLUDO.h"
 using namespace std;
 class JugadorLudo : public Jugador {
 
@@ -20,10 +21,11 @@ class JugadorLudo : public Jugador {
         std::string getNombre() override;
         std::vector<FichaAbstracta *> getFichas();
         bool getEsGanador()override;
-        void moverFicha(FichaAbstracta * ficha,int pasos) override;    
+        void moverFicha(FichaAbstracta * ficha, int pasos, TableroAbstracto* tablero) override;    
         void crearFichas(int cantidadFichas)override; 
         int lanzarDado()override;
         FichaAbstracta * elegirFicha()override;
+        int encontrarBarrera(int posicion, FichaLudo * mover, TableroLudo* tablero);
 
 };
 

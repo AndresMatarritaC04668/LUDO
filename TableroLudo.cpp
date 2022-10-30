@@ -44,9 +44,9 @@ void TableroLudo::jugarTurno(){
 
 }
 
-void TableroLudo::moverFicha(int pasos , FichaLudo * ficha){
+void TableroLudo::moverFicha(int pasos, FichaLudo * ficha){
 
-    
+    this->jugadorActual->moverFicha(ficha, pasos, this);
 
 }
 

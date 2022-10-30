@@ -35,6 +35,9 @@ public:
 	int lanzarDado(){
       return dado.lanzar();
 	}
+	Validador* getValidador() {
+		return this->validador;
+	}
 
 	protected:
 	  vector<Jugador*> jugadores;

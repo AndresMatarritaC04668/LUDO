@@ -19,6 +19,14 @@ FichaLudo::FichaLudo(std::string color, int zonaSegura) {
     this->caminoFinal = 0;
 }  
 
+void FichaLudo::activarFicha() {
+    this->activo = true;
+}
+
+void FichaLudo::desactivarFicha() {
+    this->activo = false;
+}
+
 std::string FichaLudo::getColor() {
     return this->color;
 }
