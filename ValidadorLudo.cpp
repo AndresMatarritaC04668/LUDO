@@ -99,6 +99,20 @@ bool ValidadorLudo::verifComer(int posicion, FichaLudo * mover) {
 }
 
 /**
+ * @brief Metodo que identifica el posible accionar al sacar un numero seis tras
+ * lanzar el dado.
+ * 
+ * @return true Si se puede sacar de la salida.
+ * @return false Si no se puede sacar de la salida.
+ */
+bool ValidadorLudo::validarSeis(int pasosDado, FichaAbstracta * laFicha) {
+  if (!laFicha->getEstado() && pasosDado != 6) {
+    return false;
+  }
+  return true;
+}
+
+/**
  * @brief Castea un tablero abstracto en un tablero de ludo.
  * 
  */

@@ -24,6 +24,7 @@ class ValidadorLudo : public Validador {
         void setMesaLudo(TableroLudo * mesa);
         bool reglaOcho(int posicion, FichaLudo * mover);
         bool verifComer(int posicion, FichaLudo * mover);
+        bool validarSeis(int pasosDado, FichaAbstracta * laFicha);
 };
 
 #endif
