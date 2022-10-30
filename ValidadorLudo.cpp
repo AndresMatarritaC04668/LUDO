@@ -18,6 +18,15 @@ ValidadorLudo::ValidadorLudo(TableroAbstracto * mesa) {
 }
 
 /**
+ * @brief Construct a new Validador Ludo:: Validador Ludo object
+ * 
+ * @param mesa 
+ */
+ValidadorLudo::ValidadorLudo(TableroLudo * mesa) {
+  this->mesaLudo = mesa;
+}
+
+/**
  * @brief Clase que inicializa las reglas.
  * 
  */
@@ -89,8 +98,21 @@ bool ValidadorLudo::verifComer(int posicion, FichaLudo * mover) {
   return false;
 }
 
+/**
+ * @brief Castea un tablero abstracto en un tablero de ludo.
+ * 
+ */
 void ValidadorLudo::castTable() {
   if (this->mesaLudo != NULL && this->mesa != NULL){
     this->mesaLudo = dynamic_cast< TableroLudo * >(this->mesa);
   }
+}
+
+/**
+ * @brief Setea el atributo de mesaLudo.
+ * 
+ * @param mesa El valor con lo que se llena el atributo de mesaLudo.
+ */
+void ValidadorLudo::setMesaLudo(TableroLudo * mesa) {
+  this->mesaLudo = mesa;
 }

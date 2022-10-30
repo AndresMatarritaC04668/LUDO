@@ -9,22 +9,23 @@
 
 using namespace std;
 
+class TableroAbstracto;
+
 class Validador {
-  
   protected:
     vector<Regla> reglas;
     TableroAbstracto * mesa;
   
   public:
-    Validador();
-    Validador(TableroAbstracto * mesa);
+    Validador(){};
+    Validador(TableroAbstracto * mesa){
+      this->mesa = mesa;
+    }
     virtual void iniciarReglas() = 0;
     // virtual void validarReglas(string tablero[2][52]) = 0;
     virtual int validarJugada(int posicion, FichaAbstracta * mover) = 0;
     // En LUDO: Verificar bloqueo.
     vector<Regla> obtenerReglas() { return reglas; };
-    
-    
 };
 
 #endif

@@ -1,11 +1,12 @@
 #ifndef MI_TABLEROABSTRACTO
 #define MI_TABLEROABSTRACTO
 using namespace std;
+#include "Validador.h"
 #include "Dado.h"
 #include "Jugador.h"
 #include <vector>
-#include "Validador.h"
 
+class Validador;
 
 class TableroAbstracto
 {
