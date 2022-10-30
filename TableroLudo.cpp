@@ -1,8 +1,6 @@
 #include "TableroLudo.h"
 #include "JugadorLudo.h"
 #include "Jugador.h"
-#include "Validador.h"
-#include  "ValidadorLudo.h"
 
 
 TableroLudo::TableroLudo(){
@@ -10,7 +8,7 @@ TableroLudo::TableroLudo(){
     this->tablero[0][i] = new FichaLudo("qwrwedcsd",2);
     this->tablero[1][i] = new FichaLudo("qwrwedcsd",2);
   }
-  this->validador = new ValidadorLudo(this);
+  // this->validador = new ValidadorLudo(this);
 }
 void TableroLudo::asignarCantidadJugadores(int cantidadJugadores){
   this->cantidadJugadores = cantidadJugadores;
@@ -38,17 +36,29 @@ void TableroLudo::pasarTurno(){
 }
 void TableroLudo::jugarTurno(){
 
+  int darPasos = lanzarDado();
+  FichaLudo * fichaActual =  dynamic_cast<FichaLudo* >(jugadorActual->elegirFicha());
+  moverFicha(darPasos,fichaActual);
+  
 
 }
 
-void TableroLudo::moverFicha(int pasos){
+void TableroLudo::moverFicha(int pasos , FichaLudo * ficha){
 
     
 
 }
 
-void TableroLudo::elegirPrimero(){
-
-   
+void TableroLudo::asignarPrimerJugador(){
+  int numeroCorrecto = 0;
+  while(!numeroCorrecto){
+    int prueba = lanzarDado();
+    if(prueba >= 0 && prueba < cantidadJugadores ){
+      numeroCorrecto = prueba;
+    }
+  }
+  jugadorActual = jugadores[numeroCorrecto];
 }
+
+
 

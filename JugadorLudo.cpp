@@ -11,6 +11,7 @@
         this->esGanador = false;
         this->color = color;
         this->cantidadDados = 1;
+        
     }
 
     JugadorLudo::JugadorLudo(string color,int zonaSegura){

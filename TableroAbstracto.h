@@ -4,7 +4,7 @@ using namespace std;
 #include "Dado.h"
 #include "Jugador.h"
 #include <vector>
-#include "Validador.h"
+
 
 
 class TableroAbstracto
@@ -20,12 +20,12 @@ public:
 	virtual void asignarCantidadJugadores(int ) = 0; 
 	virtual void ubicarJugadores()= 0; // Fichas enel vector zona segurado
 	virtual void iniciarPartida(){
-    
-    // dado = new dado()
+       jugarTurno();
 
     }
     virtual void pasarTurno() = 0; //Cambia al jugador actual //controlador 
     virtual void jugarTurno() = 0;      // Tira dado y ubica las fichas  // controlador
+	virtual void asignarPrimerJugador() =0;
 	void obtenerJugador(/*color jugador*/){}
 	void obtenerJugadorActual(){}
     void asignarJugadorActual(/*jugador actual*/){}
@@ -33,15 +33,13 @@ public:
 	int lanzarDado(){
       return dado.lanzar();
 	}
-    
 
 	protected:
 	  vector<Jugador*> jugadores;
 	  Jugador * jugadorActual;
       Dado  dado;
       int juegoTerminado;
-	  Validador *validador;
-	 
+
 
 };
 
