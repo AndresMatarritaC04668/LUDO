@@ -1,14 +1,15 @@
 #include "TableroLudo.h"
 #include "JugadorLudo.h"
 #include "Jugador.h"
-
+#include "Validador.h"
+#include "ValidadorLudo.h"
 
 TableroLudo::TableroLudo(){
   for(int i = 0 ; i < 52 ; i++){
     this->tablero[0][i] = new FichaLudo("qwrwedcsd",2);
     this->tablero[1][i] = new FichaLudo("qwrwedcsd",2);
   }
-  // this->validador = new ValidadorLudo(this);
+  this->validador = new ValidadorLudo(this);
 }
 void TableroLudo::asignarCantidadJugadores(int cantidadJugadores){
   this->cantidadJugadores = cantidadJugadores;
@@ -26,8 +27,8 @@ void TableroLudo::ubicarJugadores(){
  }
  
  if(cantidadJugadores == 4){
- JugadorLudo * jugador4 = new JugadorLudo("VERDE",39);
- jugadores.push_back(jugador4);
+   JugadorLudo * jugador4 = new JugadorLudo("VERDE",39);
+   jugadores.push_back(jugador4);
  }
 
 }

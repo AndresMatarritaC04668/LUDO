@@ -6,6 +6,7 @@ using namespace std;
 #include "Jugador.h"
 #include <vector>
 
+
 class Validador;
 
 class TableroAbstracto
@@ -40,6 +41,7 @@ public:
 	  Jugador * jugadorActual;
       Dado  dado;
       int juegoTerminado;
+      Validador * validador;
 
 
 };
