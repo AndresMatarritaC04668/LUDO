@@ -2,8 +2,7 @@
 #include "JugadorLudo.h"
 #include "Jugador.h"
 #include "Validador.h"
-#include  "ValidadorLudo.h"
-
+#include "ValidadorLudo.h"
 
 TableroLudo::TableroLudo(){
   for(int i = 0 ; i < 52 ; i++){
@@ -28,8 +27,8 @@ void TableroLudo::ubicarJugadores(){
  }
  
  if(cantidadJugadores == 4){
- JugadorLudo * jugador4 = new JugadorLudo("VERDE",39);
- jugadores.push_back(jugador4);
+   JugadorLudo * jugador4 = new JugadorLudo("VERDE",39);
+   jugadores.push_back(jugador4);
  }
 
 }
@@ -38,17 +37,29 @@ void TableroLudo::pasarTurno(){
 }
 void TableroLudo::jugarTurno(){
 
+  int darPasos = lanzarDado();
+  FichaLudo * fichaActual =  dynamic_cast<FichaLudo* >(jugadorActual->elegirFicha());
+  moverFicha(darPasos,fichaActual);
+  
 
 }
 
-void TableroLudo::moverFicha(int pasos){
+void TableroLudo::moverFicha(int pasos , FichaLudo * ficha){
 
     
 
 }
 
-void TableroLudo::elegirPrimero(){
-
-   
+void TableroLudo::asignarPrimerJugador(){
+  int numeroCorrecto = 0;
+  while(!numeroCorrecto){
+    int prueba = lanzarDado();
+    if(prueba >= 0 && prueba < cantidadJugadores ){
+      numeroCorrecto = prueba;
+    }
+  }
+  jugadorActual = jugadores[numeroCorrecto];
 }
+
+
 

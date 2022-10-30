@@ -1,7 +1,6 @@
 #include "TableroLUDO.h"
 #include "FichaLudo.h"
-#include "Validador.h"
-#include "ValidadorLudo.h"
+
 
 int main(){
   //Simulacion controlador

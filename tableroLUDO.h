@@ -16,8 +16,9 @@ class TableroLudo : public TableroAbstracto {
 	void ubicarJugadores()override; // Fichas enel vector zona segurado
       void pasarTurno()override; //Cambia al jugador actual
       void jugarTurno()override;
-      void elegirPrimero();
-      void moverFicha(int pasos); // Mueve una ficha
+      void asignarPrimerJugador()override;
+      void moverFicha(int pasos , FichaLudo* ); // Mueve una ficha
+      int elegirFicha();
       FichaLudo * tablero[2][52];
    
    private:

@@ -24,9 +24,13 @@ class Jugador {
 
         virtual void crearFichas(int) = 0;
 
+        
+
         virtual void moverFicha(FichaAbstracta * ficha , int pasos) = 0;
 
         virtual FichaAbstracta * elegirFicha() = 0;
+
+        virtual 
 
         void jugarTurno(){
             cout<< "Pressione cualquier tecla para lanzarDado";
