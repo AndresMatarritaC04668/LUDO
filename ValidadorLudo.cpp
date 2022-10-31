@@ -41,7 +41,9 @@ void ValidadorLudo::iniciarReglas() {
  * @return 2 Si hay una barrera. 3 Si hay otra ficha. 1 Si simplemente avanza.
  */
 int ValidadorLudo::validarJugada(int posicion, FichaAbstracta * mover) {
+
   FichaLudo * fichaL = dynamic_cast< FichaLudo * >(mover);
+ 
   if (reglaOcho(posicion, fichaL) == false) {
     return 2;
   } else if (verifComer(posicion, fichaL) == true) {
@@ -61,7 +63,7 @@ int ValidadorLudo::validarJugada(int posicion, FichaAbstracta * mover) {
  * @return false Si no se cumple la regla ocho.
  */
 bool ValidadorLudo::reglaOcho(int posicion, FichaLudo * mover) {
-  for (int i = mover->getPos() + 1; i <= posicion; ++i) {
+  for (int i = mover->getY() + 1; i <= posicion; ++i) {
     if (this->mesaLudo->tablero[0][i] != NULL &&
       this->mesaLudo->tablero[1][i] != NULL) {
       return false;
@@ -86,7 +88,7 @@ bool ValidadorLudo::verifComer(int posicion, FichaLudo * mover) {
   // va a mover.
   for (int i = 0; i < 2; ++i) {
     if (this->mesaLudo->tablero[i][posicion] != NULL) {
-      if (this->mesaLudo->tablero[i][posicion]->getPos() !=
+      if (this->mesaLudo->tablero[i][posicion]->getY() !=
         this->mesaLudo->tablero[i][posicion]->getZonaSegura()) {
           if (this->mesaLudo->tablero[i][posicion]->getColor().compare
             (mover->getColor()) != 0) {

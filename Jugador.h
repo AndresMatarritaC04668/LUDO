@@ -3,11 +3,11 @@
 
 #include "Dado.h"
 #include "FichaAbstracta.h"
-#include "TableroAbstracto.h"
 #include <vector>
 #include <stdbool.h>
 #include <iostream>
 
+class TableroAbstracto;
 using namespace std;
 
 class Jugador {
@@ -27,18 +27,16 @@ class Jugador {
 
         
 
-        virtual void moverFicha(FichaAbstracta * ficha , int pasos, TableroAbstracto* tablero) = 0;
+        virtual int moverFicha(FichaAbstracta * ficha , int pasos, TableroAbstracto* tablero) = 0;
 
         virtual FichaAbstracta * elegirFicha() = 0;
 
-        virtual 
-
-        void jugarTurno(){
+        void jugarTurno(TableroAbstracto* tablero){
             cout<< "Pressione cualquier tecla para lanzarDado";
             cin.get();
             int darPasos = lanzarDado();
             FichaAbstracta * ficha = elegirFicha();
-            moverFicha(ficha , darPasos, nullptr);         
+            moverFicha(ficha , darPasos,tablero);         
         }
 
         virtual int lanzarDado() = 0;

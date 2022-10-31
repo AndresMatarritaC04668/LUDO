@@ -53,7 +53,7 @@
 
 int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* tableroLudo) {
     int resultado = 0;
-    for (int i = mover->getPos() + 1; i <= posicion; ++i) {
+    for (int i = mover->getY() + 1; i <= posicion; ++i) {
         if (tableroLudo->tablero[0][i] != NULL &&
             tableroLudo->tablero[1][i] != NULL) {
             return i;
@@ -62,54 +62,59 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
     return resultado;
 }
 
-    void JugadorLudo::moverFicha(FichaAbstracta * ficha, int pasos, TableroAbstracto* tablero){
+    int JugadorLudo::moverFicha(FichaAbstracta * miFicha, int pasos, TableroAbstracto* tablero){
+         
         TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
-
         ValidadorLudo* validadorLudo =  dynamic_cast<ValidadorLudo* >(tableroLudo->getValidador());
-
-        int resultado = validadorLudo->validarJugada(ficha->getPos()+pasos, ficha);
-
+        FichaLudo * ficha =   dynamic_cast<FichaLudo* >(miFicha);
+        int resultado = validadorLudo->validarJugada(ficha->getY()+pasos, ficha);
+        int movimientoValido = 0;
+        
+    
 
         switch(resultado) {
 
             case 1:
-                    int newPos = ficha->getPos() + pasos;
+            {
+                    int newPos = ficha->getY() + pasos;
                     for (int i=0; i<2; ++i) {
                         if (!tableroLudo->tablero[i][newPos]) {
                            tableroLudo->tablero[i][newPos] = dynamic_cast<FichaLudo* >(ficha);
+                           tableroLudo->tablero[ficha->getX()][ficha->getY()] = nullptr; // VACIA CELDA antigua 
+                           ficha->setPosicion(i,newPos%52);  // Nueva posicion
+                           ficha->setPasosDados(ficha->getPasosDados()+pasos);// sumarPasos'
+                           cout<< "Movimiento limpio \n ";
+                           break;
                         }
                     }
-                    
+                 
+                  tableroLudo->toString();
                 break;
-
+            }
             case 2:
-                    int resultado = encontrarBarrera(ficha->getPos() + pasos, dynamic_cast<FichaLudo* >(ficha), tableroLudo);
-                    
-                    if (resultado != ficha->getPos()) {
-                        for (int j=0; j<2; ++j) {
-                            if (!tableroLudo->tablero[j][resultado-1]) {
-                                tableroLudo->tablero[j][resultado-1] = dynamic_cast<FichaLudo* >(ficha);
-                                continue;
-                            }
-                        }
-                    }
+            {
+                cout<< "Hay una barrera de color , no puedes avanzar" <<"\n";
                     
                 break;
+            }
 
             default:
-                    int nuevaPos = ficha->getPos() + pasos;
+                cout<<"comer" <<ficha->getColor();
+                    int nuevaPos = (ficha->getY() + pasos)%52;
                     FichaLudo* newFicha = nullptr;
                     int saveState = 0; 
                     for (int k=0; k<2; ++k) {
                         if (tableroLudo->tablero[k][nuevaPos]) {
                             newFicha = tableroLudo->tablero[k][nuevaPos];
                             saveState = k;
-                            continue;
+                            break;
                         }
                     }
                     tableroLudo->tablero[saveState][nuevaPos] = dynamic_cast<FichaLudo* >(ficha);
+                    cout<<"Comiste a la ficha "+ newFicha->getColor() << "\n";
                     newFicha->setPasosDados(0);
                     newFicha->desactivarFicha();
+                    
 
         }
 
@@ -118,7 +123,7 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
 // 2. Escoger la ficha     done
 // 3. Se puede mover? 
         
-        
+        return movimientoValido;
     }
 
     void JugadorLudo::crearFichas(int cantidadFichas){
@@ -142,15 +147,15 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
 
     FichaAbstracta * JugadorLudo::elegirFicha(){
        while(1){
-         cout<< "Que numero de ficha desea elegir: 1,2,3 o 4";
+         cout<< "\nQue numero de ficha desea elegir: 1,2,3 o 4";
          cout<< "\nDigite el numero de ficha que desea mover: ";
          int opcion = 0;
          cin>>opcion;
          
-         if(opcion >=1 && opcion <=4 ){
-            return fichas[opcion+1];
+         if(opcion >=1 && opcion <=4 && !fichas[(opcion-1)%4]->getFinalizado()){
+            return fichas[(opcion-1)%4];
          } else {
-            cout << "Numero de ficha incorrecto";
+            cout << "La ficha elegida ya esta en la meta , eliga otra ficha";
          }
        }
     }

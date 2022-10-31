@@ -6,8 +6,8 @@
 
 TableroLudo::TableroLudo(){
   for(int i = 0 ; i < 52 ; i++){
-    this->tablero[0][i] = new FichaLudo("qwrwedcsd",2);
-    this->tablero[1][i] = new FichaLudo("qwrwedcsd",2);
+    this->tablero[0][i] = nullptr;
+    this->tablero[1][i] = nullptr;
   }
   this->validador = new ValidadorLudo(this);
 }
@@ -34,21 +34,14 @@ void TableroLudo::ubicarJugadores(){
 }
 void TableroLudo::pasarTurno(){
 
+  jugadorActual = jugadores[(this->jugadorPresente+1)%cantidadJugadores];
+  this->jugadorPresente = (this->jugadorPresente+1)%cantidadJugadores;
+
 }
 void TableroLudo::jugarTurno(){
-
-  int darPasos = lanzarDado();
-  FichaLudo * fichaActual =  dynamic_cast<FichaLudo* >(jugadorActual->elegirFicha());
-  moverFicha(darPasos,fichaActual);
-  
-
+   jugadorActual->jugarTurno(this);
 }
 
-void TableroLudo::moverFicha(int pasos, FichaLudo * ficha){
-
-    this->jugadorActual->moverFicha(ficha, pasos, this);
-
-}
 
 void TableroLudo::asignarPrimerJugador(){
   int numeroCorrecto = 0;
@@ -59,6 +52,25 @@ void TableroLudo::asignarPrimerJugador(){
     }
   }
   jugadorActual = jugadores[numeroCorrecto];
+  jugadorPresente = numeroCorrecto;
+}
+
+void TableroLudo::toString(){
+  
+  for(int i = 0 ; i < 52 ; i++){
+    if( this->tablero[0][i]){
+        cout<<tablero[0][i]->getColor();
+    } else { 
+      cout<< "Vacio";
+    }
+    if( this->tablero[1][i]){
+        cout<<tablero[1][i]->getColor();
+    } else { 
+      cout<< "Vacio";
+    }
+    cout<<endl;
+  }
+
 }
 
 

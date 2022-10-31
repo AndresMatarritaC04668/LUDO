@@ -17,10 +17,10 @@ int main(){
   tablero->ubicarJugadores(); 
 
   // asignamos primerJugador
-
+  tablero->asignarPrimerJugador();
 
   // ComenzarJuego
-
+  tablero->iniciarPartida();
   
 
   return 0;
