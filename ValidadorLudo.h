@@ -27,6 +27,8 @@ class ValidadorLudo : public Validador {
         bool verifComer(int posicion, FichaLudo * mover);
         bool validarSeis(int pasosDado, FichaAbstracta * laFicha);
         int finalizaFicha(FichaLudo *);
+        int esGanador(std::vector<FichaAbstracta *>)override;
+        
 };
 
 #endif

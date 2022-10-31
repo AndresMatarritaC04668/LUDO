@@ -18,21 +18,17 @@ class Jugador {
         ~Jugador() {}
 
         virtual void  setNombre(std::string nombre) = 0;
-
         virtual std::string getNombre() = 0;
-
         virtual bool getEsGanador() = 0;
-
         virtual void crearFichas(int) = 0;
-
-        
-
         virtual int moverFicha(FichaAbstracta * ficha , int pasos, TableroAbstracto* tablero) = 0;
-
         virtual FichaAbstracta * elegirFicha() = 0;
+        virtual int lanzarDado() = 0;
+        virtual std::vector<FichaAbstracta *> getFichas() = 0;
 
         int jugarTurno(TableroAbstracto* tablero){
-            cout<< "Pressione cualquier tecla para lanzarDado";
+            cout<< "\nPressione cualquier tecla para lanzarDado  ";
+            cout<< this->getNombre() << "\n";
             cin.get();
             int darPasos = lanzarDado();
             FichaAbstracta * ficha = elegirFicha();
@@ -41,10 +37,8 @@ class Jugador {
             movimientoCorrecto = moverFicha(ficha , darPasos,tablero); 
 
             return movimientoCorrecto;
-        }
+        }     
 
-        virtual int lanzarDado() = 0;
-    
     protected:
        int cantidadDados;
        std::vector<FichaAbstracta *> fichas;

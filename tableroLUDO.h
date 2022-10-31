@@ -18,8 +18,10 @@ class TableroLudo : public TableroAbstracto {
       void jugarTurno()override;
       void asignarPrimerJugador()override;
       void toString();
-     
+      int hayGanador()override; 
       int elegirFicha();
+      void finalizarJuego()override;
+      Jugador * getJugadorActual()override;
       FichaLudo * tablero[2][52];
    
    private:

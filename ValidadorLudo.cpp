@@ -1,4 +1,5 @@
 #include "ValidadorLudo.h"
+#include "JugadorLudo.h"
 #include <sstream>
 
 /**
@@ -171,4 +172,18 @@ void ValidadorLudo::setMesaLudo(TableroLudo * mesa) {
 
 int ValidadorLudo::finalizaFicha(FichaLudo * ficha){
     return ficha->getPasosDados() == 60;
+}
+
+int ValidadorLudo::esGanador(std::vector<FichaAbstracta *> fichas){
+  int ganador = 1;
+ 
+  for(auto i : fichas){
+    if(i->getFinalizado() == 0){
+       ganador = 0;
+       break;
+    }
+
+  }
+  
+  return ganador;
 }

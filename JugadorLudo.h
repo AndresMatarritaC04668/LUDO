@@ -16,13 +16,11 @@ class JugadorLudo : public Jugador {
         
 
     public :
-        JugadorLudo(string color,int zonaSegura);
+        JugadorLudo(string color,int zonaSegura,string nombre);
         JugadorLudo();
-        JugadorLudo(std::string nombre , string color);
         ~JugadorLudo();
         void setNombre(std::string nombre) override;
         std::string getNombre() override;
-        std::vector<FichaAbstracta *> getFichas();
         bool getEsGanador()override;
         int moverFicha(FichaAbstracta * ficha, int pasos, TableroAbstracto* tablero) override;    
         void crearFichas(int cantidadFichas)override; 
@@ -31,6 +29,7 @@ class JugadorLudo : public Jugador {
         int encontrarBarrera(int posicion, FichaLudo * mover, TableroLudo* tablero);
         string getColor();
         void moverFichaRectaFinal(FichaLudo * ficha, int pasos, TableroLudo* tablero , ValidadorLudo * validador);
+        std::vector<FichaAbstracta *> getFichas() override;
       
 
 };

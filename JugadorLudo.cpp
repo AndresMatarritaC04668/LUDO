@@ -7,15 +7,8 @@
         this->esGanador = false;
    }
 
-    JugadorLudo::JugadorLudo(std::string nombre , string color) {
-        this->setNombre(nombre);
-        this->esGanador = false;
-        this->color = color;
-        this->cantidadDados = 1;
-        
-    }
 
-    JugadorLudo::JugadorLudo(string color,int zonaSegura){
+    JugadorLudo::JugadorLudo(string color,int zonaSegura,string nombre){
         this->cantidadDados = 1;
         FichaLudo * ficha1 = new FichaLudo(color,zonaSegura,1);
         fichas.push_back(ficha1);
@@ -27,28 +20,29 @@
         fichas.push_back(ficha4);
         this->esGanador = 0;
         this->color = color;
+        this->nombre = nombre;
     }
 
     JugadorLudo::~JugadorLudo() {
             for (auto i: fichas)
                 delete i;
-        }
+    }
 
     void JugadorLudo::setNombre(std::string nombre) {
             this->nombre = nombre;
-        }
+    }
 
     std::string JugadorLudo:: getNombre() {
             return this->nombre;
-        }
-
-    std::vector<FichaAbstracta *> JugadorLudo:: getFichas() {  // no override
-            return this->fichas;
-        }
+    }
 
     bool JugadorLudo::getEsGanador() {
             return this->esGanador;
-        }
+    }
+        
+    std::vector<FichaAbstracta *> JugadorLudo::getFichas(){
+           return this->fichas;
+    }
 
 
 int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* tableroLudo) {
@@ -152,6 +146,7 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
     }
 
     int JugadorLudo::lanzarDado(){
+        
         Dado  dado;
         int darPasos = 0;
         for(int i = 0 ; i<cantidadDados ; i++){
@@ -180,7 +175,7 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
     }
 
     void JugadorLudo::moverFichaRectaFinal(FichaLudo * ficha, int pasos, TableroLudo* tablero , ValidadorLudo * validador){
-        if(ficha->getPasosDados() < 54){
+        if(ficha->getPasosDados() <= 54){
            tablero->tablero[ficha->getX()][ficha->getY()] = nullptr;
            ficha->setPasosDados(ficha->getPasosDados()+pasos);        
         } else {
@@ -198,5 +193,7 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
 
         cout<<"\n\n Ficha  "  << ficha->getColor() << " pasos  " << ficha->getPasosDados()<<"\n\n\n";
     }
+
+
 
  

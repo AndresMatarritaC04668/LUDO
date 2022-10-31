@@ -27,13 +27,13 @@ class Validador {
         delete this->reglas[i];
       }
     }
-
     virtual void iniciarReglas() = 0;
     // virtual void validarReglas(string tablero[2][52]) = 0;
     virtual int validarJugada(int posicion, FichaAbstracta * mover) = 0;
     // En LUDO: Verificar bloqueo.
     vector<Regla *> * obtenerReglas() { return &reglas; };
     virtual string toStringReglas() = 0;
+    virtual int esGanador(std::vector<FichaAbstracta *>) = 0 ;
 };
 
 #endif

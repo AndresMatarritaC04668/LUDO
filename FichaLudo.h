@@ -19,6 +19,7 @@ class FichaLudo : public FichaAbstracta {
     public:
         FichaLudo();
         FichaLudo(std::string, int,int);
+        ~FichaLudo()override;
         std::string getColor() override;
         int getX()override;
         int getY()override;

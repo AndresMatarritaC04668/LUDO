@@ -13,28 +13,27 @@ class TableroAbstracto
 {
 public:
 	TableroAbstracto() {};
-	~TableroAbstracto() {
-        //delete jugadores
-        //delete dado
-    };
-    
-
+	~TableroAbstracto() {};
 	virtual void asignarCantidadJugadores(int ) = 0; 
 	virtual void ubicarJugadores()= 0; // Fichas enel vector zona segurado
+	virtual int  hayGanador() = 0;
+    virtual void finalizarJuego() = 0;
 	virtual void iniciarPartida(){
-	  while(1){
+	 int finalizado = 0;
+	 while(!finalizado){
        jugarTurno();
-	   pasarTurno();
+	   finalizado = hayGanador();
+	   if(finalizado){
+	      break;
+	    }
+	   pasarTurno();   
 	  }
-
+	  finalizarJuego();
     }
     virtual void pasarTurno() = 0; //Cambia al jugador actual //controlador 
     virtual void jugarTurno() = 0;      // Tira dado y ubica las fichas  // controlador
 	virtual void asignarPrimerJugador() =0;
-	void obtenerJugador(/*color jugador*/){}
-	void obtenerJugadorActual(){}
-    void asignarJugadorActual(/*jugador actual*/){}
-	void obtenerJugadores(){}
+	virtual Jugador * getJugadorActual() = 0;
 	int lanzarDado(){
       return dado.lanzar();
 	}

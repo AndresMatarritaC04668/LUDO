@@ -11,23 +11,38 @@ TableroLudo::TableroLudo(){
   }
   this->validador = new ValidadorLudo(this);
 }
+
+TableroLudo::~TableroLudo(){
+  for(int i = 0 ; i < cantidadJugadores ; i++){
+    delete jugadores[i];
+  }
+}
 void TableroLudo::asignarCantidadJugadores(int cantidadJugadores){
   this->cantidadJugadores = cantidadJugadores;
 } 
 void TableroLudo::ubicarJugadores(){
- 
- JugadorLudo * jugador1 = new JugadorLudo("ROJO",0);
+ string nombre = "";
+ cout<<"Digite el nombre del jugador rojo";
+ cin>> nombre;
+ JugadorLudo * jugador1 = new JugadorLudo("ROJO",0,nombre);
  jugadores.push_back(jugador1);
- JugadorLudo * jugador2 = new JugadorLudo("AZUL",13);
+
+ cout<<"Digite el nombre del jugador azul";
+ cin>> nombre;
+ JugadorLudo * jugador2 = new JugadorLudo("AZUL",13,nombre);
  jugadores.push_back(jugador2);
 
  if(cantidadJugadores >=3){
-   JugadorLudo * jugador3 = new JugadorLudo("AMARILLO",26);
+   cout<<"Digite el nombre del jugador amarillo";
+   cin>> nombre;
+   JugadorLudo * jugador3 = new JugadorLudo("AMARILLO",26,nombre);
    jugadores.push_back(jugador3);
  }
  
  if(cantidadJugadores == 4){
-   JugadorLudo * jugador4 = new JugadorLudo("VERDE",39);
+   cout<<"Digite el nombre del jugador verde";
+   cin>> nombre;
+   JugadorLudo * jugador4 = new JugadorLudo("VERDE",39,nombre);
    jugadores.push_back(jugador4);
  }
 
@@ -48,7 +63,6 @@ void TableroLudo::jugarTurno(){
    }
 }
 
-
 void TableroLudo::asignarPrimerJugador(){
   int numeroCorrecto = 0;
   while(!numeroCorrecto){
@@ -61,6 +75,14 @@ void TableroLudo::asignarPrimerJugador(){
   jugadorPresente = numeroCorrecto;
   JugadorLudo * jugadorActualLudo = dynamic_cast<JugadorLudo* >(jugadorActual);
   cout<<"Comienza el jugador " <<jugadorActualLudo->getColor()<<endl;
+}
+
+int TableroLudo::hayGanador(){ 
+  return validador->esGanador(jugadorActual->getFichas());
+}
+
+Jugador * TableroLudo::getJugadorActual(){
+    return this->jugadorActual;
 }
 
 void TableroLudo::toString(){
@@ -79,6 +101,11 @@ void TableroLudo::toString(){
     cout<<endl;
   }
 
+}
+
+void TableroLudo::finalizarJuego(){
+   cout<< "Gracias por jugar";
+   cout<< "El ganador es: " << jugadorActual->getNombre();
 }
 
 

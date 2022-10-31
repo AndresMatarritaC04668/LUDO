@@ -10,6 +10,10 @@ FichaLudo::FichaLudo() {
     this->y = 0;
 }
 
+FichaLudo::~FichaLudo(){
+
+}
+
 FichaLudo::FichaLudo(std::string color, int zonaSegura ,int numeroFicha) {
     this->color = color;
     this->y = zonaSegura; // posicion = zonasegura
