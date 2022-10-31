@@ -12,8 +12,9 @@ class Regla {
   public:
     Regla();
     Regla(string);
+    ~Regla();
+    void setNombre(string);
     string obtenerNombre();
-    
 };
 
 #endif

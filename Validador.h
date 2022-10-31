@@ -13,7 +13,7 @@ class TableroAbstracto;
 
 class Validador {
   protected:
-    vector<Regla> reglas;
+    vector<Regla *> reglas;
     TableroAbstracto * mesa;
   
   public:
@@ -21,11 +21,18 @@ class Validador {
     Validador(TableroAbstracto * mesa){
       this->mesa = mesa;
     }
+    ~Validador() {
+      int reglasSize = this->reglas.size();
+      for (int i = 0; i < reglasSize; ++i) {
+        delete this->reglas[i];
+      }
+    }
+
     virtual void iniciarReglas() = 0;
     // virtual void validarReglas(string tablero[2][52]) = 0;
     virtual int validarJugada(int posicion, FichaAbstracta * mover) = 0;
     // En LUDO: Verificar bloqueo.
-    vector<Regla> obtenerReglas() { return reglas; };
+    vector<Regla *> * obtenerReglas() { return &reglas; };
 };
 
 #endif
