@@ -1,13 +1,21 @@
-#include "tableroLUDO.h"
+#include "TableroLUDO.h"
 #include "FichaLudo.h"
+#include "ControladorLudo.h"
 
 
 int main(){
   //Simulacion controlador
+  ControladorLudo * controlador = new ControladorLudo();
+  controlador->asignarCantidadJugadores();
+  controlador->ubicarJugadores();
+  controlador->asignarPrimerJugador();
+  controlador->iniciarPartida();
 
 
-  // Crear tablero
-  TableroLudo * tablero = new TableroLudo();
+ 
+  /*
+  // Crear tablero()=
+   TableroLudo * tablero = new TableroLudo();
 
 
   // AsignarCantidadJugadores
@@ -22,6 +30,6 @@ int main(){
   // ComenzarJuego
   tablero->iniciarPartida();
   
-
+ */
   return 0;
 }

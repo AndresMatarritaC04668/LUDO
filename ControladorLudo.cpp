@@ -9,7 +9,10 @@ void ControladorLudo::crearTablero() {
 }
 
 void ControladorLudo::asignarCantidadJugadores() {
-    tablero->asignarCantidadJugadores(4);
+    int cantidadJugadores = 2;
+    cout<<"Elige de 2 a 4 jugadores , digite la cantidad:\n";
+    cin>>cantidadJugadores;
+    tablero->asignarCantidadJugadores(cantidadJugadores);
 }
 
 void ControladorLudo::ubicarJugadores() {
