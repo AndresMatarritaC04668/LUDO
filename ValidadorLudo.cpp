@@ -63,7 +63,7 @@ int ValidadorLudo::validarJugada(int posicion, FichaAbstracta * mover) {
  * @return false Si no se cumple la regla ocho.
  */
 bool ValidadorLudo::reglaOcho(int posicion, FichaLudo * mover) {
-  for (int i = mover->getY() + 1; i <= posicion; ++i) {
+  for (int i = (mover->getY() + 1)%52; i <= posicion; (++i)%52) {
     if (this->mesaLudo->tablero[0][i] != NULL &&
       this->mesaLudo->tablero[1][i] != NULL) {
       return false;

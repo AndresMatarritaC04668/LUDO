@@ -17,13 +17,13 @@
 
     JugadorLudo::JugadorLudo(string color,int zonaSegura){
         this->cantidadDados = 1;
-        FichaLudo * ficha1 = new FichaLudo(color,zonaSegura);
+        FichaLudo * ficha1 = new FichaLudo(color,zonaSegura,1);
         fichas.push_back(ficha1);
-        FichaLudo * ficha2 = new FichaLudo(color,zonaSegura);
+        FichaLudo * ficha2 = new FichaLudo(color,zonaSegura,2);
         fichas.push_back(ficha2);
-        FichaLudo * ficha3 = new FichaLudo(color,zonaSegura);
+        FichaLudo * ficha3 = new FichaLudo(color,zonaSegura,3);
         fichas.push_back(ficha3);
-        FichaLudo * ficha4 = new FichaLudo(color,zonaSegura);
+        FichaLudo * ficha4 = new FichaLudo(color,zonaSegura,4);
         fichas.push_back(ficha4);
         this->esGanador = 0;
         this->color = color;
@@ -67,21 +67,22 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
         TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
         ValidadorLudo* validadorLudo =  dynamic_cast<ValidadorLudo* >(tableroLudo->getValidador());
         FichaLudo * ficha =   dynamic_cast<FichaLudo* >(miFicha);
-        int resultado = validadorLudo->validarJugada(ficha->getY()+pasos, ficha);
-        int movimientoValido = 0;
-        
-    
 
+
+
+
+        int resultado = validadorLudo->validarJugada((ficha->getY()+pasos)%52, ficha);
+        int movimientoValido = 0;
         switch(resultado) {
 
             case 1:
             {
-                    int newPos = ficha->getY() + pasos;
+                    int newPos = (ficha->getY() + pasos)%52;
                     for (int i=0; i<2; ++i) {
                         if (!tableroLudo->tablero[i][newPos]) {
                            tableroLudo->tablero[i][newPos] = dynamic_cast<FichaLudo* >(ficha);
                            tableroLudo->tablero[ficha->getX()][ficha->getY()] = nullptr; // VACIA CELDA antigua 
-                           ficha->setPosicion(i,newPos%52);  // Nueva posicion
+                           ficha->setPosicion(i,newPos);  // Nueva posicion
                            ficha->setPasosDados(ficha->getPasosDados()+pasos);// sumarPasos'
                            cout<< "Movimiento limpio \n ";
                            break;
@@ -94,12 +95,12 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
             case 2:
             {
                 cout<< "Hay una barrera de color , no puedes avanzar" <<"\n";
-                    
+                
                 break;
             }
 
             default:
-                cout<<"comer" <<ficha->getColor();
+                cout<<"comer" <<ficha->getColor() <<" "<<endl;
                     int nuevaPos = (ficha->getY() + pasos)%52;
                     FichaLudo* newFicha = nullptr;
                     int saveState = 0; 
@@ -110,12 +111,13 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
                             break;
                         }
                     }
+                    tableroLudo->tablero[ficha->getX()][ficha->getY()] = nullptr;
                     tableroLudo->tablero[saveState][nuevaPos] = dynamic_cast<FichaLudo* >(ficha);
+                    ficha->setPosicion(saveState,nuevaPos);  // Nueva posicion
+                    ficha->setPasosDados(ficha->getPasosDados()+pasos);// sumarPasos'
                     cout<<"Comiste a la ficha "+ newFicha->getColor() << "\n";
                     newFicha->setPasosDados(0);
                     newFicha->desactivarFicha();
-                    
-
         }
 
 // Que tiene que hacer el usuario?
@@ -130,7 +132,7 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
 
         for(int i = 0 ; i < cantidadFichas ; i++){
 
-            FichaLudo * ficha = new FichaLudo(this->color,0);
+            FichaLudo * ficha = new FichaLudo(this->color,0,0);
 
         }
 
@@ -158,4 +160,8 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
             cout << "La ficha elegida ya esta en la meta , eliga otra ficha";
          }
        }
+    }
+
+    string JugadorLudo::getColor(){
+        return this->color;
     }

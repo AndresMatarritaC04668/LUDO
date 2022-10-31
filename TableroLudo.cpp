@@ -36,6 +36,8 @@ void TableroLudo::pasarTurno(){
 
   jugadorActual = jugadores[(this->jugadorPresente+1)%cantidadJugadores];
   this->jugadorPresente = (this->jugadorPresente+1)%cantidadJugadores;
+  JugadorLudo * jugadorActualLudo = dynamic_cast<JugadorLudo* >(jugadorActual);
+  cout<<"Turno del jugador "<<jugadorActualLudo->getColor()<<endl;
 
 }
 void TableroLudo::jugarTurno(){
@@ -53,20 +55,22 @@ void TableroLudo::asignarPrimerJugador(){
   }
   jugadorActual = jugadores[numeroCorrecto];
   jugadorPresente = numeroCorrecto;
+  JugadorLudo * jugadorActualLudo = dynamic_cast<JugadorLudo* >(jugadorActual);
+  cout<<"Comienza el jugador " <<jugadorActualLudo->getColor()<<endl;
 }
 
 void TableroLudo::toString(){
   
   for(int i = 0 ; i < 52 ; i++){
     if( this->tablero[0][i]){
-        cout<<tablero[0][i]->getColor();
+        cout<<" "<<tablero[0][i]->getColor()<<tablero[0][i]->getNumeroFicha()<<" ";
     } else { 
-      cout<< "Vacio";
+      cout<< "  Vacio  ";
     }
     if( this->tablero[1][i]){
-        cout<<tablero[1][i]->getColor();
+        cout<<tablero[1][i]->getColor()<<tablero[1][i]->getNumeroFicha();
     } else { 
-      cout<< "Vacio";
+      cout<< "  Vacio  ";
     }
     cout<<endl;
   }

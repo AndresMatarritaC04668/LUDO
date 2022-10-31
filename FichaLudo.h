@@ -13,11 +13,12 @@ class FichaLudo : public FichaAbstracta {
         int pasosDados;
         int zonaSegura;
         int caminoFinal;
+        int numeroFicha;
         
 
     public:
         FichaLudo();
-        FichaLudo(std::string, int);
+        FichaLudo(std::string, int,int);
         std::string getColor() override;
         int getX()override;
         int getY()override;
@@ -29,6 +30,7 @@ class FichaLudo : public FichaAbstracta {
         void setPosicion(int x,int y)override;
         void activarFicha();
         void desactivarFicha();
+        int getNumeroFicha();
     
 
 };

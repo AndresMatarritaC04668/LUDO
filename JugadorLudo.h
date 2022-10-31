@@ -28,6 +28,7 @@ class JugadorLudo : public Jugador {
         int lanzarDado()override;
         FichaAbstracta * elegirFicha()override;
         int encontrarBarrera(int posicion, FichaLudo * mover, TableroLudo* tablero);
+        string getColor();
 
 };
 

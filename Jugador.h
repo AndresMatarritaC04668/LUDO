@@ -36,7 +36,11 @@ class Jugador {
             cin.get();
             int darPasos = lanzarDado();
             FichaAbstracta * ficha = elegirFicha();
-            moverFicha(ficha , darPasos,tablero);         
+            int movimientoCorrecto = 0;
+
+            movimientoCorrecto = moverFicha(ficha , darPasos,tablero); 
+
+
         }
 
         virtual int lanzarDado() = 0;
