@@ -73,3 +73,7 @@ int FichaLudo::getNumeroFicha() {
     return this->numeroFicha;
 }
 
+void FichaLudo::setFinalizado(){
+    this->finalizado = 1;
+}
+

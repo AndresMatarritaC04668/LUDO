@@ -31,6 +31,7 @@ class FichaLudo : public FichaAbstracta {
         void activarFicha();
         void desactivarFicha();
         int getNumeroFicha();
+        void setFinalizado();
     
 
 };

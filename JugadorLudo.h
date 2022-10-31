@@ -4,6 +4,7 @@
 #include "Jugador.h"
 #include "tableroLUDO.h"
 #include "TableroAbstracto.h"
+#include "ValidadorLudo.h"
 using namespace std;
 
 class JugadorLudo : public Jugador {
@@ -29,6 +30,8 @@ class JugadorLudo : public Jugador {
         FichaAbstracta * elegirFicha()override;
         int encontrarBarrera(int posicion, FichaLudo * mover, TableroLudo* tablero);
         string getColor();
+        void moverFichaRectaFinal(FichaLudo * ficha, int pasos, TableroLudo* tablero , ValidadorLudo * validador);
+      
 
 };
 

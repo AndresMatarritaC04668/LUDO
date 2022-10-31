@@ -144,3 +144,7 @@ void ValidadorLudo::castTable() {
 void ValidadorLudo::setMesaLudo(TableroLudo * mesa) {
   this->mesaLudo = mesa;
 }
+
+int ValidadorLudo::finalizaFicha(FichaLudo * ficha){
+    return ficha->getPasosDados() == 60;
+}

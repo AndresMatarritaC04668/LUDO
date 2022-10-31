@@ -25,6 +25,7 @@ class ValidadorLudo : public Validador {
         bool reglaOcho(int posicion, FichaLudo * mover);
         bool verifComer(int posicion, FichaLudo * mover);
         bool validarSeis(int pasosDado, FichaAbstracta * laFicha);
+        int finalizaFicha(FichaLudo *);
 };
 
 #endif

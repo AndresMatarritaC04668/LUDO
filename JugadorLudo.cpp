@@ -67,12 +67,16 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
         TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
         ValidadorLudo* validadorLudo =  dynamic_cast<ValidadorLudo* >(tableroLudo->getValidador());
         FichaLudo * ficha =   dynamic_cast<FichaLudo* >(miFicha);
-
-
-
-
-        int resultado = validadorLudo->validarJugada((ficha->getY()+pasos)%52, ficha);
         int movimientoValido = 0;
+
+        if((ficha->getPasosDados() + pasos) > 54){
+
+          moverFichaRectaFinal(ficha,pasos,tableroLudo , validadorLudo);
+
+        } else {
+   
+        int resultado = validadorLudo->validarJugada((ficha->getY()+pasos)%52, ficha);
+        
         switch(resultado) {
 
             case 1:
@@ -119,6 +123,7 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
                     newFicha->setPasosDados(0);
                     newFicha->desactivarFicha();
         }
+    }
 
 // Que tiene que hacer el usuario?
 // 1. lanzar el dado       done
@@ -165,3 +170,25 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
     string JugadorLudo::getColor(){
         return this->color;
     }
+
+    void JugadorLudo::moverFichaRectaFinal(FichaLudo * ficha, int pasos, TableroLudo* tablero , ValidadorLudo * validador){
+        if(ficha->getPasosDados() < 54){
+           tablero->tablero[ficha->getX()][ficha->getY()] = nullptr;
+           ficha->setPasosDados(ficha->getPasosDados()+pasos);        
+        } else {
+            if((pasos+ficha->getPasosDados()) > 60 ){
+                cout<< "No puedes mover tu ficha , excede las casillas hasta la meta\n";
+            } else{
+                ficha->setPasosDados(ficha->getPasosDados()+pasos);
+            }
+        }
+
+        if(validador->finalizaFicha(ficha)){
+            cout<<"Ficha llega a la meta\n";
+            ficha->setFinalizado();
+        }
+
+        cout<<"\n\n Ficha  "  << ficha->getColor() << " pasos  " << ficha->getPasosDados()<<"\n\n\n";
+    }
+
+ 
