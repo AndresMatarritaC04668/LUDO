@@ -33,6 +33,7 @@ class Validador {
     virtual int validarJugada(int posicion, FichaAbstracta * mover) = 0;
     // En LUDO: Verificar bloqueo.
     vector<Regla *> * obtenerReglas() { return &reglas; };
+    virtual string toStringReglas() = 0;
 };
 
 #endif

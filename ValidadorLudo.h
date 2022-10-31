@@ -19,6 +19,7 @@ class ValidadorLudo : public Validador {
         ValidadorLudo(TableroLudo * mesa);
         void iniciarReglas() override;
         int validarJugada(int posicion, FichaAbstracta * mover) override;
+        string toStringReglas() override;
         bool verificarBloqueo();
         void castTable();
         void setMesaLudo(TableroLudo * mesa);

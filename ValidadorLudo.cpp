@@ -1,4 +1,5 @@
 #include "ValidadorLudo.h"
+#include <sstream>
 
 /**
  * @brief Construct a new Validador Ludo:: Validador Ludo object
@@ -63,6 +64,29 @@ int ValidadorLudo::validarJugada(int posicion, FichaAbstracta * mover) {
   } else {
     return 1;
   }
+}
+
+/**
+ * @brief Devuelve una string con todas las reglas separadas por un cambio de
+ * linea.
+ * 
+ * @return string La hilera con las reglas.
+ */
+string ValidadorLudo::toStringReglas() {
+  string theRules;
+
+  ostringstream ossReglas;
+  int reglasSize = this->reglas.size();
+  if (reglasSize) {
+    for (int i = 0; i < reglasSize; ++i) {
+      ossReglas << this->reglas[i]->obtenerNombre();
+      ossReglas << "\n";
+    }
+  }
+
+  theRules = ossReglas.str();
+
+  return theRules;
 }
 
 /**

@@ -1,4 +1,4 @@
-#include "TableroLudo.h"
+#include "tableroLUDO.h"
 #include "JugadorLudo.h"
 #include "Jugador.h"
 #include "Validador.h"
