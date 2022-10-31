@@ -17,12 +17,14 @@ class TableroLudo : public TableroAbstracto {
       void pasarTurno()override; //Cambia al jugador actual
       void jugarTurno()override;
       void asignarPrimerJugador()override;
-      void moverFicha(int pasos , FichaLudo* ); // Mueve una ficha
+      void toString();
+     
       int elegirFicha();
       FichaLudo * tablero[2][52];
    
    private:
       int cantidadJugadores;
+      int jugadorPresente;
 };
 
 #endif

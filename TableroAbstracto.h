@@ -22,7 +22,10 @@ public:
 	virtual void asignarCantidadJugadores(int ) = 0; 
 	virtual void ubicarJugadores()= 0; // Fichas enel vector zona segurado
 	virtual void iniciarPartida(){
+	  while(1){
        jugarTurno();
+	   pasarTurno();
+	  }
 
     }
     virtual void pasarTurno() = 0; //Cambia al jugador actual //controlador 

@@ -3,7 +3,9 @@
 #include<iostream>
 #include "Jugador.h"
 #include "tableroLUDO.h"
+#include "TableroAbstracto.h"
 using namespace std;
+
 class JugadorLudo : public Jugador {
 
     private:
@@ -21,7 +23,7 @@ class JugadorLudo : public Jugador {
         std::string getNombre() override;
         std::vector<FichaAbstracta *> getFichas();
         bool getEsGanador()override;
-        void moverFicha(FichaAbstracta * ficha, int pasos, TableroAbstracto* tablero) override;    
+        int moverFicha(FichaAbstracta * ficha, int pasos, TableroAbstracto* tablero) override;    
         void crearFichas(int cantidadFichas)override; 
         int lanzarDado()override;
         FichaAbstracta * elegirFicha()override;
