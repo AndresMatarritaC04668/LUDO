@@ -31,7 +31,7 @@ class Jugador {
 
         virtual FichaAbstracta * elegirFicha() = 0;
 
-        void jugarTurno(TableroAbstracto* tablero){
+        int jugarTurno(TableroAbstracto* tablero){
             cout<< "Pressione cualquier tecla para lanzarDado";
             cin.get();
             int darPasos = lanzarDado();
@@ -40,7 +40,7 @@ class Jugador {
 
             movimientoCorrecto = moverFicha(ficha , darPasos,tablero); 
 
-
+            return movimientoCorrecto;
         }
 
         virtual int lanzarDado() = 0;

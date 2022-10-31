@@ -77,3 +77,8 @@ void FichaLudo::setFinalizado(){
     this->finalizado = 1;
 }
 
+void FichaLudo::setEstadoActivo(){
+    this->activo = true;
+}
+
+

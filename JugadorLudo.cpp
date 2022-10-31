@@ -67,7 +67,15 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
         TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
         ValidadorLudo* validadorLudo =  dynamic_cast<ValidadorLudo* >(tableroLudo->getValidador());
         FichaLudo * ficha =   dynamic_cast<FichaLudo* >(miFicha);
-        int movimientoValido = 0;
+        
+
+        if(!ficha->getEstado() && pasos != 6){
+          
+           return 0;
+        } else if(!ficha->getEstado() && pasos == 6){
+            cout<<"Sacaste ficha de la carcel";
+            ficha->setEstadoActivo();
+        }
 
         if((ficha->getPasosDados() + pasos) > 54){
 
@@ -130,7 +138,7 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
 // 2. Escoger la ficha     done
 // 3. Se puede mover? 
         
-        return movimientoValido;
+        return 1;
     }
 
     void JugadorLudo::crearFichas(int cantidadFichas){

@@ -42,7 +42,10 @@ void TableroLudo::pasarTurno(){
 
 }
 void TableroLudo::jugarTurno(){
-   jugadorActual->jugarTurno(this);
+   int situacion = jugadorActual->jugarTurno(this);
+   if(situacion == 0){
+     cout<<"No sacas 6 no sacas ficha de la carcel";
+   }
 }
 
 
