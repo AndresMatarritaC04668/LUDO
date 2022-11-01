@@ -3,6 +3,10 @@
 #include "Jugador.h"
 #include "Validador.h"
 #include "ValidadorLudo.h"
+#include "controlador_ventanas.h"
+#include <qinputdialog.h>
+#include <qstring.h>
+#include <qmessagebox.h>
 
 TableroLudo::TableroLudo(){
   for(int i = 0 ; i < 52 ; i++){
@@ -20,31 +24,43 @@ TableroLudo::~TableroLudo(){
 void TableroLudo::asignarCantidadJugadores(int cantidadJugadores){
   this->cantidadJugadores = cantidadJugadores;
 } 
+
+void TableroLudo::setControlador(controlador_Ventanas* controlador){
+   this->controlador = controlador;
+}
+
 void TableroLudo::ubicarJugadores(){
- string nombre = "";
- cout<<"Digite el nombre del jugador rojo";
- cin>> nombre;
- JugadorLudo * jugador1 = new JugadorLudo("ROJO",0,nombre);
+ QString nombre = "";
+ nombre = QInputDialog::getText(controlador->input,"Nombre jugador",
+                                  "Ingrese el nombre del jugador rojo");
+ cin>>cantidadJugadores;
+ JugadorLudo * jugador1 = new JugadorLudo("ROJO",10,nombre.toStdString());
  jugadores.push_back(jugador1);
 
- cout<<"Digite el nombre del jugador azul";
- cin>> nombre;
- JugadorLudo * jugador2 = new JugadorLudo("AZUL",13,nombre);
+ nombre = QInputDialog::getText(controlador->input,"Nombre jugador",
+                                  "Ingrese el nombre del jugador azul");
+JugadorLudo * jugador2 = new JugadorLudo("AZUL",23,nombre.toStdString());
  jugadores.push_back(jugador2);
 
  if(cantidadJugadores >=3){
-   cout<<"Digite el nombre del jugador amarillo";
-   cin>> nombre;
-   JugadorLudo * jugador3 = new JugadorLudo("AMARILLO",26,nombre);
+     nombre = QInputDialog::getText(controlador->input,"Nombre jugador",
+                                      "Ingrese el nombre del jugador amarillo");
+   JugadorLudo * jugador3 = new JugadorLudo("AMARILLO",36,nombre.toStdString());
    jugadores.push_back(jugador3);
- }
+ }else{
+  jugadores.push_back(nullptr);
+}
  
  if(cantidadJugadores == 4){
-   cout<<"Digite el nombre del jugador verde";
-   cin>> nombre;
-   JugadorLudo * jugador4 = new JugadorLudo("VERDE",39,nombre);
+     nombre = QInputDialog::getText(controlador->input,"Nombre jugador",
+                                      "Ingrese el nombre del jugador verde");
+   JugadorLudo * jugador4 = new JugadorLudo("VERDE",49,nombre.toStdString());
    jugadores.push_back(jugador4);
+ }else{
+  jugadores.push_back(nullptr);
  }
+
+ controlador->graficarCarcel(jugadores);
 
 }
 void TableroLudo::pasarTurno(){
@@ -58,8 +74,10 @@ void TableroLudo::pasarTurno(){
 }
 void TableroLudo::jugarTurno(){
    int situacion = jugadorActual->jugarTurno(this);
+   string mensaje = "";
    if(situacion == 0){
-     cout<<"No sacas 6 no sacas ficha de la carcel";
+     mensaje += "No sacas 6 no sacas ficha de la carcel";
+     graficarInformacion(mensaje);
    }
 }
 
@@ -74,7 +92,9 @@ void TableroLudo::asignarPrimerJugador(){
   jugadorActual = jugadores[numeroCorrecto];
   jugadorPresente = numeroCorrecto;
   JugadorLudo * jugadorActualLudo = dynamic_cast<JugadorLudo* >(jugadorActual);
-  cout<<"Comienza el jugador " <<jugadorActualLudo->getColor()<<endl;
+  string mensaje = "";
+  mensaje = "Comienza el jugador: " + jugadorActualLudo->getNombre();
+  graficarInformacion(mensaje);
 }
 
 int TableroLudo::hayGanador(){ 
@@ -104,8 +124,22 @@ void TableroLudo::toString(){
 }
 
 void TableroLudo::finalizarJuego(){
-   cout<< "Gracias por jugar";
-   cout<< "El ganador es: " << jugadorActual->getNombre();
+   string mensaje = "";
+   mensaje += "Gracias por jugar\n";
+   mensaje += "El ganador es: " + jugadorActual->getNombre();
+}
+
+void  TableroLudo::graficarInformacion(string mensaje){
+    controlador->mensajeGrafico(mensaje);
+}
+
+int TableroLudo::graficoElejirFicha(string mensaje){
+   return controlador->elegirFicha(mensaje);
+}
+
+vector<Jugador*> TableroLudo::getjugadores(){
+
+    return this->jugadores;
 }
 
 

@@ -34,6 +34,7 @@ public:
     virtual void jugarTurno() = 0;      // Tira dado y ubica las fichas  // controlador
 	virtual void asignarPrimerJugador() =0;
 	virtual Jugador * getJugadorActual() = 0;
+    virtual vector<Jugador*> getjugadores() = 0;
 	int lanzarDado(){
       return dado.lanzar();
 	}

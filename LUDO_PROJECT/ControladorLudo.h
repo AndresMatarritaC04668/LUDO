@@ -3,6 +3,7 @@
 
 #include "ControladorAbstracto.h"
 #include "tableroLUDO.h"
+#include "controlador_ventanas.h"
 
 class ControladorLudo : public ControladorAbstracto {
 
@@ -12,12 +13,12 @@ class ControladorLudo : public ControladorAbstracto {
         void asignarCantidadJugadores() override;
         void ubicarJugadores() override;
         void asignarPrimerJugador() override;
-        void iniciarPartida() override;
+        void iniciarPartida()override;
 
     private:
         TableroLudo * tablero;
+        controlador_Ventanas * controlador;
 
 };
-
 
 #endif

@@ -24,8 +24,8 @@ class JugadorLudo : public Jugador {
         bool getEsGanador()override;
         int moverFicha(FichaAbstracta * ficha, int pasos, TableroAbstracto* tablero) override;    
         void crearFichas(int cantidadFichas)override; 
-        int lanzarDado()override;
-        FichaAbstracta * elegirFicha()override;
+        int lanzarDado(TableroAbstracto*)override;
+        FichaAbstracta * elegirFicha(TableroAbstracto*,int)override;
         int encontrarBarrera(int posicion, FichaLudo * mover, TableroLudo* tablero);
         string getColor();
         void moverFichaRectaFinal(FichaLudo * ficha, int pasos, TableroLudo* tablero , ValidadorLudo * validador);

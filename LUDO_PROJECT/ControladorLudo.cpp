@@ -1,4 +1,5 @@
 #include "ControladorLudo.h"
+#include "qinputdialog.h"
 
 ControladorLudo::ControladorLudo() {
     crearTablero();
@@ -6,13 +7,15 @@ ControladorLudo::ControladorLudo() {
 
 void ControladorLudo::crearTablero() {
     this->tablero = new TableroLudo();
+    this->controlador = new controlador_Ventanas();
+    tablero->setControlador(controlador);
+    controlador->ventanaPrincipal->show();
 }
 
 void ControladorLudo::asignarCantidadJugadores() {
-    int cantidadJugadores = 2;
-    cout<<"Elige de 2 a 4 jugadores , digite la cantidad:\n";
-    cin>>cantidadJugadores;
-    tablero->asignarCantidadJugadores(cantidadJugadores);
+  int cantidadJugadores = QInputDialog::getInt(controlador->input,"Cantidad de jugadores",                                             "Ingrese la cantidad de jugadores(2 a 4)");
+  cin>>cantidadJugadores;
+  tablero->asignarCantidadJugadores(cantidadJugadores);
 }
 
 void ControladorLudo::ubicarJugadores() {
@@ -26,3 +29,6 @@ void ControladorLudo::asignarPrimerJugador() {
 void ControladorLudo::iniciarPartida() {
     tablero->iniciarPartida();
 }
+
+
+

@@ -61,13 +61,12 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
         TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
         ValidadorLudo* validadorLudo =  dynamic_cast<ValidadorLudo* >(tableroLudo->getValidador());
         FichaLudo * ficha =   dynamic_cast<FichaLudo* >(miFicha);
-        
 
-        if(!ficha->getEstado() && pasos != 6){
-          
-           return 0;
-        } else if(!ficha->getEstado() && pasos == 6){
-            cout<<"Sacaste ficha de la carcel";
+
+        if(!ficha->getEstado() /*&& pasos != 6**/){ // descomentar regla del 6
+         // return 0;
+       // } else if(!ficha->getEstado() && pasos == 6){
+        //    cout<<"Sacaste ficha de la carcel";
             ficha->setEstadoActivo();
         }
 
@@ -95,12 +94,13 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
                         }
                     }
                  
-                  tableroLudo->toString();
+
                 break;
             }
             case 2:
             {
-                cout<< "Hay una barrera de color , no puedes avanzar" <<"\n";
+               string mensaje = "Hay una barrera de color , no puedes avanzar";
+               tableroLudo->graficarInformacion(mensaje);
                 
                 break;
             }
@@ -131,7 +131,8 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
 // 1. lanzar el dado       done
 // 2. Escoger la ficha     done
 // 3. Se puede mover? 
-        
+        tableroLudo->controlador->graficarTablero(tableroLudo);
+        tableroLudo->controlador->graficarCarcel(tablero->getjugadores());
         return 1;
     }
 
@@ -145,27 +146,30 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
 
     }
 
-    int JugadorLudo::lanzarDado(){
-        
+    int JugadorLudo::lanzarDado(TableroAbstracto* tablero){
+        TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
         Dado  dado;
         int darPasos = 0;
+        string mensaje = "Por favor lanza el dado: " + this->nombre;
+        tableroLudo->graficarInformacion(mensaje);
         for(int i = 0 ; i<cantidadDados ; i++){
           darPasos+= dado.lanzar();
         }
         return darPasos;
     }
 
-    FichaAbstracta * JugadorLudo::elegirFicha(){
+    FichaAbstracta * JugadorLudo::elegirFicha(TableroAbstracto* tablero,int pasos){
+       TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
+       string mensaje = "Dado sacó: " + std::to_string(pasos);
        while(1){
-         cout<< "\nQue numero de ficha desea elegir: 1,2,3 o 4";
-         cout<< "\nDigite el numero de ficha que desea mover: ";
          int opcion = 0;
-         cin>>opcion;
+         opcion = tableroLudo->graficoElejirFicha(mensaje);
          
          if(opcion >=1 && opcion <=4 && !fichas[(opcion-1)%4]->getFinalizado()){
             return fichas[(opcion-1)%4];
          } else {
-            cout << "La ficha elegida ya esta en la meta , eliga otra ficha";
+            mensaje = "La ficha elegida ya esta en la meta , eliga otra ficha";
+            tableroLudo->graficarInformacion(mensaje);
          }
        }
     }
@@ -175,23 +179,25 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
     }
 
     void JugadorLudo::moverFichaRectaFinal(FichaLudo * ficha, int pasos, TableroLudo* tablero , ValidadorLudo * validador){
+        string mensaje = "";
+        TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
         if(ficha->getPasosDados() <= 54){
            tablero->tablero[ficha->getX()][ficha->getY()] = nullptr;
            ficha->setPasosDados(ficha->getPasosDados()+pasos);        
         } else {
             if((pasos+ficha->getPasosDados()) > 60 ){
-                cout<< "No puedes mover tu ficha , excede las casillas hasta la meta\n";
+                mensaje = "No puedes mover tu ficha , excede las casillas hasta la meta\n";
+                 tableroLudo->graficarInformacion(mensaje);
             } else{
                 ficha->setPasosDados(ficha->getPasosDados()+pasos);
             }
         }
 
         if(validador->finalizaFicha(ficha)){
-            cout<<"Ficha llega a la meta\n";
+            mensaje = "Ficha llega a la meta" + ficha->getColor();
+            tableroLudo->graficarInformacion(mensaje);
             ficha->setFinalizado();
         }
-
-        cout<<"\n\n Ficha  "  << ficha->getColor() << " pasos  " << ficha->getPasosDados()<<"\n\n\n";
     }
 
 

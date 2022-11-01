@@ -22,16 +22,13 @@ class Jugador {
         virtual bool getEsGanador() = 0;
         virtual void crearFichas(int) = 0;
         virtual int moverFicha(FichaAbstracta * ficha , int pasos, TableroAbstracto* tablero) = 0;
-        virtual FichaAbstracta * elegirFicha() = 0;
-        virtual int lanzarDado() = 0;
+        virtual FichaAbstracta * elegirFicha(TableroAbstracto*,int) = 0;
+        virtual int lanzarDado(TableroAbstracto*) = 0;
         virtual std::vector<FichaAbstracta *> getFichas() = 0;
 
         int jugarTurno(TableroAbstracto* tablero){
-            cout<< "\nPressione cualquier tecla para lanzarDado  ";
-            cout<< this->getNombre() << "\n";
-            cin.get();
-            int darPasos = lanzarDado();
-            FichaAbstracta * ficha = elegirFicha();
+            int darPasos = lanzarDado(tablero);
+            FichaAbstracta * ficha = elegirFicha(tablero,darPasos);
             int movimientoCorrecto = 0;
 
             movimientoCorrecto = moverFicha(ficha , darPasos,tablero); 

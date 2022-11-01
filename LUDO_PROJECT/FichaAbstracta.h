@@ -16,6 +16,7 @@ class FichaAbstracta {
         virtual int getEstado() = 0;
         virtual bool getFinalizado() = 0;
         virtual void setPosicion(int x , int y) = 0;
+        virtual int getNumeroFicha() = 0;
     protected:
         int finalizado;
         int x;

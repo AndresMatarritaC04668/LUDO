@@ -31,7 +31,7 @@ class FichaLudo : public FichaAbstracta {
         void setPosicion(int x,int y)override;
         void activarFicha();
         void desactivarFicha();
-        int getNumeroFicha();
+        int getNumeroFicha()override;
         void setFinalizado();
         void setEstadoActivo();
     
