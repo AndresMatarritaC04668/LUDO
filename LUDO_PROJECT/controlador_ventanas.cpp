@@ -441,7 +441,7 @@ void controlador_Ventanas::graficarTablero(TableroAbstracto * mesa){
  }
  this->ventanaPrincipal->ui->celda_51->setText(QString::fromStdString(mensaje));
 
-
+  graficarLineaFinal(mesa);
 
 }
 
@@ -581,7 +581,241 @@ void controlador_Ventanas::graficarCarcel(vector<Jugador*> jugadores){
         }
     }
 
+
+
 }
+
+void controlador_Ventanas:: graficarLineaFinal(TableroAbstracto * mesa ){
+
+    TableroLudo * mesaLudo = dynamic_cast< TableroLudo * >(mesa);
+    Jugador * jugador = mesa->getJugadorActual();
+    std::vector<FichaAbstracta*> fichas = jugador->getFichas();
+    string mensaje = "";
+
+    if(fichas[0]->getColor() == "ROJO"){
+        for(int i = 0 ; i < 4 ; i++){
+            if(fichas[i]->getPasosDados() == 55 )
+                mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+        }
+        this->ventanaPrincipal->ui->seguraRojo_55->setText(QString::fromStdString(mensaje));
+
+        mensaje = "";
+        for(int i = 0 ; i < 4 ; i++){
+            if(fichas[i]->getPasosDados() == 56 )
+                mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+        }
+        this->ventanaPrincipal->ui->seguraRojo_56->setText(QString::fromStdString(mensaje));
+
+
+        mensaje = "";
+        for(int i = 0 ; i < 4 ; i++){
+            if(fichas[i]->getPasosDados() == 57 )
+                mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+        }
+        this->ventanaPrincipal->ui->seguraRojo_57->setText(QString::fromStdString(mensaje));
+
+
+        mensaje = "";
+        for(int i = 0 ; i < 4 ; i++){
+            if(fichas[i]->getPasosDados() == 58 )
+                mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+        }
+        this->ventanaPrincipal->ui->seguraRojo_58->setText(QString::fromStdString(mensaje));
+
+
+        mensaje = "";
+        for(int i = 0 ; i < 4 ; i++){
+            if(fichas[i]->getPasosDados() == 59 )
+                mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+        }
+        this->ventanaPrincipal->ui->seguraRojo_59->setText(QString::fromStdString(mensaje));
+
+
+        mensaje = "";
+        for(int i = 0 ; i < 4 ; i++){
+            if(fichas[i]->getPasosDados() == 60 )
+                mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+        }
+        this->ventanaPrincipal->ui->seguraRojo_60->setText(QString::fromStdString(mensaje));
+
+    }
+
+     mensaje == "";
+     if(fichas[0]->getColor() == "AZUL"){
+             for(int i = 0 ; i < 4 ; i++){
+                 if(fichas[i]->getPasosDados() == 55 )
+                     mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+             }
+             this->ventanaPrincipal->ui->seguraAzul_55->setText(QString::fromStdString(mensaje));
+
+             mensaje = "";
+             for(int i = 0 ; i < 4 ; i++){
+                 if(fichas[i]->getPasosDados() == 56 )
+                     mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+             }
+             this->ventanaPrincipal->ui->seguraAzul_56->setText(QString::fromStdString(mensaje));
+
+
+             mensaje = "";
+             for(int i = 0 ; i < 4 ; i++){
+                 if(fichas[i]->getPasosDados() == 57 )
+                     mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+             }
+             this->ventanaPrincipal->ui->seguraAzul_57->setText(QString::fromStdString(mensaje));
+
+
+             mensaje = "";
+             for(int i = 0 ; i < 4 ; i++){
+                 if(fichas[i]->getPasosDados() == 58 )
+                     mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+             }
+             this->ventanaPrincipal->ui->seguraAzul_58->setText(QString::fromStdString(mensaje));
+
+
+             mensaje = "";
+             for(int i = 0 ; i < 4 ; i++){
+                 if(fichas[i]->getPasosDados() == 59 )
+                     mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+             }
+             this->ventanaPrincipal->ui->seguraAzul_59->setText(QString::fromStdString(mensaje));
+
+
+             mensaje = "";
+             for(int i = 0 ; i < 4 ; i++){
+                 if(fichas[i]->getPasosDados() == 60 )
+                     mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+             }
+             this->ventanaPrincipal->ui->seguraAzul_60->setText(QString::fromStdString(mensaje));
+
+         }
+
+          mensaje == "";
+          if(fichas[0]->getColor() == "VERDE"){
+                  for(int i = 0 ; i < 4 ; i++){
+                      if(fichas[i]->getPasosDados() == 55 )
+                          mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+                  }
+                  this->ventanaPrincipal->ui->seguraVerde_55->setText(QString::fromStdString(mensaje));
+
+                  mensaje = "";
+                  for(int i = 0 ; i < 4 ; i++){
+                      if(fichas[i]->getPasosDados() == 56 )
+                          mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+                  }
+                  this->ventanaPrincipal->ui->seguraVerde_56->setText(QString::fromStdString(mensaje));
+
+
+                  mensaje = "";
+                  for(int i = 0 ; i < 4 ; i++){
+                      if(fichas[i]->getPasosDados() == 57 )
+                          mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+                  }
+                  this->ventanaPrincipal->ui->seguraVerde_57->setText(QString::fromStdString(mensaje));
+
+
+                  mensaje = "";
+                  for(int i = 0 ; i < 4 ; i++){
+                      if(fichas[i]->getPasosDados() == 58 )
+                          mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+                  }
+                  this->ventanaPrincipal->ui->seguraVerde_58->setText(QString::fromStdString(mensaje));
+
+
+                  mensaje = "";
+                  for(int i = 0 ; i < 4 ; i++){
+                      if(fichas[i]->getPasosDados() == 59 )
+                          mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+                  }
+                  this->ventanaPrincipal->ui->seguraVerde_59->setText(QString::fromStdString(mensaje));
+
+
+                  mensaje = "";
+                  for(int i = 0 ; i < 4 ; i++){
+                      if(fichas[i]->getPasosDados() == 60 )
+                          mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+                  }
+                  this->ventanaPrincipal->ui->seguraVerde_60->setText(QString::fromStdString(mensaje));
+
+              }
+
+          mensaje == "";
+              if(fichas[0]->getColor() == "AMARILLO"){
+                      for(int i = 0 ; i < 4 ; i++){
+                          if(fichas[i]->getPasosDados() == 55 )
+                              mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+                      }
+                      this->ventanaPrincipal->ui->seguraAmarillo_55->setText(QString::fromStdString(mensaje));
+
+                      mensaje = "";
+                      for(int i = 0 ; i < 4 ; i++){
+                          if(fichas[i]->getPasosDados() == 56 )
+                              mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+                      }
+                      this->ventanaPrincipal->ui->seguraAmarillo_56->setText(QString::fromStdString(mensaje));
+
+
+                      mensaje = "";
+                      for(int i = 0 ; i < 4 ; i++){
+                          if(fichas[i]->getPasosDados() == 57 )
+                              mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+                      }
+                      this->ventanaPrincipal->ui->seguraAmarillo_57->setText(QString::fromStdString(mensaje));
+
+
+                      mensaje = "";
+                      for(int i = 0 ; i < 4 ; i++){
+                          if(fichas[i]->getPasosDados() == 58 )
+                              mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+                      }
+                      this->ventanaPrincipal->ui->seguraAmarillo_58->setText(QString::fromStdString(mensaje));
+
+
+                      mensaje = "";
+                      for(int i = 0 ; i < 4 ; i++){
+                          if(fichas[i]->getPasosDados() == 59 )
+                              mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+                      }
+                      this->ventanaPrincipal->ui->seguraAmarillo_59->setText(QString::fromStdString(mensaje));
+
+
+                      mensaje = "";
+                      for(int i = 0 ; i < 4 ; i++){
+                          if(fichas[i]->getPasosDados() == 60 )
+                              mensaje += fichas[i]->getColor() + std::to_string( fichas[i]->getNumeroFicha()) + "\n";
+
+                      }
+                      this->ventanaPrincipal->ui->seguraAmarillo_60->setText(QString::fromStdString(mensaje));
+
+                  }
+
+
+
+
+}
+
 
 
 int  controlador_Ventanas::elegirFicha(string mensaje){

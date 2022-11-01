@@ -98,7 +98,12 @@ void TableroLudo::asignarPrimerJugador(){
 }
 
 int TableroLudo::hayGanador(){ 
-  return validador->esGanador(jugadorActual->getFichas());
+   int opcion =  validador->esGanador(jugadorActual->getFichas());
+   if(opcion == 1){
+       string mensaje = "Ganador: " + jugadorActual->getNombre() + "felicidades  " + "gracias por jugar";
+       controlador->mensajeGrafico(mensaje);
+   }
+   return opcion;
 }
 
 Jugador * TableroLudo::getJugadorActual(){

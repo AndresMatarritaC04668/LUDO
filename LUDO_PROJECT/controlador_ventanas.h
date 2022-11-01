@@ -12,9 +12,7 @@ public:
     controlador_Ventanas();
     void graficarTablero(TableroAbstracto*);
     void graficarCarcel(vector<Jugador*> jugadores );
-    void zonaSeguraRojo(int posicion , string color);
-    void zonaSeguraAzul( int posicion , string color);
-    void zonaSeguraVerde(int posicion , string color);
+    void graficarLineaFinal(TableroAbstracto*);
 
     void iniciar();
     string getNombre(string numeroJugador);

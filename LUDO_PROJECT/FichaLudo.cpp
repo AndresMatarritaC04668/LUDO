@@ -18,7 +18,7 @@ FichaLudo::FichaLudo(std::string color, int zonaSegura ,int numeroFicha) {
     this->color = color;
     this->y = zonaSegura; // posicion = zonasegura
     this->activo = false;  // cambiar false
-    this->finalizado = false; 
+    this->finalizado = false;
     this->pasosDados = 0; // cambiar = 0
     this->zonaSegura = zonaSegura; 
     this->caminoFinal = 0;

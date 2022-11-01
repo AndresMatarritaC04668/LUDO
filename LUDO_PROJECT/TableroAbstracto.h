@@ -20,12 +20,12 @@ public:
     virtual void finalizarJuego() = 0;
 	virtual void iniciarPartida(){
 	 int finalizado = 0;
-	 while(!finalizado){
+     while(!finalizado){
        jugarTurno();
-	   finalizado = hayGanador();
-	   if(finalizado){
-	      break;
-	    }
+       finalizado = hayGanador();
+       if(finalizado){
+          break;
+        }
 	   pasarTurno();   
 	  }
 	  finalizarJuego();
