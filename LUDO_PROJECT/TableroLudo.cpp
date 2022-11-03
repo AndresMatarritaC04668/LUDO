@@ -73,12 +73,8 @@ void TableroLudo::pasarTurno(){
 
 }
 void TableroLudo::jugarTurno(){
-   int situacion = jugadorActual->jugarTurno(this);
-   string mensaje = "";
-   if(situacion == 0){
-     mensaje += "No sacas 6 no sacas ficha de la carcel";
-     graficarInformacion(mensaje);
-   }
+ jugadorActual->jugarTurno(this);
+
 }
 
 void TableroLudo::asignarPrimerJugador(){

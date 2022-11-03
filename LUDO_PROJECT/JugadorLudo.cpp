@@ -57,18 +57,24 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
 }
 
     int JugadorLudo::moverFicha(FichaAbstracta * miFicha, int pasos, TableroAbstracto* tablero){
-         
+        int repetir = 0;
         TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
         ValidadorLudo* validadorLudo =  dynamic_cast<ValidadorLudo* >(tableroLudo->getValidador());
         FichaLudo * ficha =   dynamic_cast<FichaLudo* >(miFicha);
 
 
-        if(!ficha->getEstado() /*&& pasos != 6**/){ // descomentar regla del 6
-         // return 0;
+        if(!ficha->getEstado() /**&& pasos != 6**/){ // descomentar regla del 6
+           // string mensaje = "";
+         //   mensaje += "No sacas 6 no sacas ficha de la carcel";
+         //   tableroLudo-> graficarInformacion(mensaje);
+         //   return 0;
        // } else if(!ficha->getEstado() && pasos == 6){
-        //    cout<<"Sacaste ficha de la carcel";
+
             ficha->setEstadoActivo();
+           // repetir = 1;
+          //  pasos = 0;
         }
+
 
         if((ficha->getPasosDados() + pasos) > 54){
 
@@ -77,19 +83,18 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
         } else {
    
         int resultado = validadorLudo->validarJugada((ficha->getY()+pasos)%52, ficha);
-        
+        qDebug()<<resultado;
         switch(resultado) {
 
             case 1:
             {
                     int newPos = (ficha->getY() + pasos)%52;
                     for (int i=0; i<2; ++i) {
-                        if (!tableroLudo->tablero[i][newPos]) {
-                           tableroLudo->tablero[i][newPos] = dynamic_cast<FichaLudo* >(ficha);
+                        if (!tableroLudo->tablero[i][newPos]) { 
                            tableroLudo->tablero[ficha->getX()][ficha->getY()] = nullptr; // VACIA CELDA antigua 
+                           tableroLudo->tablero[i][newPos] = dynamic_cast<FichaLudo* >(ficha);
                            ficha->setPosicion(i,newPos);  // Nueva posicion
-                           ficha->setPasosDados(ficha->getPasosDados()+pasos);// sumarPasos'
-                           cout<< "Movimiento limpio \n ";
+                           ficha->setPasosDados(ficha->getPasosDados()+pasos);// sumarPasos
                            break;
                         }
                     }
@@ -127,13 +132,16 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
         }
     }
 
-// Que tiene que hacer el usuario?
-// 1. lanzar el dado       done
-// 2. Escoger la ficha     done
-// 3. Se puede mover? 
+
         tableroLudo->controlador->graficarTablero(tableroLudo);
         tableroLudo->controlador->graficarCarcel(tablero->getjugadores());
-        return 1;
+        if(pasos == 6 || repetir == 1){
+            repetir = 1;
+            string mensaje = "Obtuviste un 6 , tira de nuevo";
+            tableroLudo->graficarInformacion(mensaje);
+        }
+
+        return repetir;
     }
 
     void JugadorLudo::crearFichas(int cantidadFichas){

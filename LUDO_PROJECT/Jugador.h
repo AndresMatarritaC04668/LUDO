@@ -27,13 +27,14 @@ class Jugador {
         virtual std::vector<FichaAbstracta *> getFichas() = 0;
 
         int jugarTurno(TableroAbstracto* tablero){
+          int repetirTurno = 1;
+
+          while(repetirTurno == 1){
             int darPasos = lanzarDado(tablero);
             FichaAbstracta * ficha = elegirFicha(tablero,darPasos);
-            int movimientoCorrecto = 0;
-
-            movimientoCorrecto = moverFicha(ficha , darPasos,tablero); 
-
-            return movimientoCorrecto;
+            repetirTurno = moverFicha(ficha , darPasos,tablero);
+          }
+          return repetirTurno;
         }     
 
     protected:
