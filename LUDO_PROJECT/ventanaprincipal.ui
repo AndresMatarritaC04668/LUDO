@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1284</width>
-    <height>798</height>
+    <height>845</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -29,7 +29,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 0, 0);</string>
+     <string notr="true">background-color: rgb(156, 0, 0);
+</string>
     </property>
     <property name="text">
      <string/>
@@ -45,7 +46,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 85, 0);</string>
+     <string notr="true">background-color: rgb(0, 85, 0);
+</string>
     </property>
     <property name="text">
      <string/>
@@ -61,7 +63,9 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 0);</string>
+     <string notr="true">background-color: rgb(172, 172, 0);
+
+</string>
     </property>
     <property name="text">
      <string/>
@@ -77,7 +81,9 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 0, 255);</string>
+     <string notr="true">background-color: rgb(0, 0, 81);
+
+</string>
     </property>
     <property name="text">
      <string/>
@@ -88,12 +94,17 @@
      <rect>
       <x>140</x>
       <y>50</y>
-      <width>71</width>
+      <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 28pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 4px solid white;
+</string>
     </property>
     <property name="text">
      <string/>
@@ -104,12 +115,17 @@
      <rect>
       <x>280</x>
       <y>50</y>
-      <width>71</width>
+      <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 28pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 4px solid white;
+</string>
     </property>
     <property name="text">
      <string/>
@@ -120,12 +136,17 @@
      <rect>
       <x>140</x>
       <y>150</y>
-      <width>71</width>
+      <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 28pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 4px solid white;
+</string>
     </property>
     <property name="text">
      <string/>
@@ -136,12 +157,17 @@
      <rect>
       <x>280</x>
       <y>150</y>
-      <width>71</width>
+      <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 28pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 4px solid white;
+</string>
     </property>
     <property name="text">
      <string/>
@@ -150,17 +176,22 @@
    <widget class="QLabel" name="carcelAzul_1">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>160</x>
       <y>500</y>
-      <width>71</width>
+      <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 28pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 4px solid white;
+</string>
     </property>
     <property name="text">
-     <string/>
+     <string>1</string>
     </property>
    </widget>
    <widget class="QLabel" name="carcelAzul_2">
@@ -168,12 +199,17 @@
      <rect>
       <x>280</x>
       <y>500</y>
-      <width>71</width>
+      <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 28pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 4px solid white;
+</string>
     </property>
     <property name="text">
      <string/>
@@ -182,14 +218,19 @@
    <widget class="QLabel" name="carcelAzul_3">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>160</x>
       <y>600</y>
-      <width>71</width>
+      <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 28pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 4px solid white;
+</string>
     </property>
     <property name="text">
      <string/>
@@ -200,12 +241,17 @@
      <rect>
       <x>280</x>
       <y>600</y>
-      <width>71</width>
+      <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 28pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 4px solid white;
+</string>
     </property>
     <property name="text">
      <string/>
@@ -214,14 +260,19 @@
    <widget class="QLabel" name="carcelVerde_1">
     <property name="geometry">
      <rect>
-      <x>860</x>
+      <x>890</x>
       <y>50</y>
-      <width>71</width>
+      <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 28pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 4px solid white;
+</string>
     </property>
     <property name="text">
      <string/>
@@ -230,14 +281,19 @@
    <widget class="QLabel" name="carcelVerde_2">
     <property name="geometry">
      <rect>
-      <x>1020</x>
+      <x>1050</x>
       <y>50</y>
-      <width>71</width>
+      <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 28pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 4px solid white;
+</string>
     </property>
     <property name="text">
      <string/>
@@ -246,14 +302,19 @@
    <widget class="QLabel" name="carcelVerde_3">
     <property name="geometry">
      <rect>
-      <x>860</x>
+      <x>890</x>
       <y>150</y>
-      <width>71</width>
+      <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 28pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 4px solid white;
+</string>
     </property>
     <property name="text">
      <string/>
@@ -262,14 +323,19 @@
    <widget class="QLabel" name="carcelVerde_4">
     <property name="geometry">
      <rect>
-      <x>1020</x>
+      <x>1050</x>
       <y>150</y>
-      <width>71</width>
+      <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 28pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 4px solid white;
+</string>
     </property>
     <property name="text">
      <string/>
@@ -278,14 +344,19 @@
    <widget class="QLabel" name="carcelAmarillo_1">
     <property name="geometry">
      <rect>
-      <x>840</x>
+      <x>870</x>
       <y>510</y>
-      <width>71</width>
+      <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 28pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 4px solid white;
+</string>
     </property>
     <property name="text">
      <string/>
@@ -294,14 +365,19 @@
    <widget class="QLabel" name="carcelAmarillo_2">
     <property name="geometry">
      <rect>
-      <x>1020</x>
+      <x>1050</x>
       <y>510</y>
-      <width>71</width>
+      <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 28pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 4px solid white;
+</string>
     </property>
     <property name="text">
      <string/>
@@ -310,14 +386,19 @@
    <widget class="QLabel" name="carcelAmarillo_3">
     <property name="geometry">
      <rect>
-      <x>840</x>
+      <x>870</x>
       <y>600</y>
-      <width>71</width>
+      <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 28pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 4px solid white;
+</string>
     </property>
     <property name="text">
      <string/>
@@ -326,14 +407,19 @@
    <widget class="QLabel" name="carcelAmarillo_4">
     <property name="geometry">
      <rect>
-      <x>1020</x>
+      <x>1050</x>
       <y>600</y>
-      <width>71</width>
+      <width>41</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 28pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 4px solid white;
+</string>
     </property>
     <property name="text">
      <string/>
@@ -509,7 +595,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 0, 0);</string>
+     <string notr="true">background-color: rgb(156, 0, 0);</string>
     </property>
     <property name="text">
      <string/>
@@ -717,7 +803,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 0, 255);</string>
+     <string notr="true">background-color: rgb(0, 0, 81);</string>
     </property>
     <property name="text">
      <string/>
@@ -926,7 +1012,7 @@
     </property>
     <property name="styleSheet">
      <string notr="true">
-background-color: rgb(255, 255, 0);</string>
+background-color: rgb(172, 172, 0);</string>
     </property>
     <property name="text">
      <string/>
@@ -1182,7 +1268,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 0, 0);</string>
+     <string notr="true">background-color: rgb(156, 0, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1198,7 +1286,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 0, 0);</string>
+     <string notr="true">background-color: rgb(156, 0, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1214,7 +1304,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 0, 0);</string>
+     <string notr="true">background-color: rgb(156, 0, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1230,7 +1322,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 0, 0);</string>
+     <string notr="true">background-color: rgb(156, 0, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1246,7 +1340,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 0, 0);</string>
+     <string notr="true">background-color: rgb(156, 0, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1262,7 +1358,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 0, 0);</string>
+     <string notr="true">background-color: rgb(156, 0, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1278,8 +1376,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-background-color: rgb(255, 255, 0);</string>
+     <string notr="true">background-color: rgb(172, 172, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1295,8 +1394,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-background-color: rgb(255, 255, 0);</string>
+     <string notr="true">background-color: rgb(172, 172, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1312,8 +1412,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-background-color: rgb(255, 255, 0);</string>
+     <string notr="true">background-color: rgb(172, 172, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1329,8 +1430,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-background-color: rgb(255, 255, 0);</string>
+     <string notr="true">background-color: rgb(172, 172, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1346,8 +1448,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-background-color: rgb(255, 255, 0);</string>
+     <string notr="true">background-color: rgb(172, 172, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1363,8 +1466,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-background-color: rgb(255, 255, 0);</string>
+     <string notr="true">background-color: rgb(172, 172, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1380,7 +1484,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 85, 0);</string>
+     <string notr="true">background-color: rgb(0, 85, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1396,7 +1502,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 85, 0);</string>
+     <string notr="true">background-color: rgb(0, 85, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1412,7 +1520,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 85, 0);</string>
+     <string notr="true">background-color: rgb(0, 85, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1428,7 +1538,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 85, 0);</string>
+     <string notr="true">background-color: rgb(0, 85, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1444,7 +1556,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 85, 0);</string>
+     <string notr="true">background-color: rgb(0, 85, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1460,7 +1574,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 85, 0);</string>
+     <string notr="true">background-color: rgb(0, 85, 0);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1476,7 +1592,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 0, 255);</string>
+     <string notr="true">background-color: rgb(0, 0, 81);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1492,7 +1610,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 0, 255);</string>
+     <string notr="true">background-color: rgb(0, 0, 81);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1508,7 +1628,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 0, 255);</string>
+     <string notr="true">background-color: rgb(0, 0, 81);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1524,7 +1646,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 0, 255);</string>
+     <string notr="true">background-color: rgb(0, 0, 81);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1540,7 +1664,9 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 0, 255);</string>
+     <string notr="true">background-color: rgb(0, 0, 81);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -1556,10 +1682,2960 @@ background-color: rgb(255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 0, 255);</string>
+     <string notr="true">background-color: rgb(0, 0, 81);
+color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_0">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 2px solid white;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_0">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_1">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>60</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_1">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>60</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_2">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>110</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_2">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>110</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_3">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>160</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_3">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>160</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_4">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>210</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 2px solid white;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_4">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>210</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_5">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>260</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_5">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>260</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_6">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_6">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 2px solid white;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_7">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_7">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_8">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_8">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_9">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_9">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_10">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_10">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_11">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_11">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_12">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>360</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_12">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>360</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_13">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 2px solid white;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_13">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 2px solid white;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_14">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 2px solid white;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_14">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 2px solid white;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_15">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 2px solid white;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_15">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_16">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 2px solid white;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_16">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 2px solid white;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_17">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_17">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 2px solid white;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_18">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_18">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_19">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>460</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 2px solid white;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_19">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>460</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 2px solid white;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_20">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>510</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 2px solid white;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_20">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>510</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 2px solid white;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_21">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>560</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_21">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>560</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 2px solid white;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_22">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>610</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_22">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>610</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_23">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>660</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_23">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>660</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_24">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>710</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_24">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>710</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_25">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>710</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_25">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>710</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_26">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>710</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_26">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>710</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_27">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>660</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_27">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>660</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_28">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>610</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_28">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>610</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_29">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>560</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_29">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>560</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_30">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>510</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_30">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>510</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_31">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>460</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_31">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>460</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+border: 2px solid white;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_32">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_32">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_33">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_33">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_34">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_34">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_35">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_35">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_36">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_36">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_37">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_37">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>410</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_38">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>360</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_38">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>360</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_39">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_39">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_40">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_40">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_41">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_41">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_42">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_42">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_43">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_43">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_44">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_44">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>310</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_45">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>260</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_45">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>260</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_46">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>210</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_46">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>210</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_47">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>160</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_47">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>160</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_48">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>110</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_48">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>110</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_49">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>60</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_49">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>60</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_50">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_50">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="D_51">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="I_51">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 20pt &quot;Segoe UI&quot;;
+background-color: rgba(0,0,0,0%);
+border: 2px solid;
+border-color:  rgba(0,0,0,0%);
+    border-radius: 20px;
+</string>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="margin">
+     <number>0</number>
     </property>
    </widget>
   </widget>
