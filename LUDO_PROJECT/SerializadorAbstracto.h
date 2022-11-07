@@ -9,8 +9,8 @@ using namespace std;
 class SerializadorAbstracto {
 
     public:
-        SerializadorAbstracto();
-        ~SerializadorAbstracto();
+        SerializadorAbstracto(){}
+        ~SerializadorAbstracto(){}
         virtual void inicioObjeto() = 0;
         virtual void finObjeto() = 0;
         virtual string getSerializacion() = 0;

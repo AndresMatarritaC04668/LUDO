@@ -35,7 +35,9 @@ void SerializadorLudo::serializarJugadores() {
     int tam = this->jugadores.size();
     for (int i=0; i<tam; ++i) {
         JugadorLudo * actual = jugadores[i];
-        serializacion += ("Jugador" + i+1 + " {\n");
+        serializacion += ("Jugador");
+        serializacion += (i+1);
+        serializacion += (" {\n");
         serializacion += (actual->getColor() + "\n");
         serializacion += (actual->getNombre() + "\n");
 
@@ -46,9 +48,12 @@ void SerializadorLudo::serializarJugadores() {
 }
 
 void SerializadorLudo::serializarFicha(JugadorLudo * actual) {
+
     for (int j=0; j<4; ++j) {
-        FichaLudo* fichaActual = actual->fichas[i];
-        serializacion += ("Ficha" + j+1 + " { ");
+        FichaLudo* fichaActual = dynamic_cast<FichaLudo*> (actual->getFichas()[j]);
+        serializacion += ("Ficha");
+        serializacion += j+1;
+        serializacion += (" { ");
         serializacion += (fichaActual->getPasosDados());
         agregarSeparador();
         serializacion += (" " + fichaActual->getEstado());

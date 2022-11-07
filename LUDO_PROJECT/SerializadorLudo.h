@@ -32,7 +32,7 @@
 
 */
 
-
+class SerializadorAbstracto;
 class SerializadorLudo : public SerializadorAbstracto {
 
     public:
