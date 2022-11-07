@@ -42,6 +42,10 @@ public:
 		return this->validador;
 	}
 
+    vector<Jugador *> getJugadores() {
+        return this->jugadores;
+	}
+
 	protected:
 	  vector<Jugador*> jugadores;
 	  Jugador * jugadorActual;

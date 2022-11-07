@@ -13,6 +13,7 @@ SOURCES += \
     FichaLudo.cpp \
     JugadorLudo.cpp \
     Regla.cpp \
+    SerializadorLudo.cpp \
     TableroLudo.cpp \
     ValidadorLudo.cpp \
     controlador_ventanas.cpp \
@@ -32,6 +33,8 @@ HEADERS += \
     Jugador.h \
     JugadorLudo.h \
     Regla.h \
+    SerializadorAbstracto.h \
+    SerializadorLudo.h \
     TableroAbstracto.h \
     Validador.h \
     ValidadorLudo.h \
