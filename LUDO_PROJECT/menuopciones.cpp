@@ -19,7 +19,7 @@ void MenuOpciones::setControlador(ControladorMenuOpciones * controlador){
 
 void MenuOpciones::on_botonReglas_clicked()
 {
-
+   controlador->mostrarReglas();
 }
 
 

@@ -6,7 +6,7 @@
 #include <iostream>
 #include "controladormenuopciones.h"
 #include "controladorventanaprincipal.h"
-
+#include "ValidadorLudo.h"
 controlador_Ventanas::controlador_Ventanas(ControladorLudo * controlador)
 {
     this->controladorVentanaPrincipal = new ControladorVentanaPrincipal(this);
@@ -47,4 +47,16 @@ void controlador_Ventanas::mostrarTablero(){
 
 void controlador_Ventanas::graficarCarcel(vector<Jugador*> jugadores){
     controladorVentanaPrincipal->graficarCarcel(jugadores);
+}
+
+void controlador_Ventanas:: mostrarMenu(){
+    this->controladorVentanaPrincipal->cerrarVentana();
+    this->controladorMenuOpciones->iniciar();
+}
+
+void controlador_Ventanas::mostrarReglas(){
+    ValidadorLudo validador;
+    validador.iniciarReglas();
+    string reglas = validador.toStringReglas();
+    this->controladorMenuOpciones->graficarReglas(reglas);
 }

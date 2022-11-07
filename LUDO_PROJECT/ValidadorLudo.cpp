@@ -81,7 +81,7 @@ string ValidadorLudo::toStringReglas() {
   if (reglasSize) {
     for (int i = 0; i < reglasSize; ++i) {
       ossReglas << this->reglas[i]->obtenerNombre();
-      ossReglas << "\n";
+      ossReglas << "\n\n";
     }
   }
 

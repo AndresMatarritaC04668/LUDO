@@ -18,7 +18,9 @@ public:
     void graficarTablero(TableroAbstracto*);
     void iniciar();
     void mostrarTablero();
+    void mostrarMenu();
     void graficarCarcel(vector<Jugador*> jugadores);
+    void mostrarReglas();
     string getNombre(string numeroJugador);
     int elegirFicha(string);
 

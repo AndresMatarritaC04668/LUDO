@@ -10,6 +10,8 @@ public:
     ControladorMenuOpciones(controlador_Ventanas * controlador);
     void iniciar();
     void cerrarVentana(int opcion);
+    void mostrarReglas();
+    void graficarReglas(string);
 
  private:
     MenuOpciones * menuOpciones;

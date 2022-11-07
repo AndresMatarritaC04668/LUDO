@@ -16,7 +16,7 @@ void ControladorVentanaPrincipal::iniciar(){
 
 void ControladorVentanaPrincipal::cerrarVentana(){
     this->ventanaPrincipal->close();
-    //abrir menu opciones
+
 }
 
 void ControladorVentanaPrincipal::graficarCeldas(QLabel * label , string color , QString numero){

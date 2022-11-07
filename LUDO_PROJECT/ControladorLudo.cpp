@@ -35,6 +35,7 @@ void ControladorLudo::iniciarPartida() {
     qDebug()<<"Hata Despues";
     asignarPrimerJugador();
     tablero->iniciarPartida();
+    controladorGrafico->mostrarMenu();
 }
 
 

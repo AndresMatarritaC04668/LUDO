@@ -1,5 +1,6 @@
 #include "controladormenuopciones.h"
 #include "menuopciones.h"
+#include <qmessagebox.h>
 
 ControladorMenuOpciones::ControladorMenuOpciones(controlador_Ventanas * controlador)
 {
@@ -16,4 +17,14 @@ void ControladorMenuOpciones::cerrarVentana(int opcion){
     if(opcion == 1){
        controlador->mostrarTablero();
     }
+}
+
+
+void ControladorMenuOpciones::mostrarReglas(){
+  controlador->mostrarReglas();
+}
+
+void ControladorMenuOpciones::graficarReglas(string reglas){
+
+  QMessageBox::information(menuOpciones," Reglas ", QString::fromStdString(reglas));
 }
