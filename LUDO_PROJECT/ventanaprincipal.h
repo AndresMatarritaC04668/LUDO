@@ -2,6 +2,7 @@
 #define VENTANAPRINCIPAL_H
 
 #include <QMainWindow>
+#include "controladorventanaprincipal.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class VentanaPrincipal; }
@@ -13,10 +14,12 @@ class VentanaPrincipal : public QMainWindow
 
 public:
     VentanaPrincipal(QWidget *parent = nullptr);
+    void setControlador(ControladorVentanaPrincipal * controlador);
     ~VentanaPrincipal();
     Ui::VentanaPrincipal *ui;
 
 private:
+    ControladorVentanaPrincipal * controlador;
 
 };
 #endif // VENTANAPRINCIPAL_H

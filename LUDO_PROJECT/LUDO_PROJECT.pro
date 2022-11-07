@@ -16,7 +16,10 @@ SOURCES += \
     TableroLudo.cpp \
     ValidadorLudo.cpp \
     controlador_ventanas.cpp \
+    controladormenuopciones.cpp \
+    controladorventanaprincipal.cpp \
     main.cpp \
+    menuopciones.cpp \
     ventanainformacion.cpp \
     ventanaprincipal.cpp
 
@@ -33,11 +36,15 @@ HEADERS += \
     Validador.h \
     ValidadorLudo.h \
     controlador_ventanas.h \
+    controladormenuopciones.h \
+    controladorventanaprincipal.h \
+    menuopciones.h \
     tableroLUDO.h \
     ventanainformacion.h \
     ventanaprincipal.h
 
 FORMS += \
+    menuopciones.ui \
     ventanainformacion.ui \
     ventanaprincipal.ui
 
@@ -47,4 +54,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
+    HD-wallpaper-love-ludo-game-naseeb.jpg \
     LUDO_PROJECT.pro.user

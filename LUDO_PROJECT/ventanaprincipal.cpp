@@ -13,3 +13,7 @@ VentanaPrincipal::~VentanaPrincipal()
     delete ui;
 }
 
+void VentanaPrincipal::setControlador(ControladorVentanaPrincipal * controlador){
+    this->controlador = controlador;
+}
+

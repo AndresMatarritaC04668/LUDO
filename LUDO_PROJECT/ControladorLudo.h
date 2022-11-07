@@ -2,8 +2,9 @@
 #define _CONTROLADOR_LUDO
 
 #include "ControladorAbstracto.h"
-#include "tableroLUDO.h"
-#include "controlador_ventanas.h"
+
+class controlador_Ventanas;
+class TableroLudo;
 
 class ControladorLudo : public ControladorAbstracto {
 
@@ -17,7 +18,8 @@ class ControladorLudo : public ControladorAbstracto {
 
     private:
         TableroLudo * tablero;
-        controlador_Ventanas * controlador;
+        controlador_Ventanas * controladorGrafico;
+
 
 };
 

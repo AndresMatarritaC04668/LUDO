@@ -134,7 +134,7 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
 
 
         tableroLudo->controlador->graficarTablero(tableroLudo);
-        tableroLudo->controlador->graficarCarcel(tablero->getjugadores());
+
         if(pasos == 6 || repetir == 1){
             repetir = 1;
             string mensaje = "Obtuviste un 6 , tira de nuevo";
@@ -146,11 +146,6 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
 
     void JugadorLudo::crearFichas(int cantidadFichas){
 
-        for(int i = 0 ; i < cantidadFichas ; i++){
-
-            FichaLudo * ficha = new FichaLudo(this->color,0,0);
-
-        }
 
     }
 
