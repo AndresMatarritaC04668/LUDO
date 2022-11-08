@@ -25,7 +25,7 @@ void SerializadorLudo::agregarSeparador() {
 }
 
 void SerializadorLudo::setJugadores(vector<Jugador *> jugadores) {
-    for (int i=0; i<jugadores.size(); ++i)
+    for (int i=0; i <jugadores.size(); ++i)
         this->jugadores.push_back(dynamic_cast< JugadorLudo * >(jugadores[i]));
 }
 

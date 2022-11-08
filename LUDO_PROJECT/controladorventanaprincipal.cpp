@@ -5,17 +5,19 @@
 
 ControladorVentanaPrincipal::ControladorVentanaPrincipal(controlador_Ventanas * controlador)
 {
-  ventanaPrincipal = new VentanaPrincipal();
-  this->ventanaPrincipal->setControlador(this);
+
   this->controlador = controlador;
 }
 
 void ControladorVentanaPrincipal::iniciar(){
+    ventanaPrincipal = new VentanaPrincipal();
+    this->ventanaPrincipal->setControlador(this);
     this->ventanaPrincipal->show();
 }
 
 void ControladorVentanaPrincipal::cerrarVentana(){
     this->ventanaPrincipal->close();
+    delete ventanaPrincipal;
 
 }
 
@@ -1071,7 +1073,7 @@ void ControladorVentanaPrincipal::graficarCarcel(vector<Jugador*> jugadores){
 
 void ControladorVentanaPrincipal:: graficarLineaFinal(TableroAbstracto * mesa ){
 
-    TableroLudo * mesaLudo = dynamic_cast< TableroLudo * >(mesa);
+
     Jugador * jugador = mesa->getJugadorActual();
     std::vector<FichaAbstracta*> fichas = jugador->getFichas();
     string mensaje = "";

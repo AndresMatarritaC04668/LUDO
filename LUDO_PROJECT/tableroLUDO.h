@@ -11,12 +11,12 @@ using namespace std;
 class TableroLudo : public TableroAbstracto {
    public:
 	TableroLudo();
-      ~TableroLudo();
+     ~TableroLudo()override;
     
       void asignarCantidadJugadores(int cantidadJugadores)override; 
 	void ubicarJugadores()override; // Fichas enel vector zona segurado
       void pasarTurno()override; //Cambia al jugador actual
-      void jugarTurno()override;
+      int jugarTurno()override;
       void asignarPrimerJugador()override;
       void toString();
       int hayGanador()override; 

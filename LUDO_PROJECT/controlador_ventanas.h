@@ -23,9 +23,8 @@ public:
     void mostrarReglas();
     string getNombre(string numeroJugador);
     int elegirFicha(string);
-
+    int eleccionJugador(string turno);
     ventanaInformacion * input;
-
     void mensajeGrafico(string);
 
 private:

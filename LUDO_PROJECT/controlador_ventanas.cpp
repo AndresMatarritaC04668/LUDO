@@ -60,3 +60,23 @@ void controlador_Ventanas::mostrarReglas(){
     string reglas = validador.toStringReglas();
     this->controladorMenuOpciones->graficarReglas(reglas);
 }
+
+int controlador_Ventanas::eleccionJugador(string nombre){
+    int eleccion = 1;
+    string mensaje = nombre + "\n\nPresiona Yes para lanzar dado y seguir jugando"
+                              " \nO presiona NO para guardar partida y salir";
+
+    QMessageBox::StandardButton reply;
+    reply = QMessageBox::question(input,"Elección del jugador" , QString::fromStdString(mensaje),
+                                  QMessageBox::Yes    |        QMessageBox::No);
+    if(reply == QMessageBox::Yes){
+        qDebug () << "Sigue jugando";
+        eleccion = 1;
+    } else {
+        qDebug () << "Guardar y salir";
+        eleccion = 0;
+    }
+
+    return eleccion;
+
+}

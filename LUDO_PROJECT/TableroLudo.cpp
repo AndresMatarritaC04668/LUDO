@@ -72,8 +72,9 @@ void TableroLudo::pasarTurno(){
  
 
 }
-void TableroLudo::jugarTurno(){
- jugadorActual->jugarTurno(this);
+int TableroLudo::jugarTurno(){
+  int seguir = jugadorActual->jugarTurno(this);
+  return seguir;
 
 }
 

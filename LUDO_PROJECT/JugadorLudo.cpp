@@ -144,17 +144,13 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
         return repetir;
     }
 
-    void JugadorLudo::crearFichas(int cantidadFichas){
 
-
-    }
-
-    int JugadorLudo::lanzarDado(TableroAbstracto* tablero){
-        TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
+    int JugadorLudo::lanzarDado(){
+        //TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
         Dado  dado;
         int darPasos = 0;
-        string mensaje = "Por favor lanza el dado: " + this->nombre;
-        tableroLudo->graficarInformacion(mensaje);
+        //string mensaje = "Por favor lanza el dado: " + this->nombre;
+        //tableroLudo->graficarInformacion(mensaje);
         for(int i = 0 ; i<cantidadDados ; i++){
           darPasos+= dado.lanzar();
         }
@@ -201,6 +197,13 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
             tableroLudo->graficarInformacion(mensaje);
             ficha->setFinalizado();
         }
+    }
+
+    int JugadorLudo::elegirQueHacer(TableroAbstracto* tablero){
+        TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
+        int eleccion = 1;
+        eleccion = tableroLudo->controlador->eleccionJugador(this->nombre);
+        return eleccion;
     }
 
 

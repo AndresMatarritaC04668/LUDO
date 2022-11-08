@@ -25,6 +25,5 @@ void ControladorMenuOpciones::mostrarReglas(){
 }
 
 void ControladorMenuOpciones::graficarReglas(string reglas){
-
   QMessageBox::information(menuOpciones," Reglas ", QString::fromStdString(reglas));
 }
