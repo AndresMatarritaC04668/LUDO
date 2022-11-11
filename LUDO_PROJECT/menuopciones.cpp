@@ -25,7 +25,7 @@ void MenuOpciones::on_botonReglas_clicked()
 
 void MenuOpciones::on_botonRenaudar_clicked()
 {
-
+   this->controlador->cerrarVentana(2); // Elige la opcion de jugar
 }
 
 

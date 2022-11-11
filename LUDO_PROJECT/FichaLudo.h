@@ -8,22 +8,25 @@
 class FichaLudo : public FichaAbstracta {
 
     private:
-        std::string color;
-        bool activo;       
-        int pasosDados;
-        int zonaSegura;
-        int caminoFinal;
-        int numeroFicha;
+        //std::string color;
+        //bool activo;
+        //int pasosDados;
+        //int zonaSegura;
+        //int caminoFinal;
+        //int numeroFicha;
         
 
     public:
         FichaLudo();
         FichaLudo(std::string, int,int);
         ~FichaLudo()override;
+        void setColor(std::string)override;
         std::string getColor() override;
+        void setEstadoActivo();
+        int getEstado()override;
         int getX()override;
         int getY()override;
-        int getEstado()override;
+
         bool getFinalizado()override;
         int getPasosDados()override;
         int getZonaSegura();
@@ -32,8 +35,8 @@ class FichaLudo : public FichaAbstracta {
         void activarFicha();
         void desactivarFicha();
         int getNumeroFicha()override;
-        void setFinalizado();
-        void setEstadoActivo();
+        void setFinalizado()override;
+
     
 
 };

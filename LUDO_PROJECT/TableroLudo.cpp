@@ -7,6 +7,8 @@
 #include <qinputdialog.h>
 #include <qstring.h>
 #include <qmessagebox.h>
+#include "Hilera.h"
+#include <Controlador_Memento.h>
 
 TableroLudo::TableroLudo(){
   for(int i = 0 ; i < 52 ; i++){
@@ -17,23 +19,24 @@ TableroLudo::TableroLudo(){
 }
 
 TableroLudo::~TableroLudo(){
-  for(int i = 0 ; i < cantidadJugadores ; i++){
+  for(int i = 0 ; i < getCantidadJugadores(); i++){
     delete jugadores[i];
   }
 }
 void TableroLudo::asignarCantidadJugadores(int cantidadJugadores){
-  this->cantidadJugadores = cantidadJugadores;
+  setCantidadJugadores(cantidadJugadores);
 } 
 
-void TableroLudo::setControlador(controlador_Ventanas* controlador){
+void TableroLudo::setControlador(controlador_Ventanas* controlador , ControladorAbstracto * controladorLudo){
    this->controlador = controlador;
+   this->controladorLudo = controladorLudo;
 }
 
 void TableroLudo::ubicarJugadores(){
  QString nombre = "";
  nombre = QInputDialog::getText(controlador->input,"Nombre jugador",
                                   "Ingrese el nombre del jugador rojo");
- cin>>cantidadJugadores;
+ //cin>>getCantidadJugadores();
  JugadorLudo * jugador1 = new JugadorLudo("ROJO",10,nombre.toStdString());
  jugadores.push_back(jugador1);
 
@@ -42,7 +45,7 @@ void TableroLudo::ubicarJugadores(){
 JugadorLudo * jugador2 = new JugadorLudo("AZUL",23,nombre.toStdString());
  jugadores.push_back(jugador2);
 
- if(cantidadJugadores >=3){
+ if(getCantidadJugadores() >=3){
      nombre = QInputDialog::getText(controlador->input,"Nombre jugador",
                                       "Ingrese el nombre del jugador amarillo");
    JugadorLudo * jugador3 = new JugadorLudo("AMARILLO",36,nombre.toStdString());
@@ -51,7 +54,7 @@ JugadorLudo * jugador2 = new JugadorLudo("AZUL",23,nombre.toStdString());
   jugadores.push_back(nullptr);
 }
  
- if(cantidadJugadores == 4){
+ if(getCantidadJugadores() == 4){
      nombre = QInputDialog::getText(controlador->input,"Nombre jugador",
                                       "Ingrese el nombre del jugador verde");
    JugadorLudo * jugador4 = new JugadorLudo("VERDE",49,nombre.toStdString());
@@ -64,16 +67,14 @@ JugadorLudo * jugador2 = new JugadorLudo("AZUL",23,nombre.toStdString());
 
 }
 void TableroLudo::pasarTurno(){
-
-  jugadorActual = jugadores[(this->jugadorPresente+1)%cantidadJugadores];
-  this->jugadorPresente = (this->jugadorPresente+1)%cantidadJugadores;
-  JugadorLudo * jugadorActualLudo = dynamic_cast<JugadorLudo* >(jugadorActual);
-  cout<<"Turno del jugador "<<jugadorActualLudo->getColor();
- 
-
+  jugadorActual = jugadores[(getNumeroJugadorActual()+1)%getCantidadJugadores()];
+  int siguiente =  (getNumeroJugadorActual()+1)%getCantidadJugadores();
+  setNumeroJugadorActual(siguiente);
 }
 int TableroLudo::jugarTurno(){
+  jugadorActual = jugadores[this->getNumeroJugadorActual()];
   int seguir = jugadorActual->jugarTurno(this);
+
   return seguir;
 
 }
@@ -82,12 +83,12 @@ void TableroLudo::asignarPrimerJugador(){
   int numeroCorrecto = 0;
   while(!numeroCorrecto){
     int prueba = lanzarDado();
-    if(prueba >= 0 && prueba < cantidadJugadores ){
+    if(prueba >= 0 && prueba < getCantidadJugadores() ){
       numeroCorrecto = prueba;
     }
   }
   jugadorActual = jugadores[numeroCorrecto];
-  jugadorPresente = numeroCorrecto;
+  setNumeroJugadorActual( numeroCorrecto);
   JugadorLudo * jugadorActualLudo = dynamic_cast<JugadorLudo* >(jugadorActual);
   string mensaje = "";
   mensaje = "Comienza el jugador: " + jugadorActualLudo->getNombre();
@@ -142,6 +143,75 @@ int TableroLudo::graficoElejirFicha(string mensaje){
 vector<Jugador*> TableroLudo::getjugadores(){
 
     return this->jugadores;
+}
+
+int TableroLudo::getCantidadJugadores(){
+    std::string cantidadJugadores = "";
+        Valor* valor = obtenerAtributo("cantidadJugadores");
+        if (valor != nullptr) {
+            cantidadJugadores = ((Hilera*) valor)->obt();
+        }
+        return stoi(cantidadJugadores);
+
+}
+
+void TableroLudo::setCantidadJugadores (int cantidadJugadores ){
+    agregarAtributo("cantidadJugadores",new Hilera(to_string(cantidadJugadores)));
+
+}
+int TableroLudo::getNumeroJugadorActual(){
+
+    std::string jugadorPresente = "";
+        Valor* valor = obtenerAtributo("jugadorPresente");
+        if (valor != nullptr) {
+            jugadorPresente = ((Hilera*) valor)->obt();
+        }
+        return stoi(jugadorPresente);
+
+}
+void TableroLudo::setNumeroJugadorActual(int jugadorPresente){
+    agregarAtributo("jugadorPresente",new Hilera(to_string(jugadorPresente)));
+
+}
+
+void TableroLudo::detenerPartida(){
+    this->controladorLudo->pausarPartida();
+}
+
+void TableroLudo::setJugadores(vector<Jugador*> jugadores){
+    this->jugadores = jugadores;
+}
+
+void TableroLudo::rellenarMesa(){
+    for(FichaAbstracta * ficha : jugadores[0]->getFichas()){
+        if(ficha->getEstado() == 1 && ficha->getPasosDados() <= 54){
+            this->tablero[ficha->getX()][ficha->getY()] = dynamic_cast<FichaLudo* >(ficha);
+        }
+    }
+
+    for(FichaAbstracta * ficha : jugadores[1]->getFichas()){
+        if(ficha->getEstado() == 1 && ficha->getPasosDados() <= 54){
+            this->tablero[ficha->getX()][ficha->getY()] = dynamic_cast<FichaLudo* >(ficha);
+        }
+    }
+
+    if(this->getCantidadJugadores() >= 3){
+
+        for(FichaAbstracta * ficha : jugadores[2]->getFichas()){
+            if(ficha->getEstado() == 1 && ficha->getPasosDados() <= 54){
+                this->tablero[ficha->getX()][ficha->getY()] = dynamic_cast<FichaLudo* >(ficha);
+            }
+        }
+    }
+
+    if(this->getCantidadJugadores() ==4 ){
+
+        for(FichaAbstracta * ficha : jugadores[3]->getFichas()){
+            if(ficha->getEstado() == 1 && ficha->getPasosDados() <= 54){
+                this->tablero[ficha->getX()][ficha->getY()] = dynamic_cast<FichaLudo* >(ficha);
+            }
+        }
+    }
 }
 
 

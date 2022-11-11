@@ -1,5 +1,5 @@
 #include "ValidadorLudo.h"
-#include "JugadorLudo.h"
+
 #include <sstream>
 
 /**

@@ -1,16 +1,16 @@
 #ifndef MI_TABLEROABSTRACTO
 #define MI_TABLEROABSTRACTO
-using namespace std;
+
 #include "Validador.h"
 #include "Dado.h"
 #include "Jugador.h"
 #include <vector>
-
+#include "Objeto.h"
+#include "ControladorAbstracto.h"
 
 class Validador;
 
-class TableroAbstracto
-{
+class TableroAbstracto : public Objeto{
 public:
 	TableroAbstracto() {};
     virtual ~TableroAbstracto() {};
@@ -18,13 +18,17 @@ public:
 	virtual void ubicarJugadores()= 0; // Fichas enel vector zona segurado
 	virtual int  hayGanador() = 0;
     virtual void finalizarJuego() = 0;
-	virtual void iniciarPartida(){
+    virtual void detenerPartida() = 0;
+    virtual void setJugadores(vector<Jugador*>) = 0;
+    virtual void iniciarPartida(){
+
 	 int finalizado = 0;
      int seguir = 1;
      while(!finalizado){ 
+
        seguir = jugarTurno();
        if(!seguir){
-           // Llama al serializador
+           detenerPartida();
            break;
        }
        finalizado = hayGanador();
@@ -40,6 +44,11 @@ public:
 	virtual void asignarPrimerJugador() =0;
 	virtual Jugador * getJugadorActual() = 0;
     virtual vector<Jugador*> getjugadores() = 0;
+    virtual int getCantidadJugadores() = 0;
+    virtual void setCantidadJugadores(int) = 0;
+    virtual int getNumeroJugadorActual() = 0;
+    virtual void setNumeroJugadorActual(int) = 0;
+
 	int lanzarDado(){
       return dado.lanzar();
 	}
@@ -57,6 +66,7 @@ public:
       Dado  dado;
       int juegoTerminado;
       Validador * validador;
+      ControladorAbstracto * controladorLudo;
 
 
 };

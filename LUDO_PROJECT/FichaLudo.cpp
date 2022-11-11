@@ -1,13 +1,16 @@
 #include <iostream>
 #include "FichaLudo.h"
+#include "Hilera.h"
+#include <iosfwd>
+using namespace std;
 
 FichaLudo::FichaLudo() {
-    this->color = "";
-    this->x = 0;
-    this->activo = 0;
-    this->finalizado = 0;
-    this->pasosDados = 0;
-    this->y = 0;
+    agregarAtributo("color",new Hilera(""));
+    agregarAtributo("x",new Hilera("0"));
+    agregarAtributo("activo",new Hilera("0"));
+    agregarAtributo("finalizado",new Hilera("0"));
+    agregarAtributo("pasosDados",new Hilera("0"));
+    agregarAtributo("y",new Hilera("0"));
 }
 
 FichaLudo::~FichaLudo(){
@@ -15,74 +18,121 @@ FichaLudo::~FichaLudo(){
 }
 
 FichaLudo::FichaLudo(std::string color, int zonaSegura ,int numeroFicha) {
-    this->color = color;
-    this->y = zonaSegura; // posicion = zonasegura
-    this->activo = false;  // cambiar false
-    this->finalizado = false;
-    this->pasosDados = 0; // cambiar = 0
-    this->zonaSegura = zonaSegura; 
-    this->caminoFinal = 0;
-    this->x = 0;
-    this->numeroFicha = numeroFicha;
+
+    agregarAtributo("color",new Hilera(color));
+    agregarAtributo("y",new Hilera(to_string(zonaSegura)));
+    agregarAtributo("activo",new Hilera("0"));
+    agregarAtributo("finalizado",new Hilera("0"));
+    agregarAtributo("pasosDados",new Hilera("0"));
+    agregarAtributo("zonaSegura",new Hilera(to_string(zonaSegura)));
+    agregarAtributo("caminoFinal",new Hilera("0"));
+    agregarAtributo("x",new Hilera("0"));
+    agregarAtributo("numeroFicha",new Hilera(to_string(numeroFicha)));
+
 }  
 
 void FichaLudo::activarFicha() {
-    this->activo = true;
+    agregarAtributo("activo",new Hilera("1"));
 }
 
 void FichaLudo::desactivarFicha() {
-    this->activo = false;
-    this->y =  zonaSegura;
+    agregarAtributo("activo",new Hilera("0"));
+    agregarAtributo("y",new Hilera(
+                    to_string(getZonaSegura())));
 }
 
 std::string FichaLudo::getColor() {
-    return this->color;
+    std::string color = "";
+        Valor* valor = obtenerAtributo("color");
+        if (valor != nullptr) {
+            color = ((Hilera*) valor)->obt();
+        }
+        return color;
 }
 
 int FichaLudo::getX() {
-    return this->x;
+    std::string x = "";
+        Valor* valor = obtenerAtributo("x");
+        if (valor != nullptr) {
+            x = ((Hilera*) valor)->obt();
+        }
+        return stoi(x);;
 }
 
 int FichaLudo::getY() {
-  
-    return this->y;
+    std::string y = "";
+        Valor* valor = obtenerAtributo("y");
+        if (valor != nullptr) {
+            y = ((Hilera*) valor)->obt();
+        }
+        return stoi(y);;
 }
 
 int FichaLudo::getEstado() {
-    return this->activo;
+    std::string activo = "";
+        Valor* valor = obtenerAtributo("activo");
+        if (valor != nullptr) {
+            activo = ((Hilera*) valor)->obt();
+        }
+        return stoi(activo);
 }
 
 bool FichaLudo::getFinalizado() {
-    return this->finalizado;
+    std::string finalizado = "";
+        Valor* valor = obtenerAtributo("finalizado");
+        if (valor != nullptr) {
+            finalizado = ((Hilera*) valor)->obt();
+        }
+        return stoi(finalizado);
 }
 
 void FichaLudo::setPasosDados(int pasosDados){
-    this->pasosDados = pasosDados;
+    agregarAtributo("pasosDados",new Hilera(to_string(pasosDados)));
 }
 
 void FichaLudo::setPosicion(int x , int y){
-     this->x = x;
-     this->y = y;
+     agregarAtributo("x",new Hilera(to_string(x)));
+     agregarAtributo("y",new Hilera(to_string(y)));
+
 }
 
 int FichaLudo::getPasosDados(){
-    return this->pasosDados;
+    std::string pasosDados = "";
+        Valor* valor = obtenerAtributo("pasosDados");
+        if (valor != nullptr) {
+            pasosDados = ((Hilera*) valor)->obt();
+        }
+        return stoi(pasosDados);;
 }
 
 int FichaLudo::getZonaSegura() {
-    return this->zonaSegura;
+    std::string zonaSegura = "";
+        Valor* valor = obtenerAtributo("zonaSegura");
+        if (valor != nullptr) {
+           zonaSegura = ((Hilera*) valor)->obt();
+        }
+        return stoi(zonaSegura);
 }
 
 int FichaLudo::getNumeroFicha() {
-    return this->numeroFicha;
+    std::string numeroFicha = "";
+        Valor* valor = obtenerAtributo("numeroFicha");
+        if (valor != nullptr) {
+           numeroFicha = ((Hilera*) valor)->obt();
+        }
+        return stoi(numeroFicha);
 }
 
 void FichaLudo::setFinalizado(){
-    this->finalizado = 1;
+    agregarAtributo("finalizado",new Hilera("1"));
 }
 
 void FichaLudo::setEstadoActivo(){
-    this->activo = true;
+    agregarAtributo("activo",new Hilera("1"));
+}
+
+void FichaLudo::setColor(string color){
+    agregarAtributo("color",new Hilera(color));
 }
 
 

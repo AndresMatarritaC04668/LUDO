@@ -13,6 +13,7 @@ void ControladorVentanaPrincipal::iniciar(){
     ventanaPrincipal = new VentanaPrincipal();
     this->ventanaPrincipal->setControlador(this);
     this->ventanaPrincipal->show();
+
 }
 
 void ControladorVentanaPrincipal::cerrarVentana(){

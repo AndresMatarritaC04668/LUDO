@@ -13,9 +13,14 @@ void ControladorMenuOpciones::iniciar(){
    this->menuOpciones->show();
 }
 void ControladorMenuOpciones::cerrarVentana(int opcion){
-    this->menuOpciones->close();
+
     if(opcion == 1){
-       controlador->mostrarTablero();
+       this->menuOpciones->close();
+       controlador->mostrarTablero(opcion);
+    } else if(opcion == 2){
+       controlador->mostrarTablero(opcion);
+    } else if(opcion == 1){
+       this->menuOpciones->close();
     }
 }
 

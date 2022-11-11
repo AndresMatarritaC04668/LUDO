@@ -17,11 +17,12 @@ public:
     controlador_Ventanas(ControladorLudo * controlador);
     void graficarTablero(TableroAbstracto*);
     void iniciar();
-    void mostrarTablero();
+    void mostrarTablero(int);
     void mostrarMenu();
     void graficarCarcel(vector<Jugador*> jugadores);
     void mostrarReglas();
     string getNombre(string numeroJugador);
+    string getNombreCSV();
     int elegirFicha(string);
     int eleccionJugador(string turno);
     ventanaInformacion * input;

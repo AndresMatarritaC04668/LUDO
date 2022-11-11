@@ -9,11 +9,15 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    ConstructorSerializadorJSON.cpp \
     ControladorLudo.cpp \
+    Controlador_Memento.cpp \
+    DeserializadorJSON.cpp \
     FichaLudo.cpp \
+    Hilera.cpp \
     JugadorLudo.cpp \
+    Objeto.cpp \
     Regla.cpp \
-    SerializadorLudo.cpp \
     TableroLudo.cpp \
     ValidadorLudo.cpp \
     controlador_ventanas.cpp \
@@ -25,24 +29,32 @@ SOURCES += \
     ventanaprincipal.cpp
 
 HEADERS += \
+    ConstructorSerializadorAbstracto.h \
+    ConstructorSerializadorJSON.h \
     ControladorAbstracto.h \
     ControladorLudo.h \
+    Controlador_Memento.h \
     Dado.h \
+    DeserializadorAbstracto.h \
+    DeserializadorJSON.h \
     FichaAbstracta.h \
     FichaLudo.h \
+    Hilera.h \
     Jugador.h \
     JugadorLudo.h \
+    Objeto.h \
+    ObtAsg.h \
     Regla.h \
-    SerializadorAbstracto.h \
-    SerializadorLudo.h \
     TableroAbstracto.h \
     Validador.h \
     ValidadorLudo.h \
+    Valor.h \
     controlador_ventanas.h \
     controladormenuopciones.h \
     controladorventanaprincipal.h \
     menuopciones.h \
     tableroLUDO.h \
+    tipo.h \
     ventanainformacion.h \
     ventanaprincipal.h
 

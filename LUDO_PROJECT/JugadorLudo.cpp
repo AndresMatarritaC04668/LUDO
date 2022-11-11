@@ -1,10 +1,12 @@
 #include "JugadorLudo.h"
 #include "FichaLudo.h"
 #include "ValidadorLudo.h"
+
+#include "Hilera.h"
     
     JugadorLudo::JugadorLudo() {
-        this->nombre = "";
-        this->esGanador = false;
+        this->esGanador = 0;
+        this->cantidadDados = 1;
    }
 
 
@@ -19,8 +21,9 @@
         FichaLudo * ficha4 = new FichaLudo(color,zonaSegura,4);
         fichas.push_back(ficha4);
         this->esGanador = 0;
-        this->color = color;
-        this->nombre = nombre;
+        agregarAtributo("color",new Hilera(color));
+        agregarAtributo("nombre",new Hilera(nombre));
+
     }
 
     JugadorLudo::~JugadorLudo() {
@@ -29,11 +32,16 @@
     }
 
     void JugadorLudo::setNombre(std::string nombre) {
-            this->nombre = nombre;
+         agregarAtributo("nombre",new Hilera(nombre));
     }
 
     std::string JugadorLudo:: getNombre() {
-            return this->nombre;
+            std::string nombre = "";
+                Valor* valor = obtenerAtributo("nombre");
+                if (valor != nullptr) {
+                    nombre = ((Hilera*) valor)->obt();
+                }
+                return nombre;
     }
 
     bool JugadorLudo::getEsGanador() {
@@ -83,7 +91,6 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
         } else {
    
         int resultado = validadorLudo->validarJugada((ficha->getY()+pasos)%52, ficha);
-        qDebug()<<resultado;
         switch(resultado) {
 
             case 1:
@@ -111,7 +118,6 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
             }
 
             default:
-                cout<<"comer" <<ficha->getColor() <<" "<<endl;
                     int nuevaPos = (ficha->getY() + pasos)%52;
                     FichaLudo* newFicha = nullptr;
                     int saveState = 0; 
@@ -126,7 +132,7 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
                     tableroLudo->tablero[saveState][nuevaPos] = dynamic_cast<FichaLudo* >(ficha);
                     ficha->setPosicion(saveState,nuevaPos);  // Nueva posicion
                     ficha->setPasosDados(ficha->getPasosDados()+pasos);// sumarPasos'
-                    cout<<"Comiste a la ficha "+ newFicha->getColor() << "\n";
+
                     newFicha->setPasosDados(0);
                     newFicha->desactivarFicha();
         }
@@ -140,6 +146,9 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
             string mensaje = "Obtuviste un 6 , tira de nuevo";
             tableroLudo->graficarInformacion(mensaje);
         }
+
+
+
 
         return repetir;
     }
@@ -174,12 +183,24 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
     }
 
     string JugadorLudo::getColor(){
-        return this->color;
+        std::string color = "";
+            Valor* valor = obtenerAtributo("color");
+            if (valor != nullptr) {
+                color = ((Hilera*) valor)->obt();
+            }
+            return color;
     }
+
+    void JugadorLudo::setColor(string color){
+        agregarAtributo("color",new Hilera(color));
+    }
+
+
 
     void JugadorLudo::moverFichaRectaFinal(FichaLudo * ficha, int pasos, TableroLudo* tablero , ValidadorLudo * validador){
         string mensaje = "";
         TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
+
         if(ficha->getPasosDados() <= 54){
            tablero->tablero[ficha->getX()][ficha->getY()] = nullptr;
            ficha->setPasosDados(ficha->getPasosDados()+pasos);        
@@ -200,10 +221,18 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
     }
 
     int JugadorLudo::elegirQueHacer(TableroAbstracto* tablero){
+
         TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
         int eleccion = 1;
-        eleccion = tableroLudo->controlador->eleccionJugador(this->nombre);
+
+        eleccion = tableroLudo->controlador->eleccionJugador(getNombre());
+
         return eleccion;
+    }
+
+    void JugadorLudo::setFichas(std::vector<FichaAbstracta *>fichas){
+
+        this->fichas = fichas;
     }
 
 

@@ -40,9 +40,18 @@ int  controlador_Ventanas::elegirFicha(string mensaje){
    return opcion;
 }
 
-void controlador_Ventanas::mostrarTablero(){
-    controladorVentanaPrincipal->iniciar();
-    controladorLudo->iniciarPartida();
+void controlador_Ventanas::mostrarTablero(int opcion){
+
+   if(opcion == 1){
+       controladorVentanaPrincipal->iniciar();
+       controladorLudo->iniciarPartida();
+   } else if(opcion == 2 ){
+       controladorLudo->renaudarPartida();
+   } else if(opcion == 3){
+       controladorMenuOpciones->cerrarVentana(opcion);
+       controladorVentanaPrincipal->iniciar();
+   }
+
 }
 
 void controlador_Ventanas::graficarCarcel(vector<Jugador*> jugadores){
@@ -62,11 +71,13 @@ void controlador_Ventanas::mostrarReglas(){
 }
 
 int controlador_Ventanas::eleccionJugador(string nombre){
+
     int eleccion = 1;
     string mensaje = nombre + "\n\nPresiona Yes para lanzar dado y seguir jugando"
                               " \nO presiona NO para guardar partida y salir";
 
     QMessageBox::StandardButton reply;
+
     reply = QMessageBox::question(input,"Elección del jugador" , QString::fromStdString(mensaje),
                                   QMessageBox::Yes    |        QMessageBox::No);
     if(reply == QMessageBox::Yes){
@@ -79,4 +90,12 @@ int controlador_Ventanas::eleccionJugador(string nombre){
 
     return eleccion;
 
+}
+
+string controlador_Ventanas::getNombreCSV(){
+    string mensaje =  "\nDigita el nombre de la partidad";
+    QString nombrePartida = "";
+    nombrePartida = QInputDialog::getText(this->input,"Nombre de la partida",QString::fromStdString(mensaje));
+
+     return nombrePartida.toStdString();
 }

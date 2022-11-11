@@ -21,18 +21,21 @@ class TableroLudo : public TableroAbstracto {
       void toString();
       int hayGanador()override; 
       int elegirFicha();
+      void rellenarMesa();
+      void setJugadores(vector<Jugador*>)override;
+      void detenerPartida()override;
       void finalizarJuego()override;
-      void setControlador(controlador_Ventanas*);
+      void setControlador(controlador_Ventanas* , ControladorAbstracto *);
       Jugador * getJugadorActual()override;
       void graficarInformacion(string);
       int graficoElejirFicha(string);
       vector<Jugador*> getjugadores()override;
       FichaLudo * tablero[2][52];
       controlador_Ventanas *controlador;
-   
-   private:
-      int cantidadJugadores;
-      int jugadorPresente;
+      int getCantidadJugadores()override;
+      void setCantidadJugadores(int)override;
+      int getNumeroJugadorActual()override;
+      void setNumeroJugadorActual(int)override;
 
 };
 

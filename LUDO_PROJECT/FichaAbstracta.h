@@ -3,9 +3,9 @@
 
 #include <stdbool.h>
 #include <string>
+#include "Objeto.h"
 
-
-class FichaAbstracta {
+class FichaAbstracta : public Objeto{
 
     public:
         FichaAbstracta(){};
@@ -18,10 +18,11 @@ class FichaAbstracta {
         virtual void setPosicion(int x , int y) = 0;
         virtual int getNumeroFicha() = 0;
         virtual int getPasosDados()=0;
+        virtual void setColor(std::string) = 0;
+        virtual void setFinalizado() = 0;
     protected:
-        int finalizado;
-        int x;
-        int y;
+
+
 };
 
 

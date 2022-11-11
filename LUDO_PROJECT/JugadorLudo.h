@@ -26,10 +26,13 @@ class JugadorLudo : public Jugador {
         int lanzarDado()override;
         FichaAbstracta * elegirFicha(TableroAbstracto*,int)override;
         int encontrarBarrera(int posicion, FichaLudo * mover, TableroLudo* tablero);
-        string getColor();
+        string getColor()override;
+        void setColor(std::string nombre)override;
         void moverFichaRectaFinal(FichaLudo * ficha, int pasos, TableroLudo* tablero , ValidadorLudo * validador);
         std::vector<FichaAbstracta *> getFichas() override;
         int elegirQueHacer(TableroAbstracto* tablero)override;
+        void setFichas(std::vector<FichaAbstracta *>) override;
+
 
 };
 

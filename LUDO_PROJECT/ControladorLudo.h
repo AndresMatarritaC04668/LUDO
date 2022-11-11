@@ -15,6 +15,8 @@ class ControladorLudo : public ControladorAbstracto {
         void ubicarJugadores() override;
         void asignarPrimerJugador() override;
         void iniciarPartida()override;
+        void pausarPartida()override;
+        void renaudarPartida()override;
 
     private:
         TableroLudo * tablero;
