@@ -168,6 +168,7 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
 
     FichaAbstracta * JugadorLudo::elegirFicha(TableroAbstracto* tablero,int pasos){
        TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
+
        string mensaje = "Dado sacó: " + std::to_string(pasos);
        while(1){
          int opcion = 0;
@@ -223,6 +224,7 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
     int JugadorLudo::elegirQueHacer(TableroAbstracto* tablero){
 
         TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
+        tableroLudo->controlador->graficarTablero(tableroLudo);
         int eleccion = 1;
 
         eleccion = tableroLudo->controlador->eleccionJugador(getNombre());

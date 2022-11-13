@@ -23,23 +23,22 @@ Controlador_Memento::~Controlador_Memento() {
 
 void Controlador_Memento::serializarTablero(TableroAbstracto * mesa, string nombreCSV){
     nombreCSV += ".csv";
-    qDebug()<<QString::fromStdString(nombreCSV);
+
     ofstream {nombreCSV};
     ofstream writer(nombreCSV);
     string mesaJSON = "";
 
     mesaJSON = serializarJSON(mesa);
     writer << mesaJSON << endl;
-   //TableroLudo * tablero =  deserializarTableroJSON(mesaJSON);
 
     mesaJSON = serializarJugadoresJSON(mesa->getJugadores());
     writer << mesaJSON << endl;
-    //std::vector<Jugador*> listaJugadores = deserializarListaJugadoresJSON(mesaJSON);
 
     for(Jugador * jugador: mesa->getJugadores()){
-      mesaJSON = serializarFichasJSON(jugador->getFichas());
-      writer << mesaJSON << endl;
-      //std::vector<FichaAbstracta*> listaFichas = deserializarListaFichasJSON(mesaJSON);
+     if(jugador!=nullptr){
+        mesaJSON = serializarFichasJSON(jugador->getFichas());
+        writer << mesaJSON << endl;
+     }
     }
 
 
@@ -60,6 +59,12 @@ TableroLudo * Controlador_Memento::deserializarJuego(std::string  nombreCSV , QW
       iterador++;
       std::vector<Jugador*> listaJugadores = deserializarListaJugadoresJSON(lineas[iterador]);
       iterador++;
+      if(tablero->getCantidadJugadores() == 2){
+         listaJugadores.push_back(nullptr);
+         listaJugadores.push_back(nullptr);
+      } else if(tablero->getCantidadJugadores() == 3){
+          listaJugadores.push_back(nullptr);
+      }
       tablero->setJugadores(listaJugadores);
 
       std::vector<FichaAbstracta*> listaFichas = deserializarListaFichasJSON(lineas[iterador]);
@@ -164,10 +169,12 @@ std::string Controlador_Memento::serializarListaObjetosJSON(std::vector<Objeto*>
         stringJSON += '"'+listaObjetosString+'"'+':';
         stringJSON += "[";
         for (auto objeto : listaObjetos) {
+          if(objeto != nullptr){
             stringJSON += serializarJSON(objeto);
             if (objeto != listaObjetos[listaObjetos.size()-1]) {
                 stringJSON += ",";
             }
+           }
         }
         stringJSON += "]";
     }

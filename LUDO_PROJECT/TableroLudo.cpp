@@ -212,6 +212,8 @@ void TableroLudo::rellenarMesa(){
             }
         }
     }
+
+
 }
 
 
