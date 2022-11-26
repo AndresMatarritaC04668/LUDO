@@ -2,36 +2,18 @@
 
 #include <sstream>
 
-/**
- * @brief Construct a new Validador Ludo:: Validador Ludo object
- * 
- */
 ValidadorLudo::ValidadorLudo() {
   this->mesaLudo = NULL;
 }
 
-/**
- * @brief Construct a new Validador Ludo:: Validador Ludo object by arguments.
- * 
- * @param mesa 
- */
 ValidadorLudo::ValidadorLudo(TableroAbstracto * mesa) {
   this->mesaLudo = dynamic_cast< TableroLudo * >(mesa);
 }
 
-/**
- * @brief Construct a new Validador Ludo:: Validador Ludo object
- * 
- * @param mesa 
- */
 ValidadorLudo::ValidadorLudo(TableroLudo * mesa) {
   this->mesaLudo = mesa;
 }
 
-/**
- * @brief Clase que inicializa las reglas.
- * 
- */
 void ValidadorLudo::iniciarReglas() {
   if (!this->reglas.size()) {
     this->reglas.push_back(new Regla("1. Al comenzar, todo jugador tiene 4 fichas del mismo color en la salida."));
@@ -67,12 +49,6 @@ int ValidadorLudo::validarJugada(int posicion, FichaAbstracta * mover) {
   }
 }
 
-/**
- * @brief Devuelve una string con todas las reglas separadas por un cambio de
- * linea.
- * 
- * @return string La hilera con las reglas.
- */
 string ValidadorLudo::toStringReglas() {
   string theRules;
 
@@ -90,15 +66,6 @@ string ValidadorLudo::toStringReglas() {
   return theRules;
 }
 
-/**
- * @brief Procedimiento que verifica si la regla 8 (la de la barrera) se esta
- * cumpliendo.
- * 
- * @param posicion La posicion hasta donde se debe mover la ficha.
- * @param mover La ficha que se debe mover
- * @return true Si se cumple la regla ocho.
- * @return false Si no se cumple la regla ocho.
- */
 bool ValidadorLudo::reglaOcho(int posicion, FichaLudo * mover) {
   for (int i = (mover->getY() + 1)%52; i <= posicion; (++i)%52) {
     if (this->mesaLudo->tablero[0][i] != NULL &&
@@ -109,14 +76,6 @@ bool ValidadorLudo::reglaOcho(int posicion, FichaLudo * mover) {
   return true;
 }
 
-/**
- * @brief Clase que verifica si se puede comer la ficha que se encuentra en una
- * posicion indicada por un numero entero.
- * 
- * @param posicion posicion en la que se podria encontrar una ficha.
- * @return true Si se puede comer.
- * @return false Si no se puede comer.
- */
 bool ValidadorLudo::verifComer(int posicion, FichaLudo * mover) {
   // Este for compara, en este orden:
   // 1. Que la casilla a la que se va a llegar no este vacia.
@@ -137,13 +96,6 @@ bool ValidadorLudo::verifComer(int posicion, FichaLudo * mover) {
   return false;
 }
 
-/**
- * @brief Metodo que identifica el posible accionar al sacar un numero seis tras
- * lanzar el dado.
- * 
- * @return true Si se puede sacar de la salida.
- * @return false Si no se puede sacar de la salida.
- */
 bool ValidadorLudo::validarSeis(int pasosDado, FichaAbstracta * laFicha) {
   if (!laFicha->getEstado() && pasosDado != 6) {
     return false;
@@ -151,21 +103,12 @@ bool ValidadorLudo::validarSeis(int pasosDado, FichaAbstracta * laFicha) {
   return true;
 }
 
-/**
- * @brief Castea un tablero abstracto en un tablero de ludo.
- * 
- */
 void ValidadorLudo::castTable() {
   if (this->mesaLudo != NULL && this->mesa != NULL){
     this->mesaLudo = dynamic_cast< TableroLudo * >(this->mesa);
   }
 }
 
-/**
- * @brief Setea el atributo de mesaLudo.
- * 
- * @param mesa El valor con lo que se llena el atributo de mesaLudo.
- */
 void ValidadorLudo::setMesaLudo(TableroLudo * mesa) {
   this->mesaLudo = mesa;
 }
