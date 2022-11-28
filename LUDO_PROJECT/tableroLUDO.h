@@ -1,3 +1,14 @@
+/**
+ * @file TableroLUDO.h
+ * @author Joseph Fernando Núñez Solano (C05582)
+ * @brief Clase que implementa el tablero para el juego LUDO.
+ * @version 0.1
+ * @date 2022-11-26
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
+
 #ifndef MI_TABLEROLUDO
 #define MI_TABLEROLUDO
 #include <string.h>
