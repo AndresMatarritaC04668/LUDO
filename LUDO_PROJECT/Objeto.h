@@ -1,6 +1,7 @@
 /**
  * @file Objeto.h
- * @author Joseph Fernando Núñez Solano (C05582)
+ * @authors Esteban José Mora García (C05126),
+ * José Andrés Matarrita Miranda (C04668), Joseph Fernando Núñez Solano (C05582)
  * @brief Implementa un objeto abstracto para ser utilizado en los juegos. Tiene
  * sus propios atributos.
  * @version 0.1

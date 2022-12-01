@@ -1,7 +1,8 @@
 /**
  * @file ObtAsg.h
- * @author Joseph Fernando Núñez Solano (C05582)
- * @brief 
+ * @authors Esteban José Mora García (C05126),
+ * José Andrés Matarrita Miranda (C04668), Joseph Fernando Núñez Solano (C05582)
+ * @brief Implementacion de un objeto con un valor asignado.
  * @version 0.1
  * @date 2022-11-28
  * 

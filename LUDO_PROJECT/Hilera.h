@@ -1,6 +1,7 @@
 /**
  * @file Hilera.h
- * @author Joseph Fernando Núñez Solano (C05582)
+ * @authors Esteban José Mora García (C05126),
+ * José Andrés Matarrita Miranda (C04668), Joseph Fernando Núñez Solano (C05582)
  * @brief Clase que implementa un objeto que funciona como hilera. Funciona con
  * una string.
  * @version 0.1

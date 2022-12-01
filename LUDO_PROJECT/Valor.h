@@ -1,6 +1,7 @@
 /**
  * @file Valor.h
- * @author your name (you@domain.com)
+ * @authors Esteban José Mora García (C05126),
+ * José Andrés Matarrita Miranda (C04668), Joseph Fernando Núñez Solano (C05582)
  * @brief 
  * @version 0.1
  * @date 2022-11-28

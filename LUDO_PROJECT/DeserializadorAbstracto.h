@@ -1,6 +1,7 @@
 /**
  * @file DeserializadorAbstracto.h
- * @author Joseph Fernando Núñez Solano (C05582)
+ * @authors Esteban José Mora García (C05126),
+ * José Andrés Matarrita Miranda (C04668), Joseph Fernando Núñez Solano (C05582)
  * @brief Clase que implementa el deserializador abstracto para los
  * deserializadores de los juegos.
  * @version 0.1

@@ -1,6 +1,7 @@
 /**
  * @file controlador_ventanas.cpp
- * @author 
+ * @authors Esteban José Mora García (C05126),
+ * José Andrés Matarrita Miranda (C04668), Joseph Fernando Núñez Solano (C05582)
  * @brief Controla las ventanas del juego.
  * @version 0.1
  * @date 2022-12-01

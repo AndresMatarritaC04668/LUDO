@@ -1,6 +1,7 @@
 /**
  * @file ControladorAbstracto.h
- * @author Joseph Fernando Núñez Solano (C05582)
+ * @authors Esteban José Mora García (C05126),
+ * José Andrés Matarrita Miranda (C04668), Joseph Fernando Núñez Solano (C05582)
  * @brief Controlador abstracto para los juegos del MARDA.
  * @version 0.1
  * @date 2022-12-01
