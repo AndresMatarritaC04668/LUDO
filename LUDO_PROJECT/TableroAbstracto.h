@@ -19,6 +19,7 @@
 #include <vector>
 #include "Objeto.h"
 #include "ControladorAbstracto.h"
+#include "Hilera.h"
 
 class Validador;
 
@@ -41,7 +42,9 @@ public:
      * 
      * @param cantidadJugadores Es el numero de jugadores que tendra el juego.
      */
-	virtual void asignarCantidadJugadores(int ) = 0;
+    void asignarCantidadJugadores(int cantidadJugadores){
+        setCantidadJugadores(cantidadJugadores);
+    }
 
     /**
      * @brief Crea y coloca a los jugadores en el tablero de juego por medio de
@@ -62,20 +65,28 @@ public:
      * @brief Termina el juego.
      * 
      */
-    virtual void finalizarJuego() = 0;
+    void finalizarJuego(){
+        string mensaje = "";
+        mensaje += "Gracias por jugar\n";
+        mensaje += "El ganador es: " + jugadorActual->getNombre();
+    }
 
     /**
      * @brief Detiene la partida pausandola, mas no la termina.
      * 
      */
-    virtual void detenerPartida() = 0;
+    void detenerPartida(){
+       this->controladorJuego->pausarPartida();
+    }
 
     /**
      * @brief Set the Jugadores object.
      * 
      * @param jugadores se guarda en el atributo de jugadores.
      */
-    virtual void setJugadores(vector<Jugador*>) = 0;
+    void setJugadores(vector<Jugador*> jugadores){
+        this->jugadores = jugadores;
+    }
 
     /**
      * @brief Comienza el mecanismo para iniciar el juego, se encarga de otras
@@ -83,7 +94,7 @@ public:
      * hay ganador.
      * 
      */
-    virtual void iniciarPartida(){
+    void iniciarPartida(){
 
 	 int finalizado = 0;
      int seguir = 1;
@@ -104,10 +115,14 @@ public:
     }
 
     /**
-     * @brief Pasa al siguiente turno.
+     * @brief Pasa al siguiente turno.Cambia al jugador actual
      * 
      */
-    virtual void pasarTurno() = 0; //Cambia al jugador actual //controlador
+    void pasarTurno(){
+        jugadorActual = jugadores[(getNumeroJugadorActual()+1)%getCantidadJugadores()];
+        int siguiente =  (getNumeroJugadorActual()+1)%getCantidadJugadores();
+        setNumeroJugadorActual(siguiente);
+    } 
 
     /**
      * @brief Un jugador ejecuta su turno tirando el dado y moviendo las fichas.
@@ -127,35 +142,55 @@ public:
      * 
      * @return Jugador* el jugador actual. 
      */
-	virtual Jugador * getJugadorActual() = 0;
+	Jugador * getJugadorActual(){
+        return this->jugadorActual;
+    }
 
     /**
      * @brief Get the jugadores object
      * 
      * @return vector<Jugador*> el atributo jugadores.
      */
-    virtual vector<Jugador*> getjugadores() = 0;
+    vector<Jugador*> getjugadores(){
+      return this->jugadores;
+    }
 
     /**
      * @brief Obtiene la cantidad de jugadores.
      * 
      * @return int la cantidad de jugadores.
      */
-    virtual int getCantidadJugadores() = 0;
+    int getCantidadJugadores(){
+        std::string cantidadJugadores = "";
+        Valor* valor = obtenerAtributo("cantidadJugadores");
+        if (valor != nullptr) {
+            cantidadJugadores = ((Hilera*) valor)->obt();
+        }
+        return stoi(cantidadJugadores);
+    }
 
     /**
      * @brief Establece la cantidad de jugadores mediante un parametro.
      * 
      * @param cantidadJugadores El numero de jugadores.
      */
-    virtual void setCantidadJugadores(int) = 0;
+    void setCantidadJugadores(int cantidadJugadores){
+        agregarAtributo("cantidadJugadores",new Hilera(to_string(cantidadJugadores)));
+    }
 
     /**
      * @brief Devuelve el numero del jugador que esta ejecutando su turno.
      * 
      * @return int El numero del jugador actual.
      */
-    virtual int getNumeroJugadorActual() = 0;
+    int getNumeroJugadorActual(){
+        std::string jugadorPresente = "";
+        Valor* valor = obtenerAtributo("jugadorPresente");
+        if (valor != nullptr) {
+            jugadorPresente = ((Hilera*) valor)->obt();
+        }
+        return stoi(jugadorPresente);
+    }
 
     /**
      * @brief Establece el numero del jugador actual por medio de un parametro.
@@ -163,7 +198,9 @@ public:
      * 
      * @param jugadorPresente El numero que correspondera al jugador actual.
      */
-    virtual void setNumeroJugadorActual(int) = 0;
+    void setNumeroJugadorActual(int jugadorPresente){
+            agregarAtributo("jugadorPresente",new Hilera(to_string(jugadorPresente)));
+    }
 
     /**
      * @brief Lanza el objeto dado.
@@ -198,7 +235,7 @@ public:
       Dado  dado;
       int juegoTerminado;
       Validador * validador;
-      ControladorAbstracto * controladorLudo;
+      ControladorAbstracto * controladorJuego;
 
 
 };

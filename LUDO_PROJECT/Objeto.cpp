@@ -1,9 +1,3 @@
-//
-//  Objeto.h
-//  Prueba
-//
-//  Created by azvcr on 21/10/22.
-//
 
 #include "Objeto.h"
 

@@ -23,13 +23,10 @@ TableroLudo::~TableroLudo(){
     delete jugadores[i];
   }
 }
-void TableroLudo::asignarCantidadJugadores(int cantidadJugadores){
-  setCantidadJugadores(cantidadJugadores);
-} 
 
-void TableroLudo::setControlador(controlador_Ventanas* controlador , ControladorAbstracto * controladorLudo){
+void TableroLudo::setControlador(controlador_Ventanas* controlador , ControladorAbstracto * controladorJuego){
    this->controlador = controlador;
-   this->controladorLudo = controladorLudo;
+   this->controladorJuego = controladorJuego;
 }
 
 void TableroLudo::ubicarJugadores(){
@@ -66,11 +63,8 @@ JugadorLudo * jugador2 = new JugadorLudo("AZUL",23,nombre.toStdString());
  controlador->graficarCarcel(jugadores);
 
 }
-void TableroLudo::pasarTurno(){
-  jugadorActual = jugadores[(getNumeroJugadorActual()+1)%getCantidadJugadores()];
-  int siguiente =  (getNumeroJugadorActual()+1)%getCantidadJugadores();
-  setNumeroJugadorActual(siguiente);
-}
+
+
 int TableroLudo::jugarTurno(){
   jugadorActual = jugadores[this->getNumeroJugadorActual()];
   int seguir = jugadorActual->jugarTurno(this);
@@ -104,10 +98,6 @@ int TableroLudo::hayGanador(){
    return opcion;
 }
 
-Jugador * TableroLudo::getJugadorActual(){
-    return this->jugadorActual;
-}
-
 void TableroLudo::toString(){
   
   for(int i = 0 ; i < 52 ; i++){
@@ -126,60 +116,12 @@ void TableroLudo::toString(){
 
 }
 
-void TableroLudo::finalizarJuego(){
-   string mensaje = "";
-   mensaje += "Gracias por jugar\n";
-   mensaje += "El ganador es: " + jugadorActual->getNombre();
-}
-
 void  TableroLudo::graficarInformacion(string mensaje){
     controlador->mensajeGrafico(mensaje);
 }
 
 int TableroLudo::graficoElejirFicha(string mensaje){
    return controlador->elegirFicha(mensaje);
-}
-
-vector<Jugador*> TableroLudo::getjugadores(){
-
-    return this->jugadores;
-}
-
-int TableroLudo::getCantidadJugadores(){
-    std::string cantidadJugadores = "";
-        Valor* valor = obtenerAtributo("cantidadJugadores");
-        if (valor != nullptr) {
-            cantidadJugadores = ((Hilera*) valor)->obt();
-        }
-        return stoi(cantidadJugadores);
-
-}
-
-void TableroLudo::setCantidadJugadores (int cantidadJugadores ){
-    agregarAtributo("cantidadJugadores",new Hilera(to_string(cantidadJugadores)));
-
-}
-int TableroLudo::getNumeroJugadorActual(){
-
-    std::string jugadorPresente = "";
-        Valor* valor = obtenerAtributo("jugadorPresente");
-        if (valor != nullptr) {
-            jugadorPresente = ((Hilera*) valor)->obt();
-        }
-        return stoi(jugadorPresente);
-
-}
-void TableroLudo::setNumeroJugadorActual(int jugadorPresente){
-    agregarAtributo("jugadorPresente",new Hilera(to_string(jugadorPresente)));
-
-}
-
-void TableroLudo::detenerPartida(){
-    this->controladorLudo->pausarPartida();
-}
-
-void TableroLudo::setJugadores(vector<Jugador*> jugadores){
-    this->jugadores = jugadores;
 }
 
 void TableroLudo::rellenarMesa(){

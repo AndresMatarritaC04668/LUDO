@@ -7,10 +7,5 @@ int main(int argc, char *argv[])
 
     ControladorLudo * controlador = new ControladorLudo();
 
-    //controlador->asignarCantidadJugadores();
-    //controlador->ubicarJugadores();
-    //controlador->asignarPrimerJugador();
-    //controlador->iniciarPartida();
-
     return a.exec();
 }
