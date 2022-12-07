@@ -31,26 +31,7 @@
                 delete i;
     }
 
-    void JugadorLudo::setNombre(std::string nombre) {
-         agregarAtributo("nombre",new Hilera(nombre));
-    }
-
-    std::string JugadorLudo:: getNombre() {
-            std::string nombre = "";
-                Valor* valor = obtenerAtributo("nombre");
-                if (valor != nullptr) {
-                    nombre = ((Hilera*) valor)->obt();
-                }
-                return nombre;
-    }
-
-    bool JugadorLudo::getEsGanador() {
-            return this->esGanador;
-    }
         
-    std::vector<FichaAbstracta *> JugadorLudo::getFichas(){
-           return this->fichas;
-    }
 
 
 int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* tableroLudo) {
@@ -154,17 +135,7 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
     }
 
 
-    int JugadorLudo::lanzarDado(){
-        //TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
-        Dado  dado;
-        int darPasos = 0;
-        //string mensaje = "Por favor lanza el dado: " + this->nombre;
-        //tableroLudo->graficarInformacion(mensaje);
-        for(int i = 0 ; i<cantidadDados ; i++){
-          darPasos+= dado.lanzar();
-        }
-        return darPasos;
-    }
+
 
     FichaAbstracta * JugadorLudo::elegirFicha(TableroAbstracto* tablero,int pasos){
        TableroLudo* tableroLudo =  dynamic_cast<TableroLudo* >(tablero);
@@ -181,19 +152,6 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
             tableroLudo->graficarInformacion(mensaje);
          }
        }
-    }
-
-    string JugadorLudo::getColor(){
-        std::string color = "";
-            Valor* valor = obtenerAtributo("color");
-            if (valor != nullptr) {
-                color = ((Hilera*) valor)->obt();
-            }
-            return color;
-    }
-
-    void JugadorLudo::setColor(string color){
-        agregarAtributo("color",new Hilera(color));
     }
 
 
@@ -230,11 +188,6 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
         eleccion = tableroLudo->controlador->eleccionJugador(getNombre());
 
         return eleccion;
-    }
-
-    void JugadorLudo::setFichas(std::vector<FichaAbstracta *>fichas){
-
-        this->fichas = fichas;
     }
 
 

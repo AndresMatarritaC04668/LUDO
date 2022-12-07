@@ -21,11 +21,7 @@ using namespace std;
 
 class JugadorLudo : public Jugador {
 
-    private:
 
-        int esGanador;
-
-        
 
     public :
         /**
@@ -50,29 +46,8 @@ class JugadorLudo : public Jugador {
          */
         ~JugadorLudo()override;
 
-        /**
-         * @brief Establece el nombre del jugador en sus atributos como una
-         * string.
-         * 
-         * @param nombre La string que se guardara en los atributos.
-         */
-        void setNombre(std::string nombre) override;
 
-        /**
-         * @brief Devuelve el nombre del Jugador desde sus atributos.
-         * 
-         * @return std::string El nombre del jugador. 
-         */
-        std::string getNombre() override;
 
-        /**
-         * @brief Devuelve el atributo esGanador, este registra si el jugador ya
-         * gano el juego.
-         * 
-         * @return true 
-         * @return false 
-         */
-        bool getEsGanador()override;
         
         /**
          * El jugador ejecuta la opcion de mover la ficha para el juego LUDO.
@@ -85,12 +60,6 @@ class JugadorLudo : public Jugador {
          */
         int moverFicha(FichaAbstracta * ficha, int pasos, TableroAbstracto* tablero) override;    
         
-        /**
-         * @brief El jugador lanza el dado.
-         * 
-         * @return int El resultado de lanzar el dado. 
-         */
-        int lanzarDado()override;
 
         /**
          * @brief El jugador elige la ficha que va a mover
@@ -112,20 +81,9 @@ class JugadorLudo : public Jugador {
          */
         int encontrarBarrera(int posicion, FichaLudo * mover, TableroLudo* tablero);
         
-        /**
-         * @brief Devuelve el color desde sus atributos como una string.
-         * 
-         * @return std::string El color del jugador.
-         */
-        string getColor()override;
+ 
 
-        /**
-         * @brief Establece el color del jugador en sus atributos.
-         * 
-         * @param nombre La string que se guardara como el color en sus
-         * atributos.
-         */
-        void setColor(std::string nombre)override;
+  
 
         /**
          * @brief Determina como sera el movimiento de una ficha en la recta
@@ -138,13 +96,7 @@ class JugadorLudo : public Jugador {
          * @param validador Para determinar la validez del movimiento.
          */
         void moverFichaRectaFinal(FichaLudo * ficha, int pasos, TableroLudo* tablero , ValidadorLudo * validador);
-        
-        /**
-         * @brief Devuelve el vector de fichas que se tiene como atributo.
-         * 
-         * @return std::vector<FichaAbstracta *> El atributo fichas.
-         */
-        std::vector<FichaAbstracta *> getFichas() override;
+
 
         /**
          * @brief El jugador escoge que hacer en relacion a las reglas de juego
@@ -155,16 +107,7 @@ class JugadorLudo : public Jugador {
          * valor entero.
          */
         int elegirQueHacer(TableroAbstracto* tablero)override;
-        
-        /**
-         * @brief Establece las fichas del jugador.
-         * 
-         * @param vector<FichaAbstracta *> Lo guarda en el vector de fichas
-         * abstractas que se tiene como atributo.
-         */
-        void setFichas(std::vector<FichaAbstracta *>) override;
-
-
+  
 };
 
 #endif

@@ -18,7 +18,9 @@
 #include <stdbool.h>
 #include <iostream>
 #include <qmessagebox.h>
-using namespace std;
+#include "Hilera.h"
+#include "Dado.h"
+
 class TableroAbstracto;
 using namespace std;
 
@@ -43,29 +45,48 @@ class Jugador :public Objeto{
          * 
          * @param nombre La string que se guardara en los atributos.
          */
-        virtual void  setNombre(std::string nombre) = 0;
+        void  setNombre(std::string nombre){
+          agregarAtributo("nombre",new Hilera(nombre));
+        }
 
         /**
          * @brief Devuelve el nombre del Jugador desde sus atributos.
          * 
          * @return std::string El nombre del jugador.
          */
-        virtual std::string getNombre() = 0;
+        std::string getNombre(){
+          std::string nombre = "";
+          Valor* valor = obtenerAtributo("nombre");
+            if (valor != nullptr) {
+              nombre = ((Hilera*) valor)->obt();
+            }
+          return nombre;
+
+        }
 
         /**
          * @brief Establece el color del jugador en sus atributos.
          * 
-         * @param nombre La string que se guardara como el color en sus
+         * @param color La string que se guardara como el color en sus
          * atributos.
          */
-        virtual void  setColor(std::string nombre) = 0;
+        void  setColor(std::string color){
+          agregarAtributo("color",new Hilera(color));
+        }
         
         /**
          * @brief Devuelve el color desde sus atributos como una string.
          * 
          * @return std::string El color del jugador.
          */
-        virtual std::string getColor() = 0;
+        std::string getColor(){
+          std::string color = "";
+          Valor* valor = obtenerAtributo("color");
+          if (valor != nullptr) {
+              color = ((Hilera*) valor)->obt();
+          }
+          return color;
+        }
 
         /**
          * @brief Indica de alguna manera que si el jugador a ganado el juego
@@ -74,7 +95,9 @@ class Jugador :public Objeto{
          * @return true 
          * @return false 
          */
-        virtual bool getEsGanador() = 0;
+        bool getEsGanador(){
+          return this->esGanador;
+        }
         
         /**
          * @brief El jugador ejecuta la opcion de mover la ficha para el juego
@@ -102,7 +125,13 @@ class Jugador :public Objeto{
          * 
          * @return int El resultado de lanzar el dado.
          */
-        virtual int lanzarDado() = 0;
+        int lanzarDado(){
+          Dado  dado;
+          int darPasos = 0;
+          darPasos = dado.lanzar();
+
+          return darPasos;
+        }
 
         /**
          * @brief Establece las fichas del jugador.
@@ -110,14 +139,18 @@ class Jugador :public Objeto{
          * @param vector<FichaAbstracta *> Lo guarda en el vector de fichas
          * abstractas que se tiene como atributo.
          */
-        virtual void setFichas(std::vector<FichaAbstracta *>) = 0;
+        void setFichas(std::vector<FichaAbstracta *> fichas){
+          this->fichas = fichas;
+        }
         
         /**
          * @brief Devuelve el vector de fichas que se tiene como atributo.
          * 
          * @return std::vector<FichaAbstracta *> El atributo fichas.
          */
-        virtual std::vector<FichaAbstracta *> getFichas() = 0;
+        std::vector<FichaAbstracta *> getFichas(){
+          return this->fichas;
+        }
 
         /**
          * @brief Da las opciones para el jugador en su turno segun el juego.
@@ -155,8 +188,9 @@ class Jugador :public Objeto{
         }
 
     protected:
-       int cantidadDados;
-       std::vector<FichaAbstracta *> fichas;
+      int esGanador;
+      int cantidadDados;
+      std::vector<FichaAbstracta *> fichas;
 
 
 };
