@@ -52,16 +52,16 @@ int JugadorLudo::encontrarBarrera(int posicion, FichaLudo* mover, TableroLudo* t
         FichaLudo * ficha =   dynamic_cast<FichaLudo* >(miFicha);
 
 
-        if(!ficha->getEstado() /**&& pasos != 6**/){ // descomentar regla del 6
-           // string mensaje = "";
-           //mensaje += "No sacas 6 no sacas ficha de la carcel";
-          //tableroLudo-> graficarInformacion(mensaje);
-          // return 0;
-         //} else if(!ficha->getEstado() && pasos == 6){
+        if(!ficha->getEstado() && pasos != 6){
+           string mensaje = "";
+           mensaje += "No sacas 6 no sacas ficha de la carcel";
+          tableroLudo-> graficarInformacion(mensaje);
+          return 0;
+          } else if(!ficha->getEstado() && pasos == 6){
 
             ficha->setEstadoActivo();
-           // repetir = 1;
-           // pasos = 0;
+            repetir = 1;
+            pasos = 0;
         }
 
 
