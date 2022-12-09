@@ -58,7 +58,8 @@ HEADERS += \
     tableroLUDO.h \
     tipo.h \
     ventanainformacion.h \
-    ventanaprincipal.h
+    ventanaprincipal.h \
+    Inventario.h
 
 FORMS += \
     menuopciones.ui \
