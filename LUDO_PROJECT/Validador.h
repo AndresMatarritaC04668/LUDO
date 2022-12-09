@@ -88,7 +88,21 @@ class Validador {
      * 
      * @return string La hilera con las reglas.
      */
-    virtual string toStringReglas() = 0;
+    string toStringReglas(){
+      string theRules;
+      ostringstream ossReglas;
+      int reglasSize = this->reglas.size();
+      if (reglasSize) {
+        for (int i = 0; i < reglasSize; ++i) {
+          ossReglas << this->reglas[i]->obtenerNombre();
+          ossReglas << "\n\n";
+        }
+  }
+
+  theRules = ossReglas.str();
+
+  return theRules;
+}
 
     /**
      * @brief Se usa al final de cada turno, determina si algun ganador ya

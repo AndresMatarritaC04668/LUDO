@@ -49,23 +49,6 @@ int ValidadorLudo::validarJugada(int posicion, FichaAbstracta * mover) {
   }
 }
 
-string ValidadorLudo::toStringReglas() {
-  string theRules;
-
-  ostringstream ossReglas;
-  int reglasSize = this->reglas.size();
-  if (reglasSize) {
-    for (int i = 0; i < reglasSize; ++i) {
-      ossReglas << this->reglas[i]->obtenerNombre();
-      ossReglas << "\n\n";
-    }
-  }
-
-  theRules = ossReglas.str();
-
-  return theRules;
-}
-
 bool ValidadorLudo::reglaOcho(int posicion, FichaLudo * mover) {
   for (int i = (mover->getY() + 1)%52; i <= posicion; (++i)%52) {
     if (this->mesaLudo->tablero[0][i] != NULL &&

@@ -65,13 +65,6 @@ class ValidadorLudo : public Validador {
          */
         int validarJugada(int posicion, FichaAbstracta * mover) override;
 
-        /**
-         * @brief Devuelve una string con todas las reglas separadas por un
-         * cambio de linea.
-         * 
-         * @return string La hilera con las reglas.
-         */
-        string toStringReglas() override;
 
 
         bool verificarBloqueo();
