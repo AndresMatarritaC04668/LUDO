@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_ficha_ludo_8h" kind="file" language="C++">
+    <compoundname>FichaLudo.h</compoundname>
+    <includes local="no">stdbool.h</includes>
+    <includes local="no">string</includes>
+    <includes refid="_ficha_abstracta_8h" local="yes">FichaAbstracta.h</includes>
+    <includedby refid="_ficha_ludo_8cpp" local="yes">D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.cpp</includedby>
+    <includedby refid="_jugador_ludo_8cpp" local="yes">D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.cpp</includedby>
+    <includedby refid="tablero_l_u_d_o_8h" local="yes">D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/tableroLUDO.h</includedby>
+    <includedby refid="_validador_ludo_8h" local="yes">D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stdbool.h</label>
+      </node>
+      <node id="13">
+        <label>ObtAsg.h</label>
+        <link refid="_obt_asg_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Objeto.h</label>
+        <link refid="_objeto_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.h</label>
+        <link refid="_ficha_ludo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>map</label>
+      </node>
+      <node id="11">
+        <label>Hilera.h</label>
+        <link refid="_hilera_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="4">
+        <label>FichaAbstracta.h</label>
+        <link refid="_ficha_abstracta_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>sstream</label>
+      </node>
+      <node id="14">
+        <label>iosfwd</label>
+      </node>
+      <node id="9">
+        <label>tipo.h</label>
+        <link refid="tipo_8h_source"/>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="8">
+        <label>Valor.h</label>
+        <link refid="_valor_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.cpp</label>
+        <link refid="controlador__ventanas_8cpp"/>
+      </node>
+      <node id="2">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/tableroLUDO.h</label>
+        <link refid="tablero_l_u_d_o_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.h</label>
+        <link refid="_ficha_ludo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h</label>
+        <link refid="_controlador___memento_8h"/>
+      </node>
+      <node id="5">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h</label>
+        <link refid="_validador_ludo_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.h</label>
+        <link refid="_jugador_ludo_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_ficha_ludo" prot="public">FichaLudo</innerclass>
+    <briefdescription>
+<para>Implementación de las fichas para el juego de LUDO. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="authors"><para>Esteban José Mora García (C05126), José Andrés Matarrita Miranda (C04668), Joseph Fernando Núñez Solano (C05582) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2022-11-27</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2022 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_FICHA_LUDO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FICHA_LUDO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_ficha_abstracta_8h" kindref="compound">FichaAbstracta.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_ficha_ludo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_ficha_ludo" kindref="compound">FichaLudo</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::string<sp/>color;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//bool<sp/>activo;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//int<sp/>pasosDados;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//int<sp/>zonaSegura;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//int<sp/>caminoFinal;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//int<sp/>numeroFicha;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ficha_ludo_1a3ab1932ae4367752ffba2a5c6a19daf8" kindref="member">FichaLudo</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ficha_ludo_1a3ab1932ae4367752ffba2a5c6a19daf8" kindref="member">FichaLudo</ref>(std::string,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ficha_ludo_1a21303373e82f6b3b80ae9f99ff491830" kindref="member">~FichaLudo</ref>()</highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ficha_ludo_1ae00dcec4a98428c84801b35a19e62bdd" kindref="member">setEstadoActivo</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ficha_ludo_1a1560b9752f39d4fa9655793de13db264" kindref="member">getZonaSegura</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ficha_ludo_1ad420ca57fed9d697d5d189a8403bf6e2" kindref="member">activarFicha</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ficha_ludo_1a84ced00eae0fe6a065b9399fe815702c" kindref="member">desactivarFicha</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ficha_ludo_1a54feee3445f46d38868865ce7579da84" kindref="member">setFinalizado</ref>()</highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.h"/>
+  </compounddef>
+</doxygen>

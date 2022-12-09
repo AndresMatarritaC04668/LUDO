@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_deserializador_j_s_o_n" kind="class" language="C++" prot="public">
+    <compoundname>DeserializadorJSON</compoundname>
+    <basecompoundref refid="class_deserializador_abstracto" prot="public" virt="non-virtual">DeserializadorAbstracto</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_deserializador_j_s_o_n_1a187ab235ad4817b8046a2b9e15440f89" prot="private" static="no" mutable="no">
+        <type>std::string const</type>
+        <definition>std::string const DeserializadorJSON::delimitadorAtributo</definition>
+        <argsstring></argsstring>
+        <name>delimitadorAtributo</name>
+        <initializer>= &quot;,&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.h" line="77" column="23" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_deserializador_j_s_o_n_1a7fab88fef45775d7f540cab01d0146cc" prot="private" static="no" mutable="no">
+        <type>std::string const</type>
+        <definition>std::string const DeserializadorJSON::delimitadorLlaveValor</definition>
+        <argsstring></argsstring>
+        <name>delimitadorLlaveValor</name>
+        <initializer>= &quot;:&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.h" line="80" column="23" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_deserializador_j_s_o_n_1ab41fa918c14256f9cf4dc0f0e0a9a454" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DeserializadorJSON::DeserializadorJSON</definition>
+        <argsstring>()</argsstring>
+        <name>DeserializadorJSON</name>
+        <briefdescription>
+<para>Construct a new Deserializador J S O N object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.h" line="29" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.cpp" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_deserializador_j_s_o_n_1a224b2d901df4fc905e0029a752336302" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DeserializadorJSON::~DeserializadorJSON</definition>
+        <argsstring>()</argsstring>
+        <name>~DeserializadorJSON</name>
+        <briefdescription>
+<para>Destroy the Deserializador J S O N object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.h" line="35" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.cpp" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_deserializador_j_s_o_n_1ab338661720d87c3b9682e05c98fb6388" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::map&lt; std::string, <ref refid="class_valor" kindref="compound">Valor</ref> * &gt;</type>
+        <definition>std::map&lt; std::string, Valor * &gt; DeserializadorJSON::deserializarObjeto</definition>
+        <argsstring>(std::string) override</argsstring>
+        <name>deserializarObjeto</name>
+        <reimplements refid="class_deserializador_abstracto_1acf891403209d1bef17941d43f664e6a7">deserializarObjeto</reimplements>
+        <param>
+          <type>std::string</type>
+          <defname>stringJSON</defname>
+        </param>
+        <briefdescription>
+<para>Deserializa un objeto específico de acuerdo al formato JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stringJSON</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La string con la información del objeto serializada. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::map&lt; std::string, Valor*&gt; Este par contiene la información deserializada es un objeto en particular, implementada de acuerdo al formato JSON. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.h" line="45" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.cpp" bodystart="15" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_deserializador_j_s_o_n_1a4220f258a8068094f505aad84ca33572" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::map&lt; std::string, <ref refid="class_valor" kindref="compound">Valor</ref> * &gt; &gt;</type>
+        <definition>std::vector&lt; std::map&lt; std::string, Valor * &gt; &gt; DeserializadorJSON::deserializarListaObjetos</definition>
+        <argsstring>(std::string) override</argsstring>
+        <name>deserializarListaObjetos</name>
+        <reimplements refid="class_deserializador_abstracto_1ac5f5a054d0d5aa728c095a9a8c26f14d">deserializarListaObjetos</reimplements>
+        <param>
+          <type>std::string</type>
+          <defname>listaJSON</defname>
+        </param>
+        <briefdescription>
+<para>Deserealiza todos los objetos en una hilera de acuerdo al formato JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listaJSON</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La hilera con la información de los objetos serializada. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::vector&lt;std::map&lt; std::string, Valor* &gt;&gt; Este vector contiene la información de todos los objetos de la hilera deserializados. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.h" line="55" column="17" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.cpp" bodystart="47" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_deserializador_j_s_o_n_1a4512ff3c9f511b36cc49bda16ceb7aef" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DeserializadorJSON::eliminarInicioFinObjeto</definition>
+        <argsstring>(std::string &amp;) override</argsstring>
+        <name>eliminarInicioFinObjeto</name>
+        <reimplements refid="class_deserializador_abstracto_1ad2b876e40fbcac5e3ca3d457aeb30c5a">eliminarInicioFinObjeto</reimplements>
+        <param>
+          <type>std::string &amp;</type>
+          <defname>string</defname>
+        </param>
+        <briefdescription>
+<para>Elimina el inicio y fin de un objeto en una hilera serializada de acuerdo a los estándares del formato JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Es la hilera en un formato particular a la que se le va a eliminar su inicio y su fin. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.h" line="64" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_deserializador_j_s_o_n_1a954c9fe8f9650423e065944db397d092" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::pair&lt; std::string, <ref refid="class_valor" kindref="compound">Valor</ref> * &gt;</type>
+        <definition>std::pair&lt; std::string, Valor * &gt; DeserializadorJSON::extraerLlaveValor</definition>
+        <argsstring>(std::string) override</argsstring>
+        <name>extraerLlaveValor</name>
+        <reimplements refid="class_deserializador_abstracto_1a459cdf76513a40de48529bb03693a6e8">extraerLlaveValor</reimplements>
+        <param>
+          <type>std::string</type>
+          <defname>llaveValorString</defname>
+        </param>
+        <briefdescription>
+<para>Extrae la llave mayor del formato JSON, &quot;:&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La string a la que hay que extraerle la llave mayor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::pair&lt;std::string, Valor*&gt; El par construído con la información del objeto deserializado. Pensado para ser regresado a <ref refid="class_deserializador_j_s_o_n_1ab338661720d87c3b9682e05c98fb6388" kindref="member">deserializarObjeto()</ref>, así que hay que usar la misma lógica. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.h" line="74" column="15" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.cpp" bodystart="38" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>DeserializadorJSON</label>
+        <link refid="class_deserializador_j_s_o_n"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DeserializadorAbstracto</label>
+        <link refid="class_deserializador_abstracto"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>DeserializadorJSON</label>
+        <link refid="class_deserializador_j_s_o_n"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DeserializadorAbstracto</label>
+        <link refid="class_deserializador_abstracto"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.h" line="23" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.h" bodystart="23" bodyend="81"/>
+    <listofallmembers>
+      <member refid="class_deserializador_j_s_o_n_1a187ab235ad4817b8046a2b9e15440f89" prot="private" virt="non-virtual"><scope>DeserializadorJSON</scope><name>delimitadorAtributo</name></member>
+      <member refid="class_deserializador_j_s_o_n_1a7fab88fef45775d7f540cab01d0146cc" prot="private" virt="non-virtual"><scope>DeserializadorJSON</scope><name>delimitadorLlaveValor</name></member>
+      <member refid="class_deserializador_abstracto_1a8e66ff108f636d48c8382ac67697a5d9" prot="public" virt="non-virtual"><scope>DeserializadorJSON</scope><name>DeserializadorAbstracto</name></member>
+      <member refid="class_deserializador_j_s_o_n_1ab41fa918c14256f9cf4dc0f0e0a9a454" prot="public" virt="non-virtual"><scope>DeserializadorJSON</scope><name>DeserializadorJSON</name></member>
+      <member refid="class_deserializador_j_s_o_n_1a4220f258a8068094f505aad84ca33572" prot="public" virt="virtual"><scope>DeserializadorJSON</scope><name>deserializarListaObjetos</name></member>
+      <member refid="class_deserializador_j_s_o_n_1ab338661720d87c3b9682e05c98fb6388" prot="public" virt="virtual"><scope>DeserializadorJSON</scope><name>deserializarObjeto</name></member>
+      <member refid="class_deserializador_j_s_o_n_1a4512ff3c9f511b36cc49bda16ceb7aef" prot="protected" virt="virtual"><scope>DeserializadorJSON</scope><name>eliminarInicioFinObjeto</name></member>
+      <member refid="class_deserializador_j_s_o_n_1a954c9fe8f9650423e065944db397d092" prot="protected" virt="virtual"><scope>DeserializadorJSON</scope><name>extraerLlaveValor</name></member>
+      <member refid="class_deserializador_abstracto_1a661e9c0d627a4227d86505bfd163b2e3" prot="public" virt="non-virtual"><scope>DeserializadorJSON</scope><name>~DeserializadorAbstracto</name></member>
+      <member refid="class_deserializador_j_s_o_n_1a224b2d901df4fc905e0029a752336302" prot="public" virt="non-virtual"><scope>DeserializadorJSON</scope><name>~DeserializadorJSON</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_regla" kind="class" language="C++" prot="public">
+    <compoundname>Regla</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_regla_1a3e23cc05c02450b70844954d7c0a66fd" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Regla::nombre</definition>
+        <argsstring></argsstring>
+        <name>nombre</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Regla.h" line="22" column="12" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Regla.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_regla_1a356e2b49689a0de3fcc19d984cf81eb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Regla::Regla</definition>
+        <argsstring>()</argsstring>
+        <name>Regla</name>
+        <briefdescription>
+<para>Constructor por omision de <ref refid="class_regla" kindref="compound">Regla</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Regla.h" line="30" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Regla.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_regla_1ab20cf8981ad5ce673944c0f63c8d6266" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Regla::Regla</definition>
+        <argsstring>(string)</argsstring>
+        <name>Regla</name>
+        <param>
+          <type>string</type>
+          <defname>nombre</defname>
+        </param>
+        <briefdescription>
+<para>Constructor por parametros de <ref refid="class_regla" kindref="compound">Regla</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El contenido de la regla. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Regla.h" line="37" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Regla.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_regla_1a47a421cf04e3defcdcfcc1825c79be67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Regla::~Regla</definition>
+        <argsstring>()</argsstring>
+        <name>~Regla</name>
+        <briefdescription>
+<para>Destroy the <ref refid="class_regla" kindref="compound">Regla</ref>:: <ref refid="class_regla" kindref="compound">Regla</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Regla.h" line="43" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Regla.cpp" bodystart="11" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_regla_1a2203265b86dfddef5cc86bcb5a303129" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Regla::setNombre</definition>
+        <argsstring>(string)</argsstring>
+        <name>setNombre</name>
+        <param>
+          <type>string</type>
+          <defname>nombre</defname>
+        </param>
+        <briefdescription>
+<para>Setea el atributo nombre con una string dada por parametro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La string dada por parametro. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Regla.h" line="50" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Regla.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_regla_1a341532505717a545029df13713d02fc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Regla::obtenerNombre</definition>
+        <argsstring>()</argsstring>
+        <name>obtenerNombre</name>
+        <briefdescription>
+<para>Devuelve el atributo nombre. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string El atributo nombre. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Regla.h" line="57" column="12" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Regla.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Regla.h" line="20" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Regla.h" bodystart="20" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_regla_1a3e23cc05c02450b70844954d7c0a66fd" prot="private" virt="non-virtual"><scope>Regla</scope><name>nombre</name></member>
+      <member refid="class_regla_1a341532505717a545029df13713d02fc4" prot="public" virt="non-virtual"><scope>Regla</scope><name>obtenerNombre</name></member>
+      <member refid="class_regla_1a356e2b49689a0de3fcc19d984cf81eb8" prot="public" virt="non-virtual"><scope>Regla</scope><name>Regla</name></member>
+      <member refid="class_regla_1ab20cf8981ad5ce673944c0f63c8d6266" prot="public" virt="non-virtual"><scope>Regla</scope><name>Regla</name></member>
+      <member refid="class_regla_1a2203265b86dfddef5cc86bcb5a303129" prot="public" virt="non-virtual"><scope>Regla</scope><name>setNombre</name></member>
+      <member refid="class_regla_1a47a421cf04e3defcdcfcc1825c79be67" prot="public" virt="non-virtual"><scope>Regla</scope><name>~Regla</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_e66253e4b40cac40815745f01404749d" kind="dir">
+    <compoundname>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT</compoundname>
+    <innerfile refid="_constructor_serializador_abstracto_8h">ConstructorSerializadorAbstracto.h</innerfile>
+    <innerfile refid="_constructor_serializador_j_s_o_n_8cpp">ConstructorSerializadorJSON.cpp</innerfile>
+    <innerfile refid="_constructor_serializador_j_s_o_n_8h">ConstructorSerializadorJSON.h</innerfile>
+    <innerfile refid="_controlador___memento_8cpp">Controlador_Memento.cpp</innerfile>
+    <innerfile refid="_controlador___memento_8h">Controlador_Memento.h</innerfile>
+    <innerfile refid="controlador__ventanas_8cpp">controlador_ventanas.cpp</innerfile>
+    <innerfile refid="controlador__ventanas_8h">controlador_ventanas.h</innerfile>
+    <innerfile refid="_controlador_abstracto_8h">ControladorAbstracto.h</innerfile>
+    <innerfile refid="_controlador_ludo_8cpp">ControladorLudo.cpp</innerfile>
+    <innerfile refid="_controlador_ludo_8h">ControladorLudo.h</innerfile>
+    <innerfile refid="controladormenuopciones_8cpp">controladormenuopciones.cpp</innerfile>
+    <innerfile refid="controladormenuopciones_8h">controladormenuopciones.h</innerfile>
+    <innerfile refid="controladorventanaprincipal_8cpp">controladorventanaprincipal.cpp</innerfile>
+    <innerfile refid="controladorventanaprincipal_8h">controladorventanaprincipal.h</innerfile>
+    <innerfile refid="_dado_8h">Dado.h</innerfile>
+    <innerfile refid="_deserializador_abstracto_8h">DeserializadorAbstracto.h</innerfile>
+    <innerfile refid="_deserializador_j_s_o_n_8cpp">DeserializadorJSON.cpp</innerfile>
+    <innerfile refid="_deserializador_j_s_o_n_8h">DeserializadorJSON.h</innerfile>
+    <innerfile refid="_ficha_abstracta_8h">FichaAbstracta.h</innerfile>
+    <innerfile refid="_ficha_ludo_8cpp">FichaLudo.cpp</innerfile>
+    <innerfile refid="_ficha_ludo_8h">FichaLudo.h</innerfile>
+    <innerfile refid="_hilera_8cpp">Hilera.cpp</innerfile>
+    <innerfile refid="_hilera_8h">Hilera.h</innerfile>
+    <innerfile refid="_inventario_8cpp">Inventario.cpp</innerfile>
+    <innerfile refid="_inventario_8h">Inventario.h</innerfile>
+    <innerfile refid="_jugador_8h">Jugador.h</innerfile>
+    <innerfile refid="_jugador_ludo_8cpp">JugadorLudo.cpp</innerfile>
+    <innerfile refid="_jugador_ludo_8h">JugadorLudo.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="menuopciones_8cpp">menuopciones.cpp</innerfile>
+    <innerfile refid="menuopciones_8h">menuopciones.h</innerfile>
+    <innerfile refid="_objeto_8cpp">Objeto.cpp</innerfile>
+    <innerfile refid="_objeto_8h">Objeto.h</innerfile>
+    <innerfile refid="_obt_asg_8h">ObtAsg.h</innerfile>
+    <innerfile refid="_regla_8cpp">Regla.cpp</innerfile>
+    <innerfile refid="_regla_8h">Regla.h</innerfile>
+    <innerfile refid="_tablero_abstracto_8h">TableroAbstracto.h</innerfile>
+    <innerfile refid="_tablero_ludo_8cpp">TableroLudo.cpp</innerfile>
+    <innerfile refid="tablero_l_u_d_o_8h">tableroLUDO.h</innerfile>
+    <innerfile refid="tipo_8h">tipo.h</innerfile>
+    <innerfile refid="_validador_8h">Validador.h</innerfile>
+    <innerfile refid="_validador_ludo_8cpp">ValidadorLudo.cpp</innerfile>
+    <innerfile refid="_validador_ludo_8h">ValidadorLudo.h</innerfile>
+    <innerfile refid="_valor_8h">Valor.h</innerfile>
+    <innerfile refid="ventanainformacion_8cpp">ventanainformacion.cpp</innerfile>
+    <innerfile refid="ventanainformacion_8h">ventanainformacion.h</innerfile>
+    <innerfile refid="ventanaprincipal_8cpp">ventanaprincipal.cpp</innerfile>
+    <innerfile refid="ventanaprincipal_8h">ventanaprincipal.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/"/>
+  </compounddef>
+</doxygen>

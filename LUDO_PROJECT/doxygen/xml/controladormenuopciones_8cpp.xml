@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="controladormenuopciones_8cpp" kind="file" language="C++">
+    <compoundname>controladormenuopciones.cpp</compoundname>
+    <includes refid="controladormenuopciones_8h" local="yes">controladormenuopciones.h</includes>
+    <includes refid="menuopciones_8h" local="yes">menuopciones.h</includes>
+    <includes local="no">qmessagebox.h</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>stdbool.h</label>
+      </node>
+      <node id="22">
+        <label>ObtAsg.h</label>
+        <link refid="_obt_asg_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>menuopciones.h</label>
+        <link refid="menuopciones_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>stdlib.h</label>
+      </node>
+      <node id="24">
+        <label>qmessagebox.h</label>
+      </node>
+      <node id="16">
+        <label>Objeto.h</label>
+        <link refid="_objeto_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>TableroAbstracto.h</label>
+        <link refid="_tablero_abstracto_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>QMainWindow</label>
+      </node>
+      <node id="17">
+        <label>map</label>
+      </node>
+      <node id="25">
+        <label>Dado.h</label>
+        <link refid="_dado_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.cpp</label>
+        <link refid="controladormenuopciones_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>ControladorLudo.h</label>
+        <link refid="_controlador_ludo_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>ControladorAbstracto.h</label>
+        <link refid="_controlador_abstracto_8h"/>
+      </node>
+      <node id="8">
+        <label>Validador.h</label>
+        <link refid="_validador_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>controladormenuopciones.h</label>
+        <link refid="controladormenuopciones_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Hilera.h</label>
+        <link refid="_hilera_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>string.h</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+      <node id="10">
+        <label>Regla.h</label>
+        <link refid="_regla_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>FichaAbstracta.h</label>
+        <link refid="_ficha_abstracta_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>sstream</label>
+      </node>
+      <node id="12">
+        <label>Jugador.h</label>
+        <link refid="_jugador_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>time.h</label>
+      </node>
+      <node id="29">
+        <label>QLabel</label>
+      </node>
+      <node id="23">
+        <label>iosfwd</label>
+      </node>
+      <node id="19">
+        <label>tipo.h</label>
+        <link refid="tipo_8h_source"/>
+      </node>
+      <node id="14">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>ventanainformacion.h</label>
+        <link refid="ventanainformacion_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>controlador_ventanas.h</label>
+        <link refid="controlador__ventanas_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Valor.h</label>
+        <link refid="_valor_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="controladormenuopciones_8h" kindref="compound">controladormenuopciones.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="menuopciones_8h" kindref="compound">menuopciones.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qmessagebox.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="class_controlador_menu_opciones_1af3b0bfb7f89efa733ca71f1d21e5ea15" kindref="member">ControladorMenuOpciones::ControladorMenuOpciones</ref>(<ref refid="classcontrolador___ventanas" kindref="compound">controlador_Ventanas</ref><sp/>*<sp/>controlador)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/>this-&gt;controlador<sp/>=<sp/>controlador;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/>this-&gt;menuOpciones<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_menu_opciones" kindref="compound">MenuOpciones</ref>();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/>this-&gt;menuOpciones-&gt;<ref refid="class_menu_opciones_1a40c88f4582c98684ad9ab032b62206f5" kindref="member">setControlador</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador_menu_opciones_1a991cf74a309c2e6395d7ce3ea502f427" kindref="member">ControladorMenuOpciones::iniciar</ref>(){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/>this-&gt;menuOpciones-&gt;show();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador_menu_opciones_1a65ae24b04b22b212c51d0e94520272f9" kindref="member">ControladorMenuOpciones::cerrarVentana</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opcion){</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(opcion<sp/>==<sp/>1){</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;menuOpciones-&gt;close();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>controlador-&gt;<ref refid="classcontrolador___ventanas_1a8637e2a731c7ea6bbf9229a19edf5b86" kindref="member">mostrarTablero</ref>(opcion);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(opcion<sp/>==<sp/>2){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>controlador-&gt;<ref refid="classcontrolador___ventanas_1a8637e2a731c7ea6bbf9229a19edf5b86" kindref="member">mostrarTablero</ref>(opcion);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(opcion<sp/>==<sp/>1){</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;menuOpciones-&gt;close();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador_menu_opciones_1a14a74e84746a98b91301542756847ed6" kindref="member">ControladorMenuOpciones::mostrarReglas</ref>(){</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>controlador-&gt;<ref refid="classcontrolador___ventanas_1add5777d39d93d034eda3937951c47787" kindref="member">mostrarReglas</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador_menu_opciones_1ab949868816b809facba96eceadf16096" kindref="member">ControladorMenuOpciones::graficarReglas</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>reglas){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>QMessageBox::information(menuOpciones,</highlight><highlight class="stringliteral">&quot;<sp/>Reglas<sp/>&quot;</highlight><highlight class="normal">,<sp/>QString::fromStdString(reglas));</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.cpp"/>
+  </compounddef>
+</doxygen>

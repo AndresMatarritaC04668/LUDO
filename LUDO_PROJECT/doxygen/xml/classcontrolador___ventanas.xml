@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classcontrolador___ventanas" kind="class" language="C++" prot="public">
+    <compoundname>controlador_Ventanas</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcontrolador___ventanas_1a946a93a537589e6d75c74d579f63bcb3" prot="public" static="no" mutable="no">
+        <type><ref refid="classventana_informacion" kindref="compound">ventanaInformacion</ref> *</type>
+        <definition>ventanaInformacion* controlador_Ventanas::input</definition>
+        <argsstring></argsstring>
+        <name>input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" line="113" column="25" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcontrolador___ventanas_1a797fc24c1c10bba1cd1997941847cc31" prot="private" static="no" mutable="no">
+        <type><ref refid="class_controlador_menu_opciones" kindref="compound">ControladorMenuOpciones</ref> *</type>
+        <definition>ControladorMenuOpciones* controlador_Ventanas::controladorMenuOpciones</definition>
+        <argsstring></argsstring>
+        <name>controladorMenuOpciones</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" line="123" column="28" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcontrolador___ventanas_1a3fb43e8197ee632aeb723227dffa2449" prot="private" static="no" mutable="no">
+        <type><ref refid="class_controlador_ventana_principal" kindref="compound">ControladorVentanaPrincipal</ref> *</type>
+        <definition>ControladorVentanaPrincipal* controlador_Ventanas::controladorVentanaPrincipal</definition>
+        <argsstring></argsstring>
+        <name>controladorVentanaPrincipal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" line="124" column="32" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcontrolador___ventanas_1a66453053cfdd0f9aa61cdd3bcdaed571" prot="private" static="no" mutable="no">
+        <type><ref refid="class_controlador_ludo" kindref="compound">ControladorLudo</ref> *</type>
+        <definition>ControladorLudo* controlador_Ventanas::controladorLudo</definition>
+        <argsstring></argsstring>
+        <name>controladorLudo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" line="125" column="20" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcontrolador___ventanas_1a77ebc78b9e03abd776939113555cd4ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>controlador_Ventanas::controlador_Ventanas</definition>
+        <argsstring>(ControladorLudo *controlador)</argsstring>
+        <name>controlador_Ventanas</name>
+        <param>
+          <type><ref refid="class_controlador_ludo" kindref="compound">ControladorLudo</ref> *</type>
+          <declname>controlador</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new controlador Ventanas::controlador Ventanas object by arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controlador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>el controlador del juego LUDO. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" line="35" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.cpp" bodystart="10" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classcontrolador___ventanas_1a5f80765380a4a66b8caf69bea9255616" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void controlador_Ventanas::graficarTablero</definition>
+        <argsstring>(TableroAbstracto *)</argsstring>
+        <name>graficarTablero</name>
+        <param>
+          <type><ref refid="class_tablero_abstracto" kindref="compound">TableroAbstracto</ref> *</type>
+          <defname>mesa</defname>
+        </param>
+        <briefdescription>
+<para>Empieza a graficar el tablero con el controlador de la ventana principal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El tablero del juego. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" line="43" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classcontrolador___ventanas_1a38b79f4e6efd45fcc486daf76f8d63bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void controlador_Ventanas::iniciar</definition>
+        <argsstring>()</argsstring>
+        <name>iniciar</name>
+        <briefdescription>
+<para>Inicia las ventanas usando el controlador del menu de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" line="49" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.cpp" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcontrolador___ventanas_1a8637e2a731c7ea6bbf9229a19edf5b86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void controlador_Ventanas::mostrarTablero</definition>
+        <argsstring>(int)</argsstring>
+        <name>mostrarTablero</name>
+        <param>
+          <type>int</type>
+          <defname>opcion</defname>
+        </param>
+        <briefdescription>
+<para>Actualiza lo que muestra el tablero segun la opcion escogida por el jugador. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opcion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable numerica que representa la opcion del jugador. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" line="57" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.cpp" bodystart="43" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classcontrolador___ventanas_1a796f2f78d5cee74c06eb31764b45c2b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void controlador_Ventanas::mostrarMenu</definition>
+        <argsstring>()</argsstring>
+        <name>mostrarMenu</name>
+        <briefdescription>
+<para>Cierra la ventana principal y muestra el menu de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" line="63" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.cpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classcontrolador___ventanas_1a33b12c5a97662a9866c737d5e69d12be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void controlador_Ventanas::graficarCarcel</definition>
+        <argsstring>(vector&lt; Jugador * &gt; jugadores)</argsstring>
+        <name>graficarCarcel</name>
+        <param>
+          <type>vector&lt; <ref refid="class_jugador" kindref="compound">Jugador</ref> * &gt;</type>
+          <declname>jugadores</declname>
+        </param>
+        <briefdescription>
+<para>Usa el controlador de la ventana principal para graficar la carcel del juego. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jugadores</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Los jugadores de la partida. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" line="71" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.cpp" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classcontrolador___ventanas_1add5777d39d93d034eda3937951c47787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void controlador_Ventanas::mostrarReglas</definition>
+        <argsstring>()</argsstring>
+        <name>mostrarReglas</name>
+        <briefdescription>
+<para>Muestra la lista de reglas. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" line="77" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.cpp" bodystart="66" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classcontrolador___ventanas_1afbff2e9bfdc0eb715f3802bc0f55657d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string controlador_Ventanas::getNombre</definition>
+        <argsstring>(string numeroJugador)</argsstring>
+        <name>getNombre</name>
+        <param>
+          <type>string</type>
+          <declname>numeroJugador</declname>
+        </param>
+        <briefdescription>
+<para>Devuelve el nombre del jugador en relacion al numero que lo representa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numeroJugador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>el numero del jugador cuyo nombre se quiere obtener. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>string el nombre del jugador. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" line="86" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classcontrolador___ventanas_1afae398467350af5d9f467a5525e861be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string controlador_Ventanas::getNombreCSV</definition>
+        <argsstring>()</argsstring>
+        <name>getNombreCSV</name>
+        <briefdescription>
+<para>Pide el nombre de la partida para usarlo en los savestates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string Nombre de la partida. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" line="93" column="12" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.cpp" bodystart="95" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classcontrolador___ventanas_1a31ed9140c7986c0def1ee5ef3403059f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int controlador_Ventanas::elegirFicha</definition>
+        <argsstring>(string)</argsstring>
+        <name>elegirFicha</name>
+        <param>
+          <type>string</type>
+          <defname>mensaje</defname>
+        </param>
+        <briefdescription>
+<para>Pide que se elija el numero de ficha que se quiere mover. En realidad, se tiene que digitar un numero de 1 al numero de fichas disponibles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mensaje</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Se le envia al usuario para que elija una ficha. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int El numero de ficha seleccionada. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" line="103" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.cpp" bodystart="34" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classcontrolador___ventanas_1ae33d50efabe693904a0a0b9b90949f83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int controlador_Ventanas::eleccionJugador</definition>
+        <argsstring>(string turno)</argsstring>
+        <name>eleccionJugador</name>
+        <param>
+          <type>string</type>
+          <declname>turno</declname>
+        </param>
+        <briefdescription>
+<para>Pide que el jugador escoja que hacer en su turno. Puede elegir continuar con la jugada o salir y guardar la partida. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>del jugador. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int La eleccion del jugador representada por un valor numerico. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" line="112" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.cpp" bodystart="73" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classcontrolador___ventanas_1adb4ba6678eeb683fdc47ce2f9fb60947" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void controlador_Ventanas::mensajeGrafico</definition>
+        <argsstring>(string)</argsstring>
+        <name>mensajeGrafico</name>
+        <param>
+          <type>string</type>
+          <defname>mensaje</defname>
+        </param>
+        <briefdescription>
+<para>Muestra un mensaje grafico por medio de la interfaz. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mensaje</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El mensaje a mostrar </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" line="120" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.cpp" bodystart="28" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>controlador_Ventanas</label>
+        <link refid="classcontrolador___ventanas"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>input</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QMainWindow</label>
+      </node>
+      <node id="2">
+        <label>ventanaInformacion</label>
+        <link refid="classventana_informacion"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" line="26" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.h" bodystart="27" bodyend="126"/>
+    <listofallmembers>
+      <member refid="classcontrolador___ventanas_1a77ebc78b9e03abd776939113555cd4ba" prot="public" virt="non-virtual"><scope>controlador_Ventanas</scope><name>controlador_Ventanas</name></member>
+      <member refid="classcontrolador___ventanas_1a66453053cfdd0f9aa61cdd3bcdaed571" prot="private" virt="non-virtual"><scope>controlador_Ventanas</scope><name>controladorLudo</name></member>
+      <member refid="classcontrolador___ventanas_1a797fc24c1c10bba1cd1997941847cc31" prot="private" virt="non-virtual"><scope>controlador_Ventanas</scope><name>controladorMenuOpciones</name></member>
+      <member refid="classcontrolador___ventanas_1a3fb43e8197ee632aeb723227dffa2449" prot="private" virt="non-virtual"><scope>controlador_Ventanas</scope><name>controladorVentanaPrincipal</name></member>
+      <member refid="classcontrolador___ventanas_1ae33d50efabe693904a0a0b9b90949f83" prot="public" virt="non-virtual"><scope>controlador_Ventanas</scope><name>eleccionJugador</name></member>
+      <member refid="classcontrolador___ventanas_1a31ed9140c7986c0def1ee5ef3403059f" prot="public" virt="non-virtual"><scope>controlador_Ventanas</scope><name>elegirFicha</name></member>
+      <member refid="classcontrolador___ventanas_1afbff2e9bfdc0eb715f3802bc0f55657d" prot="public" virt="non-virtual"><scope>controlador_Ventanas</scope><name>getNombre</name></member>
+      <member refid="classcontrolador___ventanas_1afae398467350af5d9f467a5525e861be" prot="public" virt="non-virtual"><scope>controlador_Ventanas</scope><name>getNombreCSV</name></member>
+      <member refid="classcontrolador___ventanas_1a33b12c5a97662a9866c737d5e69d12be" prot="public" virt="non-virtual"><scope>controlador_Ventanas</scope><name>graficarCarcel</name></member>
+      <member refid="classcontrolador___ventanas_1a5f80765380a4a66b8caf69bea9255616" prot="public" virt="non-virtual"><scope>controlador_Ventanas</scope><name>graficarTablero</name></member>
+      <member refid="classcontrolador___ventanas_1a38b79f4e6efd45fcc486daf76f8d63bb" prot="public" virt="non-virtual"><scope>controlador_Ventanas</scope><name>iniciar</name></member>
+      <member refid="classcontrolador___ventanas_1a946a93a537589e6d75c74d579f63bcb3" prot="public" virt="non-virtual"><scope>controlador_Ventanas</scope><name>input</name></member>
+      <member refid="classcontrolador___ventanas_1adb4ba6678eeb683fdc47ce2f9fb60947" prot="public" virt="non-virtual"><scope>controlador_Ventanas</scope><name>mensajeGrafico</name></member>
+      <member refid="classcontrolador___ventanas_1a796f2f78d5cee74c06eb31764b45c2b1" prot="public" virt="non-virtual"><scope>controlador_Ventanas</scope><name>mostrarMenu</name></member>
+      <member refid="classcontrolador___ventanas_1add5777d39d93d034eda3937951c47787" prot="public" virt="non-virtual"><scope>controlador_Ventanas</scope><name>mostrarReglas</name></member>
+      <member refid="classcontrolador___ventanas_1a8637e2a731c7ea6bbf9229a19edf5b86" prot="public" virt="non-virtual"><scope>controlador_Ventanas</scope><name>mostrarTablero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

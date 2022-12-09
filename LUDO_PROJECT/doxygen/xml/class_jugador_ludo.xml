@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_jugador_ludo" kind="class" language="C++" prot="public">
+    <compoundname>JugadorLudo</compoundname>
+    <basecompoundref refid="class_jugador" prot="public" virt="non-virtual">Jugador</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_jugador_ludo_1adb4aadf616a0383ad913c48af8ca37d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JugadorLudo::JugadorLudo</definition>
+        <argsstring>(string color, int zonaSegura, string nombre)</argsstring>
+        <name>JugadorLudo</name>
+        <param>
+          <type>string</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>zonaSegura</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_jugador" kindref="compound">Jugador</ref> Ludo object by arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El color del jugador. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zonaSegura</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La zona segura del jugador en el tablero. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El nombre del jugador. Todo lo anterior se guarda en los atributos. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.h" line="35" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.cpp" bodystart="13" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_ludo_1acb15ec092fbaa8c7129c3cdb051877a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JugadorLudo::JugadorLudo</definition>
+        <argsstring>()</argsstring>
+        <name>JugadorLudo</name>
+        <briefdescription>
+<para>Construct a new <ref refid="class_jugador" kindref="compound">Jugador</ref> Ludo object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.h" line="41" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.cpp" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_ludo_1a9067143c3c47c293a61a92400f6c5c47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JugadorLudo::~JugadorLudo</definition>
+        <argsstring>() override</argsstring>
+        <name>~JugadorLudo</name>
+        <briefdescription>
+<para>Destroy the <ref refid="class_jugador" kindref="compound">Jugador</ref> Ludo object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.h" line="47" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_ludo_1a97b10a6ffd9eeed7857e29d3e3a6e3c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int JugadorLudo::moverFicha</definition>
+        <argsstring>(FichaAbstracta *ficha, int pasos, TableroAbstracto *tablero) override</argsstring>
+        <name>moverFicha</name>
+        <reimplements refid="class_jugador_1af2cf3faaf38044b3215a7a6587699473">moverFicha</reimplements>
+        <param>
+          <type><ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref> *</type>
+          <declname>ficha</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pasos</declname>
+        </param>
+        <param>
+          <type><ref refid="class_tablero_abstracto" kindref="compound">TableroAbstracto</ref> *</type>
+          <declname>tablero</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>El jugador ejecuta la opcion de mover la ficha para el juego LUDO.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ficha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La ficha que se va a mover. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pasos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Los pasos que se va a mover la ficha. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tablero</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El tablero en el que se va a mover la ficha. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Indica si el jugador tiene la opcion de volver a jugar su turno. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.h" line="61" column="13" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.cpp" bodystart="48" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_ludo_1aeacab2bbf9593ce2806daac9e00607f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref> *</type>
+        <definition>FichaAbstracta * JugadorLudo::elegirFicha</definition>
+        <argsstring>(TableroAbstracto *, int) override</argsstring>
+        <name>elegirFicha</name>
+        <reimplements refid="class_jugador_1a148ab5b9ec0cc5d7f43ebe255a76f8ab">elegirFicha</reimplements>
+        <param>
+          <type><ref refid="class_tablero_abstracto" kindref="compound">TableroAbstracto</ref> *</type>
+          <defname>tablero</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>pasos</defname>
+        </param>
+        <briefdescription>
+<para>El jugador elige la ficha que va a mover. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TableroAbstracto*</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El tablero en el que se va a mover. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>los pasos que se va a mover. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FichaAbstracta* Debe devolver la ficha elegida. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.h" line="71" column="25" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.cpp" bodystart="140" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_ludo_1abbbb7e3709644473f5572b735705727e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int JugadorLudo::encontrarBarrera</definition>
+        <argsstring>(int posicion, FichaLudo *mover, TableroLudo *tablero)</argsstring>
+        <name>encontrarBarrera</name>
+        <param>
+          <type>int</type>
+          <declname>posicion</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ficha_ludo" kindref="compound">FichaLudo</ref> *</type>
+          <declname>mover</declname>
+        </param>
+        <param>
+          <type><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref> *</type>
+          <declname>tablero</declname>
+        </param>
+        <briefdescription>
+<para>Busca las barreras en el tablero implementadas para el juego LUDO que podrian obstaculizar el movimiento de una ficha. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>posicion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La posicion a la que la ficha se va a mover. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mover</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La ficha que se va a mover. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tablero</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El tablero en el que se esta jugando. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0 si no hay una barrera en el camino, 1 si la hay. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.h" line="82" column="13" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.cpp" bodystart="37" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_ludo_1ad143a16486e648797c361c38a4bad6c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JugadorLudo::moverFichaRectaFinal</definition>
+        <argsstring>(FichaLudo *ficha, int pasos, TableroLudo *tablero, ValidadorLudo *validador)</argsstring>
+        <name>moverFichaRectaFinal</name>
+        <param>
+          <type><ref refid="class_ficha_ludo" kindref="compound">FichaLudo</ref> *</type>
+          <declname>ficha</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pasos</declname>
+        </param>
+        <param>
+          <type><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref> *</type>
+          <declname>tablero</declname>
+        </param>
+        <param>
+          <type><ref refid="class_validador_ludo" kindref="compound">ValidadorLudo</ref> *</type>
+          <declname>validador</declname>
+        </param>
+        <briefdescription>
+<para>Determina como sera el movimiento de una ficha en la recta final para el juego LUDO. El jugador necesita obtener la cantidad exacta llegar al final, no puede obtener mas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ficha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La ficha que se encuentra en la recta final. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pasos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Los pasos que se puede mover la ficha. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tablero</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El tablero en el que se esta jugando. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>validador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Para determinar la validez del movimiento. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.h" line="98" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.cpp" bodystart="159" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_ludo_1af2e970dfd7d2c4737924ab647bfbcb0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int JugadorLudo::elegirQueHacer</definition>
+        <argsstring>(TableroAbstracto *tablero) override</argsstring>
+        <name>elegirQueHacer</name>
+        <reimplements refid="class_jugador_1a36a170afd57ed41fa107a9efcf6fde46">elegirQueHacer</reimplements>
+        <param>
+          <type><ref refid="class_tablero_abstracto" kindref="compound">TableroAbstracto</ref> *</type>
+          <declname>tablero</declname>
+        </param>
+        <briefdescription>
+<para>El jugador escoge que hacer en relacion a las reglas de juego LUDO. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tablero</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El tablero en el que se esta jugando el juego. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int La eleccion del jugador, representada siempre por un valor entero. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.h" line="109" column="13" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.cpp" bodystart="182" bodyend="191"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Jugador</label>
+        <link refid="class_jugador"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Objeto</label>
+        <link refid="class_objeto"/>
+      </node>
+      <node id="1">
+        <label>JugadorLudo</label>
+        <link refid="class_jugador_ludo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Jugador</label>
+        <link refid="class_jugador"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Objeto</label>
+        <link refid="class_objeto"/>
+      </node>
+      <node id="1">
+        <label>JugadorLudo</label>
+        <link refid="class_jugador_ludo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.h" line="22" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/JugadorLudo.h" bodystart="22" bodyend="111"/>
+    <listofallmembers>
+      <member refid="class_objeto_1a480513c7fbed9c4c8ba82eb704d0c3ac" prot="protected" virt="non-virtual"><scope>JugadorLudo</scope><name>agregarAtributo</name></member>
+      <member refid="class_jugador_1aa679d387ca3af094bade60748a7ad62a" prot="protected" virt="non-virtual"><scope>JugadorLudo</scope><name>cantidadDados</name></member>
+      <member refid="class_jugador_ludo_1aeacab2bbf9593ce2806daac9e00607f9" prot="public" virt="virtual"><scope>JugadorLudo</scope><name>elegirFicha</name></member>
+      <member refid="class_jugador_ludo_1af2e970dfd7d2c4737924ab647bfbcb0e" prot="public" virt="virtual"><scope>JugadorLudo</scope><name>elegirQueHacer</name></member>
+      <member refid="class_jugador_ludo_1abbbb7e3709644473f5572b735705727e" prot="public" virt="non-virtual"><scope>JugadorLudo</scope><name>encontrarBarrera</name></member>
+      <member refid="class_jugador_1a6edb40e25712a8f98fbc3161e414dafa" prot="protected" virt="non-virtual"><scope>JugadorLudo</scope><name>esGanador</name></member>
+      <member refid="class_jugador_1a786a0a4f83ebfa5709a771b6b5efdf90" prot="protected" virt="non-virtual"><scope>JugadorLudo</scope><name>fichas</name></member>
+      <member refid="class_jugador_1a4fb6f6adf3a1f404b6619c2fdb0e8502" prot="public" virt="virtual"><scope>JugadorLudo</scope><name>getColor</name></member>
+      <member refid="class_jugador_1a4fb19395d8df5a0a0723a4150df9d1b9" prot="public" virt="virtual"><scope>JugadorLudo</scope><name>getEsGanador</name></member>
+      <member refid="class_jugador_1aaef5a3b792e1fccfc083ae034ecc3068" prot="public" virt="virtual"><scope>JugadorLudo</scope><name>getFichas</name></member>
+      <member refid="class_jugador_1ab6c7de8724019fa98431bf0ca656d55f" prot="public" virt="virtual"><scope>JugadorLudo</scope><name>getNombre</name></member>
+      <member refid="class_jugador_1a232c46f75691af6210096e5972535d71" prot="public" virt="non-virtual"><scope>JugadorLudo</scope><name>Jugador</name></member>
+      <member refid="class_jugador_ludo_1adb4aadf616a0383ad913c48af8ca37d8" prot="public" virt="non-virtual"><scope>JugadorLudo</scope><name>JugadorLudo</name></member>
+      <member refid="class_jugador_ludo_1acb15ec092fbaa8c7129c3cdb051877a3" prot="public" virt="non-virtual"><scope>JugadorLudo</scope><name>JugadorLudo</name></member>
+      <member refid="class_jugador_1a58269958d36a7e04903d540392662b60" prot="public" virt="non-virtual"><scope>JugadorLudo</scope><name>jugarTurno</name></member>
+      <member refid="class_jugador_1a62e6bcf6805e13f2253413c8e8dcbb2d" prot="public" virt="virtual"><scope>JugadorLudo</scope><name>lanzarDado</name></member>
+      <member refid="class_objeto_1a040a9e302397e6086a42359e211f6eca" prot="public" virt="non-virtual"><scope>JugadorLudo</scope><name>map_atributos</name></member>
+      <member refid="class_jugador_ludo_1a97b10a6ffd9eeed7857e29d3e3a6e3c3" prot="public" virt="virtual"><scope>JugadorLudo</scope><name>moverFicha</name></member>
+      <member refid="class_jugador_ludo_1ad143a16486e648797c361c38a4bad6c9" prot="public" virt="non-virtual"><scope>JugadorLudo</scope><name>moverFichaRectaFinal</name></member>
+      <member refid="class_objeto_1a5608071f995c220f0f1a0e5887c2d11d" prot="public" virt="non-virtual"><scope>JugadorLudo</scope><name>Objeto</name></member>
+      <member refid="class_objeto_1acd863032b2761cf855ecdf0a6052fcbb" prot="public" virt="non-virtual"><scope>JugadorLudo</scope><name>obtAtributos</name></member>
+      <member refid="class_objeto_1a8ec095f9fa9cbab27d0361e49aecff33" prot="protected" virt="non-virtual"><scope>JugadorLudo</scope><name>obtenerAtributo</name></member>
+      <member refid="class_objeto_1a9c0f555aac2bb7fb2a2f557168a3552d" prot="public" virt="non-virtual"><scope>JugadorLudo</scope><name>setAtributos</name></member>
+      <member refid="class_jugador_1a0867a6a4a10f4de855b5a34aeb6c42aa" prot="public" virt="virtual"><scope>JugadorLudo</scope><name>setColor</name></member>
+      <member refid="class_jugador_1a72c706b2a576db1082089ff225cbca4c" prot="public" virt="virtual"><scope>JugadorLudo</scope><name>setFichas</name></member>
+      <member refid="class_jugador_1ad95196fbcc19ddbc50285f739db475fa" prot="public" virt="virtual"><scope>JugadorLudo</scope><name>setNombre</name></member>
+      <member refid="class_jugador_1af58c09391e50529e009a8166707158d1" prot="public" virt="virtual"><scope>JugadorLudo</scope><name>~Jugador</name></member>
+      <member refid="class_jugador_ludo_1a9067143c3c47c293a61a92400f6c5c47" prot="public" virt="non-virtual"><scope>JugadorLudo</scope><name>~JugadorLudo</name></member>
+      <member refid="class_objeto_1a02425fff0768299968af03ac86deb496" prot="public" virt="non-virtual"><scope>JugadorLudo</scope><name>~Objeto</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

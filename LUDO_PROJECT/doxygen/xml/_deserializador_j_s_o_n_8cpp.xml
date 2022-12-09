@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_deserializador_j_s_o_n_8cpp" kind="file" language="C++">
+    <compoundname>DeserializadorJSON.cpp</compoundname>
+    <includes refid="_deserializador_j_s_o_n_8h" local="yes">DeserializadorJSON.h</includes>
+    <includes refid="_hilera_8h" local="yes">Hilera.h</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>ObtAsg.h</label>
+        <link refid="_obt_asg_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>map</label>
+      </node>
+      <node id="9">
+        <label>DeserializadorAbstracto.h</label>
+        <link refid="_deserializador_abstracto_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Hilera.h</label>
+        <link refid="_hilera_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+      <node id="1">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.cpp</label>
+        <link refid="_deserializador_j_s_o_n_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>sstream</label>
+      </node>
+      <node id="8">
+        <label>tipo.h</label>
+        <link refid="tipo_8h_source"/>
+      </node>
+      <node id="13">
+        <label>iostream</label>
+      </node>
+      <node id="7">
+        <label>Valor.h</label>
+        <link refid="_valor_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="2">
+        <label>DeserializadorJSON.h</label>
+        <link refid="_deserializador_j_s_o_n_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_deserializador_j_s_o_n_8h" kindref="compound">DeserializadorJSON.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_hilera_8h" kindref="compound">Hilera.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&lt;QDebug&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="class_deserializador_j_s_o_n_1ab41fa918c14256f9cf4dc0f0e0a9a454" kindref="member">DeserializadorJSON::DeserializadorJSON</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="class_deserializador_j_s_o_n_1a224b2d901df4fc905e0029a752336302" kindref="member">DeserializadorJSON::~DeserializadorJSON</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_deserializador_j_s_o_n_1a4512ff3c9f511b36cc49bda16ceb7aef" kindref="member">DeserializadorJSON::eliminarInicioFinObjeto</ref>(std::string&amp;<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">.substr(1,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">.size()<sp/>-<sp/>2);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">std::map&lt;<sp/>std::string,<sp/>Valor*<sp/>&gt;<sp/><ref refid="class_deserializador_j_s_o_n_1ab338661720d87c3b9682e05c98fb6388" kindref="member">DeserializadorJSON::deserializarObjeto</ref>(std::string<sp/>stringJSON)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_deserializador_j_s_o_n_1a4512ff3c9f511b36cc49bda16ceb7aef" kindref="member">eliminarInicioFinObjeto</ref>(stringJSON);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//qDebug()&lt;&lt;QString::fromStdString(stringJSON);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>stringJSON<sp/>+=<sp/>delimitadorAtributo;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>indice;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>componente;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;<sp/>std::string,<sp/>Valor*<sp/>&gt;<sp/>valores;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((indice<sp/>=<sp/>stringJSON.find(delimitadorAtributo))<sp/>!=<sp/>std::string::npos)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>componente<sp/>=<sp/>stringJSON.substr(0,<sp/>indice);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(componente<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>valores.insert(<ref refid="class_deserializador_j_s_o_n_1a954c9fe8f9650423e065944db397d092" kindref="member">extraerLlaveValor</ref>(componente));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stringJSON.erase(0,<sp/>indice<sp/>+<sp/>delimitadorAtributo.length());</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>valores;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">std::pair&lt;std::string,<sp/>Valor*&gt;<sp/><ref refid="class_deserializador_j_s_o_n_1a954c9fe8f9650423e065944db397d092" kindref="member">DeserializadorJSON::extraerLlaveValor</ref>(std::string<sp/>llaveValorString)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>indiceLlaveValor<sp/>=<sp/>llaveValorString.find(delimitadorLlaveValor);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>llave<sp/>=<sp/>llaveValorString.substr(0,<sp/>indiceLlaveValor);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_deserializador_j_s_o_n_1a4512ff3c9f511b36cc49bda16ceb7aef" kindref="member">eliminarInicioFinObjeto</ref>(llave);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>valor<sp/>=<sp/>llaveValorString.substr(indiceLlaveValor+1,<sp/>llaveValorString.length());</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_deserializador_j_s_o_n_1a4512ff3c9f511b36cc49bda16ceb7aef" kindref="member">eliminarInicioFinObjeto</ref>(valor);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::pair&lt;std::string,<sp/>Hilera*&gt;<sp/>(llave,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(valor));</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">std::vector&lt;std::map&lt;<sp/>std::string,<sp/>Valor*<sp/>&gt;&gt;<sp/><ref refid="class_deserializador_j_s_o_n_1a4220f258a8068094f505aad84ca33572" kindref="member">DeserializadorJSON::deserializarListaObjetos</ref>(std::string<sp/>listaJSON)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::map&lt;<sp/>std::string,<sp/>Valor*<sp/>&gt;&gt;<sp/>listaObjetos;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_deserializador_j_s_o_n_1a4512ff3c9f511b36cc49bda16ceb7aef" kindref="member">eliminarInicioFinObjeto</ref>(listaJSON);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>std::pair&lt;std::string,<sp/>Valor*&gt;<sp/>llaveValor<sp/>=<sp/><ref refid="class_deserializador_j_s_o_n_1a954c9fe8f9650423e065944db397d092" kindref="member">extraerLlaveValor</ref>(listaJSON);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>stringJSON<sp/>=<sp/>((<ref refid="class_hilera" kindref="compound">Hilera</ref>*)llaveValor.second)-&gt;obt();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>indice;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>objetoJSON;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>stringJSON<sp/>+=<sp/>delimitadorAtributo;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((indice<sp/>=<sp/>stringJSON.find(</highlight><highlight class="stringliteral">&quot;}&quot;</highlight><highlight class="normal">))<sp/>!=<sp/>std::string::npos)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>objetoJSON<sp/>=<sp/>stringJSON.substr(0,<sp/>indice+1);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(objetoJSON<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stringJSON.erase(0,<sp/>objetoJSON.length()+1);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>listaObjetos.push_back(<ref refid="class_deserializador_j_s_o_n_1ab338661720d87c3b9682e05c98fb6388" kindref="member">deserializarObjeto</ref>(objetoJSON));</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>listaObjetos;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorJSON.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_dado" kind="class" language="C++" prot="public">
+    <compoundname>Dado</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_dado_1a4a541e4bd3b4d8a2bd5d58cfdcf0169a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Dado::Dado</definition>
+        <argsstring>()</argsstring>
+        <name>Dado</name>
+        <briefdescription>
+<para>Construct a new <ref refid="class_dado" kindref="compound">Dado</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Dado.h" line="29" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Dado.h" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dado_1a0aec497fb27fa73746fc2e6e2f2792cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Dado::lanzar</definition>
+        <argsstring>()</argsstring>
+        <name>lanzar</name>
+        <briefdescription>
+<para>Lanza un dado y genera un numero aleatorio. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int Un numero entero del 1 al 6. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Dado.h" line="38" column="13" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Dado.h" bodystart="38" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Dado.h" line="21" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Dado.h" bodystart="21" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_dado_1a4a541e4bd3b4d8a2bd5d58cfdcf0169a" prot="public" virt="non-virtual"><scope>Dado</scope><name>Dado</name></member>
+      <member refid="class_dado_1a0aec497fb27fa73746fc2e6e2f2792cf" prot="public" virt="non-virtual"><scope>Dado</scope><name>lanzar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

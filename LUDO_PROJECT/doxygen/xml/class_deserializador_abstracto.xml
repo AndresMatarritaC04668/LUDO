@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_deserializador_abstracto" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>DeserializadorAbstracto</compoundname>
+    <derivedcompoundref refid="class_deserializador_j_s_o_n" prot="public" virt="non-virtual">DeserializadorJSON</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_deserializador_abstracto_1a8e66ff108f636d48c8382ac67697a5d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DeserializadorAbstracto::DeserializadorAbstracto</definition>
+        <argsstring>()</argsstring>
+        <name>DeserializadorAbstracto</name>
+        <briefdescription>
+<para>Construct a new Deserializador Abstracto object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorAbstracto.h" line="29" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorAbstracto.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_deserializador_abstracto_1a661e9c0d627a4227d86505bfd163b2e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DeserializadorAbstracto::~DeserializadorAbstracto</definition>
+        <argsstring>()</argsstring>
+        <name>~DeserializadorAbstracto</name>
+        <briefdescription>
+<para>Destroy the Deserializador Abstracto object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorAbstracto.h" line="35" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorAbstracto.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_deserializador_abstracto_1acf891403209d1bef17941d43f664e6a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::map&lt; std::string, <ref refid="class_valor" kindref="compound">Valor</ref> * &gt;</type>
+        <definition>virtual std::map&lt; std::string, Valor*&gt; DeserializadorAbstracto::deserializarObjeto</definition>
+        <argsstring>(std::string)=0</argsstring>
+        <name>deserializarObjeto</name>
+        <reimplementedby refid="class_deserializador_j_s_o_n_1ab338661720d87c3b9682e05c98fb6388">deserializarObjeto</reimplementedby>
+        <param>
+          <type>std::string</type>
+        </param>
+        <briefdescription>
+<para>Deserializa un objeto en relación al formato que se esté implementando. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La string con la información del objeto serializada. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::map&lt; std::string, Valor*&gt; Este par contiene la información deserializada es un objeto en particular, debe implementarse en relación al formato escogido. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorAbstracto.h" line="46" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_deserializador_abstracto_1ac5f5a054d0d5aa728c095a9a8c26f14d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; std::map&lt; std::string, <ref refid="class_valor" kindref="compound">Valor</ref> * &gt; &gt;</type>
+        <definition>virtual std::vector&lt;std::map&lt; std::string, Valor* &gt; &gt; DeserializadorAbstracto::deserializarListaObjetos</definition>
+        <argsstring>(std::string)=0</argsstring>
+        <name>deserializarListaObjetos</name>
+        <reimplementedby refid="class_deserializador_j_s_o_n_1a4220f258a8068094f505aad84ca33572">deserializarListaObjetos</reimplementedby>
+        <param>
+          <type>std::string</type>
+        </param>
+        <briefdescription>
+<para>Deserializa todos los objetos en la hilera serializada que se pasa por parametro y los guarda en un vector de objetos map cuya key es una string y su contenido es un puntero a un objeto <ref refid="class_valor" kindref="compound">Valor</ref>. Continuar deserializando los objetos de la hilera hasta que esta se termine. Usar la implementación particular adecuada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La hilera con la información de los objetos serializada. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::vector&lt;std::map&lt; std::string, Valor* &gt;&gt; Este vector contiene la información de todos los objetos de la hilera deserializados. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorAbstracto.h" line="59" column="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_deserializador_abstracto_1ad2b876e40fbcac5e3ca3d457aeb30c5a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void DeserializadorAbstracto::eliminarInicioFinObjeto</definition>
+        <argsstring>(std::string &amp;)=0</argsstring>
+        <name>eliminarInicioFinObjeto</name>
+        <reimplementedby refid="class_deserializador_j_s_o_n_1a4512ff3c9f511b36cc49bda16ceb7aef">eliminarInicioFinObjeto</reimplementedby>
+        <param>
+          <type>std::string &amp;</type>
+        </param>
+        <briefdescription>
+<para>Elimina el inicio y el fin de un objeto de acuerdo con el formato que se esté utilizando. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Es la hilera en un formato particular a la que se le va a eliminar su inicio y su fin. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorAbstracto.h" line="69" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_deserializador_abstracto_1a459cdf76513a40de48529bb03693a6e8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::pair&lt; std::string, <ref refid="class_valor" kindref="compound">Valor</ref> * &gt;</type>
+        <definition>virtual std::pair&lt;std::string, Valor*&gt; DeserializadorAbstracto::extraerLlaveValor</definition>
+        <argsstring>(std::string)=0</argsstring>
+        <name>extraerLlaveValor</name>
+        <reimplementedby refid="class_deserializador_j_s_o_n_1a954c9fe8f9650423e065944db397d092">extraerLlaveValor</reimplementedby>
+        <param>
+          <type>std::string</type>
+        </param>
+        <briefdescription>
+<para>Extrae la &quot;Llave mayor&quot; de la hilera proveída. La llave mayor es diferente dependiendo del formato y se utiliza normalmente con cada objeto. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La string a la que hay que extraerle la llave mayor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::pair&lt;std::string, Valor*&gt; El par construído con la información del objeto deserializado. Pensado para ser regresado a <ref refid="class_deserializador_abstracto_1acf891403209d1bef17941d43f664e6a7" kindref="member">deserializarObjeto()</ref>, así que hay que usar la misma lógica. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorAbstracto.h" line="81" column="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>DeserializadorJSON</label>
+        <link refid="class_deserializador_j_s_o_n"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>DeserializadorAbstracto</label>
+        <link refid="class_deserializador_abstracto"/>
+      </node>
+    </inheritancegraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorAbstracto.h" line="23" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/DeserializadorAbstracto.h" bodystart="23" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_deserializador_abstracto_1a8e66ff108f636d48c8382ac67697a5d9" prot="public" virt="non-virtual"><scope>DeserializadorAbstracto</scope><name>DeserializadorAbstracto</name></member>
+      <member refid="class_deserializador_abstracto_1ac5f5a054d0d5aa728c095a9a8c26f14d" prot="public" virt="pure-virtual"><scope>DeserializadorAbstracto</scope><name>deserializarListaObjetos</name></member>
+      <member refid="class_deserializador_abstracto_1acf891403209d1bef17941d43f664e6a7" prot="public" virt="pure-virtual"><scope>DeserializadorAbstracto</scope><name>deserializarObjeto</name></member>
+      <member refid="class_deserializador_abstracto_1ad2b876e40fbcac5e3ca3d457aeb30c5a" prot="protected" virt="pure-virtual"><scope>DeserializadorAbstracto</scope><name>eliminarInicioFinObjeto</name></member>
+      <member refid="class_deserializador_abstracto_1a459cdf76513a40de48529bb03693a6e8" prot="protected" virt="pure-virtual"><scope>DeserializadorAbstracto</scope><name>extraerLlaveValor</name></member>
+      <member refid="class_deserializador_abstracto_1a661e9c0d627a4227d86505bfd163b2e3" prot="public" virt="non-virtual"><scope>DeserializadorAbstracto</scope><name>~DeserializadorAbstracto</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="class_constructor_serializador_abstracto" kind="class"><name>ConstructorSerializadorAbstracto</name>
+    <member refid="class_constructor_serializador_abstracto_1a11b82d3d7a12ed4e7f4d8d92689f2fc1" kind="function"><name>ConstructorSerializadorAbstracto</name></member>
+    <member refid="class_constructor_serializador_abstracto_1ad4e49d3c99d1899fa8aa0c1498853f47" kind="function"><name>~ConstructorSerializadorAbstracto</name></member>
+    <member refid="class_constructor_serializador_abstracto_1adb23b92a09cab3cbd6af0f2376beaa27" kind="function"><name>inicioObjeto</name></member>
+    <member refid="class_constructor_serializador_abstracto_1a5103ba163e8a585b41d32eda00fb357c" kind="function"><name>finObjeto</name></member>
+    <member refid="class_constructor_serializador_abstracto_1a0c767f29e5c3533b59b9ce99d34bdd62" kind="function"><name>serializarHilera</name></member>
+    <member refid="class_constructor_serializador_abstracto_1ada8ca9cdbcb6148250951f43f09b097e" kind="function"><name>obtSerializacion</name></member>
+    <member refid="class_constructor_serializador_abstracto_1a90dc3765cd774fd68383141534c8d516" kind="function"><name>agregarSeparador</name></member>
+  </compound>
+  <compound refid="class_constructor_serializador_j_s_o_n" kind="class"><name>ConstructorSerializadorJSON</name>
+    <member refid="class_constructor_serializador_j_s_o_n_1ad49bef8e4e85ae7f90a74ebd683b6184" kind="variable"><name>serializacion</name></member>
+    <member refid="class_constructor_serializador_j_s_o_n_1af2a2224fc34c16aae94b8e17eaa7d998" kind="function"><name>ConstructorSerializadorJSON</name></member>
+    <member refid="class_constructor_serializador_j_s_o_n_1ad550738d4ee0c767ba1a005d2afbfb9c" kind="function"><name>~ConstructorSerializadorJSON</name></member>
+    <member refid="class_constructor_serializador_j_s_o_n_1a44c0d8090730cb2e03bd491ce67c0d0e" kind="function"><name>inicioObjeto</name></member>
+    <member refid="class_constructor_serializador_j_s_o_n_1aeb2bd6f7b6c9e50fc7962f4669eae857" kind="function"><name>finObjeto</name></member>
+    <member refid="class_constructor_serializador_j_s_o_n_1afd8a9293549a42378c1374a9254e2512" kind="function"><name>serializarHilera</name></member>
+    <member refid="class_constructor_serializador_j_s_o_n_1a189cf123b5cacbd40e64f5546ad322c1" kind="function"><name>obtSerializacion</name></member>
+    <member refid="class_constructor_serializador_j_s_o_n_1aa2691c6561a4b5c7da135fbd28bdbd3e" kind="function"><name>agregarSeparador</name></member>
+  </compound>
+  <compound refid="class_controlador___memento" kind="class"><name>Controlador_Memento</name>
+    <member refid="class_controlador___memento_1a8e4808e3a6ac22f4ffa8bb120b48bb5c" kind="variable"><name>listaObjetosString</name></member>
+    <member refid="class_controlador___memento_1a2aacac0bef4e32c5a32573303286fcb6" kind="variable"><name>numElemString</name></member>
+    <member refid="class_controlador___memento_1a9149081ba2629ca24687e3a7a7160228" kind="function"><name>Controlador_Memento</name></member>
+    <member refid="class_controlador___memento_1a3d63c81d5d34618c07dcc3c211c2fa94" kind="function"><name>~Controlador_Memento</name></member>
+    <member refid="class_controlador___memento_1a46bbcf48ec11c2429d31bd8ffe4548cf" kind="function"><name>serializarTablero</name></member>
+    <member refid="class_controlador___memento_1a041a7e75683d3abe23bdd2520ae83f75" kind="function"><name>serializarJugadoresJSON</name></member>
+    <member refid="class_controlador___memento_1af0b0e3b63faba808558059ed718f1b19" kind="function"><name>serializarFichasJSON</name></member>
+    <member refid="class_controlador___memento_1acc84c80d63372c31163bbdae9831e796" kind="function"><name>serializarListaObjetosJSON</name></member>
+    <member refid="class_controlador___memento_1a1eff5c5134fd490f7227cbdb087d05e5" kind="function"><name>serializarJSON</name></member>
+    <member refid="class_controlador___memento_1a8951875a0ff6ba76deb043344611dceb" kind="function"><name>deserializarTableroJSON</name></member>
+    <member refid="class_controlador___memento_1a02797403ec5eea5fabb24106443aef9f" kind="function"><name>deserializarListaJugadoresJSON</name></member>
+    <member refid="class_controlador___memento_1ab3cadcfdacb50c704f8ef1dd8e19c2e6" kind="function"><name>deserializarListaFichasJSON</name></member>
+    <member refid="class_controlador___memento_1acefc20cc7671fc9470fbeb4560558dd7" kind="function"><name>deserializarJuego</name></member>
+    <member refid="class_controlador___memento_1a46fdb1d2f5906220a0bfaa402219160f" kind="function"><name>serializar</name></member>
+    <member refid="class_controlador___memento_1a05cae22a32a6a4f0a66e7d1b8352dc5c" kind="function"><name>deserializarTablero</name></member>
+    <member refid="class_controlador___memento_1a5149f89d297158fb14150fe3e1d379d4" kind="function"><name>deserializarListaJugadores</name></member>
+    <member refid="class_controlador___memento_1ae3c5a6d7e135a2a174739012c49e6c09" kind="function"><name>deserializarListaFichas</name></member>
+  </compound>
+  <compound refid="classcontrolador___ventanas" kind="class"><name>controlador_Ventanas</name>
+    <member refid="classcontrolador___ventanas_1a946a93a537589e6d75c74d579f63bcb3" kind="variable"><name>input</name></member>
+    <member refid="classcontrolador___ventanas_1a797fc24c1c10bba1cd1997941847cc31" kind="variable"><name>controladorMenuOpciones</name></member>
+    <member refid="classcontrolador___ventanas_1a3fb43e8197ee632aeb723227dffa2449" kind="variable"><name>controladorVentanaPrincipal</name></member>
+    <member refid="classcontrolador___ventanas_1a66453053cfdd0f9aa61cdd3bcdaed571" kind="variable"><name>controladorLudo</name></member>
+    <member refid="classcontrolador___ventanas_1a77ebc78b9e03abd776939113555cd4ba" kind="function"><name>controlador_Ventanas</name></member>
+    <member refid="classcontrolador___ventanas_1a5f80765380a4a66b8caf69bea9255616" kind="function"><name>graficarTablero</name></member>
+    <member refid="classcontrolador___ventanas_1a38b79f4e6efd45fcc486daf76f8d63bb" kind="function"><name>iniciar</name></member>
+    <member refid="classcontrolador___ventanas_1a8637e2a731c7ea6bbf9229a19edf5b86" kind="function"><name>mostrarTablero</name></member>
+    <member refid="classcontrolador___ventanas_1a796f2f78d5cee74c06eb31764b45c2b1" kind="function"><name>mostrarMenu</name></member>
+    <member refid="classcontrolador___ventanas_1a33b12c5a97662a9866c737d5e69d12be" kind="function"><name>graficarCarcel</name></member>
+    <member refid="classcontrolador___ventanas_1add5777d39d93d034eda3937951c47787" kind="function"><name>mostrarReglas</name></member>
+    <member refid="classcontrolador___ventanas_1afbff2e9bfdc0eb715f3802bc0f55657d" kind="function"><name>getNombre</name></member>
+    <member refid="classcontrolador___ventanas_1afae398467350af5d9f467a5525e861be" kind="function"><name>getNombreCSV</name></member>
+    <member refid="classcontrolador___ventanas_1a31ed9140c7986c0def1ee5ef3403059f" kind="function"><name>elegirFicha</name></member>
+    <member refid="classcontrolador___ventanas_1ae33d50efabe693904a0a0b9b90949f83" kind="function"><name>eleccionJugador</name></member>
+    <member refid="classcontrolador___ventanas_1adb4ba6678eeb683fdc47ce2f9fb60947" kind="function"><name>mensajeGrafico</name></member>
+  </compound>
+  <compound refid="class_controlador_abstracto" kind="class"><name>ControladorAbstracto</name>
+    <member refid="class_controlador_abstracto_1a2f34a84b166bc4c988d05e3908572131" kind="function"><name>ControladorAbstracto</name></member>
+    <member refid="class_controlador_abstracto_1a7bfd850e7a38727f9f4b76edb998c588" kind="function"><name>~ControladorAbstracto</name></member>
+    <member refid="class_controlador_abstracto_1affa0bfba6bd98a10ac6497b9e41f2be3" kind="function"><name>crearTablero</name></member>
+    <member refid="class_controlador_abstracto_1a33c2da691e1fd9f1b1b33e367d7007ba" kind="function"><name>asignarCantidadJugadores</name></member>
+    <member refid="class_controlador_abstracto_1a27f576c6451b2996798192e8678ffc22" kind="function"><name>ubicarJugadores</name></member>
+    <member refid="class_controlador_abstracto_1a52abbec6ab1a2b3801b7954e002e9e16" kind="function"><name>asignarPrimerJugador</name></member>
+    <member refid="class_controlador_abstracto_1a7b60ee84bbc3b6dea08b8f686f629712" kind="function"><name>iniciarPartida</name></member>
+    <member refid="class_controlador_abstracto_1a4ec5a03130d2c436f53da4758ef28148" kind="function"><name>pausarPartida</name></member>
+    <member refid="class_controlador_abstracto_1a0f4901b5706659b0dcad29b608763720" kind="function"><name>renaudarPartida</name></member>
+  </compound>
+  <compound refid="class_controlador_ludo" kind="class"><name>ControladorLudo</name>
+    <member refid="class_controlador_ludo_1a518e378f4e1153b61590fdb5ca69f9e6" kind="variable"><name>tablero</name></member>
+    <member refid="class_controlador_ludo_1a7daf689887ea0b93e87e70bf75998c79" kind="variable"><name>controladorGrafico</name></member>
+    <member refid="class_controlador_ludo_1ab1193a2e006fb72092a256cc49ae8017" kind="function"><name>ControladorLudo</name></member>
+    <member refid="class_controlador_ludo_1a0043ee0917399e55b6d8973c409d1126" kind="function"><name>crearTablero</name></member>
+    <member refid="class_controlador_ludo_1a0def944a34b36614a334906b51352c5f" kind="function"><name>asignarCantidadJugadores</name></member>
+    <member refid="class_controlador_ludo_1ad8f32268b8fc489e273ee194044e496c" kind="function"><name>ubicarJugadores</name></member>
+    <member refid="class_controlador_ludo_1a2f132e8e184ff0342acc71cc075085d7" kind="function"><name>asignarPrimerJugador</name></member>
+    <member refid="class_controlador_ludo_1a437197103e15a36cbc6287b7da626103" kind="function"><name>iniciarPartida</name></member>
+    <member refid="class_controlador_ludo_1af82bc91fc9f52b5a06cc87ed2a1b9839" kind="function"><name>pausarPartida</name></member>
+    <member refid="class_controlador_ludo_1a0eddf90f11e3f6a1b262329191fe83be" kind="function"><name>renaudarPartida</name></member>
+  </compound>
+  <compound refid="class_controlador_menu_opciones" kind="class"><name>ControladorMenuOpciones</name>
+    <member refid="class_controlador_menu_opciones_1ab7794f525b5d201c583097d68167111a" kind="variable"><name>menuOpciones</name></member>
+    <member refid="class_controlador_menu_opciones_1a0e614e3c7231901d94e7e5be71c09b8b" kind="variable"><name>controlador</name></member>
+    <member refid="class_controlador_menu_opciones_1af3b0bfb7f89efa733ca71f1d21e5ea15" kind="function"><name>ControladorMenuOpciones</name></member>
+    <member refid="class_controlador_menu_opciones_1a991cf74a309c2e6395d7ce3ea502f427" kind="function"><name>iniciar</name></member>
+    <member refid="class_controlador_menu_opciones_1a65ae24b04b22b212c51d0e94520272f9" kind="function"><name>cerrarVentana</name></member>
+    <member refid="class_controlador_menu_opciones_1a14a74e84746a98b91301542756847ed6" kind="function"><name>mostrarReglas</name></member>
+    <member refid="class_controlador_menu_opciones_1ab949868816b809facba96eceadf16096" kind="function"><name>graficarReglas</name></member>
+  </compound>
+  <compound refid="class_controlador_ventana_principal" kind="class"><name>ControladorVentanaPrincipal</name>
+    <member refid="class_controlador_ventana_principal_1ae879a89698a46d23b2c10de569a81a7e" kind="variable"><name>controlador</name></member>
+    <member refid="class_controlador_ventana_principal_1a33afd56d9e33d3d9e5cbee813950ee91" kind="variable"><name>ventanaPrincipal</name></member>
+    <member refid="class_controlador_ventana_principal_1ae6211e2db3269e37bf6e4dda1c6602d0" kind="function"><name>ControladorVentanaPrincipal</name></member>
+    <member refid="class_controlador_ventana_principal_1a7c86bd3d0ad32aa3cc1e93c7d02433f1" kind="function"><name>iniciar</name></member>
+    <member refid="class_controlador_ventana_principal_1a4ce7d6710edfa5e4e9d314ebf336d42c" kind="function"><name>cerrarVentana</name></member>
+    <member refid="class_controlador_ventana_principal_1a1b82c1d44b2e7d03e6840efa7d3afe12" kind="function"><name>graficarTablero</name></member>
+    <member refid="class_controlador_ventana_principal_1a3661b611af044d6383a1c740156d8833" kind="function"><name>graficarCarcel</name></member>
+    <member refid="class_controlador_ventana_principal_1a867ee2ba0782d11af07aac60aa2ac317" kind="function"><name>graficarLineaFinal</name></member>
+    <member refid="class_controlador_ventana_principal_1a7b7ad406a10a6f0e0cde4c8d95861ee2" kind="function"><name>graficarCeldas</name></member>
+  </compound>
+  <compound refid="class_dado" kind="class"><name>Dado</name>
+    <member refid="class_dado_1a4a541e4bd3b4d8a2bd5d58cfdcf0169a" kind="function"><name>Dado</name></member>
+    <member refid="class_dado_1a0aec497fb27fa73746fc2e6e2f2792cf" kind="function"><name>lanzar</name></member>
+  </compound>
+  <compound refid="class_deserializador_abstracto" kind="class"><name>DeserializadorAbstracto</name>
+    <member refid="class_deserializador_abstracto_1a8e66ff108f636d48c8382ac67697a5d9" kind="function"><name>DeserializadorAbstracto</name></member>
+    <member refid="class_deserializador_abstracto_1a661e9c0d627a4227d86505bfd163b2e3" kind="function"><name>~DeserializadorAbstracto</name></member>
+    <member refid="class_deserializador_abstracto_1acf891403209d1bef17941d43f664e6a7" kind="function"><name>deserializarObjeto</name></member>
+    <member refid="class_deserializador_abstracto_1ac5f5a054d0d5aa728c095a9a8c26f14d" kind="function"><name>deserializarListaObjetos</name></member>
+    <member refid="class_deserializador_abstracto_1ad2b876e40fbcac5e3ca3d457aeb30c5a" kind="function"><name>eliminarInicioFinObjeto</name></member>
+    <member refid="class_deserializador_abstracto_1a459cdf76513a40de48529bb03693a6e8" kind="function"><name>extraerLlaveValor</name></member>
+  </compound>
+  <compound refid="class_deserializador_j_s_o_n" kind="class"><name>DeserializadorJSON</name>
+    <member refid="class_deserializador_j_s_o_n_1a187ab235ad4817b8046a2b9e15440f89" kind="variable"><name>delimitadorAtributo</name></member>
+    <member refid="class_deserializador_j_s_o_n_1a7fab88fef45775d7f540cab01d0146cc" kind="variable"><name>delimitadorLlaveValor</name></member>
+    <member refid="class_deserializador_j_s_o_n_1ab41fa918c14256f9cf4dc0f0e0a9a454" kind="function"><name>DeserializadorJSON</name></member>
+    <member refid="class_deserializador_j_s_o_n_1a224b2d901df4fc905e0029a752336302" kind="function"><name>~DeserializadorJSON</name></member>
+    <member refid="class_deserializador_j_s_o_n_1ab338661720d87c3b9682e05c98fb6388" kind="function"><name>deserializarObjeto</name></member>
+    <member refid="class_deserializador_j_s_o_n_1a4220f258a8068094f505aad84ca33572" kind="function"><name>deserializarListaObjetos</name></member>
+    <member refid="class_deserializador_j_s_o_n_1a4512ff3c9f511b36cc49bda16ceb7aef" kind="function"><name>eliminarInicioFinObjeto</name></member>
+    <member refid="class_deserializador_j_s_o_n_1a954c9fe8f9650423e065944db397d092" kind="function"><name>extraerLlaveValor</name></member>
+  </compound>
+  <compound refid="class_ficha_abstracta" kind="class"><name>FichaAbstracta</name>
+    <member refid="class_ficha_abstracta_1a9d797189dc7b1cffea01b790c437798d" kind="function"><name>FichaAbstracta</name></member>
+    <member refid="class_ficha_abstracta_1a5eabc36ceb001b532efb63b04c7f7e0c" kind="function"><name>~FichaAbstracta</name></member>
+    <member refid="class_ficha_abstracta_1a096f14c45bcba475a7115b3bdecb6133" kind="function"><name>getColor</name></member>
+    <member refid="class_ficha_abstracta_1a55805649cc07a29fd2201c048501442c" kind="function"><name>getX</name></member>
+    <member refid="class_ficha_abstracta_1ae98101002e3fc65c4e52143d4732fb07" kind="function"><name>getY</name></member>
+    <member refid="class_ficha_abstracta_1ae6d14f2ed9b8edd376c29d5d2e268786" kind="function"><name>getEstado</name></member>
+    <member refid="class_ficha_abstracta_1a48db4b7a464fb3366e3e7b60b757792f" kind="function"><name>getFinalizado</name></member>
+    <member refid="class_ficha_abstracta_1a1548a4cff929eb7abc658e47004bfca0" kind="function"><name>setPosicion</name></member>
+    <member refid="class_ficha_abstracta_1afb819a234dde51f0122c0f5e9e92456c" kind="function"><name>getNumeroFicha</name></member>
+    <member refid="class_ficha_abstracta_1a521f868c4e14802f9f9bd27a0a2ba353" kind="function"><name>setColor</name></member>
+    <member refid="class_ficha_abstracta_1a09265b809136cee54ad93095750164cc" kind="function"><name>getPasosDados</name></member>
+    <member refid="class_ficha_abstracta_1ac114e105295553ab8eb908f2cc4f467f" kind="function"><name>setPasosDados</name></member>
+    <member refid="class_ficha_abstracta_1a105240228f9502a6c7f2fde59721ac01" kind="function"><name>setFinalizado</name></member>
+  </compound>
+  <compound refid="class_ficha_ludo" kind="class"><name>FichaLudo</name>
+    <member refid="class_ficha_ludo_1a3ab1932ae4367752ffba2a5c6a19daf8" kind="function"><name>FichaLudo</name></member>
+    <member refid="class_ficha_ludo_1a895258f7fc4bf7199a92ee3b93477c91" kind="function"><name>FichaLudo</name></member>
+    <member refid="class_ficha_ludo_1a21303373e82f6b3b80ae9f99ff491830" kind="function"><name>~FichaLudo</name></member>
+    <member refid="class_ficha_ludo_1ae00dcec4a98428c84801b35a19e62bdd" kind="function"><name>setEstadoActivo</name></member>
+    <member refid="class_ficha_ludo_1a1560b9752f39d4fa9655793de13db264" kind="function"><name>getZonaSegura</name></member>
+    <member refid="class_ficha_ludo_1ad420ca57fed9d697d5d189a8403bf6e2" kind="function"><name>activarFicha</name></member>
+    <member refid="class_ficha_ludo_1a84ced00eae0fe6a065b9399fe815702c" kind="function"><name>desactivarFicha</name></member>
+    <member refid="class_ficha_ludo_1a54feee3445f46d38868865ce7579da84" kind="function"><name>setFinalizado</name></member>
+  </compound>
+  <compound refid="class_hilera" kind="class"><name>Hilera</name>
+    <member refid="class_hilera_1a876f5f3aa15e38082f56cda9cfa4cfb1" kind="variable"><name>valor</name></member>
+    <member refid="class_hilera_1aec103ce2d8d9b15964663754f0e2f36b" kind="function"><name>Hilera</name></member>
+    <member refid="class_hilera_1ad77cde8863aec0462356ef850df071f4" kind="function"><name>Hilera</name></member>
+    <member refid="class_hilera_1af07a58c64e9e0889a0bf1847045f20ca" kind="function"><name>~Hilera</name></member>
+    <member refid="class_hilera_1abb233c49d7668951264223a11a811fe0" kind="function"><name>asg</name></member>
+    <member refid="class_hilera_1aac840f78bc69d06d05b8aead587ed5c5" kind="function"><name>obt</name></member>
+    <member refid="class_hilera_1aa84d381234a755f6a3446cf1065bfb69" kind="function"><name>obtTipo</name></member>
+    <member refid="class_hilera_1aa253308b10738923d9e9ea1586de4cb1" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="class_inventario" kind="class"><name>Inventario</name>
+    <member refid="class_inventario_1a8866c386e4259c0fa0e42aab749723ff" kind="typedef"><name>Inventory</name></member>
+    <member refid="class_inventario_1ad80ae0df0a87360e897cd23ed425e8c9" kind="variable"><name>inventory</name></member>
+    <member refid="class_inventario_1ab7ca21da6822bc59fa236f7238e20fd3" kind="function"><name>Inventario</name></member>
+    <member refid="class_inventario_1a275a98d42d6aeb4d8130f5a01a521614" kind="function"><name>Inventario</name></member>
+    <member refid="class_inventario_1a0b5c030c7cc22e57f92743fa26b781de" kind="function"><name>~Inventario</name></member>
+    <member refid="class_inventario_1a323b072148949e30cc53794291c08d12" kind="function"><name>asignarInventario</name></member>
+    <member refid="class_inventario_1aeb98565cd0a5b1f597470db82a1f4497" kind="function"><name>obtenerInventario</name></member>
+    <member refid="class_inventario_1ad83e571cf862322cb4b7f62a3f97b8cd" kind="function"><name>sizeInventory</name></member>
+    <member refid="class_inventario_1aae7d9490cfb6bb28adb6d638e9c9f106" kind="function"><name>addObject</name></member>
+    <member refid="class_inventario_1a23b48312f745af2eeb5823681d3b7307" kind="function"><name>removeObject</name></member>
+    <member refid="class_inventario_1ab8518faf8794245ab7db75d2a0df0717" kind="function"><name>cleanInventory</name></member>
+    <member refid="class_inventario_1ae52b7b2ff1910b464e3d9dbfb2d8cdbe" kind="function"><name>search</name></member>
+  </compound>
+  <compound refid="class_jugador" kind="class"><name>Jugador</name>
+    <member refid="class_jugador_1a6edb40e25712a8f98fbc3161e414dafa" kind="variable"><name>esGanador</name></member>
+    <member refid="class_jugador_1aa679d387ca3af094bade60748a7ad62a" kind="variable"><name>cantidadDados</name></member>
+    <member refid="class_jugador_1a786a0a4f83ebfa5709a771b6b5efdf90" kind="variable"><name>fichas</name></member>
+    <member refid="class_jugador_1a232c46f75691af6210096e5972535d71" kind="function"><name>Jugador</name></member>
+    <member refid="class_jugador_1af58c09391e50529e009a8166707158d1" kind="function"><name>~Jugador</name></member>
+    <member refid="class_jugador_1ad95196fbcc19ddbc50285f739db475fa" kind="function"><name>setNombre</name></member>
+    <member refid="class_jugador_1ab6c7de8724019fa98431bf0ca656d55f" kind="function"><name>getNombre</name></member>
+    <member refid="class_jugador_1a0867a6a4a10f4de855b5a34aeb6c42aa" kind="function"><name>setColor</name></member>
+    <member refid="class_jugador_1a4fb6f6adf3a1f404b6619c2fdb0e8502" kind="function"><name>getColor</name></member>
+    <member refid="class_jugador_1a4fb19395d8df5a0a0723a4150df9d1b9" kind="function"><name>getEsGanador</name></member>
+    <member refid="class_jugador_1af2cf3faaf38044b3215a7a6587699473" kind="function"><name>moverFicha</name></member>
+    <member refid="class_jugador_1a148ab5b9ec0cc5d7f43ebe255a76f8ab" kind="function"><name>elegirFicha</name></member>
+    <member refid="class_jugador_1a62e6bcf6805e13f2253413c8e8dcbb2d" kind="function"><name>lanzarDado</name></member>
+    <member refid="class_jugador_1a72c706b2a576db1082089ff225cbca4c" kind="function"><name>setFichas</name></member>
+    <member refid="class_jugador_1aaef5a3b792e1fccfc083ae034ecc3068" kind="function"><name>getFichas</name></member>
+    <member refid="class_jugador_1a36a170afd57ed41fa107a9efcf6fde46" kind="function"><name>elegirQueHacer</name></member>
+    <member refid="class_jugador_1a58269958d36a7e04903d540392662b60" kind="function"><name>jugarTurno</name></member>
+  </compound>
+  <compound refid="class_jugador_ludo" kind="class"><name>JugadorLudo</name>
+    <member refid="class_jugador_ludo_1adb4aadf616a0383ad913c48af8ca37d8" kind="function"><name>JugadorLudo</name></member>
+    <member refid="class_jugador_ludo_1acb15ec092fbaa8c7129c3cdb051877a3" kind="function"><name>JugadorLudo</name></member>
+    <member refid="class_jugador_ludo_1a9067143c3c47c293a61a92400f6c5c47" kind="function"><name>~JugadorLudo</name></member>
+    <member refid="class_jugador_ludo_1a97b10a6ffd9eeed7857e29d3e3a6e3c3" kind="function"><name>moverFicha</name></member>
+    <member refid="class_jugador_ludo_1aeacab2bbf9593ce2806daac9e00607f9" kind="function"><name>elegirFicha</name></member>
+    <member refid="class_jugador_ludo_1abbbb7e3709644473f5572b735705727e" kind="function"><name>encontrarBarrera</name></member>
+    <member refid="class_jugador_ludo_1ad143a16486e648797c361c38a4bad6c9" kind="function"><name>moverFichaRectaFinal</name></member>
+    <member refid="class_jugador_ludo_1af2e970dfd7d2c4737924ab647bfbcb0e" kind="function"><name>elegirQueHacer</name></member>
+  </compound>
+  <compound refid="class_menu_opciones" kind="class"><name>MenuOpciones</name>
+    <member refid="class_menu_opciones_1aeb13559ff3af9a65da6153f20bae3ef9" kind="variable"><name>ui</name></member>
+    <member refid="class_menu_opciones_1a787b33d68104c784a1940d0e75b2ca01" kind="variable"><name>controlador</name></member>
+    <member refid="class_menu_opciones_1a6f69efc29902f12c9629e5fe5889cfda" kind="function"><name>MenuOpciones</name></member>
+    <member refid="class_menu_opciones_1a644c24eb1c7f3b66efeb389b2022b744" kind="function"><name>~MenuOpciones</name></member>
+    <member refid="class_menu_opciones_1a40c88f4582c98684ad9ab032b62206f5" kind="function"><name>setControlador</name></member>
+    <member refid="class_menu_opciones_1a85badc8ddc73f927a029d36810c01455" kind="slot"><name>on_botonReglas_clicked</name></member>
+    <member refid="class_menu_opciones_1adf32d35de18b446cde581ed48fff217c" kind="slot"><name>on_botonRenaudar_clicked</name></member>
+    <member refid="class_menu_opciones_1a681d1d0c3f7fc699fb733996b09d9e0a" kind="slot"><name>on_botonJugar_clicked</name></member>
+  </compound>
+  <compound refid="class_objeto" kind="class"><name>Objeto</name>
+    <member refid="class_objeto_1a040a9e302397e6086a42359e211f6eca" kind="typedef"><name>map_atributos</name></member>
+    <member refid="class_objeto_1ab878bedc5f74ad9c7a59bc3e4c675bee" kind="variable"><name>atributos</name></member>
+    <member refid="class_objeto_1a5608071f995c220f0f1a0e5887c2d11d" kind="function"><name>Objeto</name></member>
+    <member refid="class_objeto_1a02425fff0768299968af03ac86deb496" kind="function"><name>~Objeto</name></member>
+    <member refid="class_objeto_1acd863032b2761cf855ecdf0a6052fcbb" kind="function"><name>obtAtributos</name></member>
+    <member refid="class_objeto_1a9c0f555aac2bb7fb2a2f557168a3552d" kind="function"><name>setAtributos</name></member>
+    <member refid="class_objeto_1a480513c7fbed9c4c8ba82eb704d0c3ac" kind="function"><name>agregarAtributo</name></member>
+    <member refid="class_objeto_1a8ec095f9fa9cbab27d0361e49aecff33" kind="function"><name>obtenerAtributo</name></member>
+  </compound>
+  <compound refid="class_obt_asg" kind="class"><name>ObtAsg</name>
+    <member refid="class_obt_asg_1a284d054c7a8f3f16188d679d6c4d460a" kind="function"><name>ObtAsg</name></member>
+    <member refid="class_obt_asg_1a3a92ca90c7d8ecdcbc338ba356bcd28e" kind="function"><name>~ObtAsg</name></member>
+    <member refid="class_obt_asg_1a65b0b62addb2fc84d0f98ad3fa17b769" kind="function"><name>asg</name></member>
+    <member refid="class_obt_asg_1a2b2cbca7f00fc54a0c297d22f6ca4e86" kind="function"><name>obt</name></member>
+  </compound>
+  <compound refid="class_regla" kind="class"><name>Regla</name>
+    <member refid="class_regla_1a3e23cc05c02450b70844954d7c0a66fd" kind="variable"><name>nombre</name></member>
+    <member refid="class_regla_1a356e2b49689a0de3fcc19d984cf81eb8" kind="function"><name>Regla</name></member>
+    <member refid="class_regla_1ab20cf8981ad5ce673944c0f63c8d6266" kind="function"><name>Regla</name></member>
+    <member refid="class_regla_1a47a421cf04e3defcdcfcc1825c79be67" kind="function"><name>~Regla</name></member>
+    <member refid="class_regla_1a2203265b86dfddef5cc86bcb5a303129" kind="function"><name>setNombre</name></member>
+    <member refid="class_regla_1a341532505717a545029df13713d02fc4" kind="function"><name>obtenerNombre</name></member>
+  </compound>
+  <compound refid="class_tablero_abstracto" kind="class"><name>TableroAbstracto</name>
+    <member refid="class_tablero_abstracto_1a02d00745f558bea3552396c9955686b4" kind="variable"><name>jugadores</name></member>
+    <member refid="class_tablero_abstracto_1a1296b39cde632d8e4290acf95776fa9e" kind="variable"><name>jugadorActual</name></member>
+    <member refid="class_tablero_abstracto_1a95a153799d93e9fa532477a7e2daa2e3" kind="variable"><name>dado</name></member>
+    <member refid="class_tablero_abstracto_1a2fa7771b08c08228fc1899765803f56b" kind="variable"><name>juegoTerminado</name></member>
+    <member refid="class_tablero_abstracto_1a05909b3cde1b4ca8382643e1853bf670" kind="variable"><name>validador</name></member>
+    <member refid="class_tablero_abstracto_1a91608dc047952e035c27797a2021d90b" kind="variable"><name>controladorJuego</name></member>
+    <member refid="class_tablero_abstracto_1aeaf4aad157c7a0e2011e2085fabef061" kind="function"><name>TableroAbstracto</name></member>
+    <member refid="class_tablero_abstracto_1a56fa93332f76dd57811f9afc9a90ab4c" kind="function"><name>~TableroAbstracto</name></member>
+    <member refid="class_tablero_abstracto_1aa1400d0a30bdb81eb47f25d1fca02ad9" kind="function"><name>asignarCantidadJugadores</name></member>
+    <member refid="class_tablero_abstracto_1ac5ba08c3ee94a8474a3e2714f512fd03" kind="function"><name>ubicarJugadores</name></member>
+    <member refid="class_tablero_abstracto_1a9be989e9fb3b2f260cce478bf75b07ca" kind="function"><name>hayGanador</name></member>
+    <member refid="class_tablero_abstracto_1a5fc96da84c591fb65518b1df93c1437c" kind="function"><name>finalizarJuego</name></member>
+    <member refid="class_tablero_abstracto_1a095897aec5517d91054d7e5ad4a5c043" kind="function"><name>detenerPartida</name></member>
+    <member refid="class_tablero_abstracto_1a397adc173989cc9c11c5dd0105476777" kind="function"><name>setJugadores</name></member>
+    <member refid="class_tablero_abstracto_1a61b824bdb2afa2eef081e9bdeedc3c61" kind="function"><name>iniciarPartida</name></member>
+    <member refid="class_tablero_abstracto_1a5802d66b05abd6f955f2653808b743a0" kind="function"><name>pasarTurno</name></member>
+    <member refid="class_tablero_abstracto_1a866569a962560d2b5ad6d8b2e372e73e" kind="function"><name>jugarTurno</name></member>
+    <member refid="class_tablero_abstracto_1a7d64c4c45581009dd756d450f0c6ecf7" kind="function"><name>asignarPrimerJugador</name></member>
+    <member refid="class_tablero_abstracto_1a4ebecae63b4d3614c5642d57d8a72393" kind="function"><name>getJugadorActual</name></member>
+    <member refid="class_tablero_abstracto_1a3ce105dee20c0af4908a0f3890af698b" kind="function"><name>getjugadores</name></member>
+    <member refid="class_tablero_abstracto_1ac633f2b502332f61a110ceb471d6bc04" kind="function"><name>getCantidadJugadores</name></member>
+    <member refid="class_tablero_abstracto_1a0a767e1b6b5dc5e8a2392d68ea7d1299" kind="function"><name>setCantidadJugadores</name></member>
+    <member refid="class_tablero_abstracto_1ac07e39d83240a0e808766bd579e51399" kind="function"><name>getNumeroJugadorActual</name></member>
+    <member refid="class_tablero_abstracto_1ad9717214c399678e131d25e60a39aa47" kind="function"><name>setNumeroJugadorActual</name></member>
+    <member refid="class_tablero_abstracto_1a47ea9dbe0756537b8a3becc8114b0ae7" kind="function"><name>lanzarDado</name></member>
+    <member refid="class_tablero_abstracto_1a12716af3327adc47936750f2eefc4eff" kind="function"><name>getValidador</name></member>
+    <member refid="class_tablero_abstracto_1adf5899ad7b7da6b37fc63b6ae68451b6" kind="function"><name>getJugadores</name></member>
+  </compound>
+  <compound refid="class_tablero_ludo" kind="class"><name>TableroLudo</name>
+    <member refid="class_tablero_ludo_1a4cfff68190996bccec79105dffd2fe2a" kind="variable"><name>tablero</name></member>
+    <member refid="class_tablero_ludo_1a3be6cb9c101958f746083321aa8e52a9" kind="variable"><name>controlador</name></member>
+    <member refid="class_tablero_ludo_1a07cb9054f999fcabdeedb65bf2742a91" kind="function"><name>TableroLudo</name></member>
+    <member refid="class_tablero_ludo_1a5b4b6a0304dd1da7011ab92466578230" kind="function"><name>~TableroLudo</name></member>
+    <member refid="class_tablero_ludo_1a827d3aea0b0f72121ef7e8accf7369a2" kind="function"><name>ubicarJugadores</name></member>
+    <member refid="class_tablero_ludo_1ad8b80b6080fb8e56992521247946afc4" kind="function"><name>jugarTurno</name></member>
+    <member refid="class_tablero_ludo_1abf37b69c04f5696673278b789abcb525" kind="function"><name>asignarPrimerJugador</name></member>
+    <member refid="class_tablero_ludo_1aaba6edc9c056dcfea2e532be385bef2e" kind="function"><name>toString</name></member>
+    <member refid="class_tablero_ludo_1a80baa66eb36c7f1a15e631a56d491fd2" kind="function"><name>hayGanador</name></member>
+    <member refid="class_tablero_ludo_1acdc6b8b7a08f4079fb5e610bc2e37b3f" kind="function"><name>elegirFicha</name></member>
+    <member refid="class_tablero_ludo_1a4cc8877104f4387abaf9d48fd5641fc0" kind="function"><name>rellenarMesa</name></member>
+    <member refid="class_tablero_ludo_1a12aac5262a7f00c626e1b39c76e25c84" kind="function"><name>setControlador</name></member>
+    <member refid="class_tablero_ludo_1a1b41226aee3f62796265b0cb15015cdc" kind="function"><name>graficarInformacion</name></member>
+    <member refid="class_tablero_ludo_1ad8892dc6ff69197210e2cf3f7e8f8978" kind="function"><name>graficoElejirFicha</name></member>
+  </compound>
+  <compound refid="structtipo" kind="struct"><name>tipo</name>
+    <member refid="structtipo_1a154d8704b5f9bd45c19ee12ce39f0438" kind="enum"><name>tipo_atributo</name></member>
+    <member refid="structtipo_1a154d8704b5f9bd45c19ee12ce39f0438a6d17d725519b081dbb55562832456992" kind="enumvalue"><name>Hilera</name></member>
+  </compound>
+  <compound refid="class_validador" kind="class"><name>Validador</name>
+    <member refid="class_validador_1a023e74266c9f87cac6d0207370ff8ec9" kind="variable"><name>reglas</name></member>
+    <member refid="class_validador_1aa230a5ac6dc4027d3a07f6c4d07174da" kind="variable"><name>mesa</name></member>
+    <member refid="class_validador_1ab30fc29192df70a24021fd3946c2beba" kind="function"><name>Validador</name></member>
+    <member refid="class_validador_1a9db816651c0431c694b2cea5617c447a" kind="function"><name>Validador</name></member>
+    <member refid="class_validador_1ab10f475fc21b063297ea9e88ecc248c1" kind="function"><name>~Validador</name></member>
+    <member refid="class_validador_1a7c14f9a57a01c0e0526fdb34ccb5ca15" kind="function"><name>iniciarReglas</name></member>
+    <member refid="class_validador_1a1a438758b10a8ba26fff7b1b4a8ce666" kind="function"><name>validarJugada</name></member>
+    <member refid="class_validador_1a6830cb59f0ba53f7e82c350fdc53803a" kind="function"><name>obtenerReglas</name></member>
+    <member refid="class_validador_1a97b3edfbf7146ab1cec5a60dbcf0b438" kind="function"><name>toStringReglas</name></member>
+    <member refid="class_validador_1a52baec11f22a8cb5db6ebb8916ad61e4" kind="function"><name>esGanador</name></member>
+  </compound>
+  <compound refid="class_validador_ludo" kind="class"><name>ValidadorLudo</name>
+    <member refid="class_validador_ludo_1a5a171a8b07a39a0d6b24948b744f320e" kind="variable"><name>mesaLudo</name></member>
+    <member refid="class_validador_ludo_1ae699bd2e4aecaf3cb46ea7b5d64122d2" kind="function"><name>ValidadorLudo</name></member>
+    <member refid="class_validador_ludo_1a92fd956da440e4d674ce45104b74fae3" kind="function"><name>ValidadorLudo</name></member>
+    <member refid="class_validador_ludo_1a2bf1594290b792e0ac843044f21b81d8" kind="function"><name>ValidadorLudo</name></member>
+    <member refid="class_validador_ludo_1ab425b3adcd423b8a34b37ff79797c951" kind="function"><name>iniciarReglas</name></member>
+    <member refid="class_validador_ludo_1ae6e176661e35a9ef63b1d3d619aeadca" kind="function"><name>validarJugada</name></member>
+    <member refid="class_validador_ludo_1a880b4b191d4013b5759f5c7212787578" kind="function"><name>verificarBloqueo</name></member>
+    <member refid="class_validador_ludo_1a2221fd67729e5387a2f77b252ad010fa" kind="function"><name>castTable</name></member>
+    <member refid="class_validador_ludo_1a448efced2195f0d02772378bbe0ed9f6" kind="function"><name>setMesaLudo</name></member>
+    <member refid="class_validador_ludo_1a77adad3f57c402f2efbeaacbd24dd418" kind="function"><name>reglaOcho</name></member>
+    <member refid="class_validador_ludo_1a2cb05ebae6ef49f8942cc1152348b4a8" kind="function"><name>verifComer</name></member>
+    <member refid="class_validador_ludo_1a97418a07c1a1d66b29fc8785a7a1ffae" kind="function"><name>validarSeis</name></member>
+    <member refid="class_validador_ludo_1a7e101d4e69e2086cea7bcf5390ec49a1" kind="function"><name>finalizaFicha</name></member>
+    <member refid="class_validador_ludo_1a5945e34057c945ecc11dd56b1248a911" kind="function"><name>esGanador</name></member>
+  </compound>
+  <compound refid="class_valor" kind="class"><name>Valor</name>
+    <member refid="class_valor_1adf996fdeea290862397f7044275a1272" kind="function"><name>Valor</name></member>
+    <member refid="class_valor_1a6b4af8330d1b21fc5c00bda709a28993" kind="function"><name>~Valor</name></member>
+    <member refid="class_valor_1a46bb532f2cdc58a88248a8ac9164de01" kind="function"><name>obtTipo</name></member>
+    <member refid="class_valor_1a6866e49fde59536488c94397021a229c" kind="function"><name>toString</name></member>
+  </compound>
+  <compound refid="classventana_informacion" kind="class"><name>ventanaInformacion</name>
+    <member refid="classventana_informacion_1a3e51753cc2e8948765a62e1d1678d94a" kind="variable"><name>ui</name></member>
+    <member refid="classventana_informacion_1af1301cb82a55a092564016eb7408868d" kind="function"><name>ventanaInformacion</name></member>
+    <member refid="classventana_informacion_1a02c99dec4ccae7e8fe1ac091a66e25fc" kind="function"><name>~ventanaInformacion</name></member>
+  </compound>
+  <compound refid="class_ventana_principal" kind="class"><name>VentanaPrincipal</name>
+    <member refid="class_ventana_principal_1ab80f71df7b8dbd8d8025bbba120e9db1" kind="variable"><name>ui</name></member>
+    <member refid="class_ventana_principal_1a2c781413d7125f01cfe9e36e4b306092" kind="variable"><name>controlador</name></member>
+    <member refid="class_ventana_principal_1abbedfdc640de92a31b088cd1e515d4d0" kind="function"><name>VentanaPrincipal</name></member>
+    <member refid="class_ventana_principal_1a1d02e09eec374007cb1469f458f50cc7" kind="function"><name>setControlador</name></member>
+    <member refid="class_ventana_principal_1aeeba538e11b05363e00e224649df9a0a" kind="function"><name>~VentanaPrincipal</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="namespace_ui" kind="namespace"><name>Ui</name>
+  </compound>
+  <compound refid="_constructor_serializador_abstracto_8h" kind="file"><name>ConstructorSerializadorAbstracto.h</name>
+  </compound>
+  <compound refid="_constructor_serializador_j_s_o_n_8cpp" kind="file"><name>ConstructorSerializadorJSON.cpp</name>
+  </compound>
+  <compound refid="_constructor_serializador_j_s_o_n_8h" kind="file"><name>ConstructorSerializadorJSON.h</name>
+  </compound>
+  <compound refid="_controlador___memento_8cpp" kind="file"><name>Controlador_Memento.cpp</name>
+    <member refid="_controlador___memento_8cpp_1a1986dd8fc3d3c9127a588d4c38efdb32" kind="function"><name>abrirArchivo</name></member>
+    <member refid="_controlador___memento_8cpp_1ae1cadc276b6a54f52393adece39c24ca" kind="function"><name>extraerFilas</name></member>
+  </compound>
+  <compound refid="_controlador___memento_8h" kind="file"><name>Controlador_Memento.h</name>
+  </compound>
+  <compound refid="controlador__ventanas_8cpp" kind="file"><name>controlador_ventanas.cpp</name>
+  </compound>
+  <compound refid="controlador__ventanas_8h" kind="file"><name>controlador_ventanas.h</name>
+  </compound>
+  <compound refid="_controlador_abstracto_8h" kind="file"><name>ControladorAbstracto.h</name>
+  </compound>
+  <compound refid="_controlador_ludo_8cpp" kind="file"><name>ControladorLudo.cpp</name>
+  </compound>
+  <compound refid="_controlador_ludo_8h" kind="file"><name>ControladorLudo.h</name>
+  </compound>
+  <compound refid="controladormenuopciones_8cpp" kind="file"><name>controladormenuopciones.cpp</name>
+  </compound>
+  <compound refid="controladormenuopciones_8h" kind="file"><name>controladormenuopciones.h</name>
+  </compound>
+  <compound refid="controladorventanaprincipal_8cpp" kind="file"><name>controladorventanaprincipal.cpp</name>
+  </compound>
+  <compound refid="controladorventanaprincipal_8h" kind="file"><name>controladorventanaprincipal.h</name>
+  </compound>
+  <compound refid="_dado_8h" kind="file"><name>Dado.h</name>
+  </compound>
+  <compound refid="_deserializador_abstracto_8h" kind="file"><name>DeserializadorAbstracto.h</name>
+  </compound>
+  <compound refid="_deserializador_j_s_o_n_8cpp" kind="file"><name>DeserializadorJSON.cpp</name>
+  </compound>
+  <compound refid="_deserializador_j_s_o_n_8h" kind="file"><name>DeserializadorJSON.h</name>
+  </compound>
+  <compound refid="_ficha_abstracta_8h" kind="file"><name>FichaAbstracta.h</name>
+  </compound>
+  <compound refid="_ficha_ludo_8cpp" kind="file"><name>FichaLudo.cpp</name>
+  </compound>
+  <compound refid="_ficha_ludo_8h" kind="file"><name>FichaLudo.h</name>
+  </compound>
+  <compound refid="_hilera_8cpp" kind="file"><name>Hilera.cpp</name>
+  </compound>
+  <compound refid="_hilera_8h" kind="file"><name>Hilera.h</name>
+  </compound>
+  <compound refid="_inventario_8cpp" kind="file"><name>Inventario.cpp</name>
+  </compound>
+  <compound refid="_inventario_8h" kind="file"><name>Inventario.h</name>
+  </compound>
+  <compound refid="_jugador_8h" kind="file"><name>Jugador.h</name>
+  </compound>
+  <compound refid="_jugador_ludo_8cpp" kind="file"><name>JugadorLudo.cpp</name>
+  </compound>
+  <compound refid="_jugador_ludo_8h" kind="file"><name>JugadorLudo.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="menuopciones_8cpp" kind="file"><name>menuopciones.cpp</name>
+  </compound>
+  <compound refid="menuopciones_8h" kind="file"><name>menuopciones.h</name>
+  </compound>
+  <compound refid="_objeto_8cpp" kind="file"><name>Objeto.cpp</name>
+  </compound>
+  <compound refid="_objeto_8h" kind="file"><name>Objeto.h</name>
+  </compound>
+  <compound refid="_obt_asg_8h" kind="file"><name>ObtAsg.h</name>
+  </compound>
+  <compound refid="_regla_8cpp" kind="file"><name>Regla.cpp</name>
+  </compound>
+  <compound refid="_regla_8h" kind="file"><name>Regla.h</name>
+  </compound>
+  <compound refid="_tablero_abstracto_8h" kind="file"><name>TableroAbstracto.h</name>
+  </compound>
+  <compound refid="_tablero_ludo_8cpp" kind="file"><name>TableroLudo.cpp</name>
+  </compound>
+  <compound refid="tablero_l_u_d_o_8h" kind="file"><name>tableroLUDO.h</name>
+  </compound>
+  <compound refid="tipo_8h" kind="file"><name>tipo.h</name>
+  </compound>
+  <compound refid="_validador_8h" kind="file"><name>Validador.h</name>
+  </compound>
+  <compound refid="_validador_ludo_8cpp" kind="file"><name>ValidadorLudo.cpp</name>
+  </compound>
+  <compound refid="_validador_ludo_8h" kind="file"><name>ValidadorLudo.h</name>
+  </compound>
+  <compound refid="_valor_8h" kind="file"><name>Valor.h</name>
+  </compound>
+  <compound refid="ventanainformacion_8cpp" kind="file"><name>ventanainformacion.cpp</name>
+  </compound>
+  <compound refid="ventanainformacion_8h" kind="file"><name>ventanainformacion.h</name>
+  </compound>
+  <compound refid="ventanaprincipal_8cpp" kind="file"><name>ventanaprincipal.cpp</name>
+  </compound>
+  <compound refid="ventanaprincipal_8h" kind="file"><name>ventanaprincipal.h</name>
+  </compound>
+  <compound refid="dir_11e385f45335dd4479d25572459cf6d8" kind="dir"><name>D:/UCR/2022</name>
+  </compound>
+  <compound refid="dir_19a808222bbd27d0b5b3022f0accdaed" kind="dir"><name>D:/UCR/2022/Segundo semestre/Diseño de Software</name>
+  </compound>
+  <compound refid="dir_a22c8cae9974ba96c72dcff4e7945795" kind="dir"><name>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO</name>
+  </compound>
+  <compound refid="dir_acff041e2fc4473c4cce75630962164c" kind="dir"><name>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO</name>
+  </compound>
+  <compound refid="dir_e66253e4b40cac40815745f01404749d" kind="dir"><name>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT</name>
+  </compound>
+  <compound refid="dir_8faf8367b3a375e308723866f4eb76d6" kind="dir"><name>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto</name>
+  </compound>
+  <compound refid="dir_1d823f31e6b5010db3cc927b0e5b1832" kind="dir"><name>D:/UCR/2022/Segundo semestre</name>
+  </compound>
+  <compound refid="dir_46192aec8429aeee23b32e3749810c4b" kind="dir"><name>D:/UCR</name>
+  </compound>
+</doxygenindex>

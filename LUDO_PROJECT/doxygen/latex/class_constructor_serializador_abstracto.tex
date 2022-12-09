@@ -1,0 +1,74 @@
+\hypertarget{class_constructor_serializador_abstracto}{}\doxysection{Constructor\+Serializador\+Abstracto Class Reference}
+\label{class_constructor_serializador_abstracto}\index{ConstructorSerializadorAbstracto@{ConstructorSerializadorAbstracto}}
+Inheritance diagram for Constructor\+Serializador\+Abstracto\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_constructor_serializador_abstracto}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_constructor_serializador_abstracto_a11b82d3d7a12ed4e7f4d8d92689f2fc1}\label{class_constructor_serializador_abstracto_a11b82d3d7a12ed4e7f4d8d92689f2fc1}} 
+\mbox{\hyperlink{class_constructor_serializador_abstracto_a11b82d3d7a12ed4e7f4d8d92689f2fc1}{Constructor\+Serializador\+Abstracto}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Constructor Serializador Abstracto object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_constructor_serializador_abstracto_ad4e49d3c99d1899fa8aa0c1498853f47}\label{class_constructor_serializador_abstracto_ad4e49d3c99d1899fa8aa0c1498853f47}} 
+\mbox{\hyperlink{class_constructor_serializador_abstracto_ad4e49d3c99d1899fa8aa0c1498853f47}{$\sim$\+Constructor\+Serializador\+Abstracto}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Constructor Serializador Abstracto object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_constructor_serializador_abstracto_adb23b92a09cab3cbd6af0f2376beaa27}\label{class_constructor_serializador_abstracto_adb23b92a09cab3cbd6af0f2376beaa27}} 
+virtual void \mbox{\hyperlink{class_constructor_serializador_abstracto_adb23b92a09cab3cbd6af0f2376beaa27}{inicio\+Objeto}} ()=0
+\begin{DoxyCompactList}\small\item\em Inicia el objeto serializador dependiendo del formato. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_constructor_serializador_abstracto_a5103ba163e8a585b41d32eda00fb357c}\label{class_constructor_serializador_abstracto_a5103ba163e8a585b41d32eda00fb357c}} 
+virtual void \mbox{\hyperlink{class_constructor_serializador_abstracto_a5103ba163e8a585b41d32eda00fb357c}{fin\+Objeto}} ()=0
+\begin{DoxyCompactList}\small\item\em Agrega el fin del objeto serializador dependiendo del formato. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_constructor_serializador_abstracto_a0c767f29e5c3533b59b9ce99d34bdd62}{serializar\+Hilera}} (const std\+::pair$<$ std\+::string, \mbox{\hyperlink{class_valor}{Valor}} $\ast$ $>$ \&ph)=0
+\begin{DoxyCompactList}\small\item\em Serializa la hilera de acuerdo con el formato, se utiliza un objeto par que contiene una string y un puntero a objeto \mbox{\hyperlink{class_valor}{Valor}}. Imprime según el orden que necesite la implementación específica. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_constructor_serializador_abstracto_ada8ca9cdbcb6148250951f43f09b097e}{obt\+Serializacion}} ()=0
+\begin{DoxyCompactList}\small\item\em Devuelve la hilera que contiene la serialización en formato string. Crear una hilera en cada implementación. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_constructor_serializador_abstracto_a90dc3765cd774fd68383141534c8d516}\label{class_constructor_serializador_abstracto_a90dc3765cd774fd68383141534c8d516}} 
+virtual void \mbox{\hyperlink{class_constructor_serializador_abstracto_a90dc3765cd774fd68383141534c8d516}{agregar\+Separador}} ()=0
+\begin{DoxyCompactList}\small\item\em Agrega el separador a la hilera de la serialización dependiendo de la implementación. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_constructor_serializador_abstracto_ada8ca9cdbcb6148250951f43f09b097e}\label{class_constructor_serializador_abstracto_ada8ca9cdbcb6148250951f43f09b097e}} 
+\index{ConstructorSerializadorAbstracto@{ConstructorSerializadorAbstracto}!obtSerializacion@{obtSerializacion}}
+\index{obtSerializacion@{obtSerializacion}!ConstructorSerializadorAbstracto@{ConstructorSerializadorAbstracto}}
+\doxysubsubsection{\texorpdfstring{obtSerializacion()}{obtSerializacion()}}
+{\footnotesize\ttfamily virtual std\+::string Constructor\+Serializador\+Abstracto\+::obt\+Serializacion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Devuelve la hilera que contiene la serialización en formato string. Crear una hilera en cada implementación. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string La string con la serialización. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_constructor_serializador_j_s_o_n_a189cf123b5cacbd40e64f5546ad322c1}{Constructor\+Serializador\+JSON}}.
+
+\mbox{\Hypertarget{class_constructor_serializador_abstracto_a0c767f29e5c3533b59b9ce99d34bdd62}\label{class_constructor_serializador_abstracto_a0c767f29e5c3533b59b9ce99d34bdd62}} 
+\index{ConstructorSerializadorAbstracto@{ConstructorSerializadorAbstracto}!serializarHilera@{serializarHilera}}
+\index{serializarHilera@{serializarHilera}!ConstructorSerializadorAbstracto@{ConstructorSerializadorAbstracto}}
+\doxysubsubsection{\texorpdfstring{serializarHilera()}{serializarHilera()}}
+{\footnotesize\ttfamily virtual void Constructor\+Serializador\+Abstracto\+::serializar\+Hilera (\begin{DoxyParamCaption}\item[{const std\+::pair$<$ std\+::string, \mbox{\hyperlink{class_valor}{Valor}} $\ast$ $>$ \&}]{ph }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Serializa la hilera de acuerdo con el formato, se utiliza un objeto par que contiene una string y un puntero a objeto \mbox{\hyperlink{class_valor}{Valor}}. Imprime según el orden que necesite la implementación específica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ph} & \mbox{\hyperlink{class_objeto}{Objeto}} par, el primero es una string, el segundo es un objeto \mbox{\hyperlink{class_valor}{Valor}}, por lo general, se espera que el contenido de este se pase a string para la serialización. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_constructor_serializador_j_s_o_n_afd8a9293549a42378c1374a9254e2512}{Constructor\+Serializador\+JSON}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/\mbox{\hyperlink{_constructor_serializador_abstracto_8h}{Constructor\+Serializador\+Abstracto.\+h}}\end{DoxyCompactItemize}

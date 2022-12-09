@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_constructor_serializador_j_s_o_n" kind="class" language="C++" prot="public">
+    <compoundname>ConstructorSerializadorJSON</compoundname>
+    <basecompoundref refid="class_constructor_serializador_abstracto" prot="public" virt="non-virtual">ConstructorSerializadorAbstracto</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_constructor_serializador_j_s_o_n_1ad49bef8e4e85ae7f90a74ebd683b6184" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ConstructorSerializadorJSON::serializacion</definition>
+        <argsstring></argsstring>
+        <name>serializacion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.h" line="74" column="17" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_constructor_serializador_j_s_o_n_1af2a2224fc34c16aae94b8e17eaa7d998" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConstructorSerializadorJSON::ConstructorSerializadorJSON</definition>
+        <argsstring>()</argsstring>
+        <name>ConstructorSerializadorJSON</name>
+        <briefdescription>
+<para>Construct a new Constructor Serializador J S O N object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.h" line="29" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.cpp" bodystart="3" bodyend="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constructor_serializador_j_s_o_n_1ad550738d4ee0c767ba1a005d2afbfb9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConstructorSerializadorJSON::~ConstructorSerializadorJSON</definition>
+        <argsstring>()</argsstring>
+        <name>~ConstructorSerializadorJSON</name>
+        <briefdescription>
+<para>Destroy the Constructor Serializador J S O N object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.h" line="35" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constructor_serializador_j_s_o_n_1a44c0d8090730cb2e03bd491ce67c0d0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ConstructorSerializadorJSON::inicioObjeto</definition>
+        <argsstring>() override</argsstring>
+        <name>inicioObjeto</name>
+        <reimplements refid="class_constructor_serializador_abstracto_1adb23b92a09cab3cbd6af0f2376beaa27">inicioObjeto</reimplements>
+        <briefdescription>
+<para>Inicia el objeto serializador en acordancia al formato JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.h" line="41" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.cpp" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constructor_serializador_j_s_o_n_1aeb2bd6f7b6c9e50fc7962f4669eae857" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ConstructorSerializadorJSON::finObjeto</definition>
+        <argsstring>() override</argsstring>
+        <name>finObjeto</name>
+        <reimplements refid="class_constructor_serializador_abstracto_1a5103ba163e8a585b41d32eda00fb357c">finObjeto</reimplements>
+        <briefdescription>
+<para>Finaliza el objeto serializador en acordancia al formato JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.h" line="47" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.cpp" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constructor_serializador_j_s_o_n_1afd8a9293549a42378c1374a9254e2512" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ConstructorSerializadorJSON::serializarHilera</definition>
+        <argsstring>(const std::pair&lt; std::string, Valor * &gt; &amp;ph) override</argsstring>
+        <name>serializarHilera</name>
+        <reimplements refid="class_constructor_serializador_abstracto_1a0c767f29e5c3533b59b9ce99d34bdd62">serializarHilera</reimplements>
+        <param>
+          <type>const std::pair&lt; std::string, <ref refid="class_valor" kindref="compound">Valor</ref> * &gt; &amp;</type>
+          <declname>ph</declname>
+        </param>
+        <briefdescription>
+<para>Serializa la hilera de acuerdo al formato JSON, se utiliza un objeto par que contiene una string y un puntero a objeto <ref refid="class_valor" kindref="compound">Valor</ref>. Imprime según el orden que necesite la implementación específica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_objeto" kindref="compound">Objeto</ref> par, el primero es una string, el segundo es un objeto <ref refid="class_valor" kindref="compound">Valor</ref>, por lo general, se espera que el contenido de este se pase a string para la serialización. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.h" line="58" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constructor_serializador_j_s_o_n_1a189cf123b5cacbd40e64f5546ad322c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string ConstructorSerializadorJSON::obtSerializacion</definition>
+        <argsstring>() override</argsstring>
+        <name>obtSerializacion</name>
+        <reimplements refid="class_constructor_serializador_abstracto_1ada8ca9cdbcb6148250951f43f09b097e">obtSerializacion</reimplements>
+        <briefdescription>
+<para>Devuelve el atributo serializacion. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string El atributo serializacion. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.h" line="65" column="21" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constructor_serializador_j_s_o_n_1aa2691c6561a4b5c7da135fbd28bdbd3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ConstructorSerializadorJSON::agregarSeparador</definition>
+        <argsstring>() override</argsstring>
+        <name>agregarSeparador</name>
+        <reimplements refid="class_constructor_serializador_abstracto_1a90dc3765cd774fd68383141534c8d516">agregarSeparador</reimplements>
+        <briefdescription>
+<para>Agrega el separador de acuerdo al formato JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.h" line="71" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.cpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ConstructorSerializadorAbstracto</label>
+        <link refid="class_constructor_serializador_abstracto"/>
+      </node>
+      <node id="1">
+        <label>ConstructorSerializadorJSON</label>
+        <link refid="class_constructor_serializador_j_s_o_n"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ConstructorSerializadorAbstracto</label>
+        <link refid="class_constructor_serializador_abstracto"/>
+      </node>
+      <node id="1">
+        <label>ConstructorSerializadorJSON</label>
+        <link refid="class_constructor_serializador_j_s_o_n"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.h" line="22" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorJSON.h" bodystart="23" bodyend="78"/>
+    <listofallmembers>
+      <member refid="class_constructor_serializador_j_s_o_n_1aa2691c6561a4b5c7da135fbd28bdbd3e" prot="public" virt="virtual"><scope>ConstructorSerializadorJSON</scope><name>agregarSeparador</name></member>
+      <member refid="class_constructor_serializador_abstracto_1a11b82d3d7a12ed4e7f4d8d92689f2fc1" prot="public" virt="non-virtual"><scope>ConstructorSerializadorJSON</scope><name>ConstructorSerializadorAbstracto</name></member>
+      <member refid="class_constructor_serializador_j_s_o_n_1af2a2224fc34c16aae94b8e17eaa7d998" prot="public" virt="non-virtual"><scope>ConstructorSerializadorJSON</scope><name>ConstructorSerializadorJSON</name></member>
+      <member refid="class_constructor_serializador_j_s_o_n_1aeb2bd6f7b6c9e50fc7962f4669eae857" prot="public" virt="virtual"><scope>ConstructorSerializadorJSON</scope><name>finObjeto</name></member>
+      <member refid="class_constructor_serializador_j_s_o_n_1a44c0d8090730cb2e03bd491ce67c0d0e" prot="public" virt="virtual"><scope>ConstructorSerializadorJSON</scope><name>inicioObjeto</name></member>
+      <member refid="class_constructor_serializador_j_s_o_n_1a189cf123b5cacbd40e64f5546ad322c1" prot="public" virt="virtual"><scope>ConstructorSerializadorJSON</scope><name>obtSerializacion</name></member>
+      <member refid="class_constructor_serializador_j_s_o_n_1ad49bef8e4e85ae7f90a74ebd683b6184" prot="public" virt="non-virtual"><scope>ConstructorSerializadorJSON</scope><name>serializacion</name></member>
+      <member refid="class_constructor_serializador_j_s_o_n_1afd8a9293549a42378c1374a9254e2512" prot="public" virt="virtual"><scope>ConstructorSerializadorJSON</scope><name>serializarHilera</name></member>
+      <member refid="class_constructor_serializador_abstracto_1ad4e49d3c99d1899fa8aa0c1498853f47" prot="public" virt="non-virtual"><scope>ConstructorSerializadorJSON</scope><name>~ConstructorSerializadorAbstracto</name></member>
+      <member refid="class_constructor_serializador_j_s_o_n_1ad550738d4ee0c767ba1a005d2afbfb9c" prot="public" virt="non-virtual"><scope>ConstructorSerializadorJSON</scope><name>~ConstructorSerializadorJSON</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

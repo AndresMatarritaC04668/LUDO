@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="controladorventanaprincipal_8h" kind="file" language="C++">
+    <compoundname>controladorventanaprincipal.h</compoundname>
+    <includes refid="controlador__ventanas_8h" local="yes">controlador_ventanas.h</includes>
+    <includedby refid="controlador__ventanas_8cpp" local="yes">D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.cpp</includedby>
+    <includedby refid="controladorventanaprincipal_8cpp" local="yes">D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.cpp</includedby>
+    <includedby refid="ventanaprincipal_8h" local="yes">D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanaprincipal.h</includedby>
+    <incdepgraph>
+      <node id="14">
+        <label>stdbool.h</label>
+      </node>
+      <node id="21">
+        <label>ObtAsg.h</label>
+        <link refid="_obt_asg_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>stdlib.h</label>
+      </node>
+      <node id="23">
+        <label>qmessagebox.h</label>
+      </node>
+      <node id="15">
+        <label>Objeto.h</label>
+        <link refid="_objeto_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TableroAbstracto.h</label>
+        <link refid="_tablero_abstracto_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>QMainWindow</label>
+      </node>
+      <node id="1">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.h</label>
+        <link refid="controladorventanaprincipal_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>map</label>
+      </node>
+      <node id="24">
+        <label>Dado.h</label>
+        <link refid="_dado_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>ControladorLudo.h</label>
+        <link refid="_controlador_ludo_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>ControladorAbstracto.h</label>
+        <link refid="_controlador_abstracto_8h"/>
+      </node>
+      <node id="7">
+        <label>Validador.h</label>
+        <link refid="_validador_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Hilera.h</label>
+        <link refid="_hilera_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+      <node id="9">
+        <label>Regla.h</label>
+        <link refid="_regla_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>FichaAbstracta.h</label>
+        <link refid="_ficha_abstracta_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>sstream</label>
+      </node>
+      <node id="11">
+        <label>Jugador.h</label>
+        <link refid="_jugador_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>time.h</label>
+      </node>
+      <node id="28">
+        <label>QLabel</label>
+      </node>
+      <node id="22">
+        <label>iosfwd</label>
+      </node>
+      <node id="18">
+        <label>tipo.h</label>
+        <link refid="tipo_8h_source"/>
+      </node>
+      <node id="13">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>ventanainformacion.h</label>
+        <link refid="ventanainformacion_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>controlador_ventanas.h</label>
+        <link refid="controlador__ventanas_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Valor.h</label>
+        <link refid="_valor_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controlador_ventanas.cpp</label>
+        <link refid="controlador__ventanas_8cpp"/>
+      </node>
+      <node id="1">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.h</label>
+        <link refid="controladorventanaprincipal_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanaprincipal.h</label>
+        <link refid="ventanaprincipal_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_controlador_ventana_principal" prot="public">ControladorVentanaPrincipal</innerclass>
+    <briefdescription>
+<para>Controlador de la ventana principal del juego. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="authors"><para>Esteban José Mora García (C05126), José Andrés Matarrita Miranda (C04668), Joseph Fernando Núñez Solano (C05582) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2022-12-01</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2022 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CONTROLADORVENTANAPRINCIPAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONTROLADORVENTANAPRINCIPAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;controlador_ventanas.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_ventana_principal" kindref="compound">VentanaPrincipal</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_controlador_ventana_principal" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_controlador_ventana_principal" kindref="compound">ControladorVentanaPrincipal</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_controlador_ventana_principal_1ae6211e2db3269e37bf6e4dda1c6602d0" kindref="member">ControladorVentanaPrincipal</ref>(<ref refid="classcontrolador___ventanas" kindref="compound">controlador_Ventanas</ref><sp/>*<sp/>controlador);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador_ventana_principal_1a7c86bd3d0ad32aa3cc1e93c7d02433f1" kindref="member">iniciar</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador_ventana_principal_1a4ce7d6710edfa5e4e9d314ebf336d42c" kindref="member">cerrarVentana</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador_ventana_principal_1a1b82c1d44b2e7d03e6840efa7d3afe12" kindref="member">graficarTablero</ref>(<ref refid="class_tablero_abstracto" kindref="compound">TableroAbstracto</ref>*);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador_ventana_principal_1a3661b611af044d6383a1c740156d8833" kindref="member">graficarCarcel</ref>(vector&lt;Jugador*&gt;<sp/>jugadores<sp/>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador_ventana_principal_1a867ee2ba0782d11af07aac60aa2ac317" kindref="member">graficarLineaFinal</ref>(<ref refid="class_tablero_abstracto" kindref="compound">TableroAbstracto</ref>*);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador_ventana_principal_1a7b7ad406a10a6f0e0cde4c8d95861ee2" kindref="member">graficarCeldas</ref>(QLabel<sp/>*<sp/>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>color<sp/>,<sp/>QString<sp/>numero);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcontrolador___ventanas" kindref="compound">controlador_Ventanas</ref><sp/>*<sp/>controlador;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_ventana_principal" kindref="compound">VentanaPrincipal</ref><sp/>*<sp/>ventanaPrincipal;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>CONTROLADORVENTANAPRINCIPAL_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.h"/>
+  </compounddef>
+</doxygen>

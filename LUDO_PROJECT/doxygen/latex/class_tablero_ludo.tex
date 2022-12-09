@@ -1,0 +1,152 @@
+\hypertarget{class_tablero_ludo}{}\doxysection{Tablero\+Ludo Class Reference}
+\label{class_tablero_ludo}\index{TableroLudo@{TableroLudo}}
+Inheritance diagram for Tablero\+Ludo\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_tablero_ludo}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tablero_ludo_a07cb9054f999fcabdeedb65bf2742a91}\label{class_tablero_ludo_a07cb9054f999fcabdeedb65bf2742a91}} 
+\mbox{\hyperlink{class_tablero_ludo_a07cb9054f999fcabdeedb65bf2742a91}{Tablero\+Ludo}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Tablero Ludo object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tablero_ludo_a5b4b6a0304dd1da7011ab92466578230}\label{class_tablero_ludo_a5b4b6a0304dd1da7011ab92466578230}} 
+\mbox{\hyperlink{class_tablero_ludo_a5b4b6a0304dd1da7011ab92466578230}{$\sim$\+Tablero\+Ludo}} () override
+\begin{DoxyCompactList}\small\item\em Destroy the Tablero Ludo object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tablero_ludo_a827d3aea0b0f72121ef7e8accf7369a2}\label{class_tablero_ludo_a827d3aea0b0f72121ef7e8accf7369a2}} 
+void \mbox{\hyperlink{class_tablero_ludo_a827d3aea0b0f72121ef7e8accf7369a2}{ubicar\+Jugadores}} () override
+\begin{DoxyCompactList}\small\item\em Crea y coloca a los jugadores en el tablero de juego por medio de la interfaz. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_tablero_ludo_ad8b80b6080fb8e56992521247946afc4}{jugar\+Turno}} () override
+\begin{DoxyCompactList}\small\item\em Un jugador ejecuta su turno tirando el dado y moviendo las fichas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tablero_ludo_abf37b69c04f5696673278b789abcb525}\label{class_tablero_ludo_abf37b69c04f5696673278b789abcb525}} 
+void \mbox{\hyperlink{class_tablero_ludo_abf37b69c04f5696673278b789abcb525}{asignar\+Primer\+Jugador}} () override
+\begin{DoxyCompactList}\small\item\em Ejecuta un mecanismo para determinar cual jugador va primero. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tablero_ludo_aaba6edc9c056dcfea2e532be385bef2e}\label{class_tablero_ludo_aaba6edc9c056dcfea2e532be385bef2e}} 
+void \mbox{\hyperlink{class_tablero_ludo_aaba6edc9c056dcfea2e532be385bef2e}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Pasa a string el contenido del tablero. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_tablero_ludo_a80baa66eb36c7f1a15e631a56d491fd2}{hay\+Ganador}} () override
+\begin{DoxyCompactList}\small\item\em Determina si un jugador ya gano el juego y envia el mensaje de victoria. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_tablero_ludo_acdc6b8b7a08f4079fb5e610bc2e37b3f}{elegir\+Ficha}} ()
+\begin{DoxyCompactList}\small\item\em Llama al metodo elegir ficha del controlador. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tablero_ludo_a4cc8877104f4387abaf9d48fd5641fc0}\label{class_tablero_ludo_a4cc8877104f4387abaf9d48fd5641fc0}} 
+void \mbox{\hyperlink{class_tablero_ludo_a4cc8877104f4387abaf9d48fd5641fc0}{rellenar\+Mesa}} ()
+\begin{DoxyCompactList}\small\item\em Rellena el tablero LUDO con el estado de las fichas de los jugadores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tablero_ludo_a12aac5262a7f00c626e1b39c76e25c84}{set\+Controlador}} (\mbox{\hyperlink{classcontrolador___ventanas}{controlador\+\_\+\+Ventanas}} $\ast$, \mbox{\hyperlink{class_controlador_abstracto}{Controlador\+Abstracto}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Establece los parametros controlador y controlador\+Ludo con los parametros dados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tablero_ludo_a1b41226aee3f62796265b0cb15015cdc}{graficar\+Informacion}} (string)
+\begin{DoxyCompactList}\small\item\em Pasa informacio en el tablero a la parte grafica por medio de una string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_tablero_ludo_ad8892dc6ff69197210e2cf3f7e8f8978}{grafico\+Elejir\+Ficha}} (string)
+\begin{DoxyCompactList}\small\item\em Grafica la opcion para que el jugador escoja la ficha que quiere mover. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tablero_ludo_a4cfff68190996bccec79105dffd2fe2a}\label{class_tablero_ludo_a4cfff68190996bccec79105dffd2fe2a}} 
+\mbox{\hyperlink{class_ficha_ludo}{Ficha\+Ludo}} $\ast$ {\bfseries tablero} \mbox{[}2\mbox{]}\mbox{[}52\mbox{]}
+\item 
+\mbox{\Hypertarget{class_tablero_ludo_a3be6cb9c101958f746083321aa8e52a9}\label{class_tablero_ludo_a3be6cb9c101958f746083321aa8e52a9}} 
+\mbox{\hyperlink{classcontrolador___ventanas}{controlador\+\_\+\+Ventanas}} $\ast$ {\bfseries controlador}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tablero_ludo_acdc6b8b7a08f4079fb5e610bc2e37b3f}\label{class_tablero_ludo_acdc6b8b7a08f4079fb5e610bc2e37b3f}} 
+\index{TableroLudo@{TableroLudo}!elegirFicha@{elegirFicha}}
+\index{elegirFicha@{elegirFicha}!TableroLudo@{TableroLudo}}
+\doxysubsubsection{\texorpdfstring{elegirFicha()}{elegirFicha()}}
+{\footnotesize\ttfamily int Tablero\+Ludo\+::elegir\+Ficha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Llama al metodo elegir ficha del controlador. 
+
+\begin{DoxyReturn}{Returns}
+int 1 si la ficha es elegible, 0 si no lo es. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tablero_ludo_a1b41226aee3f62796265b0cb15015cdc}\label{class_tablero_ludo_a1b41226aee3f62796265b0cb15015cdc}} 
+\index{TableroLudo@{TableroLudo}!graficarInformacion@{graficarInformacion}}
+\index{graficarInformacion@{graficarInformacion}!TableroLudo@{TableroLudo}}
+\doxysubsubsection{\texorpdfstring{graficarInformacion()}{graficarInformacion()}}
+{\footnotesize\ttfamily void Tablero\+Ludo\+::graficar\+Informacion (\begin{DoxyParamCaption}\item[{string}]{mensaje }\end{DoxyParamCaption})}
+
+
+
+Pasa informacio en el tablero a la parte grafica por medio de una string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mensaje} & es el mensaje que se busca graficar en el tablero. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tablero_ludo_ad8892dc6ff69197210e2cf3f7e8f8978}\label{class_tablero_ludo_ad8892dc6ff69197210e2cf3f7e8f8978}} 
+\index{TableroLudo@{TableroLudo}!graficoElejirFicha@{graficoElejirFicha}}
+\index{graficoElejirFicha@{graficoElejirFicha}!TableroLudo@{TableroLudo}}
+\doxysubsubsection{\texorpdfstring{graficoElejirFicha()}{graficoElejirFicha()}}
+{\footnotesize\ttfamily int Tablero\+Ludo\+::grafico\+Elejir\+Ficha (\begin{DoxyParamCaption}\item[{string}]{mensaje }\end{DoxyParamCaption})}
+
+
+
+Grafica la opcion para que el jugador escoja la ficha que quiere mover. 
+
+\begin{DoxyReturn}{Returns}
+int El numero de la ficha que quiere mover. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tablero_ludo_a80baa66eb36c7f1a15e631a56d491fd2}\label{class_tablero_ludo_a80baa66eb36c7f1a15e631a56d491fd2}} 
+\index{TableroLudo@{TableroLudo}!hayGanador@{hayGanador}}
+\index{hayGanador@{hayGanador}!TableroLudo@{TableroLudo}}
+\doxysubsubsection{\texorpdfstring{hayGanador()}{hayGanador()}}
+{\footnotesize\ttfamily int Tablero\+Ludo\+::hay\+Ganador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Determina si un jugador ya gano el juego y envia el mensaje de victoria. 
+
+\begin{DoxyReturn}{Returns}
+int 1 si hay ganador, 0 si aun no hay. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_tablero_abstracto_a9be989e9fb3b2f260cce478bf75b07ca}{Tablero\+Abstracto}}.
+
+\mbox{\Hypertarget{class_tablero_ludo_ad8b80b6080fb8e56992521247946afc4}\label{class_tablero_ludo_ad8b80b6080fb8e56992521247946afc4}} 
+\index{TableroLudo@{TableroLudo}!jugarTurno@{jugarTurno}}
+\index{jugarTurno@{jugarTurno}!TableroLudo@{TableroLudo}}
+\doxysubsubsection{\texorpdfstring{jugarTurno()}{jugarTurno()}}
+{\footnotesize\ttfamily int Tablero\+Ludo\+::jugar\+Turno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Un jugador ejecuta su turno tirando el dado y moviendo las fichas. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_tablero_abstracto_a866569a962560d2b5ad6d8b2e372e73e}{Tablero\+Abstracto}}.
+
+\mbox{\Hypertarget{class_tablero_ludo_a12aac5262a7f00c626e1b39c76e25c84}\label{class_tablero_ludo_a12aac5262a7f00c626e1b39c76e25c84}} 
+\index{TableroLudo@{TableroLudo}!setControlador@{setControlador}}
+\index{setControlador@{setControlador}!TableroLudo@{TableroLudo}}
+\doxysubsubsection{\texorpdfstring{setControlador()}{setControlador()}}
+{\footnotesize\ttfamily void Tablero\+Ludo\+::set\+Controlador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcontrolador___ventanas}{controlador\+\_\+\+Ventanas}} $\ast$}]{controlador,  }\item[{\mbox{\hyperlink{class_controlador_abstracto}{Controlador\+Abstracto}} $\ast$}]{controlador\+Juego }\end{DoxyParamCaption})}
+
+
+
+Establece los parametros controlador y controlador\+Ludo con los parametros dados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controlador} & va en el atributo controlador. \\
+\hline
+{\em controlador\+Ludo} & va en el parametro controlador\+Ludo. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/\mbox{\hyperlink{tablero_l_u_d_o_8h}{tablero\+LUDO.\+h}}\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/Tablero\+Ludo.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,122 @@
+\hypertarget{class_deserializador_j_s_o_n}{}\doxysection{Deserializador\+JSON Class Reference}
+\label{class_deserializador_j_s_o_n}\index{DeserializadorJSON@{DeserializadorJSON}}
+Inheritance diagram for Deserializador\+JSON\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_deserializador_j_s_o_n}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_deserializador_j_s_o_n_ab41fa918c14256f9cf4dc0f0e0a9a454}\label{class_deserializador_j_s_o_n_ab41fa918c14256f9cf4dc0f0e0a9a454}} 
+\mbox{\hyperlink{class_deserializador_j_s_o_n_ab41fa918c14256f9cf4dc0f0e0a9a454}{Deserializador\+JSON}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Deserializador J S O N object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_deserializador_j_s_o_n_a224b2d901df4fc905e0029a752336302}\label{class_deserializador_j_s_o_n_a224b2d901df4fc905e0029a752336302}} 
+\mbox{\hyperlink{class_deserializador_j_s_o_n_a224b2d901df4fc905e0029a752336302}{$\sim$\+Deserializador\+JSON}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Deserializador J S O N object. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{class_valor}{Valor}} $\ast$ $>$ \mbox{\hyperlink{class_deserializador_j_s_o_n_ab338661720d87c3b9682e05c98fb6388}{deserializar\+Objeto}} (std\+::string) override
+\begin{DoxyCompactList}\small\item\em Deserializa un objeto específico de acuerdo al formato JSON. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::map$<$ std\+::string, \mbox{\hyperlink{class_valor}{Valor}} $\ast$ $>$ $>$ \mbox{\hyperlink{class_deserializador_j_s_o_n_a4220f258a8068094f505aad84ca33572}{deserializar\+Lista\+Objetos}} (std\+::string) override
+\begin{DoxyCompactList}\small\item\em Deserealiza todos los objetos en una hilera de acuerdo al formato JSON. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_deserializador_j_s_o_n_a4512ff3c9f511b36cc49bda16ceb7aef}{eliminar\+Inicio\+Fin\+Objeto}} (std\+::string \&) override
+\begin{DoxyCompactList}\small\item\em Elimina el inicio y fin de un objeto en una hilera serializada de acuerdo a los estándares del formato JSON. \end{DoxyCompactList}\item 
+std\+::pair$<$ std\+::string, \mbox{\hyperlink{class_valor}{Valor}} $\ast$ $>$ \mbox{\hyperlink{class_deserializador_j_s_o_n_a954c9fe8f9650423e065944db397d092}{extraer\+Llave\+Valor}} (std\+::string) override
+\begin{DoxyCompactList}\small\item\em Extrae la llave mayor del formato JSON, \char`\"{}\+:\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_deserializador_j_s_o_n_a4220f258a8068094f505aad84ca33572}\label{class_deserializador_j_s_o_n_a4220f258a8068094f505aad84ca33572}} 
+\index{DeserializadorJSON@{DeserializadorJSON}!deserializarListaObjetos@{deserializarListaObjetos}}
+\index{deserializarListaObjetos@{deserializarListaObjetos}!DeserializadorJSON@{DeserializadorJSON}}
+\doxysubsubsection{\texorpdfstring{deserializarListaObjetos()}{deserializarListaObjetos()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::map$<$ std\+::string, \mbox{\hyperlink{class_valor}{Valor}} $\ast$ $>$ $>$ Deserializador\+JSON\+::deserializar\+Lista\+Objetos (\begin{DoxyParamCaption}\item[{std\+::string}]{lista\+JSON }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Deserealiza todos los objetos en una hilera de acuerdo al formato JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista\+JSON} & La hilera con la información de los objetos serializada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::map$<$ std\+::string, Valor$\ast$ $>$$>$ Este vector contiene la información de todos los objetos de la hilera deserializados. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_deserializador_abstracto_ac5f5a054d0d5aa728c095a9a8c26f14d}{Deserializador\+Abstracto}}.
+
+\mbox{\Hypertarget{class_deserializador_j_s_o_n_ab338661720d87c3b9682e05c98fb6388}\label{class_deserializador_j_s_o_n_ab338661720d87c3b9682e05c98fb6388}} 
+\index{DeserializadorJSON@{DeserializadorJSON}!deserializarObjeto@{deserializarObjeto}}
+\index{deserializarObjeto@{deserializarObjeto}!DeserializadorJSON@{DeserializadorJSON}}
+\doxysubsubsection{\texorpdfstring{deserializarObjeto()}{deserializarObjeto()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, \mbox{\hyperlink{class_valor}{Valor}} $\ast$ $>$ Deserializador\+JSON\+::deserializar\+Objeto (\begin{DoxyParamCaption}\item[{std\+::string}]{string\+JSON }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Deserializa un objeto específico de acuerdo al formato JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+JSON} & La string con la información del objeto serializada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::map$<$ std\+::string, Valor$\ast$$>$ Este par contiene la información deserializada es un objeto en particular, implementada de acuerdo al formato JSON. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_deserializador_abstracto_acf891403209d1bef17941d43f664e6a7}{Deserializador\+Abstracto}}.
+
+\mbox{\Hypertarget{class_deserializador_j_s_o_n_a4512ff3c9f511b36cc49bda16ceb7aef}\label{class_deserializador_j_s_o_n_a4512ff3c9f511b36cc49bda16ceb7aef}} 
+\index{DeserializadorJSON@{DeserializadorJSON}!eliminarInicioFinObjeto@{eliminarInicioFinObjeto}}
+\index{eliminarInicioFinObjeto@{eliminarInicioFinObjeto}!DeserializadorJSON@{DeserializadorJSON}}
+\doxysubsubsection{\texorpdfstring{eliminarInicioFinObjeto()}{eliminarInicioFinObjeto()}}
+{\footnotesize\ttfamily void Deserializador\+JSON\+::eliminar\+Inicio\+Fin\+Objeto (\begin{DoxyParamCaption}\item[{std\+::string \&}]{string }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Elimina el inicio y fin de un objeto en una hilera serializada de acuerdo a los estándares del formato JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Es la hilera en un formato particular a la que se le va a eliminar su inicio y su fin. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_deserializador_abstracto_ad2b876e40fbcac5e3ca3d457aeb30c5a}{Deserializador\+Abstracto}}.
+
+\mbox{\Hypertarget{class_deserializador_j_s_o_n_a954c9fe8f9650423e065944db397d092}\label{class_deserializador_j_s_o_n_a954c9fe8f9650423e065944db397d092}} 
+\index{DeserializadorJSON@{DeserializadorJSON}!extraerLlaveValor@{extraerLlaveValor}}
+\index{extraerLlaveValor@{extraerLlaveValor}!DeserializadorJSON@{DeserializadorJSON}}
+\doxysubsubsection{\texorpdfstring{extraerLlaveValor()}{extraerLlaveValor()}}
+{\footnotesize\ttfamily std\+::pair$<$ std\+::string, \mbox{\hyperlink{class_valor}{Valor}} $\ast$ $>$ Deserializador\+JSON\+::extraer\+Llave\+Valor (\begin{DoxyParamCaption}\item[{std\+::string}]{llave\+Valor\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Extrae la llave mayor del formato JSON, \char`\"{}\+:\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & La string a la que hay que extraerle la llave mayor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$std\+::string, Valor$\ast$$>$ El par construído con la información del objeto deserializado. Pensado para ser regresado a \mbox{\hyperlink{class_deserializador_j_s_o_n_ab338661720d87c3b9682e05c98fb6388}{deserializar\+Objeto()}}, así que hay que usar la misma lógica. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_deserializador_abstracto_a459cdf76513a40de48529bb03693a6e8}{Deserializador\+Abstracto}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/\mbox{\hyperlink{_deserializador_j_s_o_n_8h}{Deserializador\+JSON.\+h}}\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/Deserializador\+JSON.\+cpp\end{DoxyCompactItemize}

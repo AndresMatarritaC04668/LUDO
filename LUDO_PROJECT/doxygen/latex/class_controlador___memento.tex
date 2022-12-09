@@ -1,0 +1,201 @@
+\hypertarget{class_controlador___memento}{}\doxysection{Controlador\+\_\+\+Memento Class Reference}
+\label{class_controlador___memento}\index{Controlador\_Memento@{Controlador\_Memento}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_controlador___memento_a9149081ba2629ca24687e3a7a7160228}\label{class_controlador___memento_a9149081ba2629ca24687e3a7a7160228}} 
+\mbox{\hyperlink{class_controlador___memento_a9149081ba2629ca24687e3a7a7160228}{Controlador\+\_\+\+Memento}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_controlador___memento}{Controlador\+\_\+\+Memento}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_controlador___memento_a3d63c81d5d34618c07dcc3c211c2fa94}\label{class_controlador___memento_a3d63c81d5d34618c07dcc3c211c2fa94}} 
+\mbox{\hyperlink{class_controlador___memento_a3d63c81d5d34618c07dcc3c211c2fa94}{$\sim$\+Controlador\+\_\+\+Memento}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_controlador___memento}{Controlador\+\_\+\+Memento}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_controlador___memento_a46bbcf48ec11c2429d31bd8ffe4548cf}{serializar\+Tablero}} (\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$, string)
+\begin{DoxyCompactList}\small\item\em Crea el archivo, llama a serializar el tablero y finalmente guarda la serializacion en el archivo creado. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_controlador___memento_a041a7e75683d3abe23bdd2520ae83f75}{serializar\+Jugadores\+JSON}} (std\+::vector$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $\ast$ $>$)
+\begin{DoxyCompactList}\small\item\em Serializa a los jugadores de la partida directamente del vector de jugadores, los guarda en un vector y luego llama a \mbox{\hyperlink{class_controlador___memento_acc84c80d63372c31163bbdae9831e796}{serializar\+Lista\+Objetos\+JSON()}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_controlador___memento_af0b0e3b63faba808558059ed718f1b19}{serializar\+Fichas\+JSON}} (std\+::vector$<$ \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$ $>$)
+\begin{DoxyCompactList}\small\item\em Serializa las fichas de un jugador de la partida directamente de su vector de fichas, los guarda en un vector y luego llama a \mbox{\hyperlink{class_controlador___memento_acc84c80d63372c31163bbdae9831e796}{serializar\+Lista\+Objetos\+JSON()}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_controlador___memento_acc84c80d63372c31163bbdae9831e796}{serializar\+Lista\+Objetos\+JSON}} (std\+::vector$<$ \mbox{\hyperlink{class_objeto}{Objeto}} $\ast$ $>$)
+\begin{DoxyCompactList}\small\item\em Crea una string a partir de una lista (vector) de objetos abstractos, de tal forma que concuerde con el formato utilizado. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_controlador___memento_a1eff5c5134fd490f7227cbdb087d05e5}{serializar\+JSON}} (\mbox{\hyperlink{class_objeto}{Objeto}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Manda a serializar un solo objeto abstrato de acuerdo al formato utilizado. Crea una string con ello. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tablero_ludo}{Tablero\+Ludo}} $\ast$ \mbox{\hyperlink{class_controlador___memento_a8951875a0ff6ba76deb043344611dceb}{deserializar\+Tablero\+JSON}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Deserializa una string que representa el tablero de juego en el formato utilizado. Llama a deserializar\+Tablero(). \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $\ast$ $>$ \mbox{\hyperlink{class_controlador___memento_a02797403ec5eea5fabb24106443aef9f}{deserializar\+Lista\+Jugadores\+JSON}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Deserializa una lista de jugadores a partir de una string serializada en el formato utilizado. Llama a deserializar\+Lista\+Jugadores() \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$ $>$ \mbox{\hyperlink{class_controlador___memento_ab3cadcfdacb50c704f8ef1dd8e19c2e6}{deserializar\+Lista\+Fichas\+JSON}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Deserializa una lista de fichas a partir de una string serializada en el formato utilizado. Llama a deserializar\+Lista\+Fichas(). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tablero_ludo}{Tablero\+Ludo}} $\ast$ \mbox{\hyperlink{class_controlador___memento_acefc20cc7671fc9470fbeb4560558dd7}{deserializar\+Juego}} (std\+::string, QWidget $\ast$)
+\begin{DoxyCompactList}\small\item\em Estructura de deserializacion del juego a partir del archivo que con la partida serializada. Llama a los demás metodos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_controlador___memento_acefc20cc7671fc9470fbeb4560558dd7}\label{class_controlador___memento_acefc20cc7671fc9470fbeb4560558dd7}} 
+\index{Controlador\_Memento@{Controlador\_Memento}!deserializarJuego@{deserializarJuego}}
+\index{deserializarJuego@{deserializarJuego}!Controlador\_Memento@{Controlador\_Memento}}
+\doxysubsubsection{\texorpdfstring{deserializarJuego()}{deserializarJuego()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tablero_ludo}{Tablero\+Ludo}} $\ast$ Controlador\+\_\+\+Memento\+::deserializar\+Juego (\begin{DoxyParamCaption}\item[{std\+::string}]{nombre\+CSV,  }\item[{QWidget $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+Estructura de deserializacion del juego a partir del archivo que con la partida serializada. Llama a los demás metodos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre\+CSV} & nombre del archivo serializado. \\
+\hline
+{\em Output} & Envía mensajes de output en caso de error. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tablero\+Ludo$\ast$ El tablero de juego deserializado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_controlador___memento_ab3cadcfdacb50c704f8ef1dd8e19c2e6}\label{class_controlador___memento_ab3cadcfdacb50c704f8ef1dd8e19c2e6}} 
+\index{Controlador\_Memento@{Controlador\_Memento}!deserializarListaFichasJSON@{deserializarListaFichasJSON}}
+\index{deserializarListaFichasJSON@{deserializarListaFichasJSON}!Controlador\_Memento@{Controlador\_Memento}}
+\doxysubsubsection{\texorpdfstring{deserializarListaFichasJSON()}{deserializarListaFichasJSON()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$ $>$ Controlador\+\_\+\+Memento\+::deserializar\+Lista\+Fichas\+JSON (\begin{DoxyParamCaption}\item[{std\+::string}]{string\+JSON }\end{DoxyParamCaption})}
+
+
+
+Deserializa una lista de fichas a partir de una string serializada en el formato utilizado. Llama a deserializar\+Lista\+Fichas(). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & La lista de fichas serializada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Ficha\+Abstracta$\ast$$>$ El vector de fichas deserializado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_controlador___memento_a02797403ec5eea5fabb24106443aef9f}\label{class_controlador___memento_a02797403ec5eea5fabb24106443aef9f}} 
+\index{Controlador\_Memento@{Controlador\_Memento}!deserializarListaJugadoresJSON@{deserializarListaJugadoresJSON}}
+\index{deserializarListaJugadoresJSON@{deserializarListaJugadoresJSON}!Controlador\_Memento@{Controlador\_Memento}}
+\doxysubsubsection{\texorpdfstring{deserializarListaJugadoresJSON()}{deserializarListaJugadoresJSON()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $\ast$ $>$ Controlador\+\_\+\+Memento\+::deserializar\+Lista\+Jugadores\+JSON (\begin{DoxyParamCaption}\item[{std\+::string}]{string\+JSON }\end{DoxyParamCaption})}
+
+
+
+Deserializa una lista de jugadores a partir de una string serializada en el formato utilizado. Llama a deserializar\+Lista\+Jugadores() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & La lista de jugadores serializada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Jugador$\ast$$>$ El vector de jugadores deserializado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_controlador___memento_a8951875a0ff6ba76deb043344611dceb}\label{class_controlador___memento_a8951875a0ff6ba76deb043344611dceb}} 
+\index{Controlador\_Memento@{Controlador\_Memento}!deserializarTableroJSON@{deserializarTableroJSON}}
+\index{deserializarTableroJSON@{deserializarTableroJSON}!Controlador\_Memento@{Controlador\_Memento}}
+\doxysubsubsection{\texorpdfstring{deserializarTableroJSON()}{deserializarTableroJSON()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tablero_ludo}{Tablero\+Ludo}} $\ast$ Controlador\+\_\+\+Memento\+::deserializar\+Tablero\+JSON (\begin{DoxyParamCaption}\item[{std\+::string}]{string\+JSON }\end{DoxyParamCaption})}
+
+
+
+Deserializa una string que representa el tablero de juego en el formato utilizado. Llama a deserializar\+Tablero(). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & La string serializada con el tablero. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tablero\+Ludo$\ast$ El tablero deserializado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_controlador___memento_af0b0e3b63faba808558059ed718f1b19}\label{class_controlador___memento_af0b0e3b63faba808558059ed718f1b19}} 
+\index{Controlador\_Memento@{Controlador\_Memento}!serializarFichasJSON@{serializarFichasJSON}}
+\index{serializarFichasJSON@{serializarFichasJSON}!Controlador\_Memento@{Controlador\_Memento}}
+\doxysubsubsection{\texorpdfstring{serializarFichasJSON()}{serializarFichasJSON()}}
+{\footnotesize\ttfamily std\+::string Controlador\+\_\+\+Memento\+::serializar\+Fichas\+JSON (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$ $>$}]{lista\+Fichas }\end{DoxyParamCaption})}
+
+
+
+Serializa las fichas de un jugador de la partida directamente de su vector de fichas, los guarda en un vector y luego llama a \mbox{\hyperlink{class_controlador___memento_acc84c80d63372c31163bbdae9831e796}{serializar\+Lista\+Objetos\+JSON()}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista\+Fichas} & La lista de fichas que deben ser serializadas como si fueran una lista. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string La lista de fichas serializada. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_controlador___memento_a1eff5c5134fd490f7227cbdb087d05e5}\label{class_controlador___memento_a1eff5c5134fd490f7227cbdb087d05e5}} 
+\index{Controlador\_Memento@{Controlador\_Memento}!serializarJSON@{serializarJSON}}
+\index{serializarJSON@{serializarJSON}!Controlador\_Memento@{Controlador\_Memento}}
+\doxysubsubsection{\texorpdfstring{serializarJSON()}{serializarJSON()}}
+{\footnotesize\ttfamily std\+::string Controlador\+\_\+\+Memento\+::serializar\+JSON (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objeto}{Objeto}} $\ast$}]{objeto }\end{DoxyParamCaption})}
+
+
+
+Manda a serializar un solo objeto abstrato de acuerdo al formato utilizado. Crea una string con ello. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objeto} & el objeto abstracto a serializar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string La string del objeto serializado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_controlador___memento_a041a7e75683d3abe23bdd2520ae83f75}\label{class_controlador___memento_a041a7e75683d3abe23bdd2520ae83f75}} 
+\index{Controlador\_Memento@{Controlador\_Memento}!serializarJugadoresJSON@{serializarJugadoresJSON}}
+\index{serializarJugadoresJSON@{serializarJugadoresJSON}!Controlador\_Memento@{Controlador\_Memento}}
+\doxysubsubsection{\texorpdfstring{serializarJugadoresJSON()}{serializarJugadoresJSON()}}
+{\footnotesize\ttfamily std\+::string Controlador\+\_\+\+Memento\+::serializar\+Jugadores\+JSON (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $\ast$ $>$}]{lista\+Jugadores }\end{DoxyParamCaption})}
+
+
+
+Serializa a los jugadores de la partida directamente del vector de jugadores, los guarda en un vector y luego llama a \mbox{\hyperlink{class_controlador___memento_acc84c80d63372c31163bbdae9831e796}{serializar\+Lista\+Objetos\+JSON()}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista\+Jugadores} & La lista de jugadores que deben ser serializados como si fueran una lista. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string La lista de jugadores serializada. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_controlador___memento_acc84c80d63372c31163bbdae9831e796}\label{class_controlador___memento_acc84c80d63372c31163bbdae9831e796}} 
+\index{Controlador\_Memento@{Controlador\_Memento}!serializarListaObjetosJSON@{serializarListaObjetosJSON}}
+\index{serializarListaObjetosJSON@{serializarListaObjetosJSON}!Controlador\_Memento@{Controlador\_Memento}}
+\doxysubsubsection{\texorpdfstring{serializarListaObjetosJSON()}{serializarListaObjetosJSON()}}
+{\footnotesize\ttfamily std\+::string Controlador\+\_\+\+Memento\+::serializar\+Lista\+Objetos\+JSON (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_objeto}{Objeto}} $\ast$ $>$}]{lista\+Objetos }\end{DoxyParamCaption})}
+
+
+
+Crea una string a partir de una lista (vector) de objetos abstractos, de tal forma que concuerde con el formato utilizado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista\+Objetos} & Vector de objetos que deben ser serializados como si fueran una lista. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string La string de objetos serializados. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_controlador___memento_a46bbcf48ec11c2429d31bd8ffe4548cf}\label{class_controlador___memento_a46bbcf48ec11c2429d31bd8ffe4548cf}} 
+\index{Controlador\_Memento@{Controlador\_Memento}!serializarTablero@{serializarTablero}}
+\index{serializarTablero@{serializarTablero}!Controlador\_Memento@{Controlador\_Memento}}
+\doxysubsubsection{\texorpdfstring{serializarTablero()}{serializarTablero()}}
+{\footnotesize\ttfamily void Controlador\+\_\+\+Memento\+::serializar\+Tablero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$}]{mesa,  }\item[{string}]{nombre\+CSV }\end{DoxyParamCaption})}
+
+
+
+Crea el archivo, llama a serializar el tablero y finalmente guarda la serializacion en el archivo creado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesa} & Es el tablero del juego que se va a serializar. \\
+\hline
+{\em nombre\+CSV} & Es el nombre del archivo en el que se va a guardar la serializacion. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/\mbox{\hyperlink{_controlador___memento_8h}{Controlador\+\_\+\+Memento.\+h}}\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/Controlador\+\_\+\+Memento.\+cpp\end{DoxyCompactItemize}

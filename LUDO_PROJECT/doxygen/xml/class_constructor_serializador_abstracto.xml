@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_constructor_serializador_abstracto" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>ConstructorSerializadorAbstracto</compoundname>
+    <derivedcompoundref refid="class_constructor_serializador_j_s_o_n" prot="public" virt="non-virtual">ConstructorSerializadorJSON</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_constructor_serializador_abstracto_1a11b82d3d7a12ed4e7f4d8d92689f2fc1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ConstructorSerializadorAbstracto::ConstructorSerializadorAbstracto</definition>
+        <argsstring>()</argsstring>
+        <name>ConstructorSerializadorAbstracto</name>
+        <briefdescription>
+<para>Construct a new Constructor Serializador Abstracto object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorAbstracto.h" line="28" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorAbstracto.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constructor_serializador_abstracto_1ad4e49d3c99d1899fa8aa0c1498853f47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ConstructorSerializadorAbstracto::~ConstructorSerializadorAbstracto</definition>
+        <argsstring>()</argsstring>
+        <name>~ConstructorSerializadorAbstracto</name>
+        <briefdescription>
+<para>Destroy the Constructor Serializador Abstracto object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorAbstracto.h" line="34" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorAbstracto.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constructor_serializador_abstracto_1adb23b92a09cab3cbd6af0f2376beaa27" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ConstructorSerializadorAbstracto::inicioObjeto</definition>
+        <argsstring>()=0</argsstring>
+        <name>inicioObjeto</name>
+        <reimplementedby refid="class_constructor_serializador_j_s_o_n_1a44c0d8090730cb2e03bd491ce67c0d0e">inicioObjeto</reimplementedby>
+        <briefdescription>
+<para>Inicia el objeto serializador dependiendo del formato. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorAbstracto.h" line="40" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constructor_serializador_abstracto_1a5103ba163e8a585b41d32eda00fb357c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ConstructorSerializadorAbstracto::finObjeto</definition>
+        <argsstring>()=0</argsstring>
+        <name>finObjeto</name>
+        <reimplementedby refid="class_constructor_serializador_j_s_o_n_1aeb2bd6f7b6c9e50fc7962f4669eae857">finObjeto</reimplementedby>
+        <briefdescription>
+<para>Agrega el fin del objeto serializador dependiendo del formato. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorAbstracto.h" line="46" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constructor_serializador_abstracto_1a0c767f29e5c3533b59b9ce99d34bdd62" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ConstructorSerializadorAbstracto::serializarHilera</definition>
+        <argsstring>(const std::pair&lt; std::string, Valor * &gt; &amp;ph)=0</argsstring>
+        <name>serializarHilera</name>
+        <reimplementedby refid="class_constructor_serializador_j_s_o_n_1afd8a9293549a42378c1374a9254e2512">serializarHilera</reimplementedby>
+        <param>
+          <type>const std::pair&lt; std::string, <ref refid="class_valor" kindref="compound">Valor</ref> * &gt; &amp;</type>
+          <declname>ph</declname>
+        </param>
+        <briefdescription>
+<para>Serializa la hilera de acuerdo con el formato, se utiliza un objeto par que contiene una string y un puntero a objeto <ref refid="class_valor" kindref="compound">Valor</ref>. Imprime según el orden que necesite la implementación específica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_objeto" kindref="compound">Objeto</ref> par, el primero es una string, el segundo es un objeto <ref refid="class_valor" kindref="compound">Valor</ref>, por lo general, se espera que el contenido de este se pase a string para la serialización. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorAbstracto.h" line="57" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constructor_serializador_abstracto_1ada8ca9cdbcb6148250951f43f09b097e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string ConstructorSerializadorAbstracto::obtSerializacion</definition>
+        <argsstring>()=0</argsstring>
+        <name>obtSerializacion</name>
+        <reimplementedby refid="class_constructor_serializador_j_s_o_n_1a189cf123b5cacbd40e64f5546ad322c1">obtSerializacion</reimplementedby>
+        <briefdescription>
+<para>Devuelve la hilera que contiene la serialización en formato string. Crear una hilera en cada implementación. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string La string con la serialización. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorAbstracto.h" line="65" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constructor_serializador_abstracto_1a90dc3765cd774fd68383141534c8d516" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ConstructorSerializadorAbstracto::agregarSeparador</definition>
+        <argsstring>()=0</argsstring>
+        <name>agregarSeparador</name>
+        <reimplementedby refid="class_constructor_serializador_j_s_o_n_1aa2691c6561a4b5c7da135fbd28bdbd3e">agregarSeparador</reimplementedby>
+        <briefdescription>
+<para>Agrega el separador a la hilera de la serialización dependiendo de la implementación. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorAbstracto.h" line="72" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ConstructorSerializadorAbstracto</label>
+        <link refid="class_constructor_serializador_abstracto"/>
+      </node>
+      <node id="2">
+        <label>ConstructorSerializadorJSON</label>
+        <link refid="class_constructor_serializador_j_s_o_n"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorAbstracto.h" line="21" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ConstructorSerializadorAbstracto.h" bodystart="22" bodyend="73"/>
+    <listofallmembers>
+      <member refid="class_constructor_serializador_abstracto_1a90dc3765cd774fd68383141534c8d516" prot="public" virt="pure-virtual"><scope>ConstructorSerializadorAbstracto</scope><name>agregarSeparador</name></member>
+      <member refid="class_constructor_serializador_abstracto_1a11b82d3d7a12ed4e7f4d8d92689f2fc1" prot="public" virt="non-virtual"><scope>ConstructorSerializadorAbstracto</scope><name>ConstructorSerializadorAbstracto</name></member>
+      <member refid="class_constructor_serializador_abstracto_1a5103ba163e8a585b41d32eda00fb357c" prot="public" virt="pure-virtual"><scope>ConstructorSerializadorAbstracto</scope><name>finObjeto</name></member>
+      <member refid="class_constructor_serializador_abstracto_1adb23b92a09cab3cbd6af0f2376beaa27" prot="public" virt="pure-virtual"><scope>ConstructorSerializadorAbstracto</scope><name>inicioObjeto</name></member>
+      <member refid="class_constructor_serializador_abstracto_1ada8ca9cdbcb6148250951f43f09b097e" prot="public" virt="pure-virtual"><scope>ConstructorSerializadorAbstracto</scope><name>obtSerializacion</name></member>
+      <member refid="class_constructor_serializador_abstracto_1a0c767f29e5c3533b59b9ce99d34bdd62" prot="public" virt="pure-virtual"><scope>ConstructorSerializadorAbstracto</scope><name>serializarHilera</name></member>
+      <member refid="class_constructor_serializador_abstracto_1ad4e49d3c99d1899fa8aa0c1498853f47" prot="public" virt="non-virtual"><scope>ConstructorSerializadorAbstracto</scope><name>~ConstructorSerializadorAbstracto</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

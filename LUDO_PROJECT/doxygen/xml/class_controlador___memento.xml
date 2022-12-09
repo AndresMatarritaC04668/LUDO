@@ -1,0 +1,552 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_controlador___memento" kind="class" language="C++" prot="public">
+    <compoundname>Controlador_Memento</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_controlador___memento_1a8e4808e3a6ac22f4ffa8bb120b48bb5c" prot="private" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string Controlador_Memento::listaObjetosString</definition>
+        <argsstring></argsstring>
+        <name>listaObjetosString</name>
+        <initializer>= &quot;ListaObjetos&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="138" column="23" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controlador___memento_1a2aacac0bef4e32c5a32573303286fcb6" prot="private" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string Controlador_Memento::numElemString</definition>
+        <argsstring></argsstring>
+        <name>numElemString</name>
+        <initializer>= &quot;cantidad&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="139" column="23" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_controlador___memento_1a9149081ba2629ca24687e3a7a7160228" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Controlador_Memento::Controlador_Memento</definition>
+        <argsstring>()</argsstring>
+        <name>Controlador_Memento</name>
+        <briefdescription>
+<para>Construct a new <ref refid="class_controlador___memento" kindref="compound">Controlador_Memento</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="29" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" bodystart="18" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador___memento_1a3d63c81d5d34618c07dcc3c211c2fa94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Controlador_Memento::~Controlador_Memento</definition>
+        <argsstring>()</argsstring>
+        <name>~Controlador_Memento</name>
+        <briefdescription>
+<para>Destroy the <ref refid="class_controlador___memento" kindref="compound">Controlador_Memento</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="35" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" bodystart="21" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador___memento_1a46bbcf48ec11c2429d31bd8ffe4548cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controlador_Memento::serializarTablero</definition>
+        <argsstring>(TableroAbstracto *, string)</argsstring>
+        <name>serializarTablero</name>
+        <param>
+          <type><ref refid="class_tablero_abstracto" kindref="compound">TableroAbstracto</ref> *</type>
+          <defname>mesa</defname>
+        </param>
+        <param>
+          <type>string</type>
+          <defname>nombreCSV</defname>
+        </param>
+        <briefdescription>
+<para>Crea el archivo, llama a serializar el tablero y finalmente guarda la serializacion en el archivo creado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Es el tablero del juego que se va a serializar. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nombreCSV</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Es el nombre del archivo en el que se va a guardar la serializacion. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="45" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" bodystart="24" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador___memento_1a041a7e75683d3abe23bdd2520ae83f75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Controlador_Memento::serializarJugadoresJSON</definition>
+        <argsstring>(std::vector&lt; Jugador * &gt;)</argsstring>
+        <name>serializarJugadoresJSON</name>
+        <param>
+          <type>std::vector&lt; <ref refid="class_jugador" kindref="compound">Jugador</ref> * &gt;</type>
+          <defname>listaJugadores</defname>
+        </param>
+        <briefdescription>
+<para>Serializa a los jugadores de la partida directamente del vector de jugadores, los guarda en un vector y luego llama a <ref refid="class_controlador___memento_1acc84c80d63372c31163bbdae9831e796" kindref="member">serializarListaObjetosJSON()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listaJugadores</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La lista de jugadores que deben ser serializados como si fueran una lista. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string La lista de jugadores serializada. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="56" column="17" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" bodystart="147" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador___memento_1af0b0e3b63faba808558059ed718f1b19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Controlador_Memento::serializarFichasJSON</definition>
+        <argsstring>(std::vector&lt; FichaAbstracta * &gt;)</argsstring>
+        <name>serializarFichasJSON</name>
+        <param>
+          <type>std::vector&lt; <ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref> * &gt;</type>
+          <defname>listaFichas</defname>
+        </param>
+        <briefdescription>
+<para>Serializa las fichas de un jugador de la partida directamente de su vector de fichas, los guarda en un vector y luego llama a <ref refid="class_controlador___memento_1acc84c80d63372c31163bbdae9831e796" kindref="member">serializarListaObjetosJSON()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listaFichas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La lista de fichas que deben ser serializadas como si fueran una lista. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string La lista de fichas serializada. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="67" column="17" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" bodystart="155" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador___memento_1acc84c80d63372c31163bbdae9831e796" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Controlador_Memento::serializarListaObjetosJSON</definition>
+        <argsstring>(std::vector&lt; Objeto * &gt;)</argsstring>
+        <name>serializarListaObjetosJSON</name>
+        <param>
+          <type>std::vector&lt; <ref refid="class_objeto" kindref="compound">Objeto</ref> * &gt;</type>
+          <defname>listaObjetos</defname>
+        </param>
+        <briefdescription>
+<para>Crea una string a partir de una lista (vector) de objetos abstractos, de tal forma que concuerde con el formato utilizado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listaObjetos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector de objetos que deben ser serializados como si fueran una lista. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string La string de objetos serializados. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="77" column="17" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" bodystart="165" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador___memento_1a1eff5c5134fd490f7227cbdb087d05e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Controlador_Memento::serializarJSON</definition>
+        <argsstring>(Objeto *)</argsstring>
+        <name>serializarJSON</name>
+        <param>
+          <type><ref refid="class_objeto" kindref="compound">Objeto</ref> *</type>
+          <defname>objeto</defname>
+        </param>
+        <briefdescription>
+<para>Manda a serializar un solo objeto abstrato de acuerdo al formato utilizado. Crea una string con ello. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objeto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>el objeto abstracto a serializar. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string La string del objeto serializado. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="86" column="17" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" bodystart="123" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador___memento_1a8951875a0ff6ba76deb043344611dceb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref> *</type>
+        <definition>TableroLudo * Controlador_Memento::deserializarTableroJSON</definition>
+        <argsstring>(std::string)</argsstring>
+        <name>deserializarTableroJSON</name>
+        <param>
+          <type>std::string</type>
+          <defname>stringJSON</defname>
+        </param>
+        <briefdescription>
+<para>Deserializa una string que representa el tablero de juego en el formato utilizado. Llama a deserializarTablero(). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La string serializada con el tablero. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TableroLudo* El tablero deserializado. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="95" column="18" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" bodystart="185" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador___memento_1a02797403ec5eea5fabb24106443aef9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_jugador" kindref="compound">Jugador</ref> * &gt;</type>
+        <definition>std::vector&lt; Jugador * &gt; Controlador_Memento::deserializarListaJugadoresJSON</definition>
+        <argsstring>(std::string)</argsstring>
+        <name>deserializarListaJugadoresJSON</name>
+        <param>
+          <type>std::string</type>
+          <defname>stringJSON</defname>
+        </param>
+        <briefdescription>
+<para>Deserializa una lista de jugadores a partir de una string serializada en el formato utilizado. Llama a deserializarListaJugadores() </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La lista de jugadores serializada. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::vector&lt;Jugador*&gt; El vector de jugadores deserializado. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="104" column="17" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" bodystart="199" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador___memento_1ab3cadcfdacb50c704f8ef1dd8e19c2e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref> * &gt;</type>
+        <definition>std::vector&lt; FichaAbstracta * &gt; Controlador_Memento::deserializarListaFichasJSON</definition>
+        <argsstring>(std::string)</argsstring>
+        <name>deserializarListaFichasJSON</name>
+        <param>
+          <type>std::string</type>
+          <defname>stringJSON</defname>
+        </param>
+        <briefdescription>
+<para>Deserializa una lista de fichas a partir de una string serializada en el formato utilizado. Llama a deserializarListaFichas(). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La lista de fichas serializada. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::vector&lt;FichaAbstracta*&gt; El vector de fichas deserializado. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="113" column="17" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" bodystart="217" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador___memento_1acefc20cc7671fc9470fbeb4560558dd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref> *</type>
+        <definition>TableroLudo * Controlador_Memento::deserializarJuego</definition>
+        <argsstring>(std::string, QWidget *)</argsstring>
+        <name>deserializarJuego</name>
+        <param>
+          <type>std::string</type>
+          <defname>nombreCSV</defname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <defname>output</defname>
+        </param>
+        <briefdescription>
+<para>Estructura de deserializacion del juego a partir del archivo que con la partida serializada. Llama a los demás metodos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombreCSV</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre del archivo serializado. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Envía mensajes de output en caso de error. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TableroLudo* El tablero de juego deserializado. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="123" column="18" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" bodystart="47" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_controlador___memento_1a46fdb1d2f5906220a0bfaa402219160f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Controlador_Memento::serializar</definition>
+        <argsstring>(Objeto *, ConstructorSerializadorAbstracto *)</argsstring>
+        <name>serializar</name>
+        <param>
+          <type><ref refid="class_objeto" kindref="compound">Objeto</ref> *</type>
+          <defname>objeto</defname>
+        </param>
+        <param>
+          <type><ref refid="class_constructor_serializador_abstracto" kindref="compound">ConstructorSerializadorAbstracto</ref> *</type>
+          <defname>serializador</defname>
+        </param>
+        <briefdescription>
+<para>Serializa un objeto abstracto usando sus atributos y un constructor serializador abstracto. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objeto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El objeto a serializar. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>serializador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Se usan los metodos de este serializador para serializar el objeto. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string El objeto serializado. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="137" column="17" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" bodystart="129" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador___memento_1a05cae22a32a6a4f0a66e7d1b8352dc5c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref> *</type>
+        <definition>TableroLudo * Controlador_Memento::deserializarTablero</definition>
+        <argsstring>(std::string, DeserializadorAbstracto *)</argsstring>
+        <name>deserializarTablero</name>
+        <param>
+          <type>std::string</type>
+          <defname>stringJSON</defname>
+        </param>
+        <param>
+          <type><ref refid="class_deserializador_abstracto" kindref="compound">DeserializadorAbstracto</ref> *</type>
+          <defname>deserializador</defname>
+        </param>
+        <briefdescription>
+<para>Deserializa un tablero a partir de una string serializada que contiene un tablero y el deserializador abstracto. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es una string serializada que contiene un tablero. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deserializador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Se usan sus metodos para serializar el tablero. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TableroLudo* El tablero deserializado. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="149" column="18" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" bodystart="192" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador___memento_1a5149f89d297158fb14150fe3e1d379d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_jugador" kindref="compound">Jugador</ref> * &gt;</type>
+        <definition>std::vector&lt; Jugador * &gt; Controlador_Memento::deserializarListaJugadores</definition>
+        <argsstring>(std::string, DeserializadorAbstracto *)</argsstring>
+        <name>deserializarListaJugadores</name>
+        <param>
+          <type>std::string</type>
+          <defname>stringJSON</defname>
+        </param>
+        <param>
+          <type><ref refid="class_deserializador_abstracto" kindref="compound">DeserializadorAbstracto</ref> *</type>
+          <defname>deserializador</defname>
+        </param>
+        <briefdescription>
+<para>Deserializa una lista de jugadores a partir de una string que contiene jugadores serializados y un deserializador. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La string serializada que contiene los jugadores. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deserializador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Se usan sus metodos para serializar a los jugadores. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::vector&lt;Jugador*&gt; Vector de jugadores deserializado. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="160" column="17" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" bodystart="205" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador___memento_1ae3c5a6d7e135a2a174739012c49e6c09" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref> * &gt;</type>
+        <definition>std::vector&lt; FichaAbstracta * &gt; Controlador_Memento::deserializarListaFichas</definition>
+        <argsstring>(std::string, DeserializadorAbstracto *)</argsstring>
+        <name>deserializarListaFichas</name>
+        <param>
+          <type>std::string</type>
+          <defname>stringJSON</defname>
+        </param>
+        <param>
+          <type><ref refid="class_deserializador_abstracto" kindref="compound">DeserializadorAbstracto</ref> *</type>
+          <defname>deserializador</defname>
+        </param>
+        <briefdescription>
+<para>Deserializa una lista de Fichas a partir de una string que contiene fichas serializadas y un deserializador. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La string serializada que contiene las fichas. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deserializador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Se usan sus metodos para serializar a las fichas. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::vector&lt;FichaAbstracta*&gt; Vector de fichas deserializadas. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="170" column="17" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" bodystart="223" bodyend="233"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" line="22" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.h" bodystart="22" bodyend="172"/>
+    <listofallmembers>
+      <member refid="class_controlador___memento_1a9149081ba2629ca24687e3a7a7160228" prot="public" virt="non-virtual"><scope>Controlador_Memento</scope><name>Controlador_Memento</name></member>
+      <member refid="class_controlador___memento_1acefc20cc7671fc9470fbeb4560558dd7" prot="public" virt="non-virtual"><scope>Controlador_Memento</scope><name>deserializarJuego</name></member>
+      <member refid="class_controlador___memento_1ae3c5a6d7e135a2a174739012c49e6c09" prot="private" virt="non-virtual"><scope>Controlador_Memento</scope><name>deserializarListaFichas</name></member>
+      <member refid="class_controlador___memento_1ab3cadcfdacb50c704f8ef1dd8e19c2e6" prot="public" virt="non-virtual"><scope>Controlador_Memento</scope><name>deserializarListaFichasJSON</name></member>
+      <member refid="class_controlador___memento_1a5149f89d297158fb14150fe3e1d379d4" prot="private" virt="non-virtual"><scope>Controlador_Memento</scope><name>deserializarListaJugadores</name></member>
+      <member refid="class_controlador___memento_1a02797403ec5eea5fabb24106443aef9f" prot="public" virt="non-virtual"><scope>Controlador_Memento</scope><name>deserializarListaJugadoresJSON</name></member>
+      <member refid="class_controlador___memento_1a05cae22a32a6a4f0a66e7d1b8352dc5c" prot="private" virt="non-virtual"><scope>Controlador_Memento</scope><name>deserializarTablero</name></member>
+      <member refid="class_controlador___memento_1a8951875a0ff6ba76deb043344611dceb" prot="public" virt="non-virtual"><scope>Controlador_Memento</scope><name>deserializarTableroJSON</name></member>
+      <member refid="class_controlador___memento_1a8e4808e3a6ac22f4ffa8bb120b48bb5c" prot="private" virt="non-virtual"><scope>Controlador_Memento</scope><name>listaObjetosString</name></member>
+      <member refid="class_controlador___memento_1a2aacac0bef4e32c5a32573303286fcb6" prot="private" virt="non-virtual"><scope>Controlador_Memento</scope><name>numElemString</name></member>
+      <member refid="class_controlador___memento_1a46fdb1d2f5906220a0bfaa402219160f" prot="private" virt="non-virtual"><scope>Controlador_Memento</scope><name>serializar</name></member>
+      <member refid="class_controlador___memento_1af0b0e3b63faba808558059ed718f1b19" prot="public" virt="non-virtual"><scope>Controlador_Memento</scope><name>serializarFichasJSON</name></member>
+      <member refid="class_controlador___memento_1a1eff5c5134fd490f7227cbdb087d05e5" prot="public" virt="non-virtual"><scope>Controlador_Memento</scope><name>serializarJSON</name></member>
+      <member refid="class_controlador___memento_1a041a7e75683d3abe23bdd2520ae83f75" prot="public" virt="non-virtual"><scope>Controlador_Memento</scope><name>serializarJugadoresJSON</name></member>
+      <member refid="class_controlador___memento_1acc84c80d63372c31163bbdae9831e796" prot="public" virt="non-virtual"><scope>Controlador_Memento</scope><name>serializarListaObjetosJSON</name></member>
+      <member refid="class_controlador___memento_1a46bbcf48ec11c2429d31bd8ffe4548cf" prot="public" virt="non-virtual"><scope>Controlador_Memento</scope><name>serializarTablero</name></member>
+      <member refid="class_controlador___memento_1a3d63c81d5d34618c07dcc3c211c2fa94" prot="public" virt="non-virtual"><scope>Controlador_Memento</scope><name>~Controlador_Memento</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

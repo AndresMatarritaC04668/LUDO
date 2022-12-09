@@ -1,0 +1,648 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_controlador___memento_8cpp" kind="file" language="C++">
+    <compoundname>Controlador_Memento.cpp</compoundname>
+    <includes refid="_controlador___memento_8h" local="yes">Controlador_Memento.h</includes>
+    <includes local="no">vector</includes>
+    <includes refid="_constructor_serializador_j_s_o_n_8h" local="yes">ConstructorSerializadorJSON.h</includes>
+    <includes refid="_deserializador_j_s_o_n_8h" local="yes">DeserializadorJSON.h</includes>
+    <includes refid="_ficha_abstracta_8h" local="yes">FichaAbstracta.h</includes>
+    <includes refid="tablero_l_u_d_o_8h" local="yes">tableroLUDO.h</includes>
+    <includes refid="_jugador_ludo_8h" local="yes">JugadorLudo.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">QMessageBox</includes>
+    <incdepgraph>
+      <node id="16">
+        <label>stdbool.h</label>
+      </node>
+      <node id="42">
+        <label>QMessageBox</label>
+      </node>
+      <node id="19">
+        <label>ObtAsg.h</label>
+        <link refid="_obt_asg_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>ConstructorSerializadorJSON.h</label>
+        <link refid="_constructor_serializador_j_s_o_n_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>stdlib.h</label>
+      </node>
+      <node id="21">
+        <label>qmessagebox.h</label>
+      </node>
+      <node id="12">
+        <label>Objeto.h</label>
+        <link refid="_objeto_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>TableroAbstracto.h</label>
+        <link refid="_tablero_abstracto_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>FichaLudo.h</label>
+        <link refid="_ficha_ludo_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>tableroLUDO.h</label>
+        <link refid="tablero_l_u_d_o_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="33">
+        <label>QMainWindow</label>
+      </node>
+      <node id="10">
+        <label>map</label>
+      </node>
+      <node id="22">
+        <label>Dado.h</label>
+        <link refid="_dado_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>ControladorLudo.h</label>
+        <link refid="_controlador_ludo_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>DeserializadorAbstracto.h</label>
+        <link refid="_deserializador_abstracto_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>ControladorAbstracto.h</label>
+        <link refid="_controlador_abstracto_8h"/>
+      </node>
+      <node id="41">
+        <label>fstream</label>
+      </node>
+      <node id="2">
+        <label>Controlador_Memento.h</label>
+        <link refid="_controlador___memento_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>Validador.h</label>
+        <link refid="_validador_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ConstructorSerializadorAbstracto.h</label>
+        <link refid="_constructor_serializador_abstracto_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Hilera.h</label>
+        <link refid="_hilera_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>ValidadorLudo.h</label>
+        <link refid="_validador_ludo_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>string.h</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+      <node id="29">
+        <label>Regla.h</label>
+        <link refid="_regla_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>utility</label>
+      </node>
+      <node id="14">
+        <label>FichaAbstracta.h</label>
+        <link refid="_ficha_abstracta_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>sstream</label>
+      </node>
+      <node id="13">
+        <label>Jugador.h</label>
+        <link refid="_jugador_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>time.h</label>
+      </node>
+      <node id="34">
+        <label>QLabel</label>
+      </node>
+      <node id="20">
+        <label>iosfwd</label>
+      </node>
+      <node id="7">
+        <label>tipo.h</label>
+        <link refid="tipo_8h_source"/>
+      </node>
+      <node id="1">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp</label>
+        <link refid="_controlador___memento_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>iostream</label>
+      </node>
+      <node id="32">
+        <label>ventanainformacion.h</label>
+        <link refid="ventanainformacion_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>JugadorLudo.h</label>
+        <link refid="_jugador_ludo_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>controlador_ventanas.h</label>
+        <link refid="controlador__ventanas_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Valor.h</label>
+        <link refid="_valor_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stdio.h</label>
+      </node>
+      <node id="38">
+        <label>DeserializadorJSON.h</label>
+        <link refid="_deserializador_j_s_o_n_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_controlador___memento_8cpp_1a1986dd8fc3d3c9127a588d4c38efdb32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int abrirArchivo</definition>
+        <argsstring>(ifstream &amp;reader, string filename, QWidget *)</argsstring>
+        <name>abrirArchivo</name>
+        <param>
+          <type>ifstream &amp;</type>
+          <declname>reader</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <defname>output</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" line="98" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" bodystart="98" bodyend="109" declfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" declline="15" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="_controlador___memento_8cpp_1ae1cadc276b6a54f52393adece39c24ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void extraerFilas</definition>
+        <argsstring>(ifstream &amp;reader, vector&lt; string &gt; &amp;lineas)</argsstring>
+        <name>extraerFilas</name>
+        <param>
+          <type>ifstream &amp;</type>
+          <declname>reader</declname>
+        </param>
+        <param>
+          <type>vector&lt; string &gt; &amp;</type>
+          <declname>lineas</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" line="111" column="6" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" bodystart="111" bodyend="119" declfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp" declline="16" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_controlador___memento_8h" kindref="compound">Controlador_Memento.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_constructor_serializador_j_s_o_n_8h" kindref="compound">ConstructorSerializadorJSON.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_deserializador_j_s_o_n_8h" kindref="compound">DeserializadorJSON.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;Hilera.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&lt;QDebug&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_ficha_abstracta_8h" kindref="compound">FichaAbstracta.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tablero_l_u_d_o_8h" kindref="compound">tableroLUDO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_jugador_ludo_8h" kindref="compound">JugadorLudo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMessageBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>abrirArchivo(ifstream&amp;<sp/>reader,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename<sp/>,<sp/>QWidget*);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>extraerFilas(ifstream&amp;<sp/>reader,<sp/>vector&lt;string&gt;&amp;<sp/>lineas);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="class_controlador___memento_1a9149081ba2629ca24687e3a7a7160228" kindref="member">Controlador_Memento::Controlador_Memento</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="class_controlador___memento_1a3d63c81d5d34618c07dcc3c211c2fa94" kindref="member">Controlador_Memento::~Controlador_Memento</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador___memento_1a46bbcf48ec11c2429d31bd8ffe4548cf" kindref="member">Controlador_Memento::serializarTablero</ref>(<ref refid="class_tablero_abstracto" kindref="compound">TableroAbstracto</ref><sp/>*<sp/>mesa,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nombreCSV){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>nombreCSV<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;.csv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>ofstream<sp/>{nombreCSV};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>ofstream<sp/>writer(nombreCSV);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>mesaJSON<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>mesaJSON<sp/>=<sp/><ref refid="class_controlador___memento_1a1eff5c5134fd490f7227cbdb087d05e5" kindref="member">serializarJSON</ref>(mesa);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>writer<sp/>&lt;&lt;<sp/>mesaJSON<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>mesaJSON<sp/>=<sp/><ref refid="class_controlador___memento_1a041a7e75683d3abe23bdd2520ae83f75" kindref="member">serializarJugadoresJSON</ref>(mesa-&gt;<ref refid="class_tablero_abstracto_1adf5899ad7b7da6b37fc63b6ae68451b6" kindref="member">getJugadores</ref>());</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>writer<sp/>&lt;&lt;<sp/>mesaJSON<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="class_jugador" kindref="compound">Jugador</ref><sp/>*<sp/>jugador:<sp/>mesa-&gt;<ref refid="class_tablero_abstracto_1adf5899ad7b7da6b37fc63b6ae68451b6" kindref="member">getJugadores</ref>()){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(jugador!=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mesaJSON<sp/>=<sp/><ref refid="class_controlador___memento_1af0b0e3b63faba808558059ed718f1b19" kindref="member">serializarFichasJSON</ref>(jugador-&gt;getFichas());</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer<sp/>&lt;&lt;<sp/>mesaJSON<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref><sp/>*<sp/><ref refid="class_controlador___memento_1acefc20cc7671fc9470fbeb4560558dd7" kindref="member">Controlador_Memento::deserializarJuego</ref>(std::string<sp/><sp/>nombreCSV<sp/>,<sp/>QWidget*<sp/>output){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>ifstream<sp/>reader;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>lineas;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>nombreCSV<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;.csv&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref><sp/>*<sp/>tablero<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>existe<sp/>=<sp/>abrirArchivo(reader,<sp/>nombreCSV<sp/>,<sp/>output);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(existe){</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>extraerFilas(reader,<sp/>lineas);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iterador<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tablero<sp/>=<sp/><sp/><sp/><ref refid="class_controlador___memento_1a8951875a0ff6ba76deb043344611dceb" kindref="member">deserializarTableroJSON</ref>(lineas[iterador]);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>iterador++;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;Jugador*&gt;<sp/>listaJugadores<sp/>=<sp/><ref refid="class_controlador___memento_1a02797403ec5eea5fabb24106443aef9f" kindref="member">deserializarListaJugadoresJSON</ref>(lineas[iterador]);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>iterador++;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tablero-&gt;<ref refid="class_tablero_abstracto_1ac633f2b502332f61a110ceb471d6bc04" kindref="member">getCantidadJugadores</ref>()<sp/>==<sp/>2){</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>listaJugadores.push_back(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>listaJugadores.push_back(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tablero-&gt;<ref refid="class_tablero_abstracto_1ac633f2b502332f61a110ceb471d6bc04" kindref="member">getCantidadJugadores</ref>()<sp/>==<sp/>3){</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>listaJugadores.push_back(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tablero-&gt;<ref refid="class_tablero_abstracto_1a397adc173989cc9c11c5dd0105476777" kindref="member">setJugadores</ref>(listaJugadores);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;FichaAbstracta*&gt;<sp/>listaFichas<sp/>=<sp/><ref refid="class_controlador___memento_1ab3cadcfdacb50c704f8ef1dd8e19c2e6" kindref="member">deserializarListaFichasJSON</ref>(lineas[iterador]);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>iterador++;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tablero-&gt;<ref refid="class_tablero_abstracto_1a3ce105dee20c0af4908a0f3890af698b" kindref="member">getjugadores</ref>()[0]-&gt;setFichas(listaFichas);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>listaFichas<sp/>=<sp/><ref refid="class_controlador___memento_1ab3cadcfdacb50c704f8ef1dd8e19c2e6" kindref="member">deserializarListaFichasJSON</ref>(lineas[iterador]);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>iterador++;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tablero-&gt;<ref refid="class_tablero_abstracto_1a3ce105dee20c0af4908a0f3890af698b" kindref="member">getjugadores</ref>()[1]-&gt;setFichas(listaFichas);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tablero-&gt;<ref refid="class_tablero_abstracto_1ac633f2b502332f61a110ceb471d6bc04" kindref="member">getCantidadJugadores</ref>()<sp/>&gt;=<sp/>3){</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>listaFichas<sp/>=<sp/><ref refid="class_controlador___memento_1ab3cadcfdacb50c704f8ef1dd8e19c2e6" kindref="member">deserializarListaFichasJSON</ref>(lineas[iterador]);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iterador++;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tablero-&gt;<ref refid="class_tablero_abstracto_1a3ce105dee20c0af4908a0f3890af698b" kindref="member">getjugadores</ref>()[2]-&gt;setFichas(listaFichas);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tablero-&gt;<ref refid="class_tablero_abstracto_1ac633f2b502332f61a110ceb471d6bc04" kindref="member">getCantidadJugadores</ref>()<sp/>==<sp/>4){</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>listaFichas<sp/>=<sp/><ref refid="class_controlador___memento_1ab3cadcfdacb50c704f8ef1dd8e19c2e6" kindref="member">deserializarListaFichasJSON</ref>(lineas[iterador]);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iterador++;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tablero-&gt;<ref refid="class_tablero_abstracto_1a3ce105dee20c0af4908a0f3890af698b" kindref="member">getjugadores</ref>()[3]-&gt;setFichas(listaFichas);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tablero-&gt;<ref refid="class_tablero_ludo_1a4cc8877104f4387abaf9d48fd5641fc0" kindref="member">rellenarMesa</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tablero;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>abrirArchivo(ifstream&amp;<sp/>reader,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename<sp/>,<sp/>QWidget*<sp/>output)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>existe<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>reader.open(filename);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(reader.fail())<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::information(output,</highlight><highlight class="stringliteral">&quot;No<sp/>existe<sp/>partida&quot;</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="stringliteral">&quot;No<sp/>hay<sp/>ninguna<sp/>partida<sp/>almacenada<sp/>con<sp/>ese<sp/>nombre&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>existe<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>existe;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>extraerFilas(ifstream&amp;<sp/>reader,<sp/>vector&lt;string&gt;&amp;<sp/>lineas)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!reader.eof())<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>linea;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getline(reader,<sp/>linea);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(linea<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lineas.push_back(linea);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linea.clear();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">std::string<sp/><ref refid="class_controlador___memento_1a1eff5c5134fd490f7227cbdb087d05e5" kindref="member">Controlador_Memento::serializarJSON</ref>(<ref refid="class_objeto" kindref="compound">Objeto</ref>*<sp/>objeto)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_constructor_serializador_j_s_o_n" kindref="compound">ConstructorSerializadorJSON</ref>*<sp/>serializador<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_constructor_serializador_j_s_o_n" kindref="compound">ConstructorSerializadorJSON</ref>();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>stringJSON<sp/>=<sp/>serializar(objeto,serializador);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stringJSON;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">std::string<sp/>Controlador_Memento::serializar(<ref refid="class_objeto" kindref="compound">Objeto</ref>*<sp/>objeto,<sp/><ref refid="class_constructor_serializador_abstracto" kindref="compound">ConstructorSerializadorAbstracto</ref>*<sp/>serializador)<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>std::pair&lt;<sp/>std::string,<sp/>Valor*<sp/>&gt;<sp/>&gt;<sp/><sp/>atributos;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>objeto-&gt;<ref refid="class_objeto_1acd863032b2761cf855ecdf0a6052fcbb" kindref="member">obtAtributos</ref>(atributos);<sp/></highlight><highlight class="comment">//<sp/>se<sp/>obtiene<sp/>el<sp/>vector<sp/>de<sp/>atributos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>serializador-&gt;<ref refid="class_constructor_serializador_abstracto_1adb23b92a09cab3cbd6af0f2376beaa27" kindref="member">inicioObjeto</ref>();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>atributo<sp/>:<sp/>atributos)<sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(atributo.second-&gt;obtTipo())</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>tipo::Hilera:serializador-&gt;<ref refid="class_constructor_serializador_abstracto_1a0c767f29e5c3533b59b9ce99d34bdd62" kindref="member">serializarHilera</ref>(atributo);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(atributos[atributos.size()-1]!=atributo)<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>serializador-&gt;<ref refid="class_constructor_serializador_abstracto_1a90dc3765cd774fd68383141534c8d516" kindref="member">agregarSeparador</ref>();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>serializador-&gt;<ref refid="class_constructor_serializador_abstracto_1a5103ba163e8a585b41d32eda00fb357c" kindref="member">finObjeto</ref>();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>serializador-&gt;<ref refid="class_constructor_serializador_abstracto_1ada8ca9cdbcb6148250951f43f09b097e" kindref="member">obtSerializacion</ref>();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">std::string<sp/><ref refid="class_controlador___memento_1a041a7e75683d3abe23bdd2520ae83f75" kindref="member">Controlador_Memento::serializarJugadoresJSON</ref>(std::vector&lt;Jugador*&gt;<sp/>listaJugadores<sp/>){</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/>vector&lt;Objeto*&gt;<sp/>JugadoresObjeto;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="class_jugador" kindref="compound">Jugador</ref><sp/>*<sp/>jugador:<sp/>listaJugadores){</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>JugadoresObjeto.push_back(jugador);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_controlador___memento_1acc84c80d63372c31163bbdae9831e796" kindref="member">serializarListaObjetosJSON</ref>(JugadoresObjeto);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal">std::string<sp/><ref refid="class_controlador___memento_1af0b0e3b63faba808558059ed718f1b19" kindref="member">Controlador_Memento::serializarFichasJSON</ref>(std::vector&lt;FichaAbstracta*&gt;<sp/>listaFichas){</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Objeto*&gt;<sp/>FichasObjeto;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/><ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref><sp/><sp/>*<sp/>ficha:<sp/>listaFichas){</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FichasObjeto.push_back(ficha);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_controlador___memento_1acc84c80d63372c31163bbdae9831e796" kindref="member">serializarListaObjetosJSON</ref>(FichasObjeto);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">std::string<sp/><ref refid="class_controlador___memento_1acc84c80d63372c31163bbdae9831e796" kindref="member">Controlador_Memento::serializarListaObjetosJSON</ref>(std::vector&lt;Objeto*&gt;<sp/>listaObjetos)<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>stringJSON<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;{&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>contador<sp/>=<sp/>listaObjetos.size();</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(contador<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stringJSON<sp/>+=<sp/></highlight><highlight class="charliteral">&apos;&quot;&apos;</highlight><highlight class="normal">+listaObjetosString+</highlight><highlight class="charliteral">&apos;&quot;&apos;</highlight><highlight class="normal">+</highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stringJSON<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>objeto<sp/>:<sp/>listaObjetos)<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(objeto<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stringJSON<sp/>+=<sp/><ref refid="class_controlador___memento_1a1eff5c5134fd490f7227cbdb087d05e5" kindref="member">serializarJSON</ref>(objeto);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(objeto<sp/>!=<sp/>listaObjetos[listaObjetos.size()-1])<sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stringJSON<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stringJSON<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>stringJSON<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stringJSON;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref><sp/>*<sp/><ref refid="class_controlador___memento_1a8951875a0ff6ba76deb043344611dceb" kindref="member">Controlador_Memento::deserializarTableroJSON</ref>(std::string<sp/>stringJSON){</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_deserializador_j_s_o_n" kindref="compound">DeserializadorJSON</ref>*<sp/>deserializador<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_deserializador_j_s_o_n" kindref="compound">DeserializadorJSON</ref>();</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref><sp/>*<sp/>tablero<sp/><sp/>=<sp/>deserializarTablero(stringJSON,deserializador);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tablero;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref><sp/>*<sp/><sp/>Controlador_Memento::deserializarTablero(std::string<sp/>stringJSON,<sp/><ref refid="class_deserializador_abstracto" kindref="compound">DeserializadorAbstracto</ref><sp/>*<sp/>deserializador<sp/>){</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref><sp/>*<sp/>tablero<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref>();</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/>std::map&lt;std::string,<sp/>Valor*&gt;<sp/>atributos<sp/>=<sp/>deserializador-&gt;<ref refid="class_deserializador_abstracto_1acf891403209d1bef17941d43f664e6a7" kindref="member">deserializarObjeto</ref>(stringJSON);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>tablero-&gt;<ref refid="class_objeto_1a9c0f555aac2bb7fb2a2f557168a3552d" kindref="member">setAtributos</ref>(atributos);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tablero;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal">std::vector&lt;Jugador*&gt;<sp/><ref refid="class_controlador___memento_1a02797403ec5eea5fabb24106443aef9f" kindref="member">Controlador_Memento::deserializarListaJugadoresJSON</ref>(std::string<sp/>stringJSON){</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_deserializador_j_s_o_n" kindref="compound">DeserializadorJSON</ref>*<sp/>deserializador<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_deserializador_j_s_o_n" kindref="compound">DeserializadorJSON</ref>();</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Jugador*&gt;<sp/>listaJugadores<sp/>=<sp/>deserializarListaJugadores(stringJSON,deserializador);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>listaJugadores;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal">std::vector&lt;Jugador*&gt;<sp/>Controlador_Memento::deserializarListaJugadores(std::string<sp/>stringJSON,<sp/><ref refid="class_deserializador_abstracto" kindref="compound">DeserializadorAbstracto</ref>*<sp/>deserializador)<sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Jugador*&gt;<sp/>listaJugadores;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::map&lt;std::string,<sp/>Valor*&gt;&gt;<sp/>listaAtributos<sp/>=<sp/>deserializador-&gt;<ref refid="class_deserializador_abstracto_1ac5f5a054d0d5aa728c095a9a8c26f14d" kindref="member">deserializarListaObjetos</ref>(stringJSON);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>atributos:<sp/>listaAtributos)<sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_jugador_ludo" kindref="compound">JugadorLudo</ref><sp/>*<sp/>jugador<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_jugador_ludo" kindref="compound">JugadorLudo</ref>();</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jugador-&gt;<ref refid="class_objeto_1a9c0f555aac2bb7fb2a2f557168a3552d" kindref="member">setAtributos</ref>(atributos);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>listaJugadores.push_back(jugador);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>listaJugadores;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">std::vector&lt;FichaAbstracta*&gt;<sp/><ref refid="class_controlador___memento_1ab3cadcfdacb50c704f8ef1dd8e19c2e6" kindref="member">Controlador_Memento::deserializarListaFichasJSON</ref>(std::string<sp/>stringJSON){</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_deserializador_j_s_o_n" kindref="compound">DeserializadorJSON</ref>*<sp/>deserializador<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_deserializador_j_s_o_n" kindref="compound">DeserializadorJSON</ref>();</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;FichaAbstracta*&gt;<sp/>listaFichas<sp/>=<sp/>deserializarListaFichas(stringJSON,deserializador);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>listaFichas;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal">std::vector&lt;FichaAbstracta*&gt;<sp/>Controlador_Memento::deserializarListaFichas(std::string<sp/>stringJSON,<sp/><ref refid="class_deserializador_abstracto" kindref="compound">DeserializadorAbstracto</ref>*<sp/>deserializador)<sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;FichaAbstracta*&gt;<sp/>listaFichas;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::map&lt;std::string,<sp/>Valor*&gt;&gt;<sp/>listaAtributos<sp/>=<sp/>deserializador-&gt;<ref refid="class_deserializador_abstracto_1ac5f5a054d0d5aa728c095a9a8c26f14d" kindref="member">deserializarListaObjetos</ref>(stringJSON);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>atributos:<sp/>listaAtributos)<sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ficha_ludo" kindref="compound">FichaLudo</ref><sp/>*<sp/>ficha<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_ficha_ludo" kindref="compound">FichaLudo</ref>();</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ficha-&gt;<ref refid="class_objeto_1a9c0f555aac2bb7fb2a2f557168a3552d" kindref="member">setAtributos</ref>(atributos);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>listaFichas.push_back(ficha);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>listaFichas;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Controlador_Memento.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_ventana_principal" kind="class" language="C++" prot="public">
+    <compoundname>VentanaPrincipal</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_ventana_principal_1ab80f71df7b8dbd8d8025bbba120e9db1" prot="public" static="no" mutable="no">
+        <type>Ui::VentanaPrincipal *</type>
+        <definition>Ui::VentanaPrincipal* VentanaPrincipal::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanaprincipal.h" line="48" column="26" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanaprincipal.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ventana_principal_1a2c781413d7125f01cfe9e36e4b306092" prot="private" static="no" mutable="no">
+        <type><ref refid="class_controlador_ventana_principal" kindref="compound">ControladorVentanaPrincipal</ref> *</type>
+        <definition>ControladorVentanaPrincipal* VentanaPrincipal::controlador</definition>
+        <argsstring></argsstring>
+        <name>controlador</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanaprincipal.h" line="51" column="34" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanaprincipal.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ventana_principal_1abbedfdc640de92a31b088cd1e515d4d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>VentanaPrincipal::VentanaPrincipal</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>VentanaPrincipal</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new Ventana Principal object by parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Widget padre de la ventana principal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanaprincipal.h" line="33" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanaprincipal.cpp" bodystart="4" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ventana_principal_1a1d02e09eec374007cb1469f458f50cc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VentanaPrincipal::setControlador</definition>
+        <argsstring>(ControladorVentanaPrincipal *controlador)</argsstring>
+        <name>setControlador</name>
+        <param>
+          <type><ref refid="class_controlador_ventana_principal" kindref="compound">ControladorVentanaPrincipal</ref> *</type>
+          <declname>controlador</declname>
+        </param>
+        <briefdescription>
+<para>Set the controlador object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controlador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Un puntero a un puntero <ref refid="class_controlador_ventana_principal" kindref="compound">ControladorVentanaPrincipal</ref>, se guarda en el atributo controlador. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanaprincipal.h" line="41" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanaprincipal.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ventana_principal_1aeeba538e11b05363e00e224649df9a0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>VentanaPrincipal::~VentanaPrincipal</definition>
+        <argsstring>()</argsstring>
+        <name>~VentanaPrincipal</name>
+        <briefdescription>
+<para>Destroy the Ventana Principal object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanaprincipal.h" line="47" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanaprincipal.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+      <node id="1">
+        <label>VentanaPrincipal</label>
+        <link refid="class_ventana_principal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+      <node id="1">
+        <label>VentanaPrincipal</label>
+        <link refid="class_ventana_principal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanaprincipal.h" line="23" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanaprincipal.h" bodystart="24" bodyend="53"/>
+    <listofallmembers>
+      <member refid="class_ventana_principal_1a2c781413d7125f01cfe9e36e4b306092" prot="private" virt="non-virtual"><scope>VentanaPrincipal</scope><name>controlador</name></member>
+      <member refid="class_ventana_principal_1a1d02e09eec374007cb1469f458f50cc7" prot="public" virt="non-virtual"><scope>VentanaPrincipal</scope><name>setControlador</name></member>
+      <member refid="class_ventana_principal_1ab80f71df7b8dbd8d8025bbba120e9db1" prot="public" virt="non-virtual"><scope>VentanaPrincipal</scope><name>ui</name></member>
+      <member refid="class_ventana_principal_1abbedfdc640de92a31b088cd1e515d4d0" prot="public" virt="non-virtual"><scope>VentanaPrincipal</scope><name>VentanaPrincipal</name></member>
+      <member refid="class_ventana_principal_1aeeba538e11b05363e00e224649df9a0a" prot="public" virt="non-virtual"><scope>VentanaPrincipal</scope><name>~VentanaPrincipal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

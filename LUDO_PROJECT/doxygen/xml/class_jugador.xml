@@ -1,0 +1,468 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_jugador" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Jugador</compoundname>
+    <basecompoundref refid="class_objeto" prot="public" virt="non-virtual">Objeto</basecompoundref>
+    <derivedcompoundref refid="class_jugador_ludo" prot="public" virt="non-virtual">JugadorLudo</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_jugador_1a6edb40e25712a8f98fbc3161e414dafa" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Jugador::esGanador</definition>
+        <argsstring></argsstring>
+        <name>esGanador</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="191" column="11" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_jugador_1aa679d387ca3af094bade60748a7ad62a" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Jugador::cantidadDados</definition>
+        <argsstring></argsstring>
+        <name>cantidadDados</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="192" column="11" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_jugador_1a786a0a4f83ebfa5709a771b6b5efdf90" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref> * &gt;</type>
+        <definition>std::vector&lt;FichaAbstracta *&gt; Jugador::fichas</definition>
+        <argsstring></argsstring>
+        <name>fichas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="193" column="19" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_jugador_1a232c46f75691af6210096e5972535d71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Jugador::Jugador</definition>
+        <argsstring>()</argsstring>
+        <name>Jugador</name>
+        <briefdescription>
+<para>Construct a new <ref refid="class_jugador" kindref="compound">Jugador</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="34" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_1af58c09391e50529e009a8166707158d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Jugador::~Jugador</definition>
+        <argsstring>()</argsstring>
+        <name>~Jugador</name>
+        <briefdescription>
+<para>Destroy the <ref refid="class_jugador" kindref="compound">Jugador</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="40" column="17" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_1ad95196fbcc19ddbc50285f739db475fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Jugador::setNombre</definition>
+        <argsstring>(std::string nombre)</argsstring>
+        <name>setNombre</name>
+        <param>
+          <type>std::string</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+<para>Establece el nombre del jugador en sus atributos como una string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La string que se guardara en los atributos. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="48" column="23" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_1ab6c7de8724019fa98431bf0ca656d55f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Jugador::getNombre</definition>
+        <argsstring>()</argsstring>
+        <name>getNombre</name>
+        <briefdescription>
+<para>Devuelve el nombre del <ref refid="class_jugador" kindref="compound">Jugador</ref> desde sus atributos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string El nombre del jugador. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="57" column="29" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" bodystart="57" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_1a0867a6a4a10f4de855b5a34aeb6c42aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Jugador::setColor</definition>
+        <argsstring>(std::string color)</argsstring>
+        <name>setColor</name>
+        <param>
+          <type>std::string</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Establece el color del jugador en sus atributos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La string que se guardara como el color en sus atributos. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="73" column="23" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" bodystart="73" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_1a4fb6f6adf3a1f404b6619c2fdb0e8502" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Jugador::getColor</definition>
+        <argsstring>()</argsstring>
+        <name>getColor</name>
+        <briefdescription>
+<para>Devuelve el color desde sus atributos como una string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string El color del jugador. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="82" column="29" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" bodystart="82" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_1a4fb19395d8df5a0a0723a4150df9d1b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Jugador::getEsGanador</definition>
+        <argsstring>()</argsstring>
+        <name>getEsGanador</name>
+        <briefdescription>
+<para>Indica de alguna manera que si el jugador a ganado el juego o no mediante un booleano. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="98" column="22" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_1af2cf3faaf38044b3215a7a6587699473" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int Jugador::moverFicha</definition>
+        <argsstring>(FichaAbstracta *ficha, int pasos, TableroAbstracto *tablero)=0</argsstring>
+        <name>moverFicha</name>
+        <reimplementedby refid="class_jugador_ludo_1a97b10a6ffd9eeed7857e29d3e3a6e3c3">moverFicha</reimplementedby>
+        <param>
+          <type><ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref> *</type>
+          <declname>ficha</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pasos</declname>
+        </param>
+        <param>
+          <type><ref refid="class_tablero_abstracto" kindref="compound">TableroAbstracto</ref> *</type>
+          <declname>tablero</declname>
+        </param>
+        <briefdescription>
+<para>El jugador ejecuta la opcion de mover la ficha para el juego que se este implementando. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ficha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La ficha que se va a mover. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pasos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Los pasos que se va a mover la ficha. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tablero</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El tablero en el que se va a mover la ficha. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Depende del juego, podria indicar si un jugador tiene el derecho a repetir el turno o no. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="112" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_1a148ab5b9ec0cc5d7f43ebe255a76f8ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref> *</type>
+        <definition>virtual FichaAbstracta* Jugador::elegirFicha</definition>
+        <argsstring>(TableroAbstracto *, int)=0</argsstring>
+        <name>elegirFicha</name>
+        <reimplementedby refid="class_jugador_ludo_1aeacab2bbf9593ce2806daac9e00607f9">elegirFicha</reimplementedby>
+        <param>
+          <type><ref refid="class_tablero_abstracto" kindref="compound">TableroAbstracto</ref> *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>El jugador elige la ficha que va a mover. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TableroAbstracto*</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El tablero en el que se va a mover. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>los pasos que se va a mover. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FichaAbstracta* Debe devolver la ficha elegida. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="121" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_1a62e6bcf6805e13f2253413c8e8dcbb2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int Jugador::lanzarDado</definition>
+        <argsstring>()</argsstring>
+        <name>lanzarDado</name>
+        <briefdescription>
+<para>El jugador lanza el dado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int El resultado de lanzar el dado. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="128" column="21" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" bodystart="128" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_1a72c706b2a576db1082089ff225cbca4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Jugador::setFichas</definition>
+        <argsstring>(std::vector&lt; FichaAbstracta * &gt; fichas)</argsstring>
+        <name>setFichas</name>
+        <param>
+          <type>std::vector&lt; <ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref> * &gt;</type>
+          <declname>fichas</declname>
+        </param>
+        <briefdescription>
+<para>Establece las fichas del jugador. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vector&lt;FichaAbstracta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*&gt; Lo guarda en el vector de fichas abstractas que se tiene como atributo. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="142" column="22" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_1aaef5a3b792e1fccfc083ae034ecc3068" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::vector&lt; <ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref> * &gt;</type>
+        <definition>virtual std::vector&lt;FichaAbstracta *&gt; Jugador::getFichas</definition>
+        <argsstring>()</argsstring>
+        <name>getFichas</name>
+        <briefdescription>
+<para>Devuelve el vector de fichas que se tiene como atributo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::vector&lt;FichaAbstracta *&gt; El atributo fichas. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="151" column="29" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" bodystart="151" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_1a36a170afd57ed41fa107a9efcf6fde46" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int Jugador::elegirQueHacer</definition>
+        <argsstring>(TableroAbstracto *tablero)=0</argsstring>
+        <name>elegirQueHacer</name>
+        <reimplementedby refid="class_jugador_ludo_1af2e970dfd7d2c4737924ab647bfbcb0e">elegirQueHacer</reimplementedby>
+        <param>
+          <type><ref refid="class_tablero_abstracto" kindref="compound">TableroAbstracto</ref> *</type>
+          <declname>tablero</declname>
+        </param>
+        <briefdescription>
+<para>Da las opciones para el jugador en su turno segun el juego. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tablero</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El tablero en el que se esta jugando. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int La eleccion del jugador, siempre representada por un valor numerico. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="162" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_jugador_1a58269958d36a7e04903d540392662b60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Jugador::jugarTurno</definition>
+        <argsstring>(TableroAbstracto *tablero)</argsstring>
+        <name>jugarTurno</name>
+        <param>
+          <type><ref refid="class_tablero_abstracto" kindref="compound">TableroAbstracto</ref> *</type>
+          <declname>tablero</declname>
+        </param>
+        <briefdescription>
+<para>El jugador juega su turno. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tablero</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El tablero en el que se esta jugando. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Un entero que funciona como booleano, se usa principalmente adentro del metodo para determinar si el jugador debe continuar su turno tras elegir su accion, pero el resultado se devuelve independientemente. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="173" column="13" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" bodystart="173" bodyend="188"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Jugador</label>
+        <link refid="class_jugador"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Objeto</label>
+        <link refid="class_objeto"/>
+      </node>
+      <node id="3">
+        <label>JugadorLudo</label>
+        <link refid="class_jugador_ludo"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Jugador</label>
+        <link refid="class_jugador"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Objeto</label>
+        <link refid="class_objeto"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" line="27" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Jugador.h" bodystart="27" bodyend="196"/>
+    <listofallmembers>
+      <member refid="class_objeto_1a480513c7fbed9c4c8ba82eb704d0c3ac" prot="protected" virt="non-virtual"><scope>Jugador</scope><name>agregarAtributo</name></member>
+      <member refid="class_jugador_1aa679d387ca3af094bade60748a7ad62a" prot="protected" virt="non-virtual"><scope>Jugador</scope><name>cantidadDados</name></member>
+      <member refid="class_jugador_1a148ab5b9ec0cc5d7f43ebe255a76f8ab" prot="public" virt="pure-virtual"><scope>Jugador</scope><name>elegirFicha</name></member>
+      <member refid="class_jugador_1a36a170afd57ed41fa107a9efcf6fde46" prot="public" virt="pure-virtual"><scope>Jugador</scope><name>elegirQueHacer</name></member>
+      <member refid="class_jugador_1a6edb40e25712a8f98fbc3161e414dafa" prot="protected" virt="non-virtual"><scope>Jugador</scope><name>esGanador</name></member>
+      <member refid="class_jugador_1a786a0a4f83ebfa5709a771b6b5efdf90" prot="protected" virt="non-virtual"><scope>Jugador</scope><name>fichas</name></member>
+      <member refid="class_jugador_1a4fb6f6adf3a1f404b6619c2fdb0e8502" prot="public" virt="virtual"><scope>Jugador</scope><name>getColor</name></member>
+      <member refid="class_jugador_1a4fb19395d8df5a0a0723a4150df9d1b9" prot="public" virt="virtual"><scope>Jugador</scope><name>getEsGanador</name></member>
+      <member refid="class_jugador_1aaef5a3b792e1fccfc083ae034ecc3068" prot="public" virt="virtual"><scope>Jugador</scope><name>getFichas</name></member>
+      <member refid="class_jugador_1ab6c7de8724019fa98431bf0ca656d55f" prot="public" virt="virtual"><scope>Jugador</scope><name>getNombre</name></member>
+      <member refid="class_jugador_1a232c46f75691af6210096e5972535d71" prot="public" virt="non-virtual"><scope>Jugador</scope><name>Jugador</name></member>
+      <member refid="class_jugador_1a58269958d36a7e04903d540392662b60" prot="public" virt="non-virtual"><scope>Jugador</scope><name>jugarTurno</name></member>
+      <member refid="class_jugador_1a62e6bcf6805e13f2253413c8e8dcbb2d" prot="public" virt="virtual"><scope>Jugador</scope><name>lanzarDado</name></member>
+      <member refid="class_objeto_1a040a9e302397e6086a42359e211f6eca" prot="public" virt="non-virtual"><scope>Jugador</scope><name>map_atributos</name></member>
+      <member refid="class_jugador_1af2cf3faaf38044b3215a7a6587699473" prot="public" virt="pure-virtual"><scope>Jugador</scope><name>moverFicha</name></member>
+      <member refid="class_objeto_1a5608071f995c220f0f1a0e5887c2d11d" prot="public" virt="non-virtual"><scope>Jugador</scope><name>Objeto</name></member>
+      <member refid="class_objeto_1acd863032b2761cf855ecdf0a6052fcbb" prot="public" virt="non-virtual"><scope>Jugador</scope><name>obtAtributos</name></member>
+      <member refid="class_objeto_1a8ec095f9fa9cbab27d0361e49aecff33" prot="protected" virt="non-virtual"><scope>Jugador</scope><name>obtenerAtributo</name></member>
+      <member refid="class_objeto_1a9c0f555aac2bb7fb2a2f557168a3552d" prot="public" virt="non-virtual"><scope>Jugador</scope><name>setAtributos</name></member>
+      <member refid="class_jugador_1a0867a6a4a10f4de855b5a34aeb6c42aa" prot="public" virt="virtual"><scope>Jugador</scope><name>setColor</name></member>
+      <member refid="class_jugador_1a72c706b2a576db1082089ff225cbca4c" prot="public" virt="virtual"><scope>Jugador</scope><name>setFichas</name></member>
+      <member refid="class_jugador_1ad95196fbcc19ddbc50285f739db475fa" prot="public" virt="virtual"><scope>Jugador</scope><name>setNombre</name></member>
+      <member refid="class_jugador_1af58c09391e50529e009a8166707158d1" prot="public" virt="virtual"><scope>Jugador</scope><name>~Jugador</name></member>
+      <member refid="class_objeto_1a02425fff0768299968af03ac86deb496" prot="public" virt="non-virtual"><scope>Jugador</scope><name>~Objeto</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

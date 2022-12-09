@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_controlador_ludo_8cpp" kind="file" language="C++">
+    <compoundname>ControladorLudo.cpp</compoundname>
+    <includes refid="_controlador_ludo_8h" local="yes">ControladorLudo.h</includes>
+    <includes local="yes">qinputdialog.h</includes>
+    <includes refid="controlador__ventanas_8h" local="yes">controlador_ventanas.h</includes>
+    <includes refid="tablero_l_u_d_o_8h" local="yes">tableroLUDO.h</includes>
+    <includes refid="_controlador___memento_8h" local="yes">Controlador_Memento.h</includes>
+    <incdepgraph>
+      <node id="17">
+        <label>stdbool.h</label>
+      </node>
+      <node id="24">
+        <label>ObtAsg.h</label>
+        <link refid="_obt_asg_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>stdlib.h</label>
+      </node>
+      <node id="26">
+        <label>qmessagebox.h</label>
+      </node>
+      <node id="18">
+        <label>Objeto.h</label>
+        <link refid="_objeto_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>TableroAbstracto.h</label>
+        <link refid="_tablero_abstracto_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>FichaLudo.h</label>
+        <link refid="_ficha_ludo_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>tableroLUDO.h</label>
+        <link refid="tablero_l_u_d_o_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>QMainWindow</label>
+      </node>
+      <node id="19">
+        <label>map</label>
+      </node>
+      <node id="27">
+        <label>Dado.h</label>
+        <link refid="_dado_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ControladorLudo.h</label>
+        <link refid="_controlador_ludo_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>DeserializadorAbstracto.h</label>
+        <link refid="_deserializador_abstracto_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ControladorAbstracto.h</label>
+        <link refid="_controlador_abstracto_8h"/>
+      </node>
+      <node id="33">
+        <label>Controlador_Memento.h</label>
+        <link refid="_controlador___memento_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Validador.h</label>
+        <link refid="_validador_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>ConstructorSerializadorAbstracto.h</label>
+        <link refid="_constructor_serializador_abstracto_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Hilera.h</label>
+        <link refid="_hilera_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>string.h</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+      <node id="12">
+        <label>Regla.h</label>
+        <link refid="_regla_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>utility</label>
+      </node>
+      <node id="15">
+        <label>FichaAbstracta.h</label>
+        <link refid="_ficha_abstracta_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>sstream</label>
+      </node>
+      <node id="14">
+        <label>Jugador.h</label>
+        <link refid="_jugador_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>time.h</label>
+      </node>
+      <node id="30">
+        <label>QLabel</label>
+      </node>
+      <node id="25">
+        <label>iosfwd</label>
+      </node>
+      <node id="21">
+        <label>tipo.h</label>
+        <link refid="tipo_8h_source"/>
+      </node>
+      <node id="16">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>ventanainformacion.h</label>
+        <link refid="ventanainformacion_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>qinputdialog.h</label>
+      </node>
+      <node id="1">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.cpp</label>
+        <link refid="_controlador_ludo_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>controlador_ventanas.h</label>
+        <link refid="controlador__ventanas_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Valor.h</label>
+        <link refid="_valor_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_controlador_ludo_8h" kindref="compound">ControladorLudo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;qinputdialog.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;controlador_ventanas.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tablero_l_u_d_o_8h" kindref="compound">tableroLUDO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_controlador_ludo_8h" kindref="compound">ControladorLudo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_controlador___memento_8h" kindref="compound">Controlador_Memento.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="class_controlador_ludo_1ab1193a2e006fb72092a256cc49ae8017" kindref="member">ControladorLudo::ControladorLudo</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;controladorGrafico<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classcontrolador___ventanas" kindref="compound">controlador_Ventanas</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>controladorGrafico-&gt;<ref refid="classcontrolador___ventanas_1a38b79f4e6efd45fcc486daf76f8d63bb" kindref="member">iniciar</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador_ludo_1a0043ee0917399e55b6d8973c409d1126" kindref="member">ControladorLudo::crearTablero</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;tablero<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>tablero-&gt;<ref refid="class_tablero_ludo_1a12aac5262a7f00c626e1b39c76e25c84" kindref="member">setControlador</ref>(controladorGrafico<sp/>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador_ludo_1a0def944a34b36614a334906b51352c5f" kindref="member">ControladorLudo::asignarCantidadJugadores</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cantidadJugadores<sp/>=<sp/>QInputDialog::getInt(controladorGrafico-&gt;input,</highlight><highlight class="stringliteral">&quot;Cantidad<sp/>de<sp/>jugadores&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Ingrese<sp/>la<sp/>cantidad<sp/>de<sp/>jugadores(2<sp/>a<sp/>4)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>cin&gt;&gt;cantidadJugadores;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>tablero-&gt;<ref refid="class_tablero_abstracto_1aa1400d0a30bdb81eb47f25d1fca02ad9" kindref="member">asignarCantidadJugadores</ref>(cantidadJugadores);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador_ludo_1ad8f32268b8fc489e273ee194044e496c" kindref="member">ControladorLudo::ubicarJugadores</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>tablero-&gt;<ref refid="class_tablero_ludo_1a827d3aea0b0f72121ef7e8accf7369a2" kindref="member">ubicarJugadores</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador_ludo_1a2f132e8e184ff0342acc71cc075085d7" kindref="member">ControladorLudo::asignarPrimerJugador</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>tablero-&gt;<ref refid="class_tablero_ludo_1abf37b69c04f5696673278b789abcb525" kindref="member">asignarPrimerJugador</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador_ludo_1a437197103e15a36cbc6287b7da626103" kindref="member">ControladorLudo::iniciarPartida</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_controlador_ludo_1a0043ee0917399e55b6d8973c409d1126" kindref="member">crearTablero</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_controlador_ludo_1a0def944a34b36614a334906b51352c5f" kindref="member">asignarCantidadJugadores</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_controlador_ludo_1ad8f32268b8fc489e273ee194044e496c" kindref="member">ubicarJugadores</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_controlador_ludo_1a2f132e8e184ff0342acc71cc075085d7" kindref="member">asignarPrimerJugador</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>tablero-&gt;<ref refid="class_tablero_abstracto_1a61b824bdb2afa2eef081e9bdeedc3c61" kindref="member">iniciarPartida</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>tablero;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>controladorGrafico-&gt;<ref refid="classcontrolador___ventanas_1a796f2f78d5cee74c06eb31764b45c2b1" kindref="member">mostrarMenu</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador_ludo_1a0eddf90f11e3f6a1b262329191fe83be" kindref="member">ControladorLudo::renaudarPartida</ref>(){</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nombrePartida<sp/>=<sp/>controladorGrafico-&gt;<ref refid="classcontrolador___ventanas_1afae398467350af5d9f467a5525e861be" kindref="member">getNombreCSV</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_controlador___memento" kindref="compound">Controlador_Memento</ref><sp/>deserializador;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;tablero<sp/>=<sp/>deserializador.<ref refid="class_controlador___memento_1acefc20cc7671fc9470fbeb4560558dd7" kindref="member">deserializarJuego</ref>(nombrePartida,controladorGrafico-&gt;input);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tablero<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;controladorGrafico-&gt;<ref refid="classcontrolador___ventanas_1a8637e2a731c7ea6bbf9229a19edf5b86" kindref="member">mostrarTablero</ref>(3);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tablero-&gt;<ref refid="class_tablero_ludo_1a12aac5262a7f00c626e1b39c76e25c84" kindref="member">setControlador</ref>(controladorGrafico<sp/>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tablero-&gt;<ref refid="class_tablero_abstracto_1a61b824bdb2afa2eef081e9bdeedc3c61" kindref="member">iniciarPartida</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>tablero;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>controladorGrafico-&gt;<ref refid="classcontrolador___ventanas_1a796f2f78d5cee74c06eb31764b45c2b1" kindref="member">mostrarMenu</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controlador_ludo_1af82bc91fc9f52b5a06cc87ed2a1b9839" kindref="member">ControladorLudo::pausarPartida</ref>(){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nombrePartida<sp/>=<sp/>controladorGrafico-&gt;<ref refid="classcontrolador___ventanas_1afae398467350af5d9f467a5525e861be" kindref="member">getNombreCSV</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_controlador___memento" kindref="compound">Controlador_Memento</ref><sp/>serializador;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/>serializador.<ref refid="class_controlador___memento_1a46bbcf48ec11c2429d31bd8ffe4548cf" kindref="member">serializarTablero</ref>(this-&gt;tablero,nombrePartida);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.cpp"/>
+  </compounddef>
+</doxygen>

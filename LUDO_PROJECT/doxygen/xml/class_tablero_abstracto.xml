@@ -1,0 +1,575 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_tablero_abstracto" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>TableroAbstracto</compoundname>
+    <basecompoundref refid="class_objeto" prot="public" virt="non-virtual">Objeto</basecompoundref>
+    <derivedcompoundref refid="class_tablero_ludo" prot="public" virt="non-virtual">TableroLudo</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_tablero_abstracto_1a02d00745f558bea3552396c9955686b4" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="class_jugador" kindref="compound">Jugador</ref> * &gt;</type>
+        <definition>vector&lt;Jugador*&gt; TableroAbstracto::jugadores</definition>
+        <argsstring></argsstring>
+        <name>jugadores</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="233" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tablero_abstracto_1a1296b39cde632d8e4290acf95776fa9e" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_jugador" kindref="compound">Jugador</ref> *</type>
+        <definition>Jugador* TableroAbstracto::jugadorActual</definition>
+        <argsstring></argsstring>
+        <name>jugadorActual</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="234" column="12" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tablero_abstracto_1a95a153799d93e9fa532477a7e2daa2e3" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_dado" kindref="compound">Dado</ref></type>
+        <definition>Dado TableroAbstracto::dado</definition>
+        <argsstring></argsstring>
+        <name>dado</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="235" column="13" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tablero_abstracto_1a2fa7771b08c08228fc1899765803f56b" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TableroAbstracto::juegoTerminado</definition>
+        <argsstring></argsstring>
+        <name>juegoTerminado</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="236" column="11" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tablero_abstracto_1a05909b3cde1b4ca8382643e1853bf670" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_validador" kindref="compound">Validador</ref> *</type>
+        <definition>Validador* TableroAbstracto::validador</definition>
+        <argsstring></argsstring>
+        <name>validador</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="237" column="18" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tablero_abstracto_1a91608dc047952e035c27797a2021d90b" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_controlador_abstracto" kindref="compound">ControladorAbstracto</ref> *</type>
+        <definition>ControladorAbstracto* TableroAbstracto::controladorJuego</definition>
+        <argsstring></argsstring>
+        <name>controladorJuego</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="238" column="29" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_tablero_abstracto_1aeaf4aad157c7a0e2011e2085fabef061" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TableroAbstracto::TableroAbstracto</definition>
+        <argsstring>()</argsstring>
+        <name>TableroAbstracto</name>
+        <briefdescription>
+<para>Construct a new Tablero Abstracto object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="32" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1a56fa93332f76dd57811f9afc9a90ab4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual TableroAbstracto::~TableroAbstracto</definition>
+        <argsstring>()</argsstring>
+        <name>~TableroAbstracto</name>
+        <briefdescription>
+<para>Destroy the Tablero Abstracto object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="38" column="13" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1aa1400d0a30bdb81eb47f25d1fca02ad9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void TableroAbstracto::asignarCantidadJugadores</definition>
+        <argsstring>(int cantidadJugadores)</argsstring>
+        <name>asignarCantidadJugadores</name>
+        <param>
+          <type>int</type>
+          <declname>cantidadJugadores</declname>
+        </param>
+        <briefdescription>
+<para>Asigna la cantidad de jugadores, numero dado por parametro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cantidadJugadores</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Es el numero de jugadores que tendra el juego. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="45" column="18" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1ac5ba08c3ee94a8474a3e2714f512fd03" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void TableroAbstracto::ubicarJugadores</definition>
+        <argsstring>()=0</argsstring>
+        <name>ubicarJugadores</name>
+        <reimplementedby refid="class_tablero_ludo_1a827d3aea0b0f72121ef7e8accf7369a2">ubicarJugadores</reimplementedby>
+        <briefdescription>
+<para>Crea y coloca a los jugadores en el tablero de juego por medio de la interfaz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="54" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1a9be989e9fb3b2f260cce478bf75b07ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int TableroAbstracto::hayGanador</definition>
+        <argsstring>()=0</argsstring>
+        <name>hayGanador</name>
+        <reimplementedby refid="class_tablero_ludo_1a80baa66eb36c7f1a15e631a56d491fd2">hayGanador</reimplementedby>
+        <briefdescription>
+<para>Determina si un jugador ya gano el juego y envia el mensaje de victoria. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int 1 si hay ganador, 0 si aun no hay. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="62" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1a5fc96da84c591fb65518b1df93c1437c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void TableroAbstracto::finalizarJuego</definition>
+        <argsstring>()</argsstring>
+        <name>finalizarJuego</name>
+        <briefdescription>
+<para>Termina el juego. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="68" column="18" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="68" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1a095897aec5517d91054d7e5ad4a5c043" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void TableroAbstracto::detenerPartida</definition>
+        <argsstring>()</argsstring>
+        <name>detenerPartida</name>
+        <briefdescription>
+<para>Detiene la partida pausandola, mas no la termina. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="78" column="18" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1a397adc173989cc9c11c5dd0105476777" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void TableroAbstracto::setJugadores</definition>
+        <argsstring>(vector&lt; Jugador * &gt; jugadores)</argsstring>
+        <name>setJugadores</name>
+        <param>
+          <type>vector&lt; <ref refid="class_jugador" kindref="compound">Jugador</ref> * &gt;</type>
+          <declname>jugadores</declname>
+        </param>
+        <briefdescription>
+<para>Set the Jugadores object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jugadores</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>se guarda en el atributo de jugadores. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="87" column="18" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1a61b824bdb2afa2eef081e9bdeedc3c61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableroAbstracto::iniciarPartida</definition>
+        <argsstring>()</argsstring>
+        <name>iniciarPartida</name>
+        <briefdescription>
+<para>Comienza el mecanismo para iniciar el juego, se encarga de otras labores como pausar la partida si es solicitado o llamar a determinar si hay ganador. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="97" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="97" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1a5802d66b05abd6f955f2653808b743a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void TableroAbstracto::pasarTurno</definition>
+        <argsstring>()</argsstring>
+        <name>pasarTurno</name>
+        <briefdescription>
+<para>Pasa al siguiente turno.Cambia al jugador actual. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="121" column="18" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="121" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1a866569a962560d2b5ad6d8b2e372e73e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int TableroAbstracto::jugarTurno</definition>
+        <argsstring>()=0</argsstring>
+        <name>jugarTurno</name>
+        <reimplementedby refid="class_tablero_ludo_1ad8b80b6080fb8e56992521247946afc4">jugarTurno</reimplementedby>
+        <briefdescription>
+<para>Un jugador ejecuta su turno tirando el dado y moviendo las fichas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="132" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1a7d64c4c45581009dd756d450f0c6ecf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void TableroAbstracto::asignarPrimerJugador</definition>
+        <argsstring>()=0</argsstring>
+        <name>asignarPrimerJugador</name>
+        <reimplementedby refid="class_tablero_ludo_1abf37b69c04f5696673278b789abcb525">asignarPrimerJugador</reimplementedby>
+        <briefdescription>
+<para>Ejecuta un mecanismo para determinar cual jugador va primero. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="138" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1a4ebecae63b4d3614c5642d57d8a72393" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_jugador" kindref="compound">Jugador</ref> *</type>
+        <definition>virtual Jugador* TableroAbstracto::getJugadorActual</definition>
+        <argsstring>()</argsstring>
+        <name>getJugadorActual</name>
+        <briefdescription>
+<para>Get the jugadorActual object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Jugador* el jugador actual. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="145" column="18" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="145" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1a3ce105dee20c0af4908a0f3890af698b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>vector&lt; <ref refid="class_jugador" kindref="compound">Jugador</ref> * &gt;</type>
+        <definition>virtual vector&lt;Jugador*&gt; TableroAbstracto::getjugadores</definition>
+        <argsstring>()</argsstring>
+        <name>getjugadores</name>
+        <briefdescription>
+<para>Get the jugadores object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>vector&lt;Jugador*&gt; el atributo jugadores. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="154" column="20" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="154" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1ac633f2b502332f61a110ceb471d6bc04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int TableroAbstracto::getCantidadJugadores</definition>
+        <argsstring>()</argsstring>
+        <name>getCantidadJugadores</name>
+        <briefdescription>
+<para>Obtiene la cantidad de jugadores. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int la cantidad de jugadores. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="163" column="17" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="163" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1a0a767e1b6b5dc5e8a2392d68ea7d1299" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void TableroAbstracto::setCantidadJugadores</definition>
+        <argsstring>(int cantidadJugadores)</argsstring>
+        <name>setCantidadJugadores</name>
+        <param>
+          <type>int</type>
+          <declname>cantidadJugadores</declname>
+        </param>
+        <briefdescription>
+<para>Establece la cantidad de jugadores mediante un parametro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cantidadJugadores</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El numero de jugadores. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="177" column="18" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="177" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1ac07e39d83240a0e808766bd579e51399" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int TableroAbstracto::getNumeroJugadorActual</definition>
+        <argsstring>()</argsstring>
+        <name>getNumeroJugadorActual</name>
+        <briefdescription>
+<para>Devuelve el numero del jugador que esta ejecutando su turno. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int El numero del jugador actual. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="186" column="17" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="186" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1ad9717214c399678e131d25e60a39aa47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void TableroAbstracto::setNumeroJugadorActual</definition>
+        <argsstring>(int jugadorPresente)</argsstring>
+        <name>setNumeroJugadorActual</name>
+        <param>
+          <type>int</type>
+          <declname>jugadorPresente</declname>
+        </param>
+        <briefdescription>
+<para>Establece el numero del jugador actual por medio de un parametro. Establece el numero por el que el jugador sera reconocido en el juego. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jugadorPresente</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El numero que correspondera al jugador actual. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="201" column="18" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="201" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1a47ea9dbe0756537b8a3becc8114b0ae7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int TableroAbstracto::lanzarDado</definition>
+        <argsstring>()</argsstring>
+        <name>lanzarDado</name>
+        <briefdescription>
+<para>Lanza el objeto dado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int el numero resultante del lanzamiento. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="210" column="13" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="210" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1a12716af3327adc47936750f2eefc4eff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_validador" kindref="compound">Validador</ref> *</type>
+        <definition>virtual Validador* TableroAbstracto::getValidador</definition>
+        <argsstring>()</argsstring>
+        <name>getValidador</name>
+        <briefdescription>
+<para>Get the validador object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Validador* El parametro validador. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="219" column="19" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="219" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tablero_abstracto_1adf5899ad7b7da6b37fc63b6ae68451b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>vector&lt; <ref refid="class_jugador" kindref="compound">Jugador</ref> * &gt;</type>
+        <definition>virtual vector&lt;Jugador *&gt; TableroAbstracto::getJugadores</definition>
+        <argsstring>()</argsstring>
+        <name>getJugadores</name>
+        <briefdescription>
+<para>Get the jugadores object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>vector&lt;Jugador *&gt; El parametro jugadores. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="228" column="20" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="228" bodyend="230"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>TableroLudo</label>
+        <link refid="class_tablero_ludo"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TableroAbstracto</label>
+        <link refid="class_tablero_abstracto"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Objeto</label>
+        <link refid="class_objeto"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>Validador</label>
+        <link refid="class_validador"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>mesa</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ControladorAbstracto</label>
+        <link refid="class_controlador_abstracto"/>
+      </node>
+      <node id="3">
+        <label>Dado</label>
+        <link refid="class_dado"/>
+      </node>
+      <node id="1">
+        <label>TableroAbstracto</label>
+        <link refid="class_tablero_abstracto"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dado</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>jugadorActual</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>validador</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>controladorJuego</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Jugador</label>
+        <link refid="class_jugador"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Objeto</label>
+        <link refid="class_objeto"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" line="26" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroAbstracto.h" bodystart="26" bodyend="241"/>
+    <listofallmembers>
+      <member refid="class_objeto_1a480513c7fbed9c4c8ba82eb704d0c3ac" prot="protected" virt="non-virtual"><scope>TableroAbstracto</scope><name>agregarAtributo</name></member>
+      <member refid="class_tablero_abstracto_1aa1400d0a30bdb81eb47f25d1fca02ad9" prot="public" virt="virtual"><scope>TableroAbstracto</scope><name>asignarCantidadJugadores</name></member>
+      <member refid="class_tablero_abstracto_1a7d64c4c45581009dd756d450f0c6ecf7" prot="public" virt="pure-virtual"><scope>TableroAbstracto</scope><name>asignarPrimerJugador</name></member>
+      <member refid="class_tablero_abstracto_1a91608dc047952e035c27797a2021d90b" prot="protected" virt="non-virtual"><scope>TableroAbstracto</scope><name>controladorJuego</name></member>
+      <member refid="class_tablero_abstracto_1a95a153799d93e9fa532477a7e2daa2e3" prot="protected" virt="non-virtual"><scope>TableroAbstracto</scope><name>dado</name></member>
+      <member refid="class_tablero_abstracto_1a095897aec5517d91054d7e5ad4a5c043" prot="public" virt="virtual"><scope>TableroAbstracto</scope><name>detenerPartida</name></member>
+      <member refid="class_tablero_abstracto_1a5fc96da84c591fb65518b1df93c1437c" prot="public" virt="virtual"><scope>TableroAbstracto</scope><name>finalizarJuego</name></member>
+      <member refid="class_tablero_abstracto_1ac633f2b502332f61a110ceb471d6bc04" prot="public" virt="virtual"><scope>TableroAbstracto</scope><name>getCantidadJugadores</name></member>
+      <member refid="class_tablero_abstracto_1a4ebecae63b4d3614c5642d57d8a72393" prot="public" virt="virtual"><scope>TableroAbstracto</scope><name>getJugadorActual</name></member>
+      <member refid="class_tablero_abstracto_1adf5899ad7b7da6b37fc63b6ae68451b6" prot="public" virt="virtual"><scope>TableroAbstracto</scope><name>getJugadores</name></member>
+      <member refid="class_tablero_abstracto_1a3ce105dee20c0af4908a0f3890af698b" prot="public" virt="virtual"><scope>TableroAbstracto</scope><name>getjugadores</name></member>
+      <member refid="class_tablero_abstracto_1ac07e39d83240a0e808766bd579e51399" prot="public" virt="virtual"><scope>TableroAbstracto</scope><name>getNumeroJugadorActual</name></member>
+      <member refid="class_tablero_abstracto_1a12716af3327adc47936750f2eefc4eff" prot="public" virt="virtual"><scope>TableroAbstracto</scope><name>getValidador</name></member>
+      <member refid="class_tablero_abstracto_1a9be989e9fb3b2f260cce478bf75b07ca" prot="public" virt="pure-virtual"><scope>TableroAbstracto</scope><name>hayGanador</name></member>
+      <member refid="class_tablero_abstracto_1a61b824bdb2afa2eef081e9bdeedc3c61" prot="public" virt="non-virtual"><scope>TableroAbstracto</scope><name>iniciarPartida</name></member>
+      <member refid="class_tablero_abstracto_1a2fa7771b08c08228fc1899765803f56b" prot="protected" virt="non-virtual"><scope>TableroAbstracto</scope><name>juegoTerminado</name></member>
+      <member refid="class_tablero_abstracto_1a1296b39cde632d8e4290acf95776fa9e" prot="protected" virt="non-virtual"><scope>TableroAbstracto</scope><name>jugadorActual</name></member>
+      <member refid="class_tablero_abstracto_1a02d00745f558bea3552396c9955686b4" prot="protected" virt="non-virtual"><scope>TableroAbstracto</scope><name>jugadores</name></member>
+      <member refid="class_tablero_abstracto_1a866569a962560d2b5ad6d8b2e372e73e" prot="public" virt="pure-virtual"><scope>TableroAbstracto</scope><name>jugarTurno</name></member>
+      <member refid="class_tablero_abstracto_1a47ea9dbe0756537b8a3becc8114b0ae7" prot="public" virt="virtual"><scope>TableroAbstracto</scope><name>lanzarDado</name></member>
+      <member refid="class_objeto_1a040a9e302397e6086a42359e211f6eca" prot="public" virt="non-virtual"><scope>TableroAbstracto</scope><name>map_atributos</name></member>
+      <member refid="class_objeto_1a5608071f995c220f0f1a0e5887c2d11d" prot="public" virt="non-virtual"><scope>TableroAbstracto</scope><name>Objeto</name></member>
+      <member refid="class_objeto_1acd863032b2761cf855ecdf0a6052fcbb" prot="public" virt="non-virtual"><scope>TableroAbstracto</scope><name>obtAtributos</name></member>
+      <member refid="class_objeto_1a8ec095f9fa9cbab27d0361e49aecff33" prot="protected" virt="non-virtual"><scope>TableroAbstracto</scope><name>obtenerAtributo</name></member>
+      <member refid="class_tablero_abstracto_1a5802d66b05abd6f955f2653808b743a0" prot="public" virt="virtual"><scope>TableroAbstracto</scope><name>pasarTurno</name></member>
+      <member refid="class_objeto_1a9c0f555aac2bb7fb2a2f557168a3552d" prot="public" virt="non-virtual"><scope>TableroAbstracto</scope><name>setAtributos</name></member>
+      <member refid="class_tablero_abstracto_1a0a767e1b6b5dc5e8a2392d68ea7d1299" prot="public" virt="virtual"><scope>TableroAbstracto</scope><name>setCantidadJugadores</name></member>
+      <member refid="class_tablero_abstracto_1a397adc173989cc9c11c5dd0105476777" prot="public" virt="virtual"><scope>TableroAbstracto</scope><name>setJugadores</name></member>
+      <member refid="class_tablero_abstracto_1ad9717214c399678e131d25e60a39aa47" prot="public" virt="virtual"><scope>TableroAbstracto</scope><name>setNumeroJugadorActual</name></member>
+      <member refid="class_tablero_abstracto_1aeaf4aad157c7a0e2011e2085fabef061" prot="public" virt="non-virtual"><scope>TableroAbstracto</scope><name>TableroAbstracto</name></member>
+      <member refid="class_tablero_abstracto_1ac5ba08c3ee94a8474a3e2714f512fd03" prot="public" virt="pure-virtual"><scope>TableroAbstracto</scope><name>ubicarJugadores</name></member>
+      <member refid="class_tablero_abstracto_1a05909b3cde1b4ca8382643e1853bf670" prot="protected" virt="non-virtual"><scope>TableroAbstracto</scope><name>validador</name></member>
+      <member refid="class_objeto_1a02425fff0768299968af03ac86deb496" prot="public" virt="non-virtual"><scope>TableroAbstracto</scope><name>~Objeto</name></member>
+      <member refid="class_tablero_abstracto_1a56fa93332f76dd57811f9afc9a90ab4c" prot="public" virt="virtual"><scope>TableroAbstracto</scope><name>~TableroAbstracto</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

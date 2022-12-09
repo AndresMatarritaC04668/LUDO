@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_validador_ludo_8cpp" kind="file" language="C++">
+    <compoundname>ValidadorLudo.cpp</compoundname>
+    <includes refid="_validador_ludo_8h" local="yes">ValidadorLudo.h</includes>
+    <includes local="no">sstream</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>stdbool.h</label>
+      </node>
+      <node id="21">
+        <label>ObtAsg.h</label>
+        <link refid="_obt_asg_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.cpp</label>
+        <link refid="_validador_ludo_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stdlib.h</label>
+      </node>
+      <node id="23">
+        <label>qmessagebox.h</label>
+      </node>
+      <node id="15">
+        <label>Objeto.h</label>
+        <link refid="_objeto_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>TableroAbstracto.h</label>
+        <link refid="_tablero_abstracto_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>FichaLudo.h</label>
+        <link refid="_ficha_ludo_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>tableroLUDO.h</label>
+        <link refid="tablero_l_u_d_o_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="29">
+        <label>QMainWindow</label>
+      </node>
+      <node id="16">
+        <label>map</label>
+      </node>
+      <node id="8">
+        <label>Dado.h</label>
+        <link refid="_dado_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>ControladorLudo.h</label>
+        <link refid="_controlador_ludo_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>ControladorAbstracto.h</label>
+        <link refid="_controlador_abstracto_8h"/>
+      </node>
+      <node id="3">
+        <label>Validador.h</label>
+        <link refid="_validador_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Hilera.h</label>
+        <link refid="_hilera_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ValidadorLudo.h</label>
+        <link refid="_validador_ludo_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>string.h</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+      <node id="5">
+        <label>Regla.h</label>
+        <link refid="_regla_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>FichaAbstracta.h</label>
+        <link refid="_ficha_abstracta_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>sstream</label>
+      </node>
+      <node id="11">
+        <label>Jugador.h</label>
+        <link refid="_jugador_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>time.h</label>
+      </node>
+      <node id="30">
+        <label>QLabel</label>
+      </node>
+      <node id="22">
+        <label>iosfwd</label>
+      </node>
+      <node id="18">
+        <label>tipo.h</label>
+        <link refid="tipo_8h_source"/>
+      </node>
+      <node id="13">
+        <label>iostream</label>
+      </node>
+      <node id="28">
+        <label>ventanainformacion.h</label>
+        <link refid="ventanainformacion_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>controlador_ventanas.h</label>
+        <link refid="controlador__ventanas_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Valor.h</label>
+        <link refid="_valor_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_validador_ludo_8h" kindref="compound">ValidadorLudo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="class_validador_ludo_1ae699bd2e4aecaf3cb46ea7b5d64122d2" kindref="member">ValidadorLudo::ValidadorLudo</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/>this-&gt;mesaLudo<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="class_validador_ludo_1ae699bd2e4aecaf3cb46ea7b5d64122d2" kindref="member">ValidadorLudo::ValidadorLudo</ref>(<ref refid="class_tablero_abstracto" kindref="compound">TableroAbstracto</ref><sp/>*<sp/>mesa)<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/>this-&gt;mesaLudo<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><sp/><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref><sp/>*<sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(mesa);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><ref refid="class_validador_ludo_1ae699bd2e4aecaf3cb46ea7b5d64122d2" kindref="member">ValidadorLudo::ValidadorLudo</ref>(<ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref><sp/>*<sp/>mesa)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>this-&gt;mesaLudo<sp/>=<sp/>mesa;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_validador_ludo_1ab425b3adcd423b8a34b37ff79797c951" kindref="member">ValidadorLudo::iniciarReglas</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!this-&gt;reglas.size())<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;reglas.push_back(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_regla" kindref="compound">Regla</ref>(</highlight><highlight class="stringliteral">&quot;1.<sp/>Al<sp/>comenzar,<sp/>todo<sp/>jugador<sp/>tiene<sp/>4<sp/>fichas<sp/>del<sp/>mismo<sp/>color<sp/>en<sp/>la<sp/>salida.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;reglas.push_back(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_regla" kindref="compound">Regla</ref>(</highlight><highlight class="stringliteral">&quot;2.<sp/>Para<sp/>determinar<sp/>cual<sp/>jugador<sp/>inicia,<sp/>la<sp/>máquina<sp/>lanza<sp/>un<sp/>número<sp/>al<sp/>azar<sp/>de<sp/>1<sp/>hasta\nel<sp/>número<sp/>de<sp/>jugadores,<sp/>el<sp/>número<sp/>resultante<sp/>correspondera<sp/>al<sp/>jugador<sp/>que<sp/>inicia<sp/>el\njuego.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;reglas.push_back(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_regla" kindref="compound">Regla</ref>(</highlight><highlight class="stringliteral">&quot;3.<sp/>Para<sp/>sacar<sp/>una<sp/>ficha<sp/>de<sp/>la<sp/>salida,<sp/>se<sp/>necesita<sp/>que<sp/>el<sp/>jugador<sp/>obtenga<sp/>6<sp/>al<sp/>lanzar\nel<sp/>dado.<sp/>Si<sp/>el<sp/>primer<sp/>jugador<sp/>no<sp/>obtiene<sp/>un<sp/>6,<sp/>entonces<sp/>inicia<sp/>el<sp/>turno<sp/>de<sp/>los<sp/>demás\njugadores,<sp/>yendo<sp/>en<sp/>dirección<sp/>de<sp/>las<sp/>manecillas<sp/>del<sp/>reloj.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;reglas.push_back(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_regla" kindref="compound">Regla</ref>(</highlight><highlight class="stringliteral">&quot;4.<sp/>Una<sp/>vez<sp/>que<sp/>el<sp/>jugador<sp/>tenga<sp/>por<sp/>lo<sp/>menos<sp/>una<sp/>ficha<sp/>por<sp/>fuera<sp/>de<sp/>la<sp/>salida,<sp/>tiene<sp/>la<sp/>opción<sp/>de<sp/>lanzar<sp/>el<sp/>dado<sp/>nuevamente.<sp/>El<sp/>número<sp/>que<sp/>caiga<sp/>corresponderá<sp/>a<sp/>la<sp/>cantidad<sp/>de<sp/>casillas<sp/>que<sp/>puede<sp/>avanzar<sp/>en<sp/>ese<sp/>turno.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;reglas.push_back(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_regla" kindref="compound">Regla</ref>(</highlight><highlight class="stringliteral">&quot;5.<sp/>Las<sp/>fichas<sp/>avanzan<sp/>en<sp/>la<sp/>dirección<sp/>que<sp/>indíque<sp/>la<sp/>primera<sp/>ficha<sp/>del<sp/>tablero.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;reglas.push_back(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_regla" kindref="compound">Regla</ref>(</highlight><highlight class="stringliteral">&quot;6.<sp/>Si<sp/>un<sp/>jugador<sp/>vuelve<sp/>a<sp/>sacar<sp/>6<sp/>al<sp/>lanzar<sp/>el<sp/>dado,<sp/>entonces<sp/>tiene<sp/>la<sp/>opción<sp/>de<sp/>sacar\notra<sp/>ficha<sp/>de<sp/>la<sp/>salida.<sp/>Si<sp/>el<sp/>jugador<sp/>lo<sp/>prefiere,<sp/>también<sp/>puede<sp/>hacer<sp/>que<sp/>alguna\notra<sp/>ficha<sp/>en<sp/>el<sp/>tablero<sp/>que<sp/>ya<sp/>esté<sp/>afuera<sp/>de<sp/>la<sp/>salida<sp/>se<sp/>mueva<sp/>6<sp/>posiciones.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;reglas.push_back(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_regla" kindref="compound">Regla</ref>(</highlight><highlight class="stringliteral">&quot;7.<sp/>En<sp/>cualquier<sp/>caso<sp/>que<sp/>se<sp/>de,<sp/>si<sp/>el<sp/>jugador<sp/>obtiene<sp/>6<sp/>al<sp/>lanzar<sp/>el<sp/>dado,<sp/>podrá\nlanzarlo<sp/>de<sp/>nuevo<sp/>consecutivamente.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;reglas.push_back(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_regla" kindref="compound">Regla</ref>(</highlight><highlight class="stringliteral">&quot;8.<sp/>Si<sp/>dos<sp/>fichas,<sp/>independientemente<sp/>de<sp/>su<sp/>color,<sp/>se<sp/>encuentran<sp/>en<sp/>una<sp/>misma<sp/>ficha,\nesta<sp/>forma<sp/>una<sp/>barrera<sp/>por<sp/>la<sp/>cual<sp/>ninguna<sp/>otra<sp/>ficha<sp/>puede<sp/>pasar.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;reglas.push_back(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_regla" kindref="compound">Regla</ref>(</highlight><highlight class="stringliteral">&quot;9.<sp/>Si<sp/>una<sp/>ficha<sp/>cae<sp/>en<sp/>una<sp/>casilla<sp/>en<sp/>la<sp/>que<sp/>se<sp/>encuentra<sp/>otra<sp/>ficha<sp/>de<sp/>color<sp/>distinto,\ny<sp/>si<sp/>esta<sp/>casilla<sp/>no<sp/>es<sp/>una<sp/>casilla<sp/>segura<sp/>(como<sp/>las<sp/>casillas<sp/>de<sp/>color),<sp/>entonces<sp/>esta\nsegunda<sp/>ficha<sp/>es<sp/>devorada<sp/>por<sp/>la<sp/>primera<sp/>(es<sp/>decir,<sp/>que<sp/>vuelve<sp/>a<sp/>la<sp/>salida).&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;reglas.push_back(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_regla" kindref="compound">Regla</ref>(</highlight><highlight class="stringliteral">&quot;10.<sp/>El<sp/>objetivo<sp/>de<sp/>este<sp/>juego<sp/>es<sp/>que<sp/>las<sp/>fichas<sp/>den<sp/>una<sp/>vuelta<sp/>entera<sp/>al<sp/>tablero<sp/>para\nllegar<sp/>a<sp/>&apos;casa&apos;,<sp/>que<sp/>se<sp/>encuentra<sp/>en<sp/>la<sp/>última<sp/>casilla<sp/>del<sp/>camino<sp/>en<sp/>el<sp/>tablero<sp/>que\ndebe<sp/>recorrer.<sp/>Una<sp/>vez<sp/>que<sp/>un<sp/>jugador<sp/>logre<sp/>que<sp/>sus<sp/>cuatro<sp/>fichas<sp/>lleguen<sp/>a<sp/>la<sp/>&apos;casa&apos;\nse<sp/>acaba<sp/>el<sp/>juego<sp/>quedando<sp/>este<sp/>como<sp/>ganador.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_validador_ludo_1ae6e176661e35a9ef63b1d3d619aeadca" kindref="member">ValidadorLudo::validarJugada</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posicion,<sp/><ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref><sp/>*<sp/>mover)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><ref refid="class_ficha_ludo" kindref="compound">FichaLudo</ref><sp/>*<sp/>fichaL<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><sp/><ref refid="class_ficha_ludo" kindref="compound">FichaLudo</ref><sp/>*<sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(mover);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_validador_ludo_1a77adad3f57c402f2efbeaacbd24dd418" kindref="member">reglaOcho</ref>(posicion,<sp/>fichaL)<sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>2;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_validador_ludo_1a2cb05ebae6ef49f8942cc1152348b4a8" kindref="member">verifComer</ref>(posicion,<sp/>fichaL)<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>3;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_validador_ludo_1a77adad3f57c402f2efbeaacbd24dd418" kindref="member">ValidadorLudo::reglaOcho</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posicion,<sp/><ref refid="class_ficha_ludo" kindref="compound">FichaLudo</ref><sp/>*<sp/>mover)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>(mover-&gt;<ref refid="class_ficha_abstracta_1ae98101002e3fc65c4e52143d4732fb07" kindref="member">getY</ref>()<sp/>+<sp/>1)%52;<sp/>i<sp/>&lt;=<sp/>posicion;<sp/>(++i)%52)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;mesaLudo-&gt;tablero[0][i]<sp/>!=<sp/>NULL<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;mesaLudo-&gt;tablero[1][i]<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_validador_ludo_1a2cb05ebae6ef49f8942cc1152348b4a8" kindref="member">ValidadorLudo::verifComer</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posicion,<sp/><ref refid="class_ficha_ludo" kindref="compound">FichaLudo</ref><sp/>*<sp/>mover)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Este<sp/>for<sp/>compara,<sp/>en<sp/>este<sp/>orden:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>1.<sp/>Que<sp/>la<sp/>casilla<sp/>a<sp/>la<sp/>que<sp/>se<sp/>va<sp/>a<sp/>llegar<sp/>no<sp/>este<sp/>vacia.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>2.<sp/>Que<sp/>la<sp/>ficha<sp/>en<sp/>esa<sp/>casilla<sp/>no<sp/>este<sp/>en<sp/>zona<sp/>segura.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>3.<sp/>Que<sp/>la<sp/>ficha<sp/>en<sp/>esa<sp/>casilla<sp/>no<sp/>sea<sp/>del<sp/>mismo<sp/>color<sp/>que<sp/>la<sp/>ficha<sp/>que<sp/>se</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>va<sp/>a<sp/>mover.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>2;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;mesaLudo-&gt;tablero[i][posicion]<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;mesaLudo-&gt;tablero[i][posicion]-&gt;<ref refid="class_ficha_abstracta_1ae98101002e3fc65c4e52143d4732fb07" kindref="member">getY</ref>()<sp/>!=</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;mesaLudo-&gt;tablero[i][posicion]-&gt;getZonaSegura())<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;mesaLudo-&gt;tablero[i][posicion]-&gt;<ref refid="class_ficha_abstracta_1a096f14c45bcba475a7115b3bdecb6133" kindref="member">getColor</ref>().compare</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(mover-&gt;<ref refid="class_ficha_abstracta_1a096f14c45bcba475a7115b3bdecb6133" kindref="member">getColor</ref>())<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_validador_ludo_1a97418a07c1a1d66b29fc8785a7a1ffae" kindref="member">ValidadorLudo::validarSeis</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pasosDado,<sp/><ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref><sp/>*<sp/>laFicha)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!laFicha-&gt;<ref refid="class_ficha_abstracta_1ae6d14f2ed9b8edd376c29d5d2e268786" kindref="member">getEstado</ref>()<sp/>&amp;&amp;<sp/>pasosDado<sp/>!=<sp/>6)<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_validador_ludo_1a2221fd67729e5387a2f77b252ad010fa" kindref="member">ValidadorLudo::castTable</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;mesaLudo<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/>this-&gt;mesa<sp/>!=<sp/>NULL){</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;mesaLudo<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><sp/><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref><sp/>*<sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(this-&gt;mesa);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_validador_ludo_1a448efced2195f0d02772378bbe0ed9f6" kindref="member">ValidadorLudo::setMesaLudo</ref>(<ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref><sp/>*<sp/>mesa)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>this-&gt;mesaLudo<sp/>=<sp/>mesa;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_validador_ludo_1a7e101d4e69e2086cea7bcf5390ec49a1" kindref="member">ValidadorLudo::finalizaFicha</ref>(<ref refid="class_ficha_ludo" kindref="compound">FichaLudo</ref><sp/>*<sp/>ficha){</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ficha-&gt;<ref refid="class_ficha_abstracta_1a09265b809136cee54ad93095750164cc" kindref="member">getPasosDados</ref>()<sp/>==<sp/>60;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_validador_ludo_1a5945e34057c945ecc11dd56b1248a911" kindref="member">ValidadorLudo::esGanador</ref>(std::vector&lt;FichaAbstracta<sp/>*&gt;<sp/>fichas){</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ganador<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>i<sp/>:<sp/>fichas){</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(i-&gt;getFinalizado()<sp/>==<sp/>0){</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ganador<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ganador;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.cpp"/>
+  </compounddef>
+</doxygen>

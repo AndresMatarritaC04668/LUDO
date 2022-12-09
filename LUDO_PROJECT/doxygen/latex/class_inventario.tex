@@ -1,0 +1,152 @@
+\hypertarget{class_inventario}{}\doxysection{Inventario Class Reference}
+\label{class_inventario}\index{Inventario@{Inventario}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_inventario_a8866c386e4259c0fa0e42aab749723ff}\label{class_inventario_a8866c386e4259c0fa0e42aab749723ff}} 
+typedef std\+::vector$<$ \mbox{\hyperlink{class_objeto}{Objeto}} $\ast$ $>$ $\ast$ {\bfseries Inventory}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_inventario_ab7ca21da6822bc59fa236f7238e20fd3}\label{class_inventario_ab7ca21da6822bc59fa236f7238e20fd3}} 
+\mbox{\hyperlink{class_inventario_ab7ca21da6822bc59fa236f7238e20fd3}{Inventario}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_inventario}{Inventario}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inventario_a275a98d42d6aeb4d8130f5a01a521614}{Inventario}} (Inventory)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_inventario}{Inventario}} object by arguments. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_inventario_a0b5c030c7cc22e57f92743fa26b781de}\label{class_inventario_a0b5c030c7cc22e57f92743fa26b781de}} 
+\mbox{\hyperlink{class_inventario_a0b5c030c7cc22e57f92743fa26b781de}{$\sim$\+Inventario}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_inventario}{Inventario}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventario_a323b072148949e30cc53794291c08d12}{asignar\+Inventario}} (Inventory)
+\begin{DoxyCompactList}\small\item\em Asigna un inventario para el atributo inventory. Advertencia\+: Si habia un inventario previo, se borraran todos sus objetos. \end{DoxyCompactList}\item 
+Inventory \mbox{\hyperlink{class_inventario_aeb98565cd0a5b1f597470db82a1f4497}{obtener\+Inventario}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el atributo inventary. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_inventario_ad83e571cf862322cb4b7f62a3f97b8cd}{size\+Inventory}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve cuantos objetos hay en el inventario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventario_aae7d9490cfb6bb28adb6d638e9c9f106}{add\+Object}} (\mbox{\hyperlink{class_objeto}{Objeto}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Agrega un objeto al inventario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventario_a23b48312f745af2eeb5823681d3b7307}{remove\+Object}} (\mbox{\hyperlink{class_objeto}{Objeto}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Elimina un objeto del inventario. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_inventario_ab8518faf8794245ab7db75d2a0df0717}\label{class_inventario_ab8518faf8794245ab7db75d2a0df0717}} 
+void \mbox{\hyperlink{class_inventario_ab8518faf8794245ab7db75d2a0df0717}{clean\+Inventory}} ()
+\begin{DoxyCompactList}\small\item\em Limpia el contenido del inventario. Advertencia\+: Si habia contenido en el inventario, se borraran todos sus objetos. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_inventario_ae52b7b2ff1910b464e3d9dbfb2d8cdbe}{search}} (\mbox{\hyperlink{class_objeto}{Objeto}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Busca un objeto en el inventario y determina si esta presente o no. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_inventario_a275a98d42d6aeb4d8130f5a01a521614}\label{class_inventario_a275a98d42d6aeb4d8130f5a01a521614}} 
+\index{Inventario@{Inventario}!Inventario@{Inventario}}
+\index{Inventario@{Inventario}!Inventario@{Inventario}}
+\doxysubsubsection{\texorpdfstring{Inventario()}{Inventario()}}
+{\footnotesize\ttfamily Inventario\+::\+Inventario (\begin{DoxyParamCaption}\item[{Inventory}]{inventory }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_inventario}{Inventario}} object by arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inventory} & Se guarda en el atributo inventory. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_inventario_aae7d9490cfb6bb28adb6d638e9c9f106}\label{class_inventario_aae7d9490cfb6bb28adb6d638e9c9f106}} 
+\index{Inventario@{Inventario}!addObject@{addObject}}
+\index{addObject@{addObject}!Inventario@{Inventario}}
+\doxysubsubsection{\texorpdfstring{addObject()}{addObject()}}
+{\footnotesize\ttfamily void Inventario\+::add\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objeto}{Objeto}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+Agrega un objeto al inventario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & se agrega al atributo inventory. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_inventario_a323b072148949e30cc53794291c08d12}\label{class_inventario_a323b072148949e30cc53794291c08d12}} 
+\index{Inventario@{Inventario}!asignarInventario@{asignarInventario}}
+\index{asignarInventario@{asignarInventario}!Inventario@{Inventario}}
+\doxysubsubsection{\texorpdfstring{asignarInventario()}{asignarInventario()}}
+{\footnotesize\ttfamily void Inventario\+::asignar\+Inventario (\begin{DoxyParamCaption}\item[{Inventory}]{inventory }\end{DoxyParamCaption})}
+
+
+
+Asigna un inventario para el atributo inventory. Advertencia\+: Si habia un inventario previo, se borraran todos sus objetos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inventory} & Se guarda en el atributo inventory. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_inventario_aeb98565cd0a5b1f597470db82a1f4497}\label{class_inventario_aeb98565cd0a5b1f597470db82a1f4497}} 
+\index{Inventario@{Inventario}!obtenerInventario@{obtenerInventario}}
+\index{obtenerInventario@{obtenerInventario}!Inventario@{Inventario}}
+\doxysubsubsection{\texorpdfstring{obtenerInventario()}{obtenerInventario()}}
+{\footnotesize\ttfamily Inventario\+::\+Inventory Inventario\+::obtener\+Inventario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el atributo inventary. 
+
+\begin{DoxyReturn}{Returns}
+Inventory El atributo inventory. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_inventario_a23b48312f745af2eeb5823681d3b7307}\label{class_inventario_a23b48312f745af2eeb5823681d3b7307}} 
+\index{Inventario@{Inventario}!removeObject@{removeObject}}
+\index{removeObject@{removeObject}!Inventario@{Inventario}}
+\doxysubsubsection{\texorpdfstring{removeObject()}{removeObject()}}
+{\footnotesize\ttfamily void Inventario\+::remove\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objeto}{Objeto}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+Elimina un objeto del inventario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & se va a eliminar del atributo inventory. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_inventario_ae52b7b2ff1910b464e3d9dbfb2d8cdbe}\label{class_inventario_ae52b7b2ff1910b464e3d9dbfb2d8cdbe}} 
+\index{Inventario@{Inventario}!search@{search}}
+\index{search@{search}!Inventario@{Inventario}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily bool Inventario\+::search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objeto}{Objeto}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+Busca un objeto en el inventario y determina si esta presente o no. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & El objeto a buscar en el inventario. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Si esta presente. 
+
+false Si no esta presente. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_inventario_ad83e571cf862322cb4b7f62a3f97b8cd}\label{class_inventario_ad83e571cf862322cb4b7f62a3f97b8cd}} 
+\index{Inventario@{Inventario}!sizeInventory@{sizeInventory}}
+\index{sizeInventory@{sizeInventory}!Inventario@{Inventario}}
+\doxysubsubsection{\texorpdfstring{sizeInventory()}{sizeInventory()}}
+{\footnotesize\ttfamily int Inventario\+::size\+Inventory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve cuantos objetos hay en el inventario. 
+
+\begin{DoxyReturn}{Returns}
+int El numero de objetos en el inventario. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/\mbox{\hyperlink{_inventario_8h}{Inventario.\+h}}\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/Inventario.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,192 @@
+\hypertarget{classcontrolador___ventanas}{}\doxysection{controlador\+\_\+\+Ventanas Class Reference}
+\label{classcontrolador___ventanas}\index{controlador\_Ventanas@{controlador\_Ventanas}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcontrolador___ventanas_a77ebc78b9e03abd776939113555cd4ba}{controlador\+\_\+\+Ventanas}} (\mbox{\hyperlink{class_controlador_ludo}{Controlador\+Ludo}} $\ast$controlador)
+\begin{DoxyCompactList}\small\item\em Construct a new controlador Ventanas\+::controlador Ventanas object by arguments. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcontrolador___ventanas_a5f80765380a4a66b8caf69bea9255616}{graficar\+Tablero}} (\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Empieza a graficar el tablero con el controlador de la ventana principal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcontrolador___ventanas_a38b79f4e6efd45fcc486daf76f8d63bb}\label{classcontrolador___ventanas_a38b79f4e6efd45fcc486daf76f8d63bb}} 
+void \mbox{\hyperlink{classcontrolador___ventanas_a38b79f4e6efd45fcc486daf76f8d63bb}{iniciar}} ()
+\begin{DoxyCompactList}\small\item\em Inicia las ventanas usando el controlador del menu de opciones. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcontrolador___ventanas_a8637e2a731c7ea6bbf9229a19edf5b86}{mostrar\+Tablero}} (int)
+\begin{DoxyCompactList}\small\item\em Actualiza lo que muestra el tablero segun la opcion escogida por el jugador. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcontrolador___ventanas_a796f2f78d5cee74c06eb31764b45c2b1}\label{classcontrolador___ventanas_a796f2f78d5cee74c06eb31764b45c2b1}} 
+void \mbox{\hyperlink{classcontrolador___ventanas_a796f2f78d5cee74c06eb31764b45c2b1}{mostrar\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Cierra la ventana principal y muestra el menu de opciones. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcontrolador___ventanas_a33b12c5a97662a9866c737d5e69d12be}{graficar\+Carcel}} (vector$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $\ast$ $>$ jugadores)
+\begin{DoxyCompactList}\small\item\em Usa el controlador de la ventana principal para graficar la carcel del juego. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcontrolador___ventanas_add5777d39d93d034eda3937951c47787}\label{classcontrolador___ventanas_add5777d39d93d034eda3937951c47787}} 
+void \mbox{\hyperlink{classcontrolador___ventanas_add5777d39d93d034eda3937951c47787}{mostrar\+Reglas}} ()
+\begin{DoxyCompactList}\small\item\em Muestra la lista de reglas. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classcontrolador___ventanas_afbff2e9bfdc0eb715f3802bc0f55657d}{get\+Nombre}} (string numero\+Jugador)
+\begin{DoxyCompactList}\small\item\em Devuelve el nombre del jugador en relacion al numero que lo representa. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classcontrolador___ventanas_afae398467350af5d9f467a5525e861be}{get\+Nombre\+CSV}} ()
+\begin{DoxyCompactList}\small\item\em Pide el nombre de la partida para usarlo en los savestates. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classcontrolador___ventanas_a31ed9140c7986c0def1ee5ef3403059f}{elegir\+Ficha}} (string)
+\begin{DoxyCompactList}\small\item\em Pide que se elija el numero de ficha que se quiere mover. En realidad, se tiene que digitar un numero de 1 al numero de fichas disponibles. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classcontrolador___ventanas_ae33d50efabe693904a0a0b9b90949f83}{eleccion\+Jugador}} (string turno)
+\begin{DoxyCompactList}\small\item\em Pide que el jugador escoja que hacer en su turno. Puede elegir continuar con la jugada o salir y guardar la partida. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcontrolador___ventanas_adb4ba6678eeb683fdc47ce2f9fb60947}{mensaje\+Grafico}} (string)
+\begin{DoxyCompactList}\small\item\em Muestra un mensaje grafico por medio de la interfaz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcontrolador___ventanas_a946a93a537589e6d75c74d579f63bcb3}\label{classcontrolador___ventanas_a946a93a537589e6d75c74d579f63bcb3}} 
+\mbox{\hyperlink{classventana_informacion}{ventana\+Informacion}} $\ast$ {\bfseries input}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcontrolador___ventanas_a77ebc78b9e03abd776939113555cd4ba}\label{classcontrolador___ventanas_a77ebc78b9e03abd776939113555cd4ba}} 
+\index{controlador\_Ventanas@{controlador\_Ventanas}!controlador\_Ventanas@{controlador\_Ventanas}}
+\index{controlador\_Ventanas@{controlador\_Ventanas}!controlador\_Ventanas@{controlador\_Ventanas}}
+\doxysubsubsection{\texorpdfstring{controlador\_Ventanas()}{controlador\_Ventanas()}}
+{\footnotesize\ttfamily controlador\+\_\+\+Ventanas\+::controlador\+\_\+\+Ventanas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_controlador_ludo}{Controlador\+Ludo}} $\ast$}]{controlador }\end{DoxyParamCaption})}
+
+
+
+Construct a new controlador Ventanas\+::controlador Ventanas object by arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controlador} & el controlador del juego LUDO. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcontrolador___ventanas_ae33d50efabe693904a0a0b9b90949f83}\label{classcontrolador___ventanas_ae33d50efabe693904a0a0b9b90949f83}} 
+\index{controlador\_Ventanas@{controlador\_Ventanas}!eleccionJugador@{eleccionJugador}}
+\index{eleccionJugador@{eleccionJugador}!controlador\_Ventanas@{controlador\_Ventanas}}
+\doxysubsubsection{\texorpdfstring{eleccionJugador()}{eleccionJugador()}}
+{\footnotesize\ttfamily int controlador\+\_\+\+Ventanas\+::eleccion\+Jugador (\begin{DoxyParamCaption}\item[{string}]{turno }\end{DoxyParamCaption})}
+
+
+
+Pide que el jugador escoja que hacer en su turno. Puede elegir continuar con la jugada o salir y guardar la partida. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & del jugador. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int La eleccion del jugador representada por un valor numerico. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcontrolador___ventanas_a31ed9140c7986c0def1ee5ef3403059f}\label{classcontrolador___ventanas_a31ed9140c7986c0def1ee5ef3403059f}} 
+\index{controlador\_Ventanas@{controlador\_Ventanas}!elegirFicha@{elegirFicha}}
+\index{elegirFicha@{elegirFicha}!controlador\_Ventanas@{controlador\_Ventanas}}
+\doxysubsubsection{\texorpdfstring{elegirFicha()}{elegirFicha()}}
+{\footnotesize\ttfamily int controlador\+\_\+\+Ventanas\+::elegir\+Ficha (\begin{DoxyParamCaption}\item[{string}]{mensaje }\end{DoxyParamCaption})}
+
+
+
+Pide que se elija el numero de ficha que se quiere mover. En realidad, se tiene que digitar un numero de 1 al numero de fichas disponibles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mensaje} & Se le envia al usuario para que elija una ficha. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int El numero de ficha seleccionada. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcontrolador___ventanas_afbff2e9bfdc0eb715f3802bc0f55657d}\label{classcontrolador___ventanas_afbff2e9bfdc0eb715f3802bc0f55657d}} 
+\index{controlador\_Ventanas@{controlador\_Ventanas}!getNombre@{getNombre}}
+\index{getNombre@{getNombre}!controlador\_Ventanas@{controlador\_Ventanas}}
+\doxysubsubsection{\texorpdfstring{getNombre()}{getNombre()}}
+{\footnotesize\ttfamily string controlador\+\_\+\+Ventanas\+::get\+Nombre (\begin{DoxyParamCaption}\item[{string}]{numero\+Jugador }\end{DoxyParamCaption})}
+
+
+
+Devuelve el nombre del jugador en relacion al numero que lo representa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numero\+Jugador} & el numero del jugador cuyo nombre se quiere obtener. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string el nombre del jugador. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcontrolador___ventanas_afae398467350af5d9f467a5525e861be}\label{classcontrolador___ventanas_afae398467350af5d9f467a5525e861be}} 
+\index{controlador\_Ventanas@{controlador\_Ventanas}!getNombreCSV@{getNombreCSV}}
+\index{getNombreCSV@{getNombreCSV}!controlador\_Ventanas@{controlador\_Ventanas}}
+\doxysubsubsection{\texorpdfstring{getNombreCSV()}{getNombreCSV()}}
+{\footnotesize\ttfamily string controlador\+\_\+\+Ventanas\+::get\+Nombre\+CSV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pide el nombre de la partida para usarlo en los savestates. 
+
+\begin{DoxyReturn}{Returns}
+string Nombre de la partida. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcontrolador___ventanas_a33b12c5a97662a9866c737d5e69d12be}\label{classcontrolador___ventanas_a33b12c5a97662a9866c737d5e69d12be}} 
+\index{controlador\_Ventanas@{controlador\_Ventanas}!graficarCarcel@{graficarCarcel}}
+\index{graficarCarcel@{graficarCarcel}!controlador\_Ventanas@{controlador\_Ventanas}}
+\doxysubsubsection{\texorpdfstring{graficarCarcel()}{graficarCarcel()}}
+{\footnotesize\ttfamily void controlador\+\_\+\+Ventanas\+::graficar\+Carcel (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $\ast$ $>$}]{jugadores }\end{DoxyParamCaption})}
+
+
+
+Usa el controlador de la ventana principal para graficar la carcel del juego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jugadores} & Los jugadores de la partida. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcontrolador___ventanas_a5f80765380a4a66b8caf69bea9255616}\label{classcontrolador___ventanas_a5f80765380a4a66b8caf69bea9255616}} 
+\index{controlador\_Ventanas@{controlador\_Ventanas}!graficarTablero@{graficarTablero}}
+\index{graficarTablero@{graficarTablero}!controlador\_Ventanas@{controlador\_Ventanas}}
+\doxysubsubsection{\texorpdfstring{graficarTablero()}{graficarTablero()}}
+{\footnotesize\ttfamily void controlador\+\_\+\+Ventanas\+::graficar\+Tablero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$}]{mesa }\end{DoxyParamCaption})}
+
+
+
+Empieza a graficar el tablero con el controlador de la ventana principal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesa} & El tablero del juego. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcontrolador___ventanas_adb4ba6678eeb683fdc47ce2f9fb60947}\label{classcontrolador___ventanas_adb4ba6678eeb683fdc47ce2f9fb60947}} 
+\index{controlador\_Ventanas@{controlador\_Ventanas}!mensajeGrafico@{mensajeGrafico}}
+\index{mensajeGrafico@{mensajeGrafico}!controlador\_Ventanas@{controlador\_Ventanas}}
+\doxysubsubsection{\texorpdfstring{mensajeGrafico()}{mensajeGrafico()}}
+{\footnotesize\ttfamily void controlador\+\_\+\+Ventanas\+::mensaje\+Grafico (\begin{DoxyParamCaption}\item[{string}]{mensaje }\end{DoxyParamCaption})}
+
+
+
+Muestra un mensaje grafico por medio de la interfaz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mensaje} & El mensaje a mostrar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcontrolador___ventanas_a8637e2a731c7ea6bbf9229a19edf5b86}\label{classcontrolador___ventanas_a8637e2a731c7ea6bbf9229a19edf5b86}} 
+\index{controlador\_Ventanas@{controlador\_Ventanas}!mostrarTablero@{mostrarTablero}}
+\index{mostrarTablero@{mostrarTablero}!controlador\_Ventanas@{controlador\_Ventanas}}
+\doxysubsubsection{\texorpdfstring{mostrarTablero()}{mostrarTablero()}}
+{\footnotesize\ttfamily void controlador\+\_\+\+Ventanas\+::mostrar\+Tablero (\begin{DoxyParamCaption}\item[{int}]{opcion }\end{DoxyParamCaption})}
+
+
+
+Actualiza lo que muestra el tablero segun la opcion escogida por el jugador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcion} & Variable numerica que representa la opcion del jugador. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/controlador\+\_\+ventanas.\+h\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/\mbox{\hyperlink{controlador__ventanas_8cpp}{controlador\+\_\+ventanas.\+cpp}}\end{DoxyCompactItemize}

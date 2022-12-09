@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_menu_opciones" kind="class" language="C++" prot="public">
+    <compoundname>MenuOpciones</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_menu_opciones_1aeb13559ff3af9a65da6153f20bae3ef9" prot="public" static="no" mutable="no">
+        <type>Ui::MenuOpciones *</type>
+        <definition>Ui::MenuOpciones* MenuOpciones::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.h" line="46" column="22" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_menu_opciones_1a787b33d68104c784a1940d0e75b2ca01" prot="private" static="no" mutable="no">
+        <type><ref refid="class_controlador_menu_opciones" kindref="compound">ControladorMenuOpciones</ref> *</type>
+        <definition>ControladorMenuOpciones* MenuOpciones::controlador</definition>
+        <argsstring></argsstring>
+        <name>controlador</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.h" line="69" column="30" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_menu_opciones_1a6f69efc29902f12c9629e5fe5889cfda" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MenuOpciones::MenuOpciones</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>MenuOpciones</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new Menu Opciones object by arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El widget padre del Menu. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.h" line="32" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.cpp" bodystart="4" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_opciones_1a644c24eb1c7f3b66efeb389b2022b744" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MenuOpciones::~MenuOpciones</definition>
+        <argsstring>()</argsstring>
+        <name>~MenuOpciones</name>
+        <briefdescription>
+<para>Destroy the Menu Opciones object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.h" line="38" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_opciones_1a40c88f4582c98684ad9ab032b62206f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuOpciones::setControlador</definition>
+        <argsstring>(ControladorMenuOpciones *controlador)</argsstring>
+        <name>setControlador</name>
+        <param>
+          <type><ref refid="class_controlador_menu_opciones" kindref="compound">ControladorMenuOpciones</ref> *</type>
+          <declname>controlador</declname>
+        </param>
+        <briefdescription>
+<para>Set the controlador object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controlador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>un puntero a objeto <ref refid="class_controlador_menu_opciones" kindref="compound">ControladorMenuOpciones</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.h" line="45" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_menu_opciones_1a85badc8ddc73f927a029d36810c01455" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuOpciones::on_botonReglas_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_botonReglas_clicked</name>
+        <briefdescription>
+<para>Llama a mostrar las reglas al clicker en el boton de reglas. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.h" line="53" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.cpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_menu_opciones_1adf32d35de18b446cde581ed48fff217c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuOpciones::on_botonRenaudar_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_botonRenaudar_clicked</name>
+        <briefdescription>
+<para>Llama a reanudar la partida al clickear el boton de reanudar. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.h" line="59" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_menu_opciones_1a681d1d0c3f7fc699fb733996b09d9e0a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuOpciones::on_botonJugar_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_botonJugar_clicked</name>
+        <briefdescription>
+<para>Llama a jugar el juego al clickear el boton de jugar. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.h" line="65" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+      <node id="1">
+        <label>MenuOpciones</label>
+        <link refid="class_menu_opciones"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+      <node id="1">
+        <label>MenuOpciones</label>
+        <link refid="class_menu_opciones"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.h" line="22" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/menuopciones.h" bodystart="23" bodyend="72"/>
+    <listofallmembers>
+      <member refid="class_menu_opciones_1a787b33d68104c784a1940d0e75b2ca01" prot="private" virt="non-virtual"><scope>MenuOpciones</scope><name>controlador</name></member>
+      <member refid="class_menu_opciones_1a6f69efc29902f12c9629e5fe5889cfda" prot="public" virt="non-virtual"><scope>MenuOpciones</scope><name>MenuOpciones</name></member>
+      <member refid="class_menu_opciones_1a681d1d0c3f7fc699fb733996b09d9e0a" prot="private" virt="non-virtual"><scope>MenuOpciones</scope><name>on_botonJugar_clicked</name></member>
+      <member refid="class_menu_opciones_1a85badc8ddc73f927a029d36810c01455" prot="private" virt="non-virtual"><scope>MenuOpciones</scope><name>on_botonReglas_clicked</name></member>
+      <member refid="class_menu_opciones_1adf32d35de18b446cde581ed48fff217c" prot="private" virt="non-virtual"><scope>MenuOpciones</scope><name>on_botonRenaudar_clicked</name></member>
+      <member refid="class_menu_opciones_1a40c88f4582c98684ad9ab032b62206f5" prot="public" virt="non-virtual"><scope>MenuOpciones</scope><name>setControlador</name></member>
+      <member refid="class_menu_opciones_1aeb13559ff3af9a65da6153f20bae3ef9" prot="public" virt="non-virtual"><scope>MenuOpciones</scope><name>ui</name></member>
+      <member refid="class_menu_opciones_1a644c24eb1c7f3b66efeb389b2022b744" prot="public" virt="non-virtual"><scope>MenuOpciones</scope><name>~MenuOpciones</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

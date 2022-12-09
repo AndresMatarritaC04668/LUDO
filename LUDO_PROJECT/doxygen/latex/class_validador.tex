@@ -1,0 +1,137 @@
+\hypertarget{class_validador}{}\doxysection{Validador Class Reference}
+\label{class_validador}\index{Validador@{Validador}}
+Inheritance diagram for Validador\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_validador}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_validador_ab30fc29192df70a24021fd3946c2beba}\label{class_validador_ab30fc29192df70a24021fd3946c2beba}} 
+\mbox{\hyperlink{class_validador_ab30fc29192df70a24021fd3946c2beba}{Validador}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_validador}{Validador}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_validador_a9db816651c0431c694b2cea5617c447a}{Validador}} (\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$mesa)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_validador}{Validador}} object by arguments. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_validador_ab10f475fc21b063297ea9e88ecc248c1}\label{class_validador_ab10f475fc21b063297ea9e88ecc248c1}} 
+\mbox{\hyperlink{class_validador_ab10f475fc21b063297ea9e88ecc248c1}{$\sim$\+Validador}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_validador}{Validador}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_validador_a7c14f9a57a01c0e0526fdb34ccb5ca15}\label{class_validador_a7c14f9a57a01c0e0526fdb34ccb5ca15}} 
+virtual void \mbox{\hyperlink{class_validador_a7c14f9a57a01c0e0526fdb34ccb5ca15}{iniciar\+Reglas}} ()=0
+\begin{DoxyCompactList}\small\item\em Metodo que inicializa las reglas. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_validador_a1a438758b10a8ba26fff7b1b4a8ce666}{validar\+Jugada}} (int posicion, \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$mover)=0
+\begin{DoxyCompactList}\small\item\em Valida la jugada conforme a las reglas. \end{DoxyCompactList}\item 
+virtual vector$<$ \mbox{\hyperlink{class_regla}{Regla}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_validador_a6830cb59f0ba53f7e82c350fdc53803a}{obtener\+Reglas}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve un vector con objetos regla. Estos contienen las strings con las reglas. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_validador_a97b3edfbf7146ab1cec5a60dbcf0b438}{to\+String\+Reglas}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve una string con todas las reglas separadas por un cambio de linea. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_validador_a52baec11f22a8cb5db6ebb8916ad61e4}{es\+Ganador}} (std\+::vector$<$ \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$ $>$)=0
+\begin{DoxyCompactList}\small\item\em Se usa al final de cada turno, determina si algun ganador ya consiguio ganar el juego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_validador_a023e74266c9f87cac6d0207370ff8ec9}\label{class_validador_a023e74266c9f87cac6d0207370ff8ec9}} 
+vector$<$ \mbox{\hyperlink{class_regla}{Regla}} $\ast$ $>$ {\bfseries reglas}
+\item 
+\mbox{\Hypertarget{class_validador_aa230a5ac6dc4027d3a07f6c4d07174da}\label{class_validador_aa230a5ac6dc4027d3a07f6c4d07174da}} 
+\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$ {\bfseries mesa}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_validador_a9db816651c0431c694b2cea5617c447a}\label{class_validador_a9db816651c0431c694b2cea5617c447a}} 
+\index{Validador@{Validador}!Validador@{Validador}}
+\index{Validador@{Validador}!Validador@{Validador}}
+\doxysubsubsection{\texorpdfstring{Validador()}{Validador()}}
+{\footnotesize\ttfamily Validador\+::\+Validador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$}]{mesa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{class_validador}{Validador}} object by arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesa} & Un objeto tablero abstracto que se va a asignar en el atributo mesa. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_validador_a52baec11f22a8cb5db6ebb8916ad61e4}\label{class_validador_a52baec11f22a8cb5db6ebb8916ad61e4}} 
+\index{Validador@{Validador}!esGanador@{esGanador}}
+\index{esGanador@{esGanador}!Validador@{Validador}}
+\doxysubsubsection{\texorpdfstring{esGanador()}{esGanador()}}
+{\footnotesize\ttfamily virtual int Validador\+::es\+Ganador (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$ $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Se usa al final de cada turno, determina si algun ganador ya consiguio ganar el juego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fichas} & Un vector con las fichas del juego. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 si es ganador, 0 si no lo es. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_validador_ludo_a5945e34057c945ecc11dd56b1248a911}{Validador\+Ludo}}.
+
+\mbox{\Hypertarget{class_validador_a6830cb59f0ba53f7e82c350fdc53803a}\label{class_validador_a6830cb59f0ba53f7e82c350fdc53803a}} 
+\index{Validador@{Validador}!obtenerReglas@{obtenerReglas}}
+\index{obtenerReglas@{obtenerReglas}!Validador@{Validador}}
+\doxysubsubsection{\texorpdfstring{obtenerReglas()}{obtenerReglas()}}
+{\footnotesize\ttfamily virtual vector$<$\mbox{\hyperlink{class_regla}{Regla}} $\ast$$>$$\ast$ Validador\+::obtener\+Reglas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Devuelve un vector con objetos regla. Estos contienen las strings con las reglas. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Regla $\ast$$>$$\ast$ El artributo reglas. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_validador_a97b3edfbf7146ab1cec5a60dbcf0b438}\label{class_validador_a97b3edfbf7146ab1cec5a60dbcf0b438}} 
+\index{Validador@{Validador}!toStringReglas@{toStringReglas}}
+\index{toStringReglas@{toStringReglas}!Validador@{Validador}}
+\doxysubsubsection{\texorpdfstring{toStringReglas()}{toStringReglas()}}
+{\footnotesize\ttfamily virtual string Validador\+::to\+String\+Reglas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Devuelve una string con todas las reglas separadas por un cambio de linea. 
+
+\begin{DoxyReturn}{Returns}
+string La hilera con las reglas. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_validador_a1a438758b10a8ba26fff7b1b4a8ce666}\label{class_validador_a1a438758b10a8ba26fff7b1b4a8ce666}} 
+\index{Validador@{Validador}!validarJugada@{validarJugada}}
+\index{validarJugada@{validarJugada}!Validador@{Validador}}
+\doxysubsubsection{\texorpdfstring{validarJugada()}{validarJugada()}}
+{\footnotesize\ttfamily virtual int Validador\+::validar\+Jugada (\begin{DoxyParamCaption}\item[{int}]{posicion,  }\item[{\mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$}]{mover }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Valida la jugada conforme a las reglas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posicion} & La nueva posicion a la que tiene que llegar la ficha. \\
+\hline
+{\em mover} & Es la ficha que se tiene que reubicar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un valor numero que representa un caso especifico. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_validador_ludo_ae6e176661e35a9ef63b1d3d619aeadca}{Validador\+Ludo}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/\mbox{\hyperlink{_validador_8h}{Validador.\+h}}\end{DoxyCompactItemize}

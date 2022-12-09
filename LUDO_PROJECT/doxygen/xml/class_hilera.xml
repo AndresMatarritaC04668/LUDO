@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_hilera" kind="class" language="C++" prot="public">
+    <compoundname>Hilera</compoundname>
+    <basecompoundref refid="class_obt_asg" prot="public" virt="non-virtual">ObtAsg&lt; std::string &gt;</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hilera_1a876f5f3aa15e38082f56cda9cfa4cfb1" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Hilera::valor</definition>
+        <argsstring></argsstring>
+        <name>valor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.h" line="75" column="13" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hilera_1aec103ce2d8d9b15964663754f0e2f36b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Hilera::Hilera</definition>
+        <argsstring>()</argsstring>
+        <name>Hilera</name>
+        <briefdescription>
+<para>Construct a new <ref refid="class_hilera" kindref="compound">Hilera</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.h" line="29" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hilera_1ad77cde8863aec0462356ef850df071f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Hilera::Hilera</definition>
+        <argsstring>(std::string v)</argsstring>
+        <name>Hilera</name>
+        <param>
+          <type>std::string</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_hilera" kindref="compound">Hilera</ref> object by arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La string con la que se va a llenar la <ref refid="class_hilera" kindref="compound">Hilera</ref>. Se guarda en el atributo valor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.h" line="37" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hilera_1af07a58c64e9e0889a0bf1847045f20ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Hilera::~Hilera</definition>
+        <argsstring>()</argsstring>
+        <name>~Hilera</name>
+        <briefdescription>
+<para>Destroy the <ref refid="class_hilera" kindref="compound">Hilera</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.h" line="43" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.cpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hilera_1abb233c49d7668951264223a11a811fe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Hilera::asg</definition>
+        <argsstring>(std::string o) override</argsstring>
+        <name>asg</name>
+        <reimplements refid="class_obt_asg_1a65b0b62addb2fc84d0f98ad3fa17b769">asg</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Asigna una string pasada como argumento al atributo valor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La string con la que se va a llenar valor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.h" line="50" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hilera_1aac840f78bc69d06d05b8aead587ed5c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string Hilera::obt</definition>
+        <argsstring>() const override</argsstring>
+        <name>obt</name>
+        <reimplements refid="class_obt_asg_1a2b2cbca7f00fc54a0c297d22f6ca4e86">obt</reimplements>
+        <briefdescription>
+<para>Devuelve la string que contiene la hilera, en este caso, el atributo valor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string el atributo valor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.h" line="58" column="21" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.cpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hilera_1aa84d381234a755f6a3446cf1065bfb69" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>tipo::tipo_atributo</type>
+        <definition>tipo::tipo_atributo Hilera::obtTipo</definition>
+        <argsstring>() const override</argsstring>
+        <name>obtTipo</name>
+        <reimplements refid="class_valor_1a46bb532f2cdc58a88248a8ac9164de01">obtTipo</reimplements>
+        <briefdescription>
+<para>Devuelve la enumeracion de la clase <ref refid="class_hilera" kindref="compound">Hilera</ref> especificada en Tipo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>tipo::tipo_atributo El tipo de la <ref refid="class_hilera" kindref="compound">Hilera</ref> es 0. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.h" line="65" column="29" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hilera_1aa253308b10738923d9e9ea1586de4cb1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string Hilera::toString</definition>
+        <argsstring>() const override</argsstring>
+        <name>toString</name>
+        <reimplements refid="class_valor_1a6866e49fde59536488c94397021a229c">toString</reimplements>
+        <briefdescription>
+<para>Devuelve el atributo valor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string El atributo valor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.h" line="72" column="25" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.cpp" bodystart="30" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ObtAsg&lt; std::string &gt;</label>
+        <link refid="class_obt_asg"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Valor</label>
+        <link refid="class_valor"/>
+      </node>
+      <node id="1">
+        <label>Hilera</label>
+        <link refid="class_hilera"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ObtAsg&lt; std::string &gt;</label>
+        <link refid="class_obt_asg"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Valor</label>
+        <link refid="class_valor"/>
+      </node>
+      <node id="1">
+        <label>Hilera</label>
+        <link refid="class_hilera"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.h" line="22" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Hilera.h" bodystart="23" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_hilera_1abb233c49d7668951264223a11a811fe0" prot="public" virt="virtual"><scope>Hilera</scope><name>asg</name></member>
+      <member refid="class_hilera_1aec103ce2d8d9b15964663754f0e2f36b" prot="public" virt="non-virtual"><scope>Hilera</scope><name>Hilera</name></member>
+      <member refid="class_hilera_1ad77cde8863aec0462356ef850df071f4" prot="public" virt="non-virtual"><scope>Hilera</scope><name>Hilera</name></member>
+      <member refid="class_hilera_1aac840f78bc69d06d05b8aead587ed5c5" prot="public" virt="virtual"><scope>Hilera</scope><name>obt</name></member>
+      <member refid="class_obt_asg_1a284d054c7a8f3f16188d679d6c4d460a" prot="public" virt="non-virtual"><scope>Hilera</scope><name>ObtAsg</name></member>
+      <member refid="class_hilera_1aa84d381234a755f6a3446cf1065bfb69" prot="public" virt="virtual"><scope>Hilera</scope><name>obtTipo</name></member>
+      <member refid="class_hilera_1aa253308b10738923d9e9ea1586de4cb1" prot="public" virt="virtual"><scope>Hilera</scope><name>toString</name></member>
+      <member refid="class_hilera_1a876f5f3aa15e38082f56cda9cfa4cfb1" prot="private" virt="non-virtual"><scope>Hilera</scope><name>valor</name></member>
+      <member refid="class_valor_1adf996fdeea290862397f7044275a1272" prot="public" virt="non-virtual"><scope>Hilera</scope><name>Valor</name></member>
+      <member refid="class_hilera_1af07a58c64e9e0889a0bf1847045f20ca" prot="public" virt="virtual"><scope>Hilera</scope><name>~Hilera</name></member>
+      <member refid="class_obt_asg_1a3a92ca90c7d8ecdcbc338ba356bcd28e" prot="public" virt="virtual"><scope>Hilera</scope><name>~ObtAsg</name></member>
+      <member refid="class_valor_1a6b4af8330d1b21fc5c00bda709a28993" prot="public" virt="virtual"><scope>Hilera</scope><name>~Valor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

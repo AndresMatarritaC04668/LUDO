@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structtipo" kind="struct" language="C++" prot="public">
+    <compoundname>tipo</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structtipo_1a154d8704b5f9bd45c19ee12ce39f0438" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tipo_atributo</name>
+        <enumvalue id="structtipo_1a154d8704b5f9bd45c19ee12ce39f0438a6d17d725519b081dbb55562832456992" prot="public">
+          <name>Hilera</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/tipo.h" line="4" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/tipo.h" bodystart="4" bodyend="4"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/tipo.h" line="2" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/tipo.h" bodystart="3" bodyend="5"/>
+    <listofallmembers>
+      <member refid="structtipo_1a154d8704b5f9bd45c19ee12ce39f0438a6d17d725519b081dbb55562832456992" prot="public" virt="non-virtual"><scope>tipo</scope><name>Hilera</name></member>
+      <member refid="structtipo_1a154d8704b5f9bd45c19ee12ce39f0438" prot="public" virt="non-virtual"><scope>tipo</scope><name>tipo_atributo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

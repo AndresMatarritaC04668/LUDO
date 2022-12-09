@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_inventario" kind="class" language="C++" prot="public">
+    <compoundname>Inventario</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_inventario_1a8866c386e4259c0fa0e42aab749723ff" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="class_objeto" kindref="compound">Objeto</ref> * &gt; *</type>
+        <definition>typedef std::vector&lt;Objeto *&gt;* Inventario::Inventory</definition>
+        <argsstring></argsstring>
+        <name>Inventory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.h" line="22" column="26" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_inventario_1ad80ae0df0a87360e897cd23ed425e8c9" prot="private" static="no" mutable="no">
+        <type>Inventory</type>
+        <definition>Inventory Inventario::inventory</definition>
+        <argsstring></argsstring>
+        <name>inventory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.h" line="97" column="15" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_inventario_1ab7ca21da6822bc59fa236f7238e20fd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Inventario::Inventario</definition>
+        <argsstring>()</argsstring>
+        <name>Inventario</name>
+        <briefdescription>
+<para>Construct a new <ref refid="class_inventario" kindref="compound">Inventario</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.h" line="28" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_inventario_1a275a98d42d6aeb4d8130f5a01a521614" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Inventario::Inventario</definition>
+        <argsstring>(Inventory)</argsstring>
+        <name>Inventario</name>
+        <param>
+          <type>Inventory</type>
+          <defname>inventory</defname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_inventario" kindref="compound">Inventario</ref> object by arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inventory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Se guarda en el atributo inventory. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.h" line="35" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.cpp" bodystart="7" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_inventario_1a0b5c030c7cc22e57f92743fa26b781de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Inventario::~Inventario</definition>
+        <argsstring>()</argsstring>
+        <name>~Inventario</name>
+        <briefdescription>
+<para>Destroy the <ref refid="class_inventario" kindref="compound">Inventario</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.h" line="41" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.cpp" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_inventario_1a323b072148949e30cc53794291c08d12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Inventario::asignarInventario</definition>
+        <argsstring>(Inventory)</argsstring>
+        <name>asignarInventario</name>
+        <param>
+          <type>Inventory</type>
+          <defname>inventory</defname>
+        </param>
+        <briefdescription>
+<para>Asigna un inventario para el atributo inventory. Advertencia: Si habia un inventario previo, se borraran todos sus objetos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inventory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Se guarda en el atributo inventory. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.h" line="49" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.cpp" bodystart="21" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_inventario_1aeb98565cd0a5b1f597470db82a1f4497" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Inventory</type>
+        <definition>Inventario::Inventory Inventario::obtenerInventario</definition>
+        <argsstring>()</argsstring>
+        <name>obtenerInventario</name>
+        <briefdescription>
+<para>Devuelve el atributo inventary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Inventory El atributo inventory. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.h" line="56" column="15" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.cpp" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_inventario_1ad83e571cf862322cb4b7f62a3f97b8cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Inventario::sizeInventory</definition>
+        <argsstring>()</argsstring>
+        <name>sizeInventory</name>
+        <briefdescription>
+<para>Devuelve cuantos objetos hay en el inventario. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int El numero de objetos en el inventario. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.h" line="63" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.cpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_inventario_1aae7d9490cfb6bb28adb6d638e9c9f106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Inventario::addObject</definition>
+        <argsstring>(Objeto *)</argsstring>
+        <name>addObject</name>
+        <param>
+          <type><ref refid="class_objeto" kindref="compound">Objeto</ref> *</type>
+          <defname>object</defname>
+        </param>
+        <briefdescription>
+<para>Agrega un objeto al inventario. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>se agrega al atributo inventory. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.h" line="70" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_inventario_1a23b48312f745af2eeb5823681d3b7307" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Inventario::removeObject</definition>
+        <argsstring>(Objeto *)</argsstring>
+        <name>removeObject</name>
+        <param>
+          <type><ref refid="class_objeto" kindref="compound">Objeto</ref> *</type>
+          <defname>object</defname>
+        </param>
+        <briefdescription>
+<para>Elimina un objeto del inventario. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>se va a eliminar del atributo inventory. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.h" line="77" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.cpp" bodystart="42" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_inventario_1ab8518faf8794245ab7db75d2a0df0717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Inventario::cleanInventory</definition>
+        <argsstring>()</argsstring>
+        <name>cleanInventory</name>
+        <briefdescription>
+<para>Limpia el contenido del inventario. Advertencia: Si habia contenido en el inventario, se borraran todos sus objetos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.h" line="84" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.cpp" bodystart="56" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_inventario_1ae52b7b2ff1910b464e3d9dbfb2d8cdbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Inventario::search</definition>
+        <argsstring>(Objeto *)</argsstring>
+        <name>search</name>
+        <param>
+          <type><ref refid="class_objeto" kindref="compound">Objeto</ref> *</type>
+          <defname>object</defname>
+        </param>
+        <briefdescription>
+<para>Busca un objeto en el inventario y determina si esta presente o no. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El objeto a buscar en el inventario. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true Si esta presente. </para>
+</simplesect>
+<simplesect kind="return"><para>false Si no esta presente. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.h" line="94" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.cpp" bodystart="63" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.h" line="19" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Inventario.h" bodystart="19" bodyend="98"/>
+    <listofallmembers>
+      <member refid="class_inventario_1aae7d9490cfb6bb28adb6d638e9c9f106" prot="public" virt="non-virtual"><scope>Inventario</scope><name>addObject</name></member>
+      <member refid="class_inventario_1a323b072148949e30cc53794291c08d12" prot="public" virt="non-virtual"><scope>Inventario</scope><name>asignarInventario</name></member>
+      <member refid="class_inventario_1ab8518faf8794245ab7db75d2a0df0717" prot="public" virt="non-virtual"><scope>Inventario</scope><name>cleanInventory</name></member>
+      <member refid="class_inventario_1ab7ca21da6822bc59fa236f7238e20fd3" prot="public" virt="non-virtual"><scope>Inventario</scope><name>Inventario</name></member>
+      <member refid="class_inventario_1a275a98d42d6aeb4d8130f5a01a521614" prot="public" virt="non-virtual"><scope>Inventario</scope><name>Inventario</name></member>
+      <member refid="class_inventario_1a8866c386e4259c0fa0e42aab749723ff" prot="public" virt="non-virtual"><scope>Inventario</scope><name>Inventory</name></member>
+      <member refid="class_inventario_1ad80ae0df0a87360e897cd23ed425e8c9" prot="private" virt="non-virtual"><scope>Inventario</scope><name>inventory</name></member>
+      <member refid="class_inventario_1aeb98565cd0a5b1f597470db82a1f4497" prot="public" virt="non-virtual"><scope>Inventario</scope><name>obtenerInventario</name></member>
+      <member refid="class_inventario_1a23b48312f745af2eeb5823681d3b7307" prot="public" virt="non-virtual"><scope>Inventario</scope><name>removeObject</name></member>
+      <member refid="class_inventario_1ae52b7b2ff1910b464e3d9dbfb2d8cdbe" prot="public" virt="non-virtual"><scope>Inventario</scope><name>search</name></member>
+      <member refid="class_inventario_1ad83e571cf862322cb4b7f62a3f97b8cd" prot="public" virt="non-virtual"><scope>Inventario</scope><name>sizeInventory</name></member>
+      <member refid="class_inventario_1a0b5c030c7cc22e57f92743fa26b781de" prot="public" virt="non-virtual"><scope>Inventario</scope><name>~Inventario</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

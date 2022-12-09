@@ -1,0 +1,276 @@
+\hypertarget{class_tablero_abstracto}{}\doxysection{Tablero\+Abstracto Class Reference}
+\label{class_tablero_abstracto}\index{TableroAbstracto@{TableroAbstracto}}
+Inheritance diagram for Tablero\+Abstracto\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_tablero_abstracto}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tablero_abstracto_aeaf4aad157c7a0e2011e2085fabef061}\label{class_tablero_abstracto_aeaf4aad157c7a0e2011e2085fabef061}} 
+\mbox{\hyperlink{class_tablero_abstracto_aeaf4aad157c7a0e2011e2085fabef061}{Tablero\+Abstracto}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Tablero Abstracto object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tablero_abstracto_a56fa93332f76dd57811f9afc9a90ab4c}\label{class_tablero_abstracto_a56fa93332f76dd57811f9afc9a90ab4c}} 
+virtual \mbox{\hyperlink{class_tablero_abstracto_a56fa93332f76dd57811f9afc9a90ab4c}{$\sim$\+Tablero\+Abstracto}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Tablero Abstracto object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_tablero_abstracto_aa1400d0a30bdb81eb47f25d1fca02ad9}{asignar\+Cantidad\+Jugadores}} (int cantidad\+Jugadores)
+\begin{DoxyCompactList}\small\item\em Asigna la cantidad de jugadores, numero dado por parametro. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tablero_abstracto_ac5ba08c3ee94a8474a3e2714f512fd03}\label{class_tablero_abstracto_ac5ba08c3ee94a8474a3e2714f512fd03}} 
+virtual void \mbox{\hyperlink{class_tablero_abstracto_ac5ba08c3ee94a8474a3e2714f512fd03}{ubicar\+Jugadores}} ()=0
+\begin{DoxyCompactList}\small\item\em Crea y coloca a los jugadores en el tablero de juego por medio de la interfaz. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_tablero_abstracto_a9be989e9fb3b2f260cce478bf75b07ca}{hay\+Ganador}} ()=0
+\begin{DoxyCompactList}\small\item\em Determina si un jugador ya gano el juego y envia el mensaje de victoria. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tablero_abstracto_a5fc96da84c591fb65518b1df93c1437c}\label{class_tablero_abstracto_a5fc96da84c591fb65518b1df93c1437c}} 
+virtual void \mbox{\hyperlink{class_tablero_abstracto_a5fc96da84c591fb65518b1df93c1437c}{finalizar\+Juego}} ()
+\begin{DoxyCompactList}\small\item\em Termina el juego. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tablero_abstracto_a095897aec5517d91054d7e5ad4a5c043}\label{class_tablero_abstracto_a095897aec5517d91054d7e5ad4a5c043}} 
+virtual void \mbox{\hyperlink{class_tablero_abstracto_a095897aec5517d91054d7e5ad4a5c043}{detener\+Partida}} ()
+\begin{DoxyCompactList}\small\item\em Detiene la partida pausandola, mas no la termina. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_tablero_abstracto_a397adc173989cc9c11c5dd0105476777}{set\+Jugadores}} (vector$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $\ast$ $>$ jugadores)
+\begin{DoxyCompactList}\small\item\em Set the Jugadores object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tablero_abstracto_a61b824bdb2afa2eef081e9bdeedc3c61}\label{class_tablero_abstracto_a61b824bdb2afa2eef081e9bdeedc3c61}} 
+void \mbox{\hyperlink{class_tablero_abstracto_a61b824bdb2afa2eef081e9bdeedc3c61}{iniciar\+Partida}} ()
+\begin{DoxyCompactList}\small\item\em Comienza el mecanismo para iniciar el juego, se encarga de otras labores como pausar la partida si es solicitado o llamar a determinar si hay ganador. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tablero_abstracto_a5802d66b05abd6f955f2653808b743a0}\label{class_tablero_abstracto_a5802d66b05abd6f955f2653808b743a0}} 
+virtual void \mbox{\hyperlink{class_tablero_abstracto_a5802d66b05abd6f955f2653808b743a0}{pasar\+Turno}} ()
+\begin{DoxyCompactList}\small\item\em Pasa al siguiente turno.\+Cambia al jugador actual. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_tablero_abstracto_a866569a962560d2b5ad6d8b2e372e73e}{jugar\+Turno}} ()=0
+\begin{DoxyCompactList}\small\item\em Un jugador ejecuta su turno tirando el dado y moviendo las fichas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tablero_abstracto_a7d64c4c45581009dd756d450f0c6ecf7}\label{class_tablero_abstracto_a7d64c4c45581009dd756d450f0c6ecf7}} 
+virtual void \mbox{\hyperlink{class_tablero_abstracto_a7d64c4c45581009dd756d450f0c6ecf7}{asignar\+Primer\+Jugador}} ()=0
+\begin{DoxyCompactList}\small\item\em Ejecuta un mecanismo para determinar cual jugador va primero. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_jugador}{Jugador}} $\ast$ \mbox{\hyperlink{class_tablero_abstracto_a4ebecae63b4d3614c5642d57d8a72393}{get\+Jugador\+Actual}} ()
+\begin{DoxyCompactList}\small\item\em Get the jugador\+Actual object. \end{DoxyCompactList}\item 
+virtual vector$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $\ast$ $>$ \mbox{\hyperlink{class_tablero_abstracto_a3ce105dee20c0af4908a0f3890af698b}{getjugadores}} ()
+\begin{DoxyCompactList}\small\item\em Get the jugadores object. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_tablero_abstracto_ac633f2b502332f61a110ceb471d6bc04}{get\+Cantidad\+Jugadores}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la cantidad de jugadores. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_tablero_abstracto_a0a767e1b6b5dc5e8a2392d68ea7d1299}{set\+Cantidad\+Jugadores}} (int cantidad\+Jugadores)
+\begin{DoxyCompactList}\small\item\em Establece la cantidad de jugadores mediante un parametro. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_tablero_abstracto_ac07e39d83240a0e808766bd579e51399}{get\+Numero\+Jugador\+Actual}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el numero del jugador que esta ejecutando su turno. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_tablero_abstracto_ad9717214c399678e131d25e60a39aa47}{set\+Numero\+Jugador\+Actual}} (int jugador\+Presente)
+\begin{DoxyCompactList}\small\item\em Establece el numero del jugador actual por medio de un parametro. Establece el numero por el que el jugador sera reconocido en el juego. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_tablero_abstracto_a47ea9dbe0756537b8a3becc8114b0ae7}{lanzar\+Dado}} ()
+\begin{DoxyCompactList}\small\item\em Lanza el objeto dado. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_validador}{Validador}} $\ast$ \mbox{\hyperlink{class_tablero_abstracto_a12716af3327adc47936750f2eefc4eff}{get\+Validador}} ()
+\begin{DoxyCompactList}\small\item\em Get the validador object. \end{DoxyCompactList}\item 
+virtual vector$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $\ast$ $>$ \mbox{\hyperlink{class_tablero_abstracto_adf5899ad7b7da6b37fc63b6ae68451b6}{get\+Jugadores}} ()
+\begin{DoxyCompactList}\small\item\em Get the jugadores object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tablero_abstracto_a02d00745f558bea3552396c9955686b4}\label{class_tablero_abstracto_a02d00745f558bea3552396c9955686b4}} 
+vector$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $\ast$ $>$ {\bfseries jugadores}
+\item 
+\mbox{\Hypertarget{class_tablero_abstracto_a1296b39cde632d8e4290acf95776fa9e}\label{class_tablero_abstracto_a1296b39cde632d8e4290acf95776fa9e}} 
+\mbox{\hyperlink{class_jugador}{Jugador}} $\ast$ {\bfseries jugador\+Actual}
+\item 
+\mbox{\Hypertarget{class_tablero_abstracto_a95a153799d93e9fa532477a7e2daa2e3}\label{class_tablero_abstracto_a95a153799d93e9fa532477a7e2daa2e3}} 
+\mbox{\hyperlink{class_dado}{Dado}} {\bfseries dado}
+\item 
+\mbox{\Hypertarget{class_tablero_abstracto_a2fa7771b08c08228fc1899765803f56b}\label{class_tablero_abstracto_a2fa7771b08c08228fc1899765803f56b}} 
+int {\bfseries juego\+Terminado}
+\item 
+\mbox{\Hypertarget{class_tablero_abstracto_a05909b3cde1b4ca8382643e1853bf670}\label{class_tablero_abstracto_a05909b3cde1b4ca8382643e1853bf670}} 
+\mbox{\hyperlink{class_validador}{Validador}} $\ast$ {\bfseries validador}
+\item 
+\mbox{\Hypertarget{class_tablero_abstracto_a91608dc047952e035c27797a2021d90b}\label{class_tablero_abstracto_a91608dc047952e035c27797a2021d90b}} 
+\mbox{\hyperlink{class_controlador_abstracto}{Controlador\+Abstracto}} $\ast$ {\bfseries controlador\+Juego}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tablero_abstracto_aa1400d0a30bdb81eb47f25d1fca02ad9}\label{class_tablero_abstracto_aa1400d0a30bdb81eb47f25d1fca02ad9}} 
+\index{TableroAbstracto@{TableroAbstracto}!asignarCantidadJugadores@{asignarCantidadJugadores}}
+\index{asignarCantidadJugadores@{asignarCantidadJugadores}!TableroAbstracto@{TableroAbstracto}}
+\doxysubsubsection{\texorpdfstring{asignarCantidadJugadores()}{asignarCantidadJugadores()}}
+{\footnotesize\ttfamily virtual void Tablero\+Abstracto\+::asignar\+Cantidad\+Jugadores (\begin{DoxyParamCaption}\item[{int}]{cantidad\+Jugadores }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Asigna la cantidad de jugadores, numero dado por parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cantidad\+Jugadores} & Es el numero de jugadores que tendra el juego. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tablero_abstracto_ac633f2b502332f61a110ceb471d6bc04}\label{class_tablero_abstracto_ac633f2b502332f61a110ceb471d6bc04}} 
+\index{TableroAbstracto@{TableroAbstracto}!getCantidadJugadores@{getCantidadJugadores}}
+\index{getCantidadJugadores@{getCantidadJugadores}!TableroAbstracto@{TableroAbstracto}}
+\doxysubsubsection{\texorpdfstring{getCantidadJugadores()}{getCantidadJugadores()}}
+{\footnotesize\ttfamily virtual int Tablero\+Abstracto\+::get\+Cantidad\+Jugadores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Obtiene la cantidad de jugadores. 
+
+\begin{DoxyReturn}{Returns}
+int la cantidad de jugadores. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tablero_abstracto_a4ebecae63b4d3614c5642d57d8a72393}\label{class_tablero_abstracto_a4ebecae63b4d3614c5642d57d8a72393}} 
+\index{TableroAbstracto@{TableroAbstracto}!getJugadorActual@{getJugadorActual}}
+\index{getJugadorActual@{getJugadorActual}!TableroAbstracto@{TableroAbstracto}}
+\doxysubsubsection{\texorpdfstring{getJugadorActual()}{getJugadorActual()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_jugador}{Jugador}}$\ast$ Tablero\+Abstracto\+::get\+Jugador\+Actual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the jugador\+Actual object. 
+
+\begin{DoxyReturn}{Returns}
+Jugador$\ast$ el jugador actual. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tablero_abstracto_a3ce105dee20c0af4908a0f3890af698b}\label{class_tablero_abstracto_a3ce105dee20c0af4908a0f3890af698b}} 
+\index{TableroAbstracto@{TableroAbstracto}!getjugadores@{getjugadores}}
+\index{getjugadores@{getjugadores}!TableroAbstracto@{TableroAbstracto}}
+\doxysubsubsection{\texorpdfstring{getjugadores()}{getjugadores()}}
+{\footnotesize\ttfamily virtual vector$<$\mbox{\hyperlink{class_jugador}{Jugador}}$\ast$$>$ Tablero\+Abstracto\+::getjugadores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the jugadores object. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Jugador$\ast$$>$ el atributo jugadores. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tablero_abstracto_adf5899ad7b7da6b37fc63b6ae68451b6}\label{class_tablero_abstracto_adf5899ad7b7da6b37fc63b6ae68451b6}} 
+\index{TableroAbstracto@{TableroAbstracto}!getJugadores@{getJugadores}}
+\index{getJugadores@{getJugadores}!TableroAbstracto@{TableroAbstracto}}
+\doxysubsubsection{\texorpdfstring{getJugadores()}{getJugadores()}}
+{\footnotesize\ttfamily virtual vector$<$\mbox{\hyperlink{class_jugador}{Jugador}} $\ast$$>$ Tablero\+Abstracto\+::get\+Jugadores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the jugadores object. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Jugador $\ast$$>$ El parametro jugadores. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tablero_abstracto_ac07e39d83240a0e808766bd579e51399}\label{class_tablero_abstracto_ac07e39d83240a0e808766bd579e51399}} 
+\index{TableroAbstracto@{TableroAbstracto}!getNumeroJugadorActual@{getNumeroJugadorActual}}
+\index{getNumeroJugadorActual@{getNumeroJugadorActual}!TableroAbstracto@{TableroAbstracto}}
+\doxysubsubsection{\texorpdfstring{getNumeroJugadorActual()}{getNumeroJugadorActual()}}
+{\footnotesize\ttfamily virtual int Tablero\+Abstracto\+::get\+Numero\+Jugador\+Actual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Devuelve el numero del jugador que esta ejecutando su turno. 
+
+\begin{DoxyReturn}{Returns}
+int El numero del jugador actual. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tablero_abstracto_a12716af3327adc47936750f2eefc4eff}\label{class_tablero_abstracto_a12716af3327adc47936750f2eefc4eff}} 
+\index{TableroAbstracto@{TableroAbstracto}!getValidador@{getValidador}}
+\index{getValidador@{getValidador}!TableroAbstracto@{TableroAbstracto}}
+\doxysubsubsection{\texorpdfstring{getValidador()}{getValidador()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_validador}{Validador}}$\ast$ Tablero\+Abstracto\+::get\+Validador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the validador object. 
+
+\begin{DoxyReturn}{Returns}
+Validador$\ast$ El parametro validador. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tablero_abstracto_a9be989e9fb3b2f260cce478bf75b07ca}\label{class_tablero_abstracto_a9be989e9fb3b2f260cce478bf75b07ca}} 
+\index{TableroAbstracto@{TableroAbstracto}!hayGanador@{hayGanador}}
+\index{hayGanador@{hayGanador}!TableroAbstracto@{TableroAbstracto}}
+\doxysubsubsection{\texorpdfstring{hayGanador()}{hayGanador()}}
+{\footnotesize\ttfamily virtual int Tablero\+Abstracto\+::hay\+Ganador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Determina si un jugador ya gano el juego y envia el mensaje de victoria. 
+
+\begin{DoxyReturn}{Returns}
+int 1 si hay ganador, 0 si aun no hay. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_tablero_ludo_a80baa66eb36c7f1a15e631a56d491fd2}{Tablero\+Ludo}}.
+
+\mbox{\Hypertarget{class_tablero_abstracto_a866569a962560d2b5ad6d8b2e372e73e}\label{class_tablero_abstracto_a866569a962560d2b5ad6d8b2e372e73e}} 
+\index{TableroAbstracto@{TableroAbstracto}!jugarTurno@{jugarTurno}}
+\index{jugarTurno@{jugarTurno}!TableroAbstracto@{TableroAbstracto}}
+\doxysubsubsection{\texorpdfstring{jugarTurno()}{jugarTurno()}}
+{\footnotesize\ttfamily virtual int Tablero\+Abstracto\+::jugar\+Turno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Un jugador ejecuta su turno tirando el dado y moviendo las fichas. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_tablero_ludo_ad8b80b6080fb8e56992521247946afc4}{Tablero\+Ludo}}.
+
+\mbox{\Hypertarget{class_tablero_abstracto_a47ea9dbe0756537b8a3becc8114b0ae7}\label{class_tablero_abstracto_a47ea9dbe0756537b8a3becc8114b0ae7}} 
+\index{TableroAbstracto@{TableroAbstracto}!lanzarDado@{lanzarDado}}
+\index{lanzarDado@{lanzarDado}!TableroAbstracto@{TableroAbstracto}}
+\doxysubsubsection{\texorpdfstring{lanzarDado()}{lanzarDado()}}
+{\footnotesize\ttfamily virtual int Tablero\+Abstracto\+::lanzar\+Dado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Lanza el objeto dado. 
+
+\begin{DoxyReturn}{Returns}
+int el numero resultante del lanzamiento. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tablero_abstracto_a0a767e1b6b5dc5e8a2392d68ea7d1299}\label{class_tablero_abstracto_a0a767e1b6b5dc5e8a2392d68ea7d1299}} 
+\index{TableroAbstracto@{TableroAbstracto}!setCantidadJugadores@{setCantidadJugadores}}
+\index{setCantidadJugadores@{setCantidadJugadores}!TableroAbstracto@{TableroAbstracto}}
+\doxysubsubsection{\texorpdfstring{setCantidadJugadores()}{setCantidadJugadores()}}
+{\footnotesize\ttfamily virtual void Tablero\+Abstracto\+::set\+Cantidad\+Jugadores (\begin{DoxyParamCaption}\item[{int}]{cantidad\+Jugadores }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Establece la cantidad de jugadores mediante un parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cantidad\+Jugadores} & El numero de jugadores. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tablero_abstracto_a397adc173989cc9c11c5dd0105476777}\label{class_tablero_abstracto_a397adc173989cc9c11c5dd0105476777}} 
+\index{TableroAbstracto@{TableroAbstracto}!setJugadores@{setJugadores}}
+\index{setJugadores@{setJugadores}!TableroAbstracto@{TableroAbstracto}}
+\doxysubsubsection{\texorpdfstring{setJugadores()}{setJugadores()}}
+{\footnotesize\ttfamily virtual void Tablero\+Abstracto\+::set\+Jugadores (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_jugador}{Jugador}} $\ast$ $>$}]{jugadores }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the Jugadores object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jugadores} & se guarda en el atributo de jugadores. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tablero_abstracto_ad9717214c399678e131d25e60a39aa47}\label{class_tablero_abstracto_ad9717214c399678e131d25e60a39aa47}} 
+\index{TableroAbstracto@{TableroAbstracto}!setNumeroJugadorActual@{setNumeroJugadorActual}}
+\index{setNumeroJugadorActual@{setNumeroJugadorActual}!TableroAbstracto@{TableroAbstracto}}
+\doxysubsubsection{\texorpdfstring{setNumeroJugadorActual()}{setNumeroJugadorActual()}}
+{\footnotesize\ttfamily virtual void Tablero\+Abstracto\+::set\+Numero\+Jugador\+Actual (\begin{DoxyParamCaption}\item[{int}]{jugador\+Presente }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Establece el numero del jugador actual por medio de un parametro. Establece el numero por el que el jugador sera reconocido en el juego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jugador\+Presente} & El numero que correspondera al jugador actual. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/\mbox{\hyperlink{_tablero_abstracto_8h}{Tablero\+Abstracto.\+h}}\end{DoxyCompactItemize}

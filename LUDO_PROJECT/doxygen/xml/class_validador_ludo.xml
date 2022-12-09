@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_validador_ludo" kind="class" language="C++" prot="public">
+    <compoundname>ValidadorLudo</compoundname>
+    <basecompoundref refid="class_validador" prot="public" virt="non-virtual">Validador</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_validador_ludo_1a5a171a8b07a39a0d6b24948b744f320e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref> *</type>
+        <definition>TableroLudo* ValidadorLudo::mesaLudo</definition>
+        <argsstring></argsstring>
+        <name>mesaLudo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h" line="27" column="22" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_validador_ludo_1ae699bd2e4aecaf3cb46ea7b5d64122d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ValidadorLudo::ValidadorLudo</definition>
+        <argsstring>()</argsstring>
+        <name>ValidadorLudo</name>
+        <briefdescription>
+<para>Construct a new <ref refid="class_validador" kindref="compound">Validador</ref> Ludo:: <ref refid="class_validador" kindref="compound">Validador</ref> Ludo object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h" line="34" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.cpp" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_validador_ludo_1a92fd956da440e4d674ce45104b74fae3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ValidadorLudo::ValidadorLudo</definition>
+        <argsstring>(TableroAbstracto *mesa)</argsstring>
+        <name>ValidadorLudo</name>
+        <param>
+          <type><ref refid="class_tablero_abstracto" kindref="compound">TableroAbstracto</ref> *</type>
+          <declname>mesa</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_validador" kindref="compound">Validador</ref> Ludo:: <ref refid="class_validador" kindref="compound">Validador</ref> Ludo object by arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_tablero_abstracto" kindref="compound">TableroAbstracto</ref> que representa el tablero de juego. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h" line="42" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.cpp" bodystart="9" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_validador_ludo_1a2bf1594290b792e0ac843044f21b81d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ValidadorLudo::ValidadorLudo</definition>
+        <argsstring>(TableroLudo *mesa)</argsstring>
+        <name>ValidadorLudo</name>
+        <param>
+          <type><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref> *</type>
+          <declname>mesa</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_validador" kindref="compound">Validador</ref> Ludo:: <ref refid="class_validador" kindref="compound">Validador</ref> Ludo object by arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref> que representa el tablero de juego. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h" line="50" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.cpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_validador_ludo_1ab425b3adcd423b8a34b37ff79797c951" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ValidadorLudo::iniciarReglas</definition>
+        <argsstring>() override</argsstring>
+        <name>iniciarReglas</name>
+        <reimplements refid="class_validador_1a7c14f9a57a01c0e0526fdb34ccb5ca15">iniciarReglas</reimplements>
+        <briefdescription>
+<para>Metodo que inicializa las reglas. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h" line="56" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.cpp" bodystart="17" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_validador_ludo_1ae6e176661e35a9ef63b1d3d619aeadca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int ValidadorLudo::validarJugada</definition>
+        <argsstring>(int posicion, FichaAbstracta *mover) override</argsstring>
+        <name>validarJugada</name>
+        <reimplements refid="class_validador_1a1a438758b10a8ba26fff7b1b4a8ce666">validarJugada</reimplements>
+        <param>
+          <type>int</type>
+          <declname>posicion</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref> *</type>
+          <declname>mover</declname>
+        </param>
+        <briefdescription>
+<para>Valida la jugada conforme a las reglas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>posicion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La nueva posicion a la que tiene que llegar la ficha. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mover</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Es la ficha que se tiene que reubicar. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>2 Si hay una barrera. 3 Si hay otra ficha. 1 Si simplemente avanza. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h" line="66" column="13" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.cpp" bodystart="39" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_validador_ludo_1a880b4b191d4013b5759f5c7212787578" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ValidadorLudo::verificarBloqueo</definition>
+        <argsstring>()</argsstring>
+        <name>verificarBloqueo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h" line="70" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_validador_ludo_1a2221fd67729e5387a2f77b252ad010fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ValidadorLudo::castTable</definition>
+        <argsstring>()</argsstring>
+        <name>castTable</name>
+        <briefdescription>
+<para>Castea un tablero abstracto en un tablero de ludo. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h" line="76" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.cpp" bodystart="89" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_validador_ludo_1a448efced2195f0d02772378bbe0ed9f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ValidadorLudo::setMesaLudo</definition>
+        <argsstring>(TableroLudo *mesa)</argsstring>
+        <name>setMesaLudo</name>
+        <param>
+          <type><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref> *</type>
+          <declname>mesa</declname>
+        </param>
+        <briefdescription>
+<para>Setea el atributo de mesaLudo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El valor con lo que se llena el atributo de mesaLudo. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h" line="83" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.cpp" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_validador_ludo_1a77adad3f57c402f2efbeaacbd24dd418" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ValidadorLudo::reglaOcho</definition>
+        <argsstring>(int posicion, FichaLudo *mover)</argsstring>
+        <name>reglaOcho</name>
+        <param>
+          <type>int</type>
+          <declname>posicion</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ficha_ludo" kindref="compound">FichaLudo</ref> *</type>
+          <declname>mover</declname>
+        </param>
+        <briefdescription>
+<para>Procedimiento que verifica si la regla 8 (la de la barrera) se esta cumpliendo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>posicion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La posicion hasta donde se debe mover la ficha. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mover</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La ficha que se debe mover </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true Si se cumple la regla ocho. </para>
+</simplesect>
+<simplesect kind="return"><para>false Si no se cumple la regla ocho. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h" line="94" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.cpp" bodystart="52" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_validador_ludo_1a2cb05ebae6ef49f8942cc1152348b4a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ValidadorLudo::verifComer</definition>
+        <argsstring>(int posicion, FichaLudo *mover)</argsstring>
+        <name>verifComer</name>
+        <param>
+          <type>int</type>
+          <declname>posicion</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ficha_ludo" kindref="compound">FichaLudo</ref> *</type>
+          <declname>mover</declname>
+        </param>
+        <briefdescription>
+<para>Clase que verifica si se puede comer la ficha que se encuentra en una posicion indicada por un numero entero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>posicion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>posicion en la que se podria encontrar una ficha. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true Si se puede comer. </para>
+</simplesect>
+<simplesect kind="return"><para>false Si no se puede comer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h" line="104" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.cpp" bodystart="62" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_validador_ludo_1a97418a07c1a1d66b29fc8785a7a1ffae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ValidadorLudo::validarSeis</definition>
+        <argsstring>(int pasosDado, FichaAbstracta *laFicha)</argsstring>
+        <name>validarSeis</name>
+        <param>
+          <type>int</type>
+          <declname>pasosDado</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref> *</type>
+          <declname>laFicha</declname>
+        </param>
+        <briefdescription>
+<para>Metodo que identifica el posible accionar al sacar un numero seis tras lanzar el dado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true Si se puede sacar de la salida. </para>
+</simplesect>
+<simplesect kind="return"><para>false Si no se puede sacar de la salida. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h" line="113" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.cpp" bodystart="82" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_validador_ludo_1a7e101d4e69e2086cea7bcf5390ec49a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ValidadorLudo::finalizaFicha</definition>
+        <argsstring>(FichaLudo *)</argsstring>
+        <name>finalizaFicha</name>
+        <param>
+          <type><ref refid="class_ficha_ludo" kindref="compound">FichaLudo</ref> *</type>
+          <defname>ficha</defname>
+        </param>
+        <briefdescription>
+<para>Determina si una ficha ya llego a casa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int 1 si ya llego, 0 si no ha llegado. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h" line="120" column="13" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.cpp" bodystart="99" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_validador_ludo_1a5945e34057c945ecc11dd56b1248a911" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int ValidadorLudo::esGanador</definition>
+        <argsstring>(std::vector&lt; FichaAbstracta * &gt;) override</argsstring>
+        <name>esGanador</name>
+        <reimplements refid="class_validador_1a52baec11f22a8cb5db6ebb8916ad61e4">esGanador</reimplements>
+        <param>
+          <type>std::vector&lt; <ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref> * &gt;</type>
+          <defname>fichas</defname>
+        </param>
+        <briefdescription>
+<para>Se usa al final de cada turno, determina si algun ganador ya consiguio ganar el juego. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fichas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Un vector con las fichas del juego. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 1 si es ganador, 0 si no lo es. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h" line="129" column="13" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.cpp" bodystart="103" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Validador</label>
+        <link refid="class_validador"/>
+      </node>
+      <node id="1">
+        <label>ValidadorLudo</label>
+        <link refid="class_validador_ludo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Validador</label>
+        <link refid="class_validador"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mesa</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ControladorAbstracto</label>
+        <link refid="class_controlador_abstracto"/>
+      </node>
+      <node id="5">
+        <label>Dado</label>
+        <link refid="class_dado"/>
+      </node>
+      <node id="3">
+        <label>TableroAbstracto</label>
+        <link refid="class_tablero_abstracto"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>dado</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>jugadorActual</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>validador</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>controladorJuego</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Jugador</label>
+        <link refid="class_jugador"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Objeto</label>
+        <link refid="class_objeto"/>
+      </node>
+      <node id="1">
+        <label>ValidadorLudo</label>
+        <link refid="class_validador_ludo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h" line="25" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ValidadorLudo.h" bodystart="25" bodyend="131"/>
+    <listofallmembers>
+      <member refid="class_validador_ludo_1a2221fd67729e5387a2f77b252ad010fa" prot="public" virt="non-virtual"><scope>ValidadorLudo</scope><name>castTable</name></member>
+      <member refid="class_validador_ludo_1a5945e34057c945ecc11dd56b1248a911" prot="public" virt="virtual"><scope>ValidadorLudo</scope><name>esGanador</name></member>
+      <member refid="class_validador_ludo_1a7e101d4e69e2086cea7bcf5390ec49a1" prot="public" virt="non-virtual"><scope>ValidadorLudo</scope><name>finalizaFicha</name></member>
+      <member refid="class_validador_ludo_1ab425b3adcd423b8a34b37ff79797c951" prot="public" virt="virtual"><scope>ValidadorLudo</scope><name>iniciarReglas</name></member>
+      <member refid="class_validador_1aa230a5ac6dc4027d3a07f6c4d07174da" prot="protected" virt="non-virtual"><scope>ValidadorLudo</scope><name>mesa</name></member>
+      <member refid="class_validador_ludo_1a5a171a8b07a39a0d6b24948b744f320e" prot="private" virt="non-virtual"><scope>ValidadorLudo</scope><name>mesaLudo</name></member>
+      <member refid="class_validador_1a6830cb59f0ba53f7e82c350fdc53803a" prot="public" virt="virtual"><scope>ValidadorLudo</scope><name>obtenerReglas</name></member>
+      <member refid="class_validador_ludo_1a77adad3f57c402f2efbeaacbd24dd418" prot="public" virt="non-virtual"><scope>ValidadorLudo</scope><name>reglaOcho</name></member>
+      <member refid="class_validador_1a023e74266c9f87cac6d0207370ff8ec9" prot="protected" virt="non-virtual"><scope>ValidadorLudo</scope><name>reglas</name></member>
+      <member refid="class_validador_ludo_1a448efced2195f0d02772378bbe0ed9f6" prot="public" virt="non-virtual"><scope>ValidadorLudo</scope><name>setMesaLudo</name></member>
+      <member refid="class_validador_1a97b3edfbf7146ab1cec5a60dbcf0b438" prot="public" virt="virtual"><scope>ValidadorLudo</scope><name>toStringReglas</name></member>
+      <member refid="class_validador_1ab30fc29192df70a24021fd3946c2beba" prot="public" virt="non-virtual"><scope>ValidadorLudo</scope><name>Validador</name></member>
+      <member refid="class_validador_1a9db816651c0431c694b2cea5617c447a" prot="public" virt="non-virtual"><scope>ValidadorLudo</scope><name>Validador</name></member>
+      <member refid="class_validador_ludo_1ae699bd2e4aecaf3cb46ea7b5d64122d2" prot="public" virt="non-virtual"><scope>ValidadorLudo</scope><name>ValidadorLudo</name></member>
+      <member refid="class_validador_ludo_1a92fd956da440e4d674ce45104b74fae3" prot="public" virt="non-virtual"><scope>ValidadorLudo</scope><name>ValidadorLudo</name></member>
+      <member refid="class_validador_ludo_1a2bf1594290b792e0ac843044f21b81d8" prot="public" virt="non-virtual"><scope>ValidadorLudo</scope><name>ValidadorLudo</name></member>
+      <member refid="class_validador_ludo_1ae6e176661e35a9ef63b1d3d619aeadca" prot="public" virt="virtual"><scope>ValidadorLudo</scope><name>validarJugada</name></member>
+      <member refid="class_validador_ludo_1a97418a07c1a1d66b29fc8785a7a1ffae" prot="public" virt="non-virtual"><scope>ValidadorLudo</scope><name>validarSeis</name></member>
+      <member refid="class_validador_ludo_1a2cb05ebae6ef49f8942cc1152348b4a8" prot="public" virt="non-virtual"><scope>ValidadorLudo</scope><name>verifComer</name></member>
+      <member refid="class_validador_ludo_1a880b4b191d4013b5759f5c7212787578" prot="public" virt="non-virtual"><scope>ValidadorLudo</scope><name>verificarBloqueo</name></member>
+      <member refid="class_validador_1ab10f475fc21b063297ea9e88ecc248c1" prot="public" virt="non-virtual"><scope>ValidadorLudo</scope><name>~Validador</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

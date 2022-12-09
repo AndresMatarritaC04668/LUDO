@@ -1,0 +1,264 @@
+\hypertarget{class_jugador}{}\doxysection{Jugador Class Reference}
+\label{class_jugador}\index{Jugador@{Jugador}}
+Inheritance diagram for Jugador\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_jugador}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_jugador_a232c46f75691af6210096e5972535d71}\label{class_jugador_a232c46f75691af6210096e5972535d71}} 
+\mbox{\hyperlink{class_jugador_a232c46f75691af6210096e5972535d71}{Jugador}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_jugador}{Jugador}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_jugador_af58c09391e50529e009a8166707158d1}\label{class_jugador_af58c09391e50529e009a8166707158d1}} 
+virtual \mbox{\hyperlink{class_jugador_af58c09391e50529e009a8166707158d1}{$\sim$\+Jugador}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_jugador}{Jugador}} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_jugador_ad95196fbcc19ddbc50285f739db475fa}{set\+Nombre}} (std\+::string nombre)
+\begin{DoxyCompactList}\small\item\em Establece el nombre del jugador en sus atributos como una string. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_jugador_ab6c7de8724019fa98431bf0ca656d55f}{get\+Nombre}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el nombre del \mbox{\hyperlink{class_jugador}{Jugador}} desde sus atributos. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_jugador_a0867a6a4a10f4de855b5a34aeb6c42aa}{set\+Color}} (std\+::string color)
+\begin{DoxyCompactList}\small\item\em Establece el color del jugador en sus atributos. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_jugador_a4fb6f6adf3a1f404b6619c2fdb0e8502}{get\+Color}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el color desde sus atributos como una string. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_jugador_a4fb19395d8df5a0a0723a4150df9d1b9}{get\+Es\+Ganador}} ()
+\begin{DoxyCompactList}\small\item\em Indica de alguna manera que si el jugador a ganado el juego o no mediante un booleano. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_jugador_af2cf3faaf38044b3215a7a6587699473}{mover\+Ficha}} (\mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$ficha, int pasos, \mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$tablero)=0
+\begin{DoxyCompactList}\small\item\em El jugador ejecuta la opcion de mover la ficha para el juego que se este implementando. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$ \mbox{\hyperlink{class_jugador_a148ab5b9ec0cc5d7f43ebe255a76f8ab}{elegir\+Ficha}} (\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$, int)=0
+\begin{DoxyCompactList}\small\item\em El jugador elige la ficha que va a mover. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_jugador_a62e6bcf6805e13f2253413c8e8dcbb2d}{lanzar\+Dado}} ()
+\begin{DoxyCompactList}\small\item\em El jugador lanza el dado. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_jugador_a72c706b2a576db1082089ff225cbca4c}{set\+Fichas}} (std\+::vector$<$ \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$ $>$ fichas)
+\begin{DoxyCompactList}\small\item\em Establece las fichas del jugador. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$ $>$ \mbox{\hyperlink{class_jugador_aaef5a3b792e1fccfc083ae034ecc3068}{get\+Fichas}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el vector de fichas que se tiene como atributo. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_jugador_a36a170afd57ed41fa107a9efcf6fde46}{elegir\+Que\+Hacer}} (\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$tablero)=0
+\begin{DoxyCompactList}\small\item\em Da las opciones para el jugador en su turno segun el juego. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_jugador_a58269958d36a7e04903d540392662b60}{jugar\+Turno}} (\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$tablero)
+\begin{DoxyCompactList}\small\item\em El jugador juega su turno. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_jugador_a6edb40e25712a8f98fbc3161e414dafa}\label{class_jugador_a6edb40e25712a8f98fbc3161e414dafa}} 
+int {\bfseries es\+Ganador}
+\item 
+\mbox{\Hypertarget{class_jugador_aa679d387ca3af094bade60748a7ad62a}\label{class_jugador_aa679d387ca3af094bade60748a7ad62a}} 
+int {\bfseries cantidad\+Dados}
+\item 
+\mbox{\Hypertarget{class_jugador_a786a0a4f83ebfa5709a771b6b5efdf90}\label{class_jugador_a786a0a4f83ebfa5709a771b6b5efdf90}} 
+std\+::vector$<$ \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$ $>$ {\bfseries fichas}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_jugador_a148ab5b9ec0cc5d7f43ebe255a76f8ab}\label{class_jugador_a148ab5b9ec0cc5d7f43ebe255a76f8ab}} 
+\index{Jugador@{Jugador}!elegirFicha@{elegirFicha}}
+\index{elegirFicha@{elegirFicha}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{elegirFicha()}{elegirFicha()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}}$\ast$ Jugador\+::elegir\+Ficha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+El jugador elige la ficha que va a mover. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tablero\+Abstracto$\ast$} & El tablero en el que se va a mover. \\
+\hline
+{\em int} & los pasos que se va a mover. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ficha\+Abstracta$\ast$ Debe devolver la ficha elegida. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_jugador_ludo_aeacab2bbf9593ce2806daac9e00607f9}{Jugador\+Ludo}}.
+
+\mbox{\Hypertarget{class_jugador_a36a170afd57ed41fa107a9efcf6fde46}\label{class_jugador_a36a170afd57ed41fa107a9efcf6fde46}} 
+\index{Jugador@{Jugador}!elegirQueHacer@{elegirQueHacer}}
+\index{elegirQueHacer@{elegirQueHacer}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{elegirQueHacer()}{elegirQueHacer()}}
+{\footnotesize\ttfamily virtual int Jugador\+::elegir\+Que\+Hacer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$}]{tablero }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Da las opciones para el jugador en su turno segun el juego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tablero} & El tablero en el que se esta jugando. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int La eleccion del jugador, siempre representada por un valor numerico. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_jugador_ludo_af2e970dfd7d2c4737924ab647bfbcb0e}{Jugador\+Ludo}}.
+
+\mbox{\Hypertarget{class_jugador_a4fb6f6adf3a1f404b6619c2fdb0e8502}\label{class_jugador_a4fb6f6adf3a1f404b6619c2fdb0e8502}} 
+\index{Jugador@{Jugador}!getColor@{getColor}}
+\index{getColor@{getColor}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily virtual std\+::string Jugador\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Devuelve el color desde sus atributos como una string. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string El color del jugador. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jugador_a4fb19395d8df5a0a0723a4150df9d1b9}\label{class_jugador_a4fb19395d8df5a0a0723a4150df9d1b9}} 
+\index{Jugador@{Jugador}!getEsGanador@{getEsGanador}}
+\index{getEsGanador@{getEsGanador}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{getEsGanador()}{getEsGanador()}}
+{\footnotesize\ttfamily virtual bool Jugador\+::get\+Es\+Ganador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Indica de alguna manera que si el jugador a ganado el juego o no mediante un booleano. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jugador_aaef5a3b792e1fccfc083ae034ecc3068}\label{class_jugador_aaef5a3b792e1fccfc083ae034ecc3068}} 
+\index{Jugador@{Jugador}!getFichas@{getFichas}}
+\index{getFichas@{getFichas}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{getFichas()}{getFichas()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$$>$ Jugador\+::get\+Fichas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Devuelve el vector de fichas que se tiene como atributo. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Ficha\+Abstracta $\ast$$>$ El atributo fichas. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jugador_ab6c7de8724019fa98431bf0ca656d55f}\label{class_jugador_ab6c7de8724019fa98431bf0ca656d55f}} 
+\index{Jugador@{Jugador}!getNombre@{getNombre}}
+\index{getNombre@{getNombre}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{getNombre()}{getNombre()}}
+{\footnotesize\ttfamily virtual std\+::string Jugador\+::get\+Nombre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Devuelve el nombre del \mbox{\hyperlink{class_jugador}{Jugador}} desde sus atributos. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string El nombre del jugador. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jugador_a58269958d36a7e04903d540392662b60}\label{class_jugador_a58269958d36a7e04903d540392662b60}} 
+\index{Jugador@{Jugador}!jugarTurno@{jugarTurno}}
+\index{jugarTurno@{jugarTurno}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{jugarTurno()}{jugarTurno()}}
+{\footnotesize\ttfamily int Jugador\+::jugar\+Turno (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$}]{tablero }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+El jugador juega su turno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tablero} & El tablero en el que se esta jugando. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Un entero que funciona como booleano, se usa principalmente adentro del metodo para determinar si el jugador debe continuar su turno tras elegir su accion, pero el resultado se devuelve independientemente. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jugador_a62e6bcf6805e13f2253413c8e8dcbb2d}\label{class_jugador_a62e6bcf6805e13f2253413c8e8dcbb2d}} 
+\index{Jugador@{Jugador}!lanzarDado@{lanzarDado}}
+\index{lanzarDado@{lanzarDado}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{lanzarDado()}{lanzarDado()}}
+{\footnotesize\ttfamily virtual int Jugador\+::lanzar\+Dado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+El jugador lanza el dado. 
+
+\begin{DoxyReturn}{Returns}
+int El resultado de lanzar el dado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jugador_af2cf3faaf38044b3215a7a6587699473}\label{class_jugador_af2cf3faaf38044b3215a7a6587699473}} 
+\index{Jugador@{Jugador}!moverFicha@{moverFicha}}
+\index{moverFicha@{moverFicha}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{moverFicha()}{moverFicha()}}
+{\footnotesize\ttfamily virtual int Jugador\+::mover\+Ficha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$}]{ficha,  }\item[{int}]{pasos,  }\item[{\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$}]{tablero }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+El jugador ejecuta la opcion de mover la ficha para el juego que se este implementando. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ficha} & La ficha que se va a mover. \\
+\hline
+{\em pasos} & Los pasos que se va a mover la ficha. \\
+\hline
+{\em tablero} & El tablero en el que se va a mover la ficha. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Depende del juego, podria indicar si un jugador tiene el derecho a repetir el turno o no. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_jugador_ludo_a97b10a6ffd9eeed7857e29d3e3a6e3c3}{Jugador\+Ludo}}.
+
+\mbox{\Hypertarget{class_jugador_a0867a6a4a10f4de855b5a34aeb6c42aa}\label{class_jugador_a0867a6a4a10f4de855b5a34aeb6c42aa}} 
+\index{Jugador@{Jugador}!setColor@{setColor}}
+\index{setColor@{setColor}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily virtual void Jugador\+::set\+Color (\begin{DoxyParamCaption}\item[{std\+::string}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Establece el color del jugador en sus atributos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & La string que se guardara como el color en sus atributos. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_jugador_a72c706b2a576db1082089ff225cbca4c}\label{class_jugador_a72c706b2a576db1082089ff225cbca4c}} 
+\index{Jugador@{Jugador}!setFichas@{setFichas}}
+\index{setFichas@{setFichas}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{setFichas()}{setFichas()}}
+{\footnotesize\ttfamily virtual void Jugador\+::set\+Fichas (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$ $>$}]{fichas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Establece las fichas del jugador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Ficha\+Abstracta} & $\ast$$>$ Lo guarda en el vector de fichas abstractas que se tiene como atributo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_jugador_ad95196fbcc19ddbc50285f739db475fa}\label{class_jugador_ad95196fbcc19ddbc50285f739db475fa}} 
+\index{Jugador@{Jugador}!setNombre@{setNombre}}
+\index{setNombre@{setNombre}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{setNombre()}{setNombre()}}
+{\footnotesize\ttfamily virtual void Jugador\+::set\+Nombre (\begin{DoxyParamCaption}\item[{std\+::string}]{nombre }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Establece el nombre del jugador en sus atributos como una string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & La string que se guardara en los atributos. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/\mbox{\hyperlink{_jugador_8h}{Jugador.\+h}}\end{DoxyCompactItemize}

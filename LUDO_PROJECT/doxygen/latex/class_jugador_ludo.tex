@@ -1,0 +1,174 @@
+\hypertarget{class_jugador_ludo}{}\doxysection{Jugador\+Ludo Class Reference}
+\label{class_jugador_ludo}\index{JugadorLudo@{JugadorLudo}}
+Inheritance diagram for Jugador\+Ludo\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_jugador_ludo}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_jugador_ludo_adb4aadf616a0383ad913c48af8ca37d8}{Jugador\+Ludo}} (string color, int zona\+Segura, string nombre)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_jugador}{Jugador}} Ludo object by arguments. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_jugador_ludo_acb15ec092fbaa8c7129c3cdb051877a3}\label{class_jugador_ludo_acb15ec092fbaa8c7129c3cdb051877a3}} 
+\mbox{\hyperlink{class_jugador_ludo_acb15ec092fbaa8c7129c3cdb051877a3}{Jugador\+Ludo}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_jugador}{Jugador}} Ludo object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_jugador_ludo_a9067143c3c47c293a61a92400f6c5c47}\label{class_jugador_ludo_a9067143c3c47c293a61a92400f6c5c47}} 
+\mbox{\hyperlink{class_jugador_ludo_a9067143c3c47c293a61a92400f6c5c47}{$\sim$\+Jugador\+Ludo}} () override
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_jugador}{Jugador}} Ludo object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_jugador_ludo_a97b10a6ffd9eeed7857e29d3e3a6e3c3}{mover\+Ficha}} (\mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$ficha, int pasos, \mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$tablero) override
+\item 
+\mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$ \mbox{\hyperlink{class_jugador_ludo_aeacab2bbf9593ce2806daac9e00607f9}{elegir\+Ficha}} (\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$, int) override
+\begin{DoxyCompactList}\small\item\em El jugador elige la ficha que va a mover. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_jugador_ludo_abbbb7e3709644473f5572b735705727e}{encontrar\+Barrera}} (int posicion, \mbox{\hyperlink{class_ficha_ludo}{Ficha\+Ludo}} $\ast$mover, \mbox{\hyperlink{class_tablero_ludo}{Tablero\+Ludo}} $\ast$tablero)
+\begin{DoxyCompactList}\small\item\em Busca las barreras en el tablero implementadas para el juego LUDO que podrian obstaculizar el movimiento de una ficha. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jugador_ludo_ad143a16486e648797c361c38a4bad6c9}{mover\+Ficha\+Recta\+Final}} (\mbox{\hyperlink{class_ficha_ludo}{Ficha\+Ludo}} $\ast$ficha, int pasos, \mbox{\hyperlink{class_tablero_ludo}{Tablero\+Ludo}} $\ast$tablero, \mbox{\hyperlink{class_validador_ludo}{Validador\+Ludo}} $\ast$validador)
+\begin{DoxyCompactList}\small\item\em Determina como sera el movimiento de una ficha en la recta final para el juego LUDO. El jugador necesita obtener la cantidad exacta llegar al final, no puede obtener mas. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_jugador_ludo_af2e970dfd7d2c4737924ab647bfbcb0e}{elegir\+Que\+Hacer}} (\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$tablero) override
+\begin{DoxyCompactList}\small\item\em El jugador escoge que hacer en relacion a las reglas de juego LUDO. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_jugador_ludo_adb4aadf616a0383ad913c48af8ca37d8}\label{class_jugador_ludo_adb4aadf616a0383ad913c48af8ca37d8}} 
+\index{JugadorLudo@{JugadorLudo}!JugadorLudo@{JugadorLudo}}
+\index{JugadorLudo@{JugadorLudo}!JugadorLudo@{JugadorLudo}}
+\doxysubsubsection{\texorpdfstring{JugadorLudo()}{JugadorLudo()}}
+{\footnotesize\ttfamily Jugador\+Ludo\+::\+Jugador\+Ludo (\begin{DoxyParamCaption}\item[{string}]{color,  }\item[{int}]{zona\+Segura,  }\item[{string}]{nombre }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_jugador}{Jugador}} Ludo object by arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & El color del jugador. \\
+\hline
+{\em zona\+Segura} & La zona segura del jugador en el tablero. \\
+\hline
+{\em nombre} & El nombre del jugador. Todo lo anterior se guarda en los atributos. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_jugador_ludo_aeacab2bbf9593ce2806daac9e00607f9}\label{class_jugador_ludo_aeacab2bbf9593ce2806daac9e00607f9}} 
+\index{JugadorLudo@{JugadorLudo}!elegirFicha@{elegirFicha}}
+\index{elegirFicha@{elegirFicha}!JugadorLudo@{JugadorLudo}}
+\doxysubsubsection{\texorpdfstring{elegirFicha()}{elegirFicha()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$ Jugador\+Ludo\+::elegir\+Ficha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$}]{tablero,  }\item[{int}]{pasos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+El jugador elige la ficha que va a mover. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Tablero\+Abstracto$\ast$} & El tablero en el que se va a mover. \\
+\hline
+{\em int} & los pasos que se va a mover. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ficha\+Abstracta$\ast$ Debe devolver la ficha elegida. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_jugador_a148ab5b9ec0cc5d7f43ebe255a76f8ab}{Jugador}}.
+
+\mbox{\Hypertarget{class_jugador_ludo_af2e970dfd7d2c4737924ab647bfbcb0e}\label{class_jugador_ludo_af2e970dfd7d2c4737924ab647bfbcb0e}} 
+\index{JugadorLudo@{JugadorLudo}!elegirQueHacer@{elegirQueHacer}}
+\index{elegirQueHacer@{elegirQueHacer}!JugadorLudo@{JugadorLudo}}
+\doxysubsubsection{\texorpdfstring{elegirQueHacer()}{elegirQueHacer()}}
+{\footnotesize\ttfamily int Jugador\+Ludo\+::elegir\+Que\+Hacer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$}]{tablero }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+El jugador escoge que hacer en relacion a las reglas de juego LUDO. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tablero} & El tablero en el que se esta jugando el juego. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int La eleccion del jugador, representada siempre por un valor entero. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_jugador_a36a170afd57ed41fa107a9efcf6fde46}{Jugador}}.
+
+\mbox{\Hypertarget{class_jugador_ludo_abbbb7e3709644473f5572b735705727e}\label{class_jugador_ludo_abbbb7e3709644473f5572b735705727e}} 
+\index{JugadorLudo@{JugadorLudo}!encontrarBarrera@{encontrarBarrera}}
+\index{encontrarBarrera@{encontrarBarrera}!JugadorLudo@{JugadorLudo}}
+\doxysubsubsection{\texorpdfstring{encontrarBarrera()}{encontrarBarrera()}}
+{\footnotesize\ttfamily int Jugador\+Ludo\+::encontrar\+Barrera (\begin{DoxyParamCaption}\item[{int}]{posicion,  }\item[{\mbox{\hyperlink{class_ficha_ludo}{Ficha\+Ludo}} $\ast$}]{mover,  }\item[{\mbox{\hyperlink{class_tablero_ludo}{Tablero\+Ludo}} $\ast$}]{tablero }\end{DoxyParamCaption})}
+
+
+
+Busca las barreras en el tablero implementadas para el juego LUDO que podrian obstaculizar el movimiento de una ficha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posicion} & La posicion a la que la ficha se va a mover. \\
+\hline
+{\em mover} & La ficha que se va a mover. \\
+\hline
+{\em tablero} & El tablero en el que se esta jugando. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 si no hay una barrera en el camino, 1 si la hay. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_jugador_ludo_a97b10a6ffd9eeed7857e29d3e3a6e3c3}\label{class_jugador_ludo_a97b10a6ffd9eeed7857e29d3e3a6e3c3}} 
+\index{JugadorLudo@{JugadorLudo}!moverFicha@{moverFicha}}
+\index{moverFicha@{moverFicha}!JugadorLudo@{JugadorLudo}}
+\doxysubsubsection{\texorpdfstring{moverFicha()}{moverFicha()}}
+{\footnotesize\ttfamily int Jugador\+Ludo\+::mover\+Ficha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$}]{ficha,  }\item[{int}]{pasos,  }\item[{\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$}]{tablero }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+El jugador ejecuta la opcion de mover la ficha para el juego LUDO.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ficha} & La ficha que se va a mover. \\
+\hline
+{\em pasos} & Los pasos que se va a mover la ficha. \\
+\hline
+{\em tablero} & El tablero en el que se va a mover la ficha. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Indica si el jugador tiene la opcion de volver a jugar su turno. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_jugador_af2cf3faaf38044b3215a7a6587699473}{Jugador}}.
+
+\mbox{\Hypertarget{class_jugador_ludo_ad143a16486e648797c361c38a4bad6c9}\label{class_jugador_ludo_ad143a16486e648797c361c38a4bad6c9}} 
+\index{JugadorLudo@{JugadorLudo}!moverFichaRectaFinal@{moverFichaRectaFinal}}
+\index{moverFichaRectaFinal@{moverFichaRectaFinal}!JugadorLudo@{JugadorLudo}}
+\doxysubsubsection{\texorpdfstring{moverFichaRectaFinal()}{moverFichaRectaFinal()}}
+{\footnotesize\ttfamily void Jugador\+Ludo\+::mover\+Ficha\+Recta\+Final (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ficha_ludo}{Ficha\+Ludo}} $\ast$}]{ficha,  }\item[{int}]{pasos,  }\item[{\mbox{\hyperlink{class_tablero_ludo}{Tablero\+Ludo}} $\ast$}]{tablero,  }\item[{\mbox{\hyperlink{class_validador_ludo}{Validador\+Ludo}} $\ast$}]{validador }\end{DoxyParamCaption})}
+
+
+
+Determina como sera el movimiento de una ficha en la recta final para el juego LUDO. El jugador necesita obtener la cantidad exacta llegar al final, no puede obtener mas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ficha} & La ficha que se encuentra en la recta final. \\
+\hline
+{\em pasos} & Los pasos que se puede mover la ficha. \\
+\hline
+{\em tablero} & El tablero en el que se esta jugando. \\
+\hline
+{\em validador} & Para determinar la validez del movimiento. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/\mbox{\hyperlink{_jugador_ludo_8h}{Jugador\+Ludo.\+h}}\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/Jugador\+Ludo.\+cpp\end{DoxyCompactItemize}

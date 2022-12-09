@@ -1,0 +1,108 @@
+\hypertarget{class_objeto}{}\doxysection{Objeto Class Reference}
+\label{class_objeto}\index{Objeto@{Objeto}}
+Inheritance diagram for Objeto\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_objeto}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_objeto_a040a9e302397e6086a42359e211f6eca}\label{class_objeto_a040a9e302397e6086a42359e211f6eca}} 
+typedef std\+::map$<$ std\+::string, \mbox{\hyperlink{class_valor}{Valor}} $\ast$ $>$ {\bfseries map\+\_\+atributos}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_objeto_a5608071f995c220f0f1a0e5887c2d11d}\label{class_objeto_a5608071f995c220f0f1a0e5887c2d11d}} 
+\mbox{\hyperlink{class_objeto_a5608071f995c220f0f1a0e5887c2d11d}{Objeto}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_objeto}{Objeto}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_objeto_a02425fff0768299968af03ac86deb496}\label{class_objeto_a02425fff0768299968af03ac86deb496}} 
+\mbox{\hyperlink{class_objeto_a02425fff0768299968af03ac86deb496}{$\sim$\+Objeto}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_objeto}{Objeto}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_objeto_acd863032b2761cf855ecdf0a6052fcbb}{obt\+Atributos}} (std\+::vector$<$ std\+::pair$<$ std\+::string, \mbox{\hyperlink{class_valor}{Valor}} $\ast$ $>$ $>$ \&vector\+Valores)
+\begin{DoxyCompactList}\small\item\em Guarda los atributos del objeto en un vector de valores compuesto por un par de string y objeto \mbox{\hyperlink{class_valor}{Valor}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_objeto_a9c0f555aac2bb7fb2a2f557168a3552d}{set\+Atributos}} (map\+\_\+atributos)
+\begin{DoxyCompactList}\small\item\em Establece los atributos de un objeto map\+\_\+atributos dado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_objeto_a480513c7fbed9c4c8ba82eb704d0c3ac}{agregar\+Atributo}} (std\+::string, \mbox{\hyperlink{class_valor}{Valor}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Agrega un atributo al map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_valor}{Valor}} $\ast$ \mbox{\hyperlink{class_objeto_a8ec095f9fa9cbab27d0361e49aecff33}{obtener\+Atributo}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Recupera el valor de un atributo usando su nombre como llave. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_objeto_a480513c7fbed9c4c8ba82eb704d0c3ac}\label{class_objeto_a480513c7fbed9c4c8ba82eb704d0c3ac}} 
+\index{Objeto@{Objeto}!agregarAtributo@{agregarAtributo}}
+\index{agregarAtributo@{agregarAtributo}!Objeto@{Objeto}}
+\doxysubsubsection{\texorpdfstring{agregarAtributo()}{agregarAtributo()}}
+{\footnotesize\ttfamily void Objeto\+::agregar\+Atributo (\begin{DoxyParamCaption}\item[{std\+::string}]{nombre,  }\item[{\mbox{\hyperlink{class_valor}{Valor}} $\ast$}]{valor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Agrega un atributo al map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & El del atributo. Se usa como key. \\
+\hline
+{\em valor} & El contenido del atributo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_objeto_acd863032b2761cf855ecdf0a6052fcbb}\label{class_objeto_acd863032b2761cf855ecdf0a6052fcbb}} 
+\index{Objeto@{Objeto}!obtAtributos@{obtAtributos}}
+\index{obtAtributos@{obtAtributos}!Objeto@{Objeto}}
+\doxysubsubsection{\texorpdfstring{obtAtributos()}{obtAtributos()}}
+{\footnotesize\ttfamily void Objeto\+::obt\+Atributos (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::pair$<$ std\+::string, \mbox{\hyperlink{class_valor}{Valor}} $\ast$ $>$ $>$ \&}]{vector\+Valores }\end{DoxyParamCaption})}
+
+
+
+Guarda los atributos del objeto en un vector de valores compuesto por un par de string y objeto \mbox{\hyperlink{class_valor}{Valor}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector\+Valores} & El vector en el que se van a guardar los atributos del objeto. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_objeto_a8ec095f9fa9cbab27d0361e49aecff33}\label{class_objeto_a8ec095f9fa9cbab27d0361e49aecff33}} 
+\index{Objeto@{Objeto}!obtenerAtributo@{obtenerAtributo}}
+\index{obtenerAtributo@{obtenerAtributo}!Objeto@{Objeto}}
+\doxysubsubsection{\texorpdfstring{obtenerAtributo()}{obtenerAtributo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_valor}{Valor}} $\ast$ Objeto\+::obtener\+Atributo (\begin{DoxyParamCaption}\item[{std\+::string}]{nombre }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Recupera el valor de un atributo usando su nombre como llave. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & El nombre del atributo para buscarlo en el map. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor$\ast$ El contenido del atributo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_objeto_a9c0f555aac2bb7fb2a2f557168a3552d}\label{class_objeto_a9c0f555aac2bb7fb2a2f557168a3552d}} 
+\index{Objeto@{Objeto}!setAtributos@{setAtributos}}
+\index{setAtributos@{setAtributos}!Objeto@{Objeto}}
+\doxysubsubsection{\texorpdfstring{setAtributos()}{setAtributos()}}
+{\footnotesize\ttfamily void Objeto\+::set\+Atributos (\begin{DoxyParamCaption}\item[{map\+\_\+atributos}]{atributos }\end{DoxyParamCaption})}
+
+
+
+Establece los atributos de un objeto map\+\_\+atributos dado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em atributos} & Se van a guardar en los atributos del objeto. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/\mbox{\hyperlink{_objeto_8h}{Objeto.\+h}}\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/Objeto.\+cpp\end{DoxyCompactItemize}

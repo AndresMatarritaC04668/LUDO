@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['search_352',['search',['../class_inventario.html#ae52b7b2ff1910b464e3d9dbfb2d8cdbe',1,'Inventario']]],
+  ['serializarfichasjson_353',['serializarFichasJSON',['../class_controlador___memento.html#af0b0e3b63faba808558059ed718f1b19',1,'Controlador_Memento']]],
+  ['serializarhilera_354',['serializarHilera',['../class_constructor_serializador_abstracto.html#a0c767f29e5c3533b59b9ce99d34bdd62',1,'ConstructorSerializadorAbstracto::serializarHilera()'],['../class_constructor_serializador_j_s_o_n.html#afd8a9293549a42378c1374a9254e2512',1,'ConstructorSerializadorJSON::serializarHilera()']]],
+  ['serializarjson_355',['serializarJSON',['../class_controlador___memento.html#a1eff5c5134fd490f7227cbdb087d05e5',1,'Controlador_Memento']]],
+  ['serializarjugadoresjson_356',['serializarJugadoresJSON',['../class_controlador___memento.html#a041a7e75683d3abe23bdd2520ae83f75',1,'Controlador_Memento']]],
+  ['serializarlistaobjetosjson_357',['serializarListaObjetosJSON',['../class_controlador___memento.html#acc84c80d63372c31163bbdae9831e796',1,'Controlador_Memento']]],
+  ['serializartablero_358',['serializarTablero',['../class_controlador___memento.html#a46bbcf48ec11c2429d31bd8ffe4548cf',1,'Controlador_Memento']]],
+  ['setatributos_359',['setAtributos',['../class_objeto.html#a9c0f555aac2bb7fb2a2f557168a3552d',1,'Objeto']]],
+  ['setcantidadjugadores_360',['setCantidadJugadores',['../class_tablero_abstracto.html#a0a767e1b6b5dc5e8a2392d68ea7d1299',1,'TableroAbstracto']]],
+  ['setcolor_361',['setColor',['../class_ficha_abstracta.html#a521f868c4e14802f9f9bd27a0a2ba353',1,'FichaAbstracta::setColor()'],['../class_jugador.html#a0867a6a4a10f4de855b5a34aeb6c42aa',1,'Jugador::setColor()']]],
+  ['setcontrolador_362',['setControlador',['../class_menu_opciones.html#a40c88f4582c98684ad9ab032b62206f5',1,'MenuOpciones::setControlador()'],['../class_tablero_ludo.html#a12aac5262a7f00c626e1b39c76e25c84',1,'TableroLudo::setControlador()'],['../class_ventana_principal.html#a1d02e09eec374007cb1469f458f50cc7',1,'VentanaPrincipal::setControlador()']]],
+  ['setestadoactivo_363',['setEstadoActivo',['../class_ficha_ludo.html#ae00dcec4a98428c84801b35a19e62bdd',1,'FichaLudo']]],
+  ['setfichas_364',['setFichas',['../class_jugador.html#a72c706b2a576db1082089ff225cbca4c',1,'Jugador']]],
+  ['setfinalizado_365',['setFinalizado',['../class_ficha_abstracta.html#a105240228f9502a6c7f2fde59721ac01',1,'FichaAbstracta::setFinalizado()'],['../class_ficha_ludo.html#a54feee3445f46d38868865ce7579da84',1,'FichaLudo::setFinalizado()']]],
+  ['setjugadores_366',['setJugadores',['../class_tablero_abstracto.html#a397adc173989cc9c11c5dd0105476777',1,'TableroAbstracto']]],
+  ['setmesaludo_367',['setMesaLudo',['../class_validador_ludo.html#a448efced2195f0d02772378bbe0ed9f6',1,'ValidadorLudo']]],
+  ['setnombre_368',['setNombre',['../class_jugador.html#ad95196fbcc19ddbc50285f739db475fa',1,'Jugador::setNombre()'],['../class_regla.html#a2203265b86dfddef5cc86bcb5a303129',1,'Regla::setNombre()']]],
+  ['setnumerojugadoractual_369',['setNumeroJugadorActual',['../class_tablero_abstracto.html#ad9717214c399678e131d25e60a39aa47',1,'TableroAbstracto']]],
+  ['setpasosdados_370',['setPasosDados',['../class_ficha_abstracta.html#ac114e105295553ab8eb908f2cc4f467f',1,'FichaAbstracta']]],
+  ['setposicion_371',['setPosicion',['../class_ficha_abstracta.html#a1548a4cff929eb7abc658e47004bfca0',1,'FichaAbstracta']]],
+  ['sizeinventory_372',['sizeInventory',['../class_inventario.html#ad83e571cf862322cb4b7f62a3f97b8cd',1,'Inventario']]]
+];

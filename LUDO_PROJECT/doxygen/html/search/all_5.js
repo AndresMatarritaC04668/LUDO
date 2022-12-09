@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['getcantidadjugadores_56',['getCantidadJugadores',['../class_tablero_abstracto.html#ac633f2b502332f61a110ceb471d6bc04',1,'TableroAbstracto']]],
+  ['getcolor_57',['getColor',['../class_ficha_abstracta.html#a096f14c45bcba475a7115b3bdecb6133',1,'FichaAbstracta::getColor()'],['../class_jugador.html#a4fb6f6adf3a1f404b6619c2fdb0e8502',1,'Jugador::getColor()']]],
+  ['getesganador_58',['getEsGanador',['../class_jugador.html#a4fb19395d8df5a0a0723a4150df9d1b9',1,'Jugador']]],
+  ['getestado_59',['getEstado',['../class_ficha_abstracta.html#ae6d14f2ed9b8edd376c29d5d2e268786',1,'FichaAbstracta']]],
+  ['getfichas_60',['getFichas',['../class_jugador.html#aaef5a3b792e1fccfc083ae034ecc3068',1,'Jugador']]],
+  ['getfinalizado_61',['getFinalizado',['../class_ficha_abstracta.html#a48db4b7a464fb3366e3e7b60b757792f',1,'FichaAbstracta']]],
+  ['getjugadoractual_62',['getJugadorActual',['../class_tablero_abstracto.html#a4ebecae63b4d3614c5642d57d8a72393',1,'TableroAbstracto']]],
+  ['getjugadores_63',['getJugadores',['../class_tablero_abstracto.html#adf5899ad7b7da6b37fc63b6ae68451b6',1,'TableroAbstracto']]],
+  ['getjugadores_64',['getjugadores',['../class_tablero_abstracto.html#a3ce105dee20c0af4908a0f3890af698b',1,'TableroAbstracto']]],
+  ['getnombre_65',['getNombre',['../classcontrolador___ventanas.html#afbff2e9bfdc0eb715f3802bc0f55657d',1,'controlador_Ventanas::getNombre()'],['../class_jugador.html#ab6c7de8724019fa98431bf0ca656d55f',1,'Jugador::getNombre()']]],
+  ['getnombrecsv_66',['getNombreCSV',['../classcontrolador___ventanas.html#afae398467350af5d9f467a5525e861be',1,'controlador_Ventanas']]],
+  ['getnumeroficha_67',['getNumeroFicha',['../class_ficha_abstracta.html#afb819a234dde51f0122c0f5e9e92456c',1,'FichaAbstracta']]],
+  ['getnumerojugadoractual_68',['getNumeroJugadorActual',['../class_tablero_abstracto.html#ac07e39d83240a0e808766bd579e51399',1,'TableroAbstracto']]],
+  ['getpasosdados_69',['getPasosDados',['../class_ficha_abstracta.html#a09265b809136cee54ad93095750164cc',1,'FichaAbstracta']]],
+  ['getvalidador_70',['getValidador',['../class_tablero_abstracto.html#a12716af3327adc47936750f2eefc4eff',1,'TableroAbstracto']]],
+  ['getx_71',['getX',['../class_ficha_abstracta.html#a55805649cc07a29fd2201c048501442c',1,'FichaAbstracta']]],
+  ['gety_72',['getY',['../class_ficha_abstracta.html#ae98101002e3fc65c4e52143d4732fb07',1,'FichaAbstracta']]],
+  ['getzonasegura_73',['getZonaSegura',['../class_ficha_ludo.html#a1560b9752f39d4fa9655793de13db264',1,'FichaLudo']]],
+  ['graficarcarcel_74',['graficarCarcel',['../classcontrolador___ventanas.html#a33b12c5a97662a9866c737d5e69d12be',1,'controlador_Ventanas::graficarCarcel()'],['../class_controlador_ventana_principal.html#a3661b611af044d6383a1c740156d8833',1,'ControladorVentanaPrincipal::graficarCarcel(vector&lt; Jugador * &gt; jugadores)']]],
+  ['graficarceldas_75',['graficarCeldas',['../class_controlador_ventana_principal.html#a7b7ad406a10a6f0e0cde4c8d95861ee2',1,'ControladorVentanaPrincipal']]],
+  ['graficarinformacion_76',['graficarInformacion',['../class_tablero_ludo.html#a1b41226aee3f62796265b0cb15015cdc',1,'TableroLudo']]],
+  ['graficarlineafinal_77',['graficarLineaFinal',['../class_controlador_ventana_principal.html#a867ee2ba0782d11af07aac60aa2ac317',1,'ControladorVentanaPrincipal']]],
+  ['graficarreglas_78',['graficarReglas',['../class_controlador_menu_opciones.html#ab949868816b809facba96eceadf16096',1,'ControladorMenuOpciones']]],
+  ['graficartablero_79',['graficarTablero',['../classcontrolador___ventanas.html#a5f80765380a4a66b8caf69bea9255616',1,'controlador_Ventanas::graficarTablero()'],['../class_controlador_ventana_principal.html#a1b82c1d44b2e7d03e6840efa7d3afe12',1,'ControladorVentanaPrincipal::graficarTablero()']]],
+  ['graficoelejirficha_80',['graficoElejirFicha',['../class_tablero_ludo.html#ad8892dc6ff69197210e2cf3f7e8f8978',1,'TableroLudo']]]
+];

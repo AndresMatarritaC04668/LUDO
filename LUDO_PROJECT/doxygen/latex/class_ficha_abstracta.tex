@@ -1,0 +1,189 @@
+\hypertarget{class_ficha_abstracta}{}\doxysection{Ficha\+Abstracta Class Reference}
+\label{class_ficha_abstracta}\index{FichaAbstracta@{FichaAbstracta}}
+Inheritance diagram for Ficha\+Abstracta\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_ficha_abstracta}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ficha_abstracta_a9d797189dc7b1cffea01b790c437798d}\label{class_ficha_abstracta_a9d797189dc7b1cffea01b790c437798d}} 
+\mbox{\hyperlink{class_ficha_abstracta_a9d797189dc7b1cffea01b790c437798d}{Ficha\+Abstracta}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Ficha Abstracta object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ficha_abstracta_a5eabc36ceb001b532efb63b04c7f7e0c}\label{class_ficha_abstracta_a5eabc36ceb001b532efb63b04c7f7e0c}} 
+virtual \mbox{\hyperlink{class_ficha_abstracta_a5eabc36ceb001b532efb63b04c7f7e0c}{$\sim$\+Ficha\+Abstracta}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Ficha Abstracta object. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_ficha_abstracta_a096f14c45bcba475a7115b3bdecb6133}{get\+Color}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el color de la ficha de los atributos. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_ficha_abstracta_a55805649cc07a29fd2201c048501442c}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene un atributo \char`\"{}\+X\char`\"{} de la ficha, depende de la implementación. Debe ser una variable numerica. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_ficha_abstracta_ae98101002e3fc65c4e52143d4732fb07}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene un atributo \char`\"{}\+Y\char`\"{} de la ficha, depende de la implementación. Debe ser una variable numerica. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_ficha_abstracta_ae6d14f2ed9b8edd376c29d5d2e268786}{get\+Estado}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el estado de la ficha en el juego. Indicado por un entero. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_ficha_abstracta_a48db4b7a464fb3366e3e7b60b757792f}{get\+Finalizado}} ()
+\begin{DoxyCompactList}\small\item\em Indica si una ficha llegó a la meta final. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_ficha_abstracta_a1548a4cff929eb7abc658e47004bfca0}{set\+Posicion}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Establece la posición de la ficha en el tablero. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_ficha_abstracta_afb819a234dde51f0122c0f5e9e92456c}{get\+Numero\+Ficha}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el número de ficha desde los atributos. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_ficha_abstracta_a521f868c4e14802f9f9bd27a0a2ba353}{set\+Color}} (std\+::string color)
+\begin{DoxyCompactList}\small\item\em Establece el color de una ficha. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_ficha_abstracta_a09265b809136cee54ad93095750164cc}{get\+Pasos\+Dados}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el número de pasos dados en el tablero por la ficha desde los atributos. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_ficha_abstracta_ac114e105295553ab8eb908f2cc4f467f}{set\+Pasos\+Dados}} (int pasos\+Dados)
+\begin{DoxyCompactList}\small\item\em Establece los pasos dados por la ficha en los atributos. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ficha_abstracta_a105240228f9502a6c7f2fde59721ac01}\label{class_ficha_abstracta_a105240228f9502a6c7f2fde59721ac01}} 
+virtual void \mbox{\hyperlink{class_ficha_abstracta_a105240228f9502a6c7f2fde59721ac01}{set\+Finalizado}} ()=0
+\begin{DoxyCompactList}\small\item\em Establece a una ficha en la meta final en sus atributos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ficha_abstracta_a096f14c45bcba475a7115b3bdecb6133}\label{class_ficha_abstracta_a096f14c45bcba475a7115b3bdecb6133}} 
+\index{FichaAbstracta@{FichaAbstracta}!getColor@{getColor}}
+\index{getColor@{getColor}!FichaAbstracta@{FichaAbstracta}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily virtual std\+::string Ficha\+Abstracta\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Devuelve el color de la ficha de los atributos. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string Indica el color de la ficha. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ficha_abstracta_ae6d14f2ed9b8edd376c29d5d2e268786}\label{class_ficha_abstracta_ae6d14f2ed9b8edd376c29d5d2e268786}} 
+\index{FichaAbstracta@{FichaAbstracta}!getEstado@{getEstado}}
+\index{getEstado@{getEstado}!FichaAbstracta@{FichaAbstracta}}
+\doxysubsubsection{\texorpdfstring{getEstado()}{getEstado()}}
+{\footnotesize\ttfamily virtual int Ficha\+Abstracta\+::get\+Estado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Devuelve el estado de la ficha en el juego. Indicado por un entero. 
+
+\begin{DoxyReturn}{Returns}
+int Indica el estado de la ficha en el juego. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ficha_abstracta_a48db4b7a464fb3366e3e7b60b757792f}\label{class_ficha_abstracta_a48db4b7a464fb3366e3e7b60b757792f}} 
+\index{FichaAbstracta@{FichaAbstracta}!getFinalizado@{getFinalizado}}
+\index{getFinalizado@{getFinalizado}!FichaAbstracta@{FichaAbstracta}}
+\doxysubsubsection{\texorpdfstring{getFinalizado()}{getFinalizado()}}
+{\footnotesize\ttfamily virtual bool Ficha\+Abstracta\+::get\+Finalizado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Indica si una ficha llegó a la meta final. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ficha_abstracta_afb819a234dde51f0122c0f5e9e92456c}\label{class_ficha_abstracta_afb819a234dde51f0122c0f5e9e92456c}} 
+\index{FichaAbstracta@{FichaAbstracta}!getNumeroFicha@{getNumeroFicha}}
+\index{getNumeroFicha@{getNumeroFicha}!FichaAbstracta@{FichaAbstracta}}
+\doxysubsubsection{\texorpdfstring{getNumeroFicha()}{getNumeroFicha()}}
+{\footnotesize\ttfamily virtual int Ficha\+Abstracta\+::get\+Numero\+Ficha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Devuelve el número de ficha desde los atributos. 
+
+\begin{DoxyReturn}{Returns}
+int El número de ficha. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ficha_abstracta_a09265b809136cee54ad93095750164cc}\label{class_ficha_abstracta_a09265b809136cee54ad93095750164cc}} 
+\index{FichaAbstracta@{FichaAbstracta}!getPasosDados@{getPasosDados}}
+\index{getPasosDados@{getPasosDados}!FichaAbstracta@{FichaAbstracta}}
+\doxysubsubsection{\texorpdfstring{getPasosDados()}{getPasosDados()}}
+{\footnotesize\ttfamily virtual int Ficha\+Abstracta\+::get\+Pasos\+Dados (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Devuelve el número de pasos dados en el tablero por la ficha desde los atributos. 
+
+\begin{DoxyReturn}{Returns}
+int Los pasos dados. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ficha_abstracta_a55805649cc07a29fd2201c048501442c}\label{class_ficha_abstracta_a55805649cc07a29fd2201c048501442c}} 
+\index{FichaAbstracta@{FichaAbstracta}!getX@{getX}}
+\index{getX@{getX}!FichaAbstracta@{FichaAbstracta}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily virtual int Ficha\+Abstracta\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Obtiene un atributo \char`\"{}\+X\char`\"{} de la ficha, depende de la implementación. Debe ser una variable numerica. 
+
+\begin{DoxyReturn}{Returns}
+int Entero que representa el atributo X. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ficha_abstracta_ae98101002e3fc65c4e52143d4732fb07}\label{class_ficha_abstracta_ae98101002e3fc65c4e52143d4732fb07}} 
+\index{FichaAbstracta@{FichaAbstracta}!getY@{getY}}
+\index{getY@{getY}!FichaAbstracta@{FichaAbstracta}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily virtual int Ficha\+Abstracta\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Obtiene un atributo \char`\"{}\+Y\char`\"{} de la ficha, depende de la implementación. Debe ser una variable numerica. 
+
+\begin{DoxyReturn}{Returns}
+int Entero que representa el atributo Y. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ficha_abstracta_a521f868c4e14802f9f9bd27a0a2ba353}\label{class_ficha_abstracta_a521f868c4e14802f9f9bd27a0a2ba353}} 
+\index{FichaAbstracta@{FichaAbstracta}!setColor@{setColor}}
+\index{setColor@{setColor}!FichaAbstracta@{FichaAbstracta}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily virtual void Ficha\+Abstracta\+::set\+Color (\begin{DoxyParamCaption}\item[{std\+::string}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Establece el color de una ficha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & Es el color que tendrá la ficha. Se guarda en atributos. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ficha_abstracta_ac114e105295553ab8eb908f2cc4f467f}\label{class_ficha_abstracta_ac114e105295553ab8eb908f2cc4f467f}} 
+\index{FichaAbstracta@{FichaAbstracta}!setPasosDados@{setPasosDados}}
+\index{setPasosDados@{setPasosDados}!FichaAbstracta@{FichaAbstracta}}
+\doxysubsubsection{\texorpdfstring{setPasosDados()}{setPasosDados()}}
+{\footnotesize\ttfamily virtual void Ficha\+Abstracta\+::set\+Pasos\+Dados (\begin{DoxyParamCaption}\item[{int}]{pasos\+Dados }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Establece los pasos dados por la ficha en los atributos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pasos\+Dados} & Los pasos que se guardaran en los atributos. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ficha_abstracta_a1548a4cff929eb7abc658e47004bfca0}\label{class_ficha_abstracta_a1548a4cff929eb7abc658e47004bfca0}} 
+\index{FichaAbstracta@{FichaAbstracta}!setPosicion@{setPosicion}}
+\index{setPosicion@{setPosicion}!FichaAbstracta@{FichaAbstracta}}
+\doxysubsubsection{\texorpdfstring{setPosicion()}{setPosicion()}}
+{\footnotesize\ttfamily virtual void Ficha\+Abstracta\+::set\+Posicion (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Establece la posición de la ficha en el tablero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Posición en el eje x. \\
+\hline
+{\em y} & Posición en el eje y. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/\mbox{\hyperlink{_ficha_abstracta_8h}{Ficha\+Abstracta.\+h}}\end{DoxyCompactItemize}

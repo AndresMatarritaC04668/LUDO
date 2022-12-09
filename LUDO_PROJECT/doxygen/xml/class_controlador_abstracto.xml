@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_controlador_abstracto" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>ControladorAbstracto</compoundname>
+    <derivedcompoundref refid="class_controlador_ludo" prot="public" virt="non-virtual">ControladorLudo</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_controlador_abstracto_1a2f34a84b166bc4c988d05e3908572131" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ControladorAbstracto::ControladorAbstracto</definition>
+        <argsstring>()</argsstring>
+        <name>ControladorAbstracto</name>
+        <briefdescription>
+<para>Construct a new Controlador Abstracto object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorAbstracto.h" line="23" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorAbstracto.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_abstracto_1a7bfd850e7a38727f9f4b76edb998c588" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ControladorAbstracto::~ControladorAbstracto</definition>
+        <argsstring>()</argsstring>
+        <name>~ControladorAbstracto</name>
+        <briefdescription>
+<para>Destroy the Controlador Abstracto object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorAbstracto.h" line="29" column="17" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorAbstracto.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_abstracto_1affa0bfba6bd98a10ac6497b9e41f2be3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ControladorAbstracto::crearTablero</definition>
+        <argsstring>()=0</argsstring>
+        <name>crearTablero</name>
+        <reimplementedby refid="class_controlador_ludo_1a0043ee0917399e55b6d8973c409d1126">crearTablero</reimplementedby>
+        <briefdescription>
+<para>Crea el tablero de juego. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorAbstracto.h" line="35" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_abstracto_1a33c2da691e1fd9f1b1b33e367d7007ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ControladorAbstracto::asignarCantidadJugadores</definition>
+        <argsstring>()=0</argsstring>
+        <name>asignarCantidadJugadores</name>
+        <reimplementedby refid="class_controlador_ludo_1a0def944a34b36614a334906b51352c5f">asignarCantidadJugadores</reimplementedby>
+        <briefdescription>
+<para>Solicita que se seleccione la cantidad de jugadores. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorAbstracto.h" line="41" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_abstracto_1a27f576c6451b2996798192e8678ffc22" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ControladorAbstracto::ubicarJugadores</definition>
+        <argsstring>()=0</argsstring>
+        <name>ubicarJugadores</name>
+        <reimplementedby refid="class_controlador_ludo_1ad8f32268b8fc489e273ee194044e496c">ubicarJugadores</reimplementedby>
+        <briefdescription>
+<para>Llama a ubicar los jugadores, es decir, a que se construyan y se guarden en el vector de jugadores. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorAbstracto.h" line="48" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_abstracto_1a52abbec6ab1a2b3801b7954e002e9e16" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ControladorAbstracto::asignarPrimerJugador</definition>
+        <argsstring>()=0</argsstring>
+        <name>asignarPrimerJugador</name>
+        <reimplementedby refid="class_controlador_ludo_1a2f132e8e184ff0342acc71cc075085d7">asignarPrimerJugador</reimplementedby>
+        <briefdescription>
+<para>Llama a asignar el primer jugador. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorAbstracto.h" line="54" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_abstracto_1a7b60ee84bbc3b6dea08b8f686f629712" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ControladorAbstracto::iniciarPartida</definition>
+        <argsstring>()=0</argsstring>
+        <name>iniciarPartida</name>
+        <reimplementedby refid="class_controlador_ludo_1a437197103e15a36cbc6287b7da626103">iniciarPartida</reimplementedby>
+        <briefdescription>
+<para>Inicia la partida usando el tablero. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorAbstracto.h" line="60" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_abstracto_1a4ec5a03130d2c436f53da4758ef28148" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ControladorAbstracto::pausarPartida</definition>
+        <argsstring>()=0</argsstring>
+        <name>pausarPartida</name>
+        <reimplementedby refid="class_controlador_ludo_1af82bc91fc9f52b5a06cc87ed2a1b9839">pausarPartida</reimplementedby>
+        <briefdescription>
+<para>Pausa la partida usando el tablero y el serializador. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorAbstracto.h" line="66" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_abstracto_1a0f4901b5706659b0dcad29b608763720" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ControladorAbstracto::renaudarPartida</definition>
+        <argsstring>()=0</argsstring>
+        <name>renaudarPartida</name>
+        <reimplementedby refid="class_controlador_ludo_1a0eddf90f11e3f6a1b262329191fe83be">renaudarPartida</reimplementedby>
+        <briefdescription>
+<para>Reanuda la partida usando el tablero y el deserializador. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorAbstracto.h" line="72" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ControladorLudo</label>
+        <link refid="class_controlador_ludo"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ControladorAbstracto</label>
+        <link refid="class_controlador_abstracto"/>
+      </node>
+    </inheritancegraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorAbstracto.h" line="16" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorAbstracto.h" bodystart="16" bodyend="74"/>
+    <listofallmembers>
+      <member refid="class_controlador_abstracto_1a33c2da691e1fd9f1b1b33e367d7007ba" prot="public" virt="pure-virtual"><scope>ControladorAbstracto</scope><name>asignarCantidadJugadores</name></member>
+      <member refid="class_controlador_abstracto_1a52abbec6ab1a2b3801b7954e002e9e16" prot="public" virt="pure-virtual"><scope>ControladorAbstracto</scope><name>asignarPrimerJugador</name></member>
+      <member refid="class_controlador_abstracto_1a2f34a84b166bc4c988d05e3908572131" prot="public" virt="non-virtual"><scope>ControladorAbstracto</scope><name>ControladorAbstracto</name></member>
+      <member refid="class_controlador_abstracto_1affa0bfba6bd98a10ac6497b9e41f2be3" prot="public" virt="pure-virtual"><scope>ControladorAbstracto</scope><name>crearTablero</name></member>
+      <member refid="class_controlador_abstracto_1a7b60ee84bbc3b6dea08b8f686f629712" prot="public" virt="pure-virtual"><scope>ControladorAbstracto</scope><name>iniciarPartida</name></member>
+      <member refid="class_controlador_abstracto_1a4ec5a03130d2c436f53da4758ef28148" prot="public" virt="pure-virtual"><scope>ControladorAbstracto</scope><name>pausarPartida</name></member>
+      <member refid="class_controlador_abstracto_1a0f4901b5706659b0dcad29b608763720" prot="public" virt="pure-virtual"><scope>ControladorAbstracto</scope><name>renaudarPartida</name></member>
+      <member refid="class_controlador_abstracto_1a27f576c6451b2996798192e8678ffc22" prot="public" virt="pure-virtual"><scope>ControladorAbstracto</scope><name>ubicarJugadores</name></member>
+      <member refid="class_controlador_abstracto_1a7bfd850e7a38727f9f4b76edb998c588" prot="public" virt="virtual"><scope>ControladorAbstracto</scope><name>~ControladorAbstracto</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

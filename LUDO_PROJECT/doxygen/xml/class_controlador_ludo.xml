@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_controlador_ludo" kind="class" language="C++" prot="public">
+    <compoundname>ControladorLudo</compoundname>
+    <basecompoundref refid="class_controlador_abstracto" prot="public" virt="non-virtual">ControladorAbstracto</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_controlador_ludo_1a518e378f4e1153b61590fdb5ca69f9e6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_tablero_ludo" kindref="compound">TableroLudo</ref> *</type>
+        <definition>TableroLudo* ControladorLudo::tablero</definition>
+        <argsstring></argsstring>
+        <name>tablero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.h" line="76" column="22" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controlador_ludo_1a7daf689887ea0b93e87e70bf75998c79" prot="private" static="no" mutable="no">
+        <type><ref refid="classcontrolador___ventanas" kindref="compound">controlador_Ventanas</ref> *</type>
+        <definition>controlador_Ventanas* ControladorLudo::controladorGrafico</definition>
+        <argsstring></argsstring>
+        <name>controladorGrafico</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.h" line="77" column="31" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_controlador_ludo_1ab1193a2e006fb72092a256cc49ae8017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ControladorLudo::ControladorLudo</definition>
+        <argsstring>()</argsstring>
+        <name>ControladorLudo</name>
+        <briefdescription>
+<para>Construct a new Controlador Ludo object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.h" line="28" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.cpp" bodystart="7" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_ludo_1a0043ee0917399e55b6d8973c409d1126" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ControladorLudo::crearTablero</definition>
+        <argsstring>() override</argsstring>
+        <name>crearTablero</name>
+        <reimplements refid="class_controlador_abstracto_1affa0bfba6bd98a10ac6497b9e41f2be3">crearTablero</reimplements>
+        <briefdescription>
+<para>Llama a crear el tablero para el juego LUDO. Le asigna el controlador grafico. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.h" line="35" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_ludo_1a0def944a34b36614a334906b51352c5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ControladorLudo::asignarCantidadJugadores</definition>
+        <argsstring>() override</argsstring>
+        <name>asignarCantidadJugadores</name>
+        <reimplements refid="class_controlador_abstracto_1a33c2da691e1fd9f1b1b33e367d7007ba">asignarCantidadJugadores</reimplements>
+        <briefdescription>
+<para>Llama al tablero a asignar la cantidad de jugadores segun la cantidad introducida por el jugador por medio de la interfaz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.h" line="42" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.cpp" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_ludo_1ad8f32268b8fc489e273ee194044e496c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ControladorLudo::ubicarJugadores</definition>
+        <argsstring>() override</argsstring>
+        <name>ubicarJugadores</name>
+        <reimplements refid="class_controlador_abstracto_1a27f576c6451b2996798192e8678ffc22">ubicarJugadores</reimplements>
+        <briefdescription>
+<para>Llama a que el tablero ubique a los jugadores. Es decir a que se construyan y se guarden en el vector de jugadores. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.h" line="49" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_ludo_1a2f132e8e184ff0342acc71cc075085d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ControladorLudo::asignarPrimerJugador</definition>
+        <argsstring>() override</argsstring>
+        <name>asignarPrimerJugador</name>
+        <reimplements refid="class_controlador_abstracto_1a52abbec6ab1a2b3801b7954e002e9e16">asignarPrimerJugador</reimplements>
+        <briefdescription>
+<para>Llama a asignar el primer jugador con el tablero. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.h" line="55" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_ludo_1a437197103e15a36cbc6287b7da626103" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ControladorLudo::iniciarPartida</definition>
+        <argsstring>() override</argsstring>
+        <name>iniciarPartida</name>
+        <reimplements refid="class_controlador_abstracto_1a7b60ee84bbc3b6dea08b8f686f629712">iniciarPartida</reimplements>
+        <briefdescription>
+<para>Inicia la partida usando el tablero. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.h" line="61" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.cpp" bodystart="32" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_ludo_1af82bc91fc9f52b5a06cc87ed2a1b9839" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ControladorLudo::pausarPartida</definition>
+        <argsstring>() override</argsstring>
+        <name>pausarPartida</name>
+        <reimplements refid="class_controlador_abstracto_1a4ec5a03130d2c436f53da4758ef28148">pausarPartida</reimplements>
+        <briefdescription>
+<para>Pausa la partida usando el tablero y el serializador. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.h" line="67" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.cpp" bodystart="58" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_ludo_1a0eddf90f11e3f6a1b262329191fe83be" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ControladorLudo::renaudarPartida</definition>
+        <argsstring>() override</argsstring>
+        <name>renaudarPartida</name>
+        <reimplements refid="class_controlador_abstracto_1a0f4901b5706659b0dcad29b608763720">renaudarPartida</reimplements>
+        <briefdescription>
+<para>Reanuda la partida usando el tablero y el deserializador. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.h" line="73" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.cpp" bodystart="42" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ControladorLudo</label>
+        <link refid="class_controlador_ludo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ControladorAbstracto</label>
+        <link refid="class_controlador_abstracto"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ControladorLudo</label>
+        <link refid="class_controlador_ludo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ControladorAbstracto</label>
+        <link refid="class_controlador_abstracto"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.h" line="21" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ControladorLudo.h" bodystart="21" bodyend="80"/>
+    <listofallmembers>
+      <member refid="class_controlador_ludo_1a0def944a34b36614a334906b51352c5f" prot="public" virt="virtual"><scope>ControladorLudo</scope><name>asignarCantidadJugadores</name></member>
+      <member refid="class_controlador_ludo_1a2f132e8e184ff0342acc71cc075085d7" prot="public" virt="virtual"><scope>ControladorLudo</scope><name>asignarPrimerJugador</name></member>
+      <member refid="class_controlador_abstracto_1a2f34a84b166bc4c988d05e3908572131" prot="public" virt="non-virtual"><scope>ControladorLudo</scope><name>ControladorAbstracto</name></member>
+      <member refid="class_controlador_ludo_1a7daf689887ea0b93e87e70bf75998c79" prot="private" virt="non-virtual"><scope>ControladorLudo</scope><name>controladorGrafico</name></member>
+      <member refid="class_controlador_ludo_1ab1193a2e006fb72092a256cc49ae8017" prot="public" virt="non-virtual"><scope>ControladorLudo</scope><name>ControladorLudo</name></member>
+      <member refid="class_controlador_ludo_1a0043ee0917399e55b6d8973c409d1126" prot="public" virt="virtual"><scope>ControladorLudo</scope><name>crearTablero</name></member>
+      <member refid="class_controlador_ludo_1a437197103e15a36cbc6287b7da626103" prot="public" virt="virtual"><scope>ControladorLudo</scope><name>iniciarPartida</name></member>
+      <member refid="class_controlador_ludo_1af82bc91fc9f52b5a06cc87ed2a1b9839" prot="public" virt="virtual"><scope>ControladorLudo</scope><name>pausarPartida</name></member>
+      <member refid="class_controlador_ludo_1a0eddf90f11e3f6a1b262329191fe83be" prot="public" virt="virtual"><scope>ControladorLudo</scope><name>renaudarPartida</name></member>
+      <member refid="class_controlador_ludo_1a518e378f4e1153b61590fdb5ca69f9e6" prot="private" virt="non-virtual"><scope>ControladorLudo</scope><name>tablero</name></member>
+      <member refid="class_controlador_ludo_1ad8f32268b8fc489e273ee194044e496c" prot="public" virt="virtual"><scope>ControladorLudo</scope><name>ubicarJugadores</name></member>
+      <member refid="class_controlador_abstracto_1a7bfd850e7a38727f9f4b76edb998c588" prot="public" virt="virtual"><scope>ControladorLudo</scope><name>~ControladorAbstracto</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

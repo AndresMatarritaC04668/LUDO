@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_ficha_ludo_8cpp" kind="file" language="C++">
+    <compoundname>FichaLudo.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="_ficha_ludo_8h" local="yes">FichaLudo.h</includes>
+    <includes refid="_hilera_8h" local="yes">Hilera.h</includes>
+    <includes local="no">iosfwd</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="14">
+        <label>ObtAsg.h</label>
+        <link refid="_obt_asg_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Objeto.h</label>
+        <link refid="_objeto_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FichaLudo.h</label>
+        <link refid="_ficha_ludo_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>map</label>
+      </node>
+      <node id="12">
+        <label>Hilera.h</label>
+        <link refid="_hilera_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>FichaAbstracta.h</label>
+        <link refid="_ficha_abstracta_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>sstream</label>
+      </node>
+      <node id="15">
+        <label>iosfwd</label>
+      </node>
+      <node id="10">
+        <label>tipo.h</label>
+        <link refid="tipo_8h_source"/>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="1">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.cpp</label>
+        <link refid="_ficha_ludo_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Valor.h</label>
+        <link refid="_valor_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_ficha_ludo_8h" kindref="compound">FichaLudo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_hilera_8h" kindref="compound">Hilera.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iosfwd&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="class_ficha_ludo_1a3ab1932ae4367752ffba2a5c6a19daf8" kindref="member">FichaLudo::FichaLudo</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;color&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;x&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;activo&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;finalizado&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;pasosDados&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;y&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="class_ficha_ludo_1a21303373e82f6b3b80ae9f99ff491830" kindref="member">FichaLudo::~FichaLudo</ref>(){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="class_ficha_ludo_1a3ab1932ae4367752ffba2a5c6a19daf8" kindref="member">FichaLudo::FichaLudo</ref>(std::string<sp/>color,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>zonaSegura<sp/>,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numeroFicha)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;color&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(color));</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;y&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(to_string(zonaSegura)));</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;activo&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;finalizado&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;pasosDados&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;zonaSegura&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(to_string(zonaSegura)));</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;caminoFinal&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;x&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;numeroFicha&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(to_string(numeroFicha)));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ficha_ludo_1ad420ca57fed9d697d5d189a8403bf6e2" kindref="member">FichaLudo::activarFicha</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;activo&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(</highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ficha_ludo_1a84ced00eae0fe6a065b9399fe815702c" kindref="member">FichaLudo::desactivarFicha</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;activo&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;y&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>to_string(getZonaSegura())));</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ficha_ludo_1a1560b9752f39d4fa9655793de13db264" kindref="member">FichaLudo::getZonaSegura</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>zonaSegura<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_valor" kindref="compound">Valor</ref>*<sp/>valor<sp/>=<sp/>obtenerAtributo(</highlight><highlight class="stringliteral">&quot;zonaSegura&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(valor<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>zonaSegura<sp/>=<sp/>((<ref refid="class_hilera" kindref="compound">Hilera</ref>*)<sp/>valor)-&gt;obt();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stoi(zonaSegura);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ficha_ludo_1a54feee3445f46d38868865ce7579da84" kindref="member">FichaLudo::setFinalizado</ref>(){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;finalizado&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(</highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ficha_ludo_1ae00dcec4a98428c84801b35a19e62bdd" kindref="member">FichaLudo::setEstadoActivo</ref>(){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>agregarAtributo(</highlight><highlight class="stringliteral">&quot;activo&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_hilera" kindref="compound">Hilera</ref>(</highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.cpp"/>
+  </compounddef>
+</doxygen>

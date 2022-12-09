@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_valor" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Valor</compoundname>
+    <derivedcompoundref refid="class_obt_asg" prot="public" virt="non-virtual">ObtAsg&lt; std::string &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_obt_asg" prot="public" virt="non-virtual">ObtAsg&lt; T &gt;</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_valor_1adf996fdeea290862397f7044275a1272" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Valor::Valor</definition>
+        <argsstring>()</argsstring>
+        <name>Valor</name>
+        <briefdescription>
+<para>Construct a new <ref refid="class_valor" kindref="compound">Valor</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Valor.h" line="26" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Valor.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_valor_1a6b4af8330d1b21fc5c00bda709a28993" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Valor::~Valor</definition>
+        <argsstring>()</argsstring>
+        <name>~Valor</name>
+        <briefdescription>
+<para>Destroy the <ref refid="class_valor" kindref="compound">Valor</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Valor.h" line="32" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Valor.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_valor_1a46bb532f2cdc58a88248a8ac9164de01" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>tipo::tipo_atributo</type>
+        <definition>virtual tipo::tipo_atributo Valor::obtTipo</definition>
+        <argsstring>() const =0</argsstring>
+        <name>obtTipo</name>
+        <reimplementedby refid="class_hilera_1aa84d381234a755f6a3446cf1065bfb69">obtTipo</reimplementedby>
+        <briefdescription>
+<para>Devuelve el tipo de objeto heredero. Es una enumeracion. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>tipo::tipo_atributo La enumeracion del tipo. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Valor.h" line="39" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_valor_1a6866e49fde59536488c94397021a229c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string Valor::toString</definition>
+        <argsstring>() const =0</argsstring>
+        <name>toString</name>
+        <reimplementedby refid="class_hilera_1aa253308b10738923d9e9ea1586de4cb1">toString</reimplementedby>
+        <briefdescription>
+<para>Devuelve como string el contenido del objeto heredero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string El contenido del objeto heredero. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Valor.h" line="46" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>ObtAsg&lt; T &gt;</label>
+        <link refid="class_obt_asg"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ObtAsg&lt; std::string &gt;</label>
+        <link refid="class_obt_asg"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Valor</label>
+        <link refid="class_valor"/>
+      </node>
+      <node id="3">
+        <label>Hilera</label>
+        <link refid="class_hilera"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Valor.h" line="19" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Valor.h" bodystart="20" bodyend="47"/>
+    <listofallmembers>
+      <member refid="class_valor_1a46bb532f2cdc58a88248a8ac9164de01" prot="public" virt="pure-virtual"><scope>Valor</scope><name>obtTipo</name></member>
+      <member refid="class_valor_1a6866e49fde59536488c94397021a229c" prot="public" virt="pure-virtual"><scope>Valor</scope><name>toString</name></member>
+      <member refid="class_valor_1adf996fdeea290862397f7044275a1272" prot="public" virt="non-virtual"><scope>Valor</scope><name>Valor</name></member>
+      <member refid="class_valor_1a6b4af8330d1b21fc5c00bda709a28993" prot="public" virt="virtual"><scope>Valor</scope><name>~Valor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

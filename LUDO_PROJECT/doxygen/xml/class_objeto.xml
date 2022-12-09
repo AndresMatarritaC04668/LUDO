@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_objeto" kind="class" language="C++" prot="public">
+    <compoundname>Objeto</compoundname>
+    <derivedcompoundref refid="class_ficha_abstracta" prot="public" virt="non-virtual">FichaAbstracta</derivedcompoundref>
+    <derivedcompoundref refid="class_jugador" prot="public" virt="non-virtual">Jugador</derivedcompoundref>
+    <derivedcompoundref refid="class_tablero_abstracto" prot="public" virt="non-virtual">TableroAbstracto</derivedcompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_objeto_1a040a9e302397e6086a42359e211f6eca" prot="public" static="no">
+        <type>std::map&lt; std::string, <ref refid="class_valor" kindref="compound">Valor</ref> * &gt;</type>
+        <definition>typedef std::map&lt; std::string, Valor* &gt; Objeto::map_atributos</definition>
+        <argsstring></argsstring>
+        <name>map_atributos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.h" line="45" column="22" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_objeto_1ab878bedc5f74ad9c7a59bc3e4c675bee" prot="private" static="no" mutable="no">
+        <type>map_atributos</type>
+        <definition>map_atributos Objeto::atributos</definition>
+        <argsstring></argsstring>
+        <name>atributos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.h" line="70" column="19" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_objeto_1a5608071f995c220f0f1a0e5887c2d11d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Objeto::Objeto</definition>
+        <argsstring>()</argsstring>
+        <name>Objeto</name>
+        <briefdescription>
+<para>Construct a new <ref refid="class_objeto" kindref="compound">Objeto</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.h" line="27" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.cpp" bodystart="4" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="class_objeto_1a02425fff0768299968af03ac86deb496" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Objeto::~Objeto</definition>
+        <argsstring>()</argsstring>
+        <name>~Objeto</name>
+        <briefdescription>
+<para>Destroy the <ref refid="class_objeto" kindref="compound">Objeto</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.h" line="33" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_objeto_1acd863032b2761cf855ecdf0a6052fcbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Objeto::obtAtributos</definition>
+        <argsstring>(std::vector&lt; std::pair&lt; std::string, Valor * &gt; &gt; &amp;vectorValores)</argsstring>
+        <name>obtAtributos</name>
+        <param>
+          <type>std::vector&lt; std::pair&lt; std::string, <ref refid="class_valor" kindref="compound">Valor</ref> * &gt; &gt; &amp;</type>
+          <declname>vectorValores</declname>
+        </param>
+        <briefdescription>
+<para>Guarda los atributos del objeto en un vector de valores compuesto por un par de string y objeto <ref refid="class_valor" kindref="compound">Valor</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vectorValores</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El vector en el que se van a guardar los atributos del objeto. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.h" line="42" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.cpp" bodystart="10" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_objeto_1a9c0f555aac2bb7fb2a2f557168a3552d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Objeto::setAtributos</definition>
+        <argsstring>(map_atributos)</argsstring>
+        <name>setAtributos</name>
+        <param>
+          <type>map_atributos</type>
+          <defname>atributos</defname>
+        </param>
+        <briefdescription>
+<para>Establece los atributos de un objeto map_atributos dado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>atributos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Se van a guardar en los atributos del objeto. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.h" line="52" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_objeto_1a480513c7fbed9c4c8ba82eb704d0c3ac" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Objeto::agregarAtributo</definition>
+        <argsstring>(std::string, Valor *)</argsstring>
+        <name>agregarAtributo</name>
+        <param>
+          <type>std::string</type>
+          <defname>nombre</defname>
+        </param>
+        <param>
+          <type><ref refid="class_valor" kindref="compound">Valor</ref> *</type>
+          <defname>valor</defname>
+        </param>
+        <briefdescription>
+<para>Agrega un atributo al map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El del atributo. Se usa como key. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El contenido del atributo. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.h" line="60" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.cpp" bodystart="22" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_objeto_1a8ec095f9fa9cbab27d0361e49aecff33" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_valor" kindref="compound">Valor</ref> *</type>
+        <definition>Valor * Objeto::obtenerAtributo</definition>
+        <argsstring>(std::string)</argsstring>
+        <name>obtenerAtributo</name>
+        <param>
+          <type>std::string</type>
+          <defname>nombre</defname>
+        </param>
+        <briefdescription>
+<para>Recupera el valor de un atributo usando su nombre como llave. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El nombre del atributo para buscarlo en el map. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Valor* El contenido del atributo. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.h" line="68" column="11" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.cpp" bodystart="33" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>FichaLudo</label>
+        <link refid="class_ficha_ludo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>TableroLudo</label>
+        <link refid="class_tablero_ludo"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TableroAbstracto</label>
+        <link refid="class_tablero_abstracto"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FichaAbstracta</label>
+        <link refid="class_ficha_abstracta"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Jugador</label>
+        <link refid="class_jugador"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Objeto</label>
+        <link refid="class_objeto"/>
+      </node>
+      <node id="5">
+        <label>JugadorLudo</label>
+        <link refid="class_jugador_ludo"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.h" line="21" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/Objeto.h" bodystart="21" bodyend="71"/>
+    <listofallmembers>
+      <member refid="class_objeto_1a480513c7fbed9c4c8ba82eb704d0c3ac" prot="protected" virt="non-virtual"><scope>Objeto</scope><name>agregarAtributo</name></member>
+      <member refid="class_objeto_1ab878bedc5f74ad9c7a59bc3e4c675bee" prot="private" virt="non-virtual"><scope>Objeto</scope><name>atributos</name></member>
+      <member refid="class_objeto_1a040a9e302397e6086a42359e211f6eca" prot="public" virt="non-virtual"><scope>Objeto</scope><name>map_atributos</name></member>
+      <member refid="class_objeto_1a5608071f995c220f0f1a0e5887c2d11d" prot="public" virt="non-virtual"><scope>Objeto</scope><name>Objeto</name></member>
+      <member refid="class_objeto_1acd863032b2761cf855ecdf0a6052fcbb" prot="public" virt="non-virtual"><scope>Objeto</scope><name>obtAtributos</name></member>
+      <member refid="class_objeto_1a8ec095f9fa9cbab27d0361e49aecff33" prot="protected" virt="non-virtual"><scope>Objeto</scope><name>obtenerAtributo</name></member>
+      <member refid="class_objeto_1a9c0f555aac2bb7fb2a2f557168a3552d" prot="public" virt="non-virtual"><scope>Objeto</scope><name>setAtributos</name></member>
+      <member refid="class_objeto_1a02425fff0768299968af03ac86deb496" prot="public" virt="non-virtual"><scope>Objeto</scope><name>~Objeto</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

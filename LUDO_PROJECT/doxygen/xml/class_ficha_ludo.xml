@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_ficha_ludo" kind="class" language="C++" prot="public">
+    <compoundname>FichaLudo</compoundname>
+    <basecompoundref refid="class_ficha_abstracta" prot="public" virt="non-virtual">FichaAbstracta</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ficha_ludo_1a3ab1932ae4367752ffba2a5c6a19daf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FichaLudo::FichaLudo</definition>
+        <argsstring>()</argsstring>
+        <name>FichaLudo</name>
+        <briefdescription>
+<para>Construct a new Ficha Ludo object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.h" line="36" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.cpp" bodystart="7" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_ludo_1a895258f7fc4bf7199a92ee3b93477c91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FichaLudo::FichaLudo</definition>
+        <argsstring>(std::string, int, int)</argsstring>
+        <name>FichaLudo</name>
+        <param>
+          <type>std::string</type>
+          <defname>color</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>zonaSegura</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>numeroFicha</defname>
+        </param>
+        <briefdescription>
+<para>Construct a new Ficha Ludo object by arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Agrega el color a los atributos. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zonaSegura</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Agrega la zona segura a los atributos. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numeroFicha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Agrega el número de la ficha a los atributos. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.h" line="45" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.cpp" bodystart="20" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_ludo_1a21303373e82f6b3b80ae9f99ff491830" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FichaLudo::~FichaLudo</definition>
+        <argsstring>() override</argsstring>
+        <name>~FichaLudo</name>
+        <briefdescription>
+<para>Destroy the Ficha Ludo object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.h" line="51" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_ludo_1ae00dcec4a98428c84801b35a19e62bdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FichaLudo::setEstadoActivo</definition>
+        <argsstring>()</argsstring>
+        <name>setEstadoActivo</name>
+        <briefdescription>
+<para>Activa una ficha para sacarla de la carcel en LUDO. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.h" line="58" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.cpp" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_ludo_1a1560b9752f39d4fa9655793de13db264" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int FichaLudo::getZonaSegura</definition>
+        <argsstring>()</argsstring>
+        <name>getZonaSegura</name>
+        <briefdescription>
+<para>Devuelve la zona segura en los atributos de la ficha. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int La zona seguera de la ficha, dada como un número. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.h" line="66" column="13" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.cpp" bodystart="44" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_ludo_1ad420ca57fed9d697d5d189a8403bf6e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FichaLudo::activarFicha</definition>
+        <argsstring>()</argsstring>
+        <name>activarFicha</name>
+        <briefdescription>
+<para>Pone a la ficha en estado activo en sus atributos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.h" line="72" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.cpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_ludo_1a84ced00eae0fe6a065b9399fe815702c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FichaLudo::desactivarFicha</definition>
+        <argsstring>()</argsstring>
+        <name>desactivarFicha</name>
+        <briefdescription>
+<para>Pone a la ficha en estado inactivo en sus atributos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.h" line="78" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.cpp" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_ludo_1a54feee3445f46d38868865ce7579da84" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FichaLudo::setFinalizado</definition>
+        <argsstring>() override</argsstring>
+        <name>setFinalizado</name>
+        <reimplements refid="class_ficha_abstracta_1a105240228f9502a6c7f2fde59721ac01">setFinalizado</reimplements>
+        <briefdescription>
+<para>Establece a una ficha en la meta final en sus atributos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.h" line="85" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.cpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FichaLudo</label>
+        <link refid="class_ficha_ludo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FichaAbstracta</label>
+        <link refid="class_ficha_abstracta"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Objeto</label>
+        <link refid="class_objeto"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>FichaLudo</label>
+        <link refid="class_ficha_ludo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FichaAbstracta</label>
+        <link refid="class_ficha_abstracta"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Objeto</label>
+        <link refid="class_objeto"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.h" line="20" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaLudo.h" bodystart="20" bodyend="87"/>
+    <listofallmembers>
+      <member refid="class_ficha_ludo_1ad420ca57fed9d697d5d189a8403bf6e2" prot="public" virt="non-virtual"><scope>FichaLudo</scope><name>activarFicha</name></member>
+      <member refid="class_objeto_1a480513c7fbed9c4c8ba82eb704d0c3ac" prot="protected" virt="non-virtual"><scope>FichaLudo</scope><name>agregarAtributo</name></member>
+      <member refid="class_ficha_ludo_1a84ced00eae0fe6a065b9399fe815702c" prot="public" virt="non-virtual"><scope>FichaLudo</scope><name>desactivarFicha</name></member>
+      <member refid="class_ficha_abstracta_1a9d797189dc7b1cffea01b790c437798d" prot="public" virt="non-virtual"><scope>FichaLudo</scope><name>FichaAbstracta</name></member>
+      <member refid="class_ficha_ludo_1a3ab1932ae4367752ffba2a5c6a19daf8" prot="public" virt="non-virtual"><scope>FichaLudo</scope><name>FichaLudo</name></member>
+      <member refid="class_ficha_ludo_1a895258f7fc4bf7199a92ee3b93477c91" prot="public" virt="non-virtual"><scope>FichaLudo</scope><name>FichaLudo</name></member>
+      <member refid="class_ficha_abstracta_1a096f14c45bcba475a7115b3bdecb6133" prot="public" virt="virtual"><scope>FichaLudo</scope><name>getColor</name></member>
+      <member refid="class_ficha_abstracta_1ae6d14f2ed9b8edd376c29d5d2e268786" prot="public" virt="virtual"><scope>FichaLudo</scope><name>getEstado</name></member>
+      <member refid="class_ficha_abstracta_1a48db4b7a464fb3366e3e7b60b757792f" prot="public" virt="virtual"><scope>FichaLudo</scope><name>getFinalizado</name></member>
+      <member refid="class_ficha_abstracta_1afb819a234dde51f0122c0f5e9e92456c" prot="public" virt="virtual"><scope>FichaLudo</scope><name>getNumeroFicha</name></member>
+      <member refid="class_ficha_abstracta_1a09265b809136cee54ad93095750164cc" prot="public" virt="virtual"><scope>FichaLudo</scope><name>getPasosDados</name></member>
+      <member refid="class_ficha_abstracta_1a55805649cc07a29fd2201c048501442c" prot="public" virt="virtual"><scope>FichaLudo</scope><name>getX</name></member>
+      <member refid="class_ficha_abstracta_1ae98101002e3fc65c4e52143d4732fb07" prot="public" virt="virtual"><scope>FichaLudo</scope><name>getY</name></member>
+      <member refid="class_ficha_ludo_1a1560b9752f39d4fa9655793de13db264" prot="public" virt="non-virtual"><scope>FichaLudo</scope><name>getZonaSegura</name></member>
+      <member refid="class_objeto_1a040a9e302397e6086a42359e211f6eca" prot="public" virt="non-virtual"><scope>FichaLudo</scope><name>map_atributos</name></member>
+      <member refid="class_objeto_1a5608071f995c220f0f1a0e5887c2d11d" prot="public" virt="non-virtual"><scope>FichaLudo</scope><name>Objeto</name></member>
+      <member refid="class_objeto_1acd863032b2761cf855ecdf0a6052fcbb" prot="public" virt="non-virtual"><scope>FichaLudo</scope><name>obtAtributos</name></member>
+      <member refid="class_objeto_1a8ec095f9fa9cbab27d0361e49aecff33" prot="protected" virt="non-virtual"><scope>FichaLudo</scope><name>obtenerAtributo</name></member>
+      <member refid="class_objeto_1a9c0f555aac2bb7fb2a2f557168a3552d" prot="public" virt="non-virtual"><scope>FichaLudo</scope><name>setAtributos</name></member>
+      <member refid="class_ficha_abstracta_1a521f868c4e14802f9f9bd27a0a2ba353" prot="public" virt="virtual"><scope>FichaLudo</scope><name>setColor</name></member>
+      <member refid="class_ficha_ludo_1ae00dcec4a98428c84801b35a19e62bdd" prot="public" virt="non-virtual"><scope>FichaLudo</scope><name>setEstadoActivo</name></member>
+      <member refid="class_ficha_ludo_1a54feee3445f46d38868865ce7579da84" prot="public" virt="virtual"><scope>FichaLudo</scope><name>setFinalizado</name></member>
+      <member refid="class_ficha_abstracta_1ac114e105295553ab8eb908f2cc4f467f" prot="public" virt="virtual"><scope>FichaLudo</scope><name>setPasosDados</name></member>
+      <member refid="class_ficha_abstracta_1a1548a4cff929eb7abc658e47004bfca0" prot="public" virt="virtual"><scope>FichaLudo</scope><name>setPosicion</name></member>
+      <member refid="class_ficha_abstracta_1a5eabc36ceb001b532efb63b04c7f7e0c" prot="public" virt="virtual"><scope>FichaLudo</scope><name>~FichaAbstracta</name></member>
+      <member refid="class_ficha_ludo_1a21303373e82f6b3b80ae9f99ff491830" prot="public" virt="non-virtual"><scope>FichaLudo</scope><name>~FichaLudo</name></member>
+      <member refid="class_objeto_1a02425fff0768299968af03ac86deb496" prot="public" virt="non-virtual"><scope>FichaLudo</scope><name>~Objeto</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

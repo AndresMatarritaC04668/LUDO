@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_controlador_menu_opciones" kind="class" language="C++" prot="public">
+    <compoundname>ControladorMenuOpciones</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_controlador_menu_opciones_1ab7794f525b5d201c583097d68167111a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_menu_opciones" kindref="compound">MenuOpciones</ref> *</type>
+        <definition>MenuOpciones* ControladorMenuOpciones::menuOpciones</definition>
+        <argsstring></argsstring>
+        <name>menuOpciones</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.h" line="59" column="19" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controlador_menu_opciones_1a0e614e3c7231901d94e7e5be71c09b8b" prot="private" static="no" mutable="no">
+        <type><ref refid="classcontrolador___ventanas" kindref="compound">controlador_Ventanas</ref> *</type>
+        <definition>controlador_Ventanas* ControladorMenuOpciones::controlador</definition>
+        <argsstring></argsstring>
+        <name>controlador</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.h" line="60" column="27" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_controlador_menu_opciones_1af3b0bfb7f89efa733ca71f1d21e5ea15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ControladorMenuOpciones::ControladorMenuOpciones</definition>
+        <argsstring>(controlador_Ventanas *controlador)</argsstring>
+        <name>ControladorMenuOpciones</name>
+        <param>
+          <type><ref refid="classcontrolador___ventanas" kindref="compound">controlador_Ventanas</ref> *</type>
+          <declname>controlador</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Controlador Menu Opciones object by arguments. Iniciar y settear atributos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controlador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El controlador de ventadas. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.h" line="28" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.cpp" bodystart="5" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_menu_opciones_1a991cf74a309c2e6395d7ce3ea502f427" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControladorMenuOpciones::iniciar</definition>
+        <argsstring>()</argsstring>
+        <name>iniciar</name>
+        <briefdescription>
+<para>Llama a iniciar el menu de opciones usando el atributo con ese nombre. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.h" line="35" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_menu_opciones_1a65ae24b04b22b212c51d0e94520272f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControladorMenuOpciones::cerrarVentana</definition>
+        <argsstring>(int opcion)</argsstring>
+        <name>cerrarVentana</name>
+        <param>
+          <type>int</type>
+          <declname>opcion</declname>
+        </param>
+        <briefdescription>
+<para>Cierra la ventana segun la opcion seleccionada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opcion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_valor" kindref="compound">Valor</ref> numerico que representa la opcion seleccionada. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.h" line="42" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.cpp" bodystart="15" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_menu_opciones_1a14a74e84746a98b91301542756847ed6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControladorMenuOpciones::mostrarReglas</definition>
+        <argsstring>()</argsstring>
+        <name>mostrarReglas</name>
+        <briefdescription>
+<para>Muestra las reglas usando el controlador de ventanas. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.h" line="48" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_menu_opciones_1ab949868816b809facba96eceadf16096" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControladorMenuOpciones::graficarReglas</definition>
+        <argsstring>(string)</argsstring>
+        <name>graficarReglas</name>
+        <param>
+          <type>string</type>
+          <defname>reglas</defname>
+        </param>
+        <briefdescription>
+<para>Grafica las reglas en la interfaz usando una string que las contiene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reglas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contiene las reglas que se van a graficar. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.h" line="56" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.cpp" bodystart="32" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.h" line="19" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladormenuopciones.h" bodystart="20" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_controlador_menu_opciones_1a65ae24b04b22b212c51d0e94520272f9" prot="public" virt="non-virtual"><scope>ControladorMenuOpciones</scope><name>cerrarVentana</name></member>
+      <member refid="class_controlador_menu_opciones_1a0e614e3c7231901d94e7e5be71c09b8b" prot="private" virt="non-virtual"><scope>ControladorMenuOpciones</scope><name>controlador</name></member>
+      <member refid="class_controlador_menu_opciones_1af3b0bfb7f89efa733ca71f1d21e5ea15" prot="public" virt="non-virtual"><scope>ControladorMenuOpciones</scope><name>ControladorMenuOpciones</name></member>
+      <member refid="class_controlador_menu_opciones_1ab949868816b809facba96eceadf16096" prot="public" virt="non-virtual"><scope>ControladorMenuOpciones</scope><name>graficarReglas</name></member>
+      <member refid="class_controlador_menu_opciones_1a991cf74a309c2e6395d7ce3ea502f427" prot="public" virt="non-virtual"><scope>ControladorMenuOpciones</scope><name>iniciar</name></member>
+      <member refid="class_controlador_menu_opciones_1ab7794f525b5d201c583097d68167111a" prot="private" virt="non-virtual"><scope>ControladorMenuOpciones</scope><name>menuOpciones</name></member>
+      <member refid="class_controlador_menu_opciones_1a14a74e84746a98b91301542756847ed6" prot="public" virt="non-virtual"><scope>ControladorMenuOpciones</scope><name>mostrarReglas</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

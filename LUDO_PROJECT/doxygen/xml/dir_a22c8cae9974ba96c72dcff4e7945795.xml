@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_a22c8cae9974ba96c72dcff4e7945795" kind="dir">
+    <compoundname>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO</compoundname>
+    <innerdir refid="dir_acff041e2fc4473c4cce75630962164c">D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/"/>
+  </compounddef>
+</doxygen>

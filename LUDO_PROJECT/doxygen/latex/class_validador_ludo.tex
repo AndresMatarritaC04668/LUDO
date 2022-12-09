@@ -1,0 +1,215 @@
+\hypertarget{class_validador_ludo}{}\doxysection{Validador\+Ludo Class Reference}
+\label{class_validador_ludo}\index{ValidadorLudo@{ValidadorLudo}}
+Inheritance diagram for Validador\+Ludo\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_validador_ludo}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_validador_ludo_ae699bd2e4aecaf3cb46ea7b5d64122d2}\label{class_validador_ludo_ae699bd2e4aecaf3cb46ea7b5d64122d2}} 
+\mbox{\hyperlink{class_validador_ludo_ae699bd2e4aecaf3cb46ea7b5d64122d2}{Validador\+Ludo}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_validador}{Validador}} Ludo\+:\+: \mbox{\hyperlink{class_validador}{Validador}} Ludo object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_validador_ludo_a92fd956da440e4d674ce45104b74fae3}{Validador\+Ludo}} (\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$mesa)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_validador}{Validador}} Ludo\+:\+: \mbox{\hyperlink{class_validador}{Validador}} Ludo object by arguments. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_validador_ludo_a2bf1594290b792e0ac843044f21b81d8}{Validador\+Ludo}} (\mbox{\hyperlink{class_tablero_ludo}{Tablero\+Ludo}} $\ast$mesa)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_validador}{Validador}} Ludo\+:\+: \mbox{\hyperlink{class_validador}{Validador}} Ludo object by arguments. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_validador_ludo_ab425b3adcd423b8a34b37ff79797c951}\label{class_validador_ludo_ab425b3adcd423b8a34b37ff79797c951}} 
+void \mbox{\hyperlink{class_validador_ludo_ab425b3adcd423b8a34b37ff79797c951}{iniciar\+Reglas}} () override
+\begin{DoxyCompactList}\small\item\em Metodo que inicializa las reglas. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_validador_ludo_ae6e176661e35a9ef63b1d3d619aeadca}{validar\+Jugada}} (int posicion, \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$mover) override
+\begin{DoxyCompactList}\small\item\em Valida la jugada conforme a las reglas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_validador_ludo_a880b4b191d4013b5759f5c7212787578}\label{class_validador_ludo_a880b4b191d4013b5759f5c7212787578}} 
+bool {\bfseries verificar\+Bloqueo} ()
+\item 
+\mbox{\Hypertarget{class_validador_ludo_a2221fd67729e5387a2f77b252ad010fa}\label{class_validador_ludo_a2221fd67729e5387a2f77b252ad010fa}} 
+void \mbox{\hyperlink{class_validador_ludo_a2221fd67729e5387a2f77b252ad010fa}{cast\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Castea un tablero abstracto en un tablero de ludo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_validador_ludo_a448efced2195f0d02772378bbe0ed9f6}{set\+Mesa\+Ludo}} (\mbox{\hyperlink{class_tablero_ludo}{Tablero\+Ludo}} $\ast$mesa)
+\begin{DoxyCompactList}\small\item\em Setea el atributo de mesa\+Ludo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_validador_ludo_a77adad3f57c402f2efbeaacbd24dd418}{regla\+Ocho}} (int posicion, \mbox{\hyperlink{class_ficha_ludo}{Ficha\+Ludo}} $\ast$mover)
+\begin{DoxyCompactList}\small\item\em Procedimiento que verifica si la regla 8 (la de la barrera) se esta cumpliendo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_validador_ludo_a2cb05ebae6ef49f8942cc1152348b4a8}{verif\+Comer}} (int posicion, \mbox{\hyperlink{class_ficha_ludo}{Ficha\+Ludo}} $\ast$mover)
+\begin{DoxyCompactList}\small\item\em Clase que verifica si se puede comer la ficha que se encuentra en una posicion indicada por un numero entero. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_validador_ludo_a97418a07c1a1d66b29fc8785a7a1ffae}{validar\+Seis}} (int pasos\+Dado, \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$la\+Ficha)
+\begin{DoxyCompactList}\small\item\em Metodo que identifica el posible accionar al sacar un numero seis tras lanzar el dado. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_validador_ludo_a7e101d4e69e2086cea7bcf5390ec49a1}{finaliza\+Ficha}} (\mbox{\hyperlink{class_ficha_ludo}{Ficha\+Ludo}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Determina si una ficha ya llego a casa. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_validador_ludo_a5945e34057c945ecc11dd56b1248a911}{es\+Ganador}} (std\+::vector$<$ \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$ $>$) override
+\begin{DoxyCompactList}\small\item\em Se usa al final de cada turno, determina si algun ganador ya consiguio ganar el juego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_validador_ludo_a92fd956da440e4d674ce45104b74fae3}\label{class_validador_ludo_a92fd956da440e4d674ce45104b74fae3}} 
+\index{ValidadorLudo@{ValidadorLudo}!ValidadorLudo@{ValidadorLudo}}
+\index{ValidadorLudo@{ValidadorLudo}!ValidadorLudo@{ValidadorLudo}}
+\doxysubsubsection{\texorpdfstring{ValidadorLudo()}{ValidadorLudo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Validador\+Ludo\+::\+Validador\+Ludo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} $\ast$}]{mesa }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_validador}{Validador}} Ludo\+:\+: \mbox{\hyperlink{class_validador}{Validador}} Ludo object by arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesa} & \mbox{\hyperlink{class_tablero_abstracto}{Tablero\+Abstracto}} que representa el tablero de juego. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_validador_ludo_a2bf1594290b792e0ac843044f21b81d8}\label{class_validador_ludo_a2bf1594290b792e0ac843044f21b81d8}} 
+\index{ValidadorLudo@{ValidadorLudo}!ValidadorLudo@{ValidadorLudo}}
+\index{ValidadorLudo@{ValidadorLudo}!ValidadorLudo@{ValidadorLudo}}
+\doxysubsubsection{\texorpdfstring{ValidadorLudo()}{ValidadorLudo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Validador\+Ludo\+::\+Validador\+Ludo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tablero_ludo}{Tablero\+Ludo}} $\ast$}]{mesa }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_validador}{Validador}} Ludo\+:\+: \mbox{\hyperlink{class_validador}{Validador}} Ludo object by arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesa} & \mbox{\hyperlink{class_tablero_ludo}{Tablero\+Ludo}} que representa el tablero de juego. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_validador_ludo_a5945e34057c945ecc11dd56b1248a911}\label{class_validador_ludo_a5945e34057c945ecc11dd56b1248a911}} 
+\index{ValidadorLudo@{ValidadorLudo}!esGanador@{esGanador}}
+\index{esGanador@{esGanador}!ValidadorLudo@{ValidadorLudo}}
+\doxysubsubsection{\texorpdfstring{esGanador()}{esGanador()}}
+{\footnotesize\ttfamily int Validador\+Ludo\+::es\+Ganador (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$ $>$}]{fichas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Se usa al final de cada turno, determina si algun ganador ya consiguio ganar el juego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fichas} & Un vector con las fichas del juego. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 si es ganador, 0 si no lo es. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_validador_a52baec11f22a8cb5db6ebb8916ad61e4}{Validador}}.
+
+\mbox{\Hypertarget{class_validador_ludo_a7e101d4e69e2086cea7bcf5390ec49a1}\label{class_validador_ludo_a7e101d4e69e2086cea7bcf5390ec49a1}} 
+\index{ValidadorLudo@{ValidadorLudo}!finalizaFicha@{finalizaFicha}}
+\index{finalizaFicha@{finalizaFicha}!ValidadorLudo@{ValidadorLudo}}
+\doxysubsubsection{\texorpdfstring{finalizaFicha()}{finalizaFicha()}}
+{\footnotesize\ttfamily int Validador\+Ludo\+::finaliza\+Ficha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ficha_ludo}{Ficha\+Ludo}} $\ast$}]{ficha }\end{DoxyParamCaption})}
+
+
+
+Determina si una ficha ya llego a casa. 
+
+\begin{DoxyReturn}{Returns}
+int 1 si ya llego, 0 si no ha llegado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_validador_ludo_a77adad3f57c402f2efbeaacbd24dd418}\label{class_validador_ludo_a77adad3f57c402f2efbeaacbd24dd418}} 
+\index{ValidadorLudo@{ValidadorLudo}!reglaOcho@{reglaOcho}}
+\index{reglaOcho@{reglaOcho}!ValidadorLudo@{ValidadorLudo}}
+\doxysubsubsection{\texorpdfstring{reglaOcho()}{reglaOcho()}}
+{\footnotesize\ttfamily bool Validador\+Ludo\+::regla\+Ocho (\begin{DoxyParamCaption}\item[{int}]{posicion,  }\item[{\mbox{\hyperlink{class_ficha_ludo}{Ficha\+Ludo}} $\ast$}]{mover }\end{DoxyParamCaption})}
+
+
+
+Procedimiento que verifica si la regla 8 (la de la barrera) se esta cumpliendo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posicion} & La posicion hasta donde se debe mover la ficha. \\
+\hline
+{\em mover} & La ficha que se debe mover \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Si se cumple la regla ocho. 
+
+false Si no se cumple la regla ocho. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_validador_ludo_a448efced2195f0d02772378bbe0ed9f6}\label{class_validador_ludo_a448efced2195f0d02772378bbe0ed9f6}} 
+\index{ValidadorLudo@{ValidadorLudo}!setMesaLudo@{setMesaLudo}}
+\index{setMesaLudo@{setMesaLudo}!ValidadorLudo@{ValidadorLudo}}
+\doxysubsubsection{\texorpdfstring{setMesaLudo()}{setMesaLudo()}}
+{\footnotesize\ttfamily void Validador\+Ludo\+::set\+Mesa\+Ludo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tablero_ludo}{Tablero\+Ludo}} $\ast$}]{mesa }\end{DoxyParamCaption})}
+
+
+
+Setea el atributo de mesa\+Ludo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesa} & El valor con lo que se llena el atributo de mesa\+Ludo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_validador_ludo_ae6e176661e35a9ef63b1d3d619aeadca}\label{class_validador_ludo_ae6e176661e35a9ef63b1d3d619aeadca}} 
+\index{ValidadorLudo@{ValidadorLudo}!validarJugada@{validarJugada}}
+\index{validarJugada@{validarJugada}!ValidadorLudo@{ValidadorLudo}}
+\doxysubsubsection{\texorpdfstring{validarJugada()}{validarJugada()}}
+{\footnotesize\ttfamily int Validador\+Ludo\+::validar\+Jugada (\begin{DoxyParamCaption}\item[{int}]{posicion,  }\item[{\mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$}]{mover }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Valida la jugada conforme a las reglas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posicion} & La nueva posicion a la que tiene que llegar la ficha. \\
+\hline
+{\em mover} & Es la ficha que se tiene que reubicar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+2 Si hay una barrera. 3 Si hay otra ficha. 1 Si simplemente avanza. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_validador_a1a438758b10a8ba26fff7b1b4a8ce666}{Validador}}.
+
+\mbox{\Hypertarget{class_validador_ludo_a97418a07c1a1d66b29fc8785a7a1ffae}\label{class_validador_ludo_a97418a07c1a1d66b29fc8785a7a1ffae}} 
+\index{ValidadorLudo@{ValidadorLudo}!validarSeis@{validarSeis}}
+\index{validarSeis@{validarSeis}!ValidadorLudo@{ValidadorLudo}}
+\doxysubsubsection{\texorpdfstring{validarSeis()}{validarSeis()}}
+{\footnotesize\ttfamily bool Validador\+Ludo\+::validar\+Seis (\begin{DoxyParamCaption}\item[{int}]{pasos\+Dado,  }\item[{\mbox{\hyperlink{class_ficha_abstracta}{Ficha\+Abstracta}} $\ast$}]{la\+Ficha }\end{DoxyParamCaption})}
+
+
+
+Metodo que identifica el posible accionar al sacar un numero seis tras lanzar el dado. 
+
+\begin{DoxyReturn}{Returns}
+true Si se puede sacar de la salida. 
+
+false Si no se puede sacar de la salida. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_validador_ludo_a2cb05ebae6ef49f8942cc1152348b4a8}\label{class_validador_ludo_a2cb05ebae6ef49f8942cc1152348b4a8}} 
+\index{ValidadorLudo@{ValidadorLudo}!verifComer@{verifComer}}
+\index{verifComer@{verifComer}!ValidadorLudo@{ValidadorLudo}}
+\doxysubsubsection{\texorpdfstring{verifComer()}{verifComer()}}
+{\footnotesize\ttfamily bool Validador\+Ludo\+::verif\+Comer (\begin{DoxyParamCaption}\item[{int}]{posicion,  }\item[{\mbox{\hyperlink{class_ficha_ludo}{Ficha\+Ludo}} $\ast$}]{mover }\end{DoxyParamCaption})}
+
+
+
+Clase que verifica si se puede comer la ficha que se encuentra en una posicion indicada por un numero entero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posicion} & posicion en la que se podria encontrar una ficha. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Si se puede comer. 
+
+false Si no se puede comer. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/\mbox{\hyperlink{_validador_ludo_8h}{Validador\+Ludo.\+h}}\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/Validador\+Ludo.\+cpp\end{DoxyCompactItemize}

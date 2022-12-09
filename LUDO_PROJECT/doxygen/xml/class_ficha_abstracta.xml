@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_ficha_abstracta" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>FichaAbstracta</compoundname>
+    <basecompoundref refid="class_objeto" prot="public" virt="non-virtual">Objeto</basecompoundref>
+    <derivedcompoundref refid="class_ficha_ludo" prot="public" virt="non-virtual">FichaLudo</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ficha_abstracta_1a9d797189dc7b1cffea01b790c437798d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FichaAbstracta::FichaAbstracta</definition>
+        <argsstring>()</argsstring>
+        <name>FichaAbstracta</name>
+        <briefdescription>
+<para>Construct a new Ficha Abstracta object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" line="31" column="9" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_abstracta_1a5eabc36ceb001b532efb63b04c7f7e0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual FichaAbstracta::~FichaAbstracta</definition>
+        <argsstring>()</argsstring>
+        <name>~FichaAbstracta</name>
+        <briefdescription>
+<para>Destroy the Ficha Abstracta object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" line="37" column="17" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_abstracta_1a096f14c45bcba475a7115b3bdecb6133" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string FichaAbstracta::getColor</definition>
+        <argsstring>()</argsstring>
+        <name>getColor</name>
+        <briefdescription>
+<para>Devuelve el color de la ficha de los atributos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::string Indica el color de la ficha. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" line="44" column="29" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" bodystart="44" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_abstracta_1a55805649cc07a29fd2201c048501442c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int FichaAbstracta::getX</definition>
+        <argsstring>()</argsstring>
+        <name>getX</name>
+        <briefdescription>
+<para>Obtiene un atributo &quot;X&quot; de la ficha, depende de la implementación. Debe ser una variable numerica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int Entero que representa el atributo X. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" line="60" column="21" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" bodystart="60" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_abstracta_1ae98101002e3fc65c4e52143d4732fb07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int FichaAbstracta::getY</definition>
+        <argsstring>()</argsstring>
+        <name>getY</name>
+        <briefdescription>
+<para>Obtiene un atributo &quot;Y&quot; de la ficha, depende de la implementación. Debe ser una variable numerica. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int Entero que representa el atributo Y. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" line="75" column="21" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" bodystart="75" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_abstracta_1ae6d14f2ed9b8edd376c29d5d2e268786" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int FichaAbstracta::getEstado</definition>
+        <argsstring>()</argsstring>
+        <name>getEstado</name>
+        <briefdescription>
+<para>Devuelve el estado de la ficha en el juego. Indicado por un entero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int Indica el estado de la ficha en el juego. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" line="90" column="21" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" bodystart="90" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_abstracta_1a48db4b7a464fb3366e3e7b60b757792f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool FichaAbstracta::getFinalizado</definition>
+        <argsstring>()</argsstring>
+        <name>getFinalizado</name>
+        <briefdescription>
+<para>Indica si una ficha llegó a la meta final. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" line="105" column="22" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" bodystart="105" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_abstracta_1a1548a4cff929eb7abc658e47004bfca0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void FichaAbstracta::setPosicion</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>setPosicion</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Establece la posición de la ficha en el tablero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Posición en el eje x. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Posición en el eje y. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" line="120" column="22" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_abstracta_1afb819a234dde51f0122c0f5e9e92456c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int FichaAbstracta::getNumeroFicha</definition>
+        <argsstring>()</argsstring>
+        <name>getNumeroFicha</name>
+        <briefdescription>
+<para>Devuelve el número de ficha desde los atributos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int El número de ficha. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" line="130" column="21" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" bodystart="130" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_abstracta_1a521f868c4e14802f9f9bd27a0a2ba353" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void FichaAbstracta::setColor</definition>
+        <argsstring>(std::string color)</argsstring>
+        <name>setColor</name>
+        <param>
+          <type>std::string</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Establece el color de una ficha. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Es el color que tendrá la ficha. Se guarda en atributos. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" line="145" column="22" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" bodystart="145" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_abstracta_1a09265b809136cee54ad93095750164cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int FichaAbstracta::getPasosDados</definition>
+        <argsstring>()</argsstring>
+        <name>getPasosDados</name>
+        <briefdescription>
+<para>Devuelve el número de pasos dados en el tablero por la ficha desde los atributos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int Los pasos dados. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" line="155" column="21" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" bodystart="155" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_abstracta_1ac114e105295553ab8eb908f2cc4f467f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void FichaAbstracta::setPasosDados</definition>
+        <argsstring>(int pasosDados)</argsstring>
+        <name>setPasosDados</name>
+        <param>
+          <type>int</type>
+          <declname>pasosDados</declname>
+        </param>
+        <briefdescription>
+<para>Establece los pasos dados por la ficha en los atributos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pasosDados</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Los pasos que se guardaran en los atributos. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" line="169" column="22" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" bodystart="169" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ficha_abstracta_1a105240228f9502a6c7f2fde59721ac01" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void FichaAbstracta::setFinalizado</definition>
+        <argsstring>()=0</argsstring>
+        <name>setFinalizado</name>
+        <reimplementedby refid="class_ficha_ludo_1a54feee3445f46d38868865ce7579da84">setFinalizado</reimplementedby>
+        <briefdescription>
+<para>Establece a una ficha en la meta final en sus atributos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" line="177" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>FichaLudo</label>
+        <link refid="class_ficha_ludo"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FichaAbstracta</label>
+        <link refid="class_ficha_abstracta"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Objeto</label>
+        <link refid="class_objeto"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>FichaAbstracta</label>
+        <link refid="class_ficha_abstracta"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Objeto</label>
+        <link refid="class_objeto"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" line="24" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/FichaAbstracta.h" bodystart="24" bodyend="181"/>
+    <listofallmembers>
+      <member refid="class_objeto_1a480513c7fbed9c4c8ba82eb704d0c3ac" prot="protected" virt="non-virtual"><scope>FichaAbstracta</scope><name>agregarAtributo</name></member>
+      <member refid="class_ficha_abstracta_1a9d797189dc7b1cffea01b790c437798d" prot="public" virt="non-virtual"><scope>FichaAbstracta</scope><name>FichaAbstracta</name></member>
+      <member refid="class_ficha_abstracta_1a096f14c45bcba475a7115b3bdecb6133" prot="public" virt="virtual"><scope>FichaAbstracta</scope><name>getColor</name></member>
+      <member refid="class_ficha_abstracta_1ae6d14f2ed9b8edd376c29d5d2e268786" prot="public" virt="virtual"><scope>FichaAbstracta</scope><name>getEstado</name></member>
+      <member refid="class_ficha_abstracta_1a48db4b7a464fb3366e3e7b60b757792f" prot="public" virt="virtual"><scope>FichaAbstracta</scope><name>getFinalizado</name></member>
+      <member refid="class_ficha_abstracta_1afb819a234dde51f0122c0f5e9e92456c" prot="public" virt="virtual"><scope>FichaAbstracta</scope><name>getNumeroFicha</name></member>
+      <member refid="class_ficha_abstracta_1a09265b809136cee54ad93095750164cc" prot="public" virt="virtual"><scope>FichaAbstracta</scope><name>getPasosDados</name></member>
+      <member refid="class_ficha_abstracta_1a55805649cc07a29fd2201c048501442c" prot="public" virt="virtual"><scope>FichaAbstracta</scope><name>getX</name></member>
+      <member refid="class_ficha_abstracta_1ae98101002e3fc65c4e52143d4732fb07" prot="public" virt="virtual"><scope>FichaAbstracta</scope><name>getY</name></member>
+      <member refid="class_objeto_1a040a9e302397e6086a42359e211f6eca" prot="public" virt="non-virtual"><scope>FichaAbstracta</scope><name>map_atributos</name></member>
+      <member refid="class_objeto_1a5608071f995c220f0f1a0e5887c2d11d" prot="public" virt="non-virtual"><scope>FichaAbstracta</scope><name>Objeto</name></member>
+      <member refid="class_objeto_1acd863032b2761cf855ecdf0a6052fcbb" prot="public" virt="non-virtual"><scope>FichaAbstracta</scope><name>obtAtributos</name></member>
+      <member refid="class_objeto_1a8ec095f9fa9cbab27d0361e49aecff33" prot="protected" virt="non-virtual"><scope>FichaAbstracta</scope><name>obtenerAtributo</name></member>
+      <member refid="class_objeto_1a9c0f555aac2bb7fb2a2f557168a3552d" prot="public" virt="non-virtual"><scope>FichaAbstracta</scope><name>setAtributos</name></member>
+      <member refid="class_ficha_abstracta_1a521f868c4e14802f9f9bd27a0a2ba353" prot="public" virt="virtual"><scope>FichaAbstracta</scope><name>setColor</name></member>
+      <member refid="class_ficha_abstracta_1a105240228f9502a6c7f2fde59721ac01" prot="public" virt="pure-virtual"><scope>FichaAbstracta</scope><name>setFinalizado</name></member>
+      <member refid="class_ficha_abstracta_1ac114e105295553ab8eb908f2cc4f467f" prot="public" virt="virtual"><scope>FichaAbstracta</scope><name>setPasosDados</name></member>
+      <member refid="class_ficha_abstracta_1a1548a4cff929eb7abc658e47004bfca0" prot="public" virt="virtual"><scope>FichaAbstracta</scope><name>setPosicion</name></member>
+      <member refid="class_ficha_abstracta_1a5eabc36ceb001b532efb63b04c7f7e0c" prot="public" virt="virtual"><scope>FichaAbstracta</scope><name>~FichaAbstracta</name></member>
+      <member refid="class_objeto_1a02425fff0768299968af03ac86deb496" prot="public" virt="non-virtual"><scope>FichaAbstracta</scope><name>~Objeto</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_controlador_ventana_principal" kind="class" language="C++" prot="public">
+    <compoundname>ControladorVentanaPrincipal</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_controlador_ventana_principal_1ae879a89698a46d23b2c10de569a81a7e" prot="private" static="no" mutable="no">
+        <type><ref refid="classcontrolador___ventanas" kindref="compound">controlador_Ventanas</ref> *</type>
+        <definition>controlador_Ventanas* ControladorVentanaPrincipal::controlador</definition>
+        <argsstring></argsstring>
+        <name>controlador</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.h" line="85" column="27" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controlador_ventana_principal_1a33afd56d9e33d3d9e5cbee813950ee91" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ventana_principal" kindref="compound">VentanaPrincipal</ref> *</type>
+        <definition>VentanaPrincipal* ControladorVentanaPrincipal::ventanaPrincipal</definition>
+        <argsstring></argsstring>
+        <name>ventanaPrincipal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.h" line="86" column="23" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_controlador_ventana_principal_1ae6211e2db3269e37bf6e4dda1c6602d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ControladorVentanaPrincipal::ControladorVentanaPrincipal</definition>
+        <argsstring>(controlador_Ventanas *controlador)</argsstring>
+        <name>ControladorVentanaPrincipal</name>
+        <param>
+          <type><ref refid="classcontrolador___ventanas" kindref="compound">controlador_Ventanas</ref> *</type>
+          <declname>controlador</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Controlador Ventana Principal object by arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controlador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Controlador de ventanas se asigna al atributo controlador. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.h" line="29" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.cpp" bodystart="6" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_ventana_principal_1a7c86bd3d0ad32aa3cc1e93c7d02433f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControladorVentanaPrincipal::iniciar</definition>
+        <argsstring>()</argsstring>
+        <name>iniciar</name>
+        <briefdescription>
+<para>Inicia el controlador. Inicia y settea los atributos. A ventana principal se le debe pasar el mismo controlador como argumento en el constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.h" line="37" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.cpp" bodystart="12" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_ventana_principal_1a4ce7d6710edfa5e4e9d314ebf336d42c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControladorVentanaPrincipal::cerrarVentana</definition>
+        <argsstring>()</argsstring>
+        <name>cerrarVentana</name>
+        <briefdescription>
+<para>Cierra y elimina la ventana principal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.h" line="43" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.cpp" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_ventana_principal_1a1b82c1d44b2e7d03e6840efa7d3afe12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControladorVentanaPrincipal::graficarTablero</definition>
+        <argsstring>(TableroAbstracto *)</argsstring>
+        <name>graficarTablero</name>
+        <param>
+          <type><ref refid="class_tablero_abstracto" kindref="compound">TableroAbstracto</ref> *</type>
+          <defname>mesa</defname>
+        </param>
+        <briefdescription>
+<para>Grafica el tablero usando la matriz de fichas que lo representa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Es el tablero del juego, de aqui se saca la matriz del tablero. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.h" line="51" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.cpp" bodystart="63" bodyend="801"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_ventana_principal_1a3661b611af044d6383a1c740156d8833" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControladorVentanaPrincipal::graficarCarcel</definition>
+        <argsstring>(vector&lt; Jugador * &gt; jugadores)</argsstring>
+        <name>graficarCarcel</name>
+        <param>
+          <type>vector&lt; <ref refid="class_jugador" kindref="compound">Jugador</ref> * &gt;</type>
+          <declname>jugadores</declname>
+        </param>
+        <briefdescription>
+<para>Grafica la carcel del juego, colocando a las fichas de los jugadores de estar aun ahí. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jugadores</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El vector que guarda a los jugadores de la partida. Se extraen las fichas de cada jugador para graficar. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.h" line="60" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.cpp" bodystart="803" bodyend="1073"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_ventana_principal_1a867ee2ba0782d11af07aac60aa2ac317" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControladorVentanaPrincipal::graficarLineaFinal</definition>
+        <argsstring>(TableroAbstracto *)</argsstring>
+        <name>graficarLineaFinal</name>
+        <param>
+          <type><ref refid="class_tablero_abstracto" kindref="compound">TableroAbstracto</ref> *</type>
+          <defname>mesa</defname>
+        </param>
+        <briefdescription>
+<para>Grafica la linea final de las fichas de un jugador en el juego. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mesa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La mesa de juego, de aqui se extrae el jugador actual, y de ahí, las fichas del jugador. La linea final se grafica si una o mas de las fichas tienen una cantidad de pasos dados suficientes para entrar a esta recta (mayor o igual a 55). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.h" line="70" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.cpp" bodystart="1075" bodyend="1304"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controlador_ventana_principal_1a7b7ad406a10a6f0e0cde4c8d95861ee2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControladorVentanaPrincipal::graficarCeldas</definition>
+        <argsstring>(QLabel *, string color, QString numero)</argsstring>
+        <name>graficarCeldas</name>
+        <param>
+          <type>QLabel *</type>
+          <defname>label</defname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>QString</type>
+          <declname>numero</declname>
+        </param>
+        <briefdescription>
+<para>Grafica las celdas del tablero segun el color que se quiere empezar a graficar. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Se usa el metodo setStyleSheet para guardar el color. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El color que se quiere empezar a graficar, el codigo hara procesos ligeramente diferentes dependiendo de su contenido. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numero</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string de caracteres unicode para QT, en realidad contiene un numero. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.h" line="82" column="10" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.cpp" bodystart="25" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.h" line="20" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/controladorventanaprincipal.h" bodystart="21" bodyend="87"/>
+    <listofallmembers>
+      <member refid="class_controlador_ventana_principal_1a4ce7d6710edfa5e4e9d314ebf336d42c" prot="public" virt="non-virtual"><scope>ControladorVentanaPrincipal</scope><name>cerrarVentana</name></member>
+      <member refid="class_controlador_ventana_principal_1ae879a89698a46d23b2c10de569a81a7e" prot="private" virt="non-virtual"><scope>ControladorVentanaPrincipal</scope><name>controlador</name></member>
+      <member refid="class_controlador_ventana_principal_1ae6211e2db3269e37bf6e4dda1c6602d0" prot="public" virt="non-virtual"><scope>ControladorVentanaPrincipal</scope><name>ControladorVentanaPrincipal</name></member>
+      <member refid="class_controlador_ventana_principal_1a3661b611af044d6383a1c740156d8833" prot="public" virt="non-virtual"><scope>ControladorVentanaPrincipal</scope><name>graficarCarcel</name></member>
+      <member refid="class_controlador_ventana_principal_1a7b7ad406a10a6f0e0cde4c8d95861ee2" prot="public" virt="non-virtual"><scope>ControladorVentanaPrincipal</scope><name>graficarCeldas</name></member>
+      <member refid="class_controlador_ventana_principal_1a867ee2ba0782d11af07aac60aa2ac317" prot="public" virt="non-virtual"><scope>ControladorVentanaPrincipal</scope><name>graficarLineaFinal</name></member>
+      <member refid="class_controlador_ventana_principal_1a1b82c1d44b2e7d03e6840efa7d3afe12" prot="public" virt="non-virtual"><scope>ControladorVentanaPrincipal</scope><name>graficarTablero</name></member>
+      <member refid="class_controlador_ventana_principal_1a7c86bd3d0ad32aa3cc1e93c7d02433f1" prot="public" virt="non-virtual"><scope>ControladorVentanaPrincipal</scope><name>iniciar</name></member>
+      <member refid="class_controlador_ventana_principal_1a33afd56d9e33d3d9e5cbee813950ee91" prot="private" virt="non-virtual"><scope>ControladorVentanaPrincipal</scope><name>ventanaPrincipal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

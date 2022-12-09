@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classventana_informacion" kind="class" language="C++" prot="public">
+    <compoundname>ventanaInformacion</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classventana_informacion_1a3e51753cc2e8948765a62e1d1678d94a" prot="private" static="no" mutable="no">
+        <type>Ui::ventanaInformacion *</type>
+        <definition>Ui::ventanaInformacion* ventanaInformacion::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanainformacion.h" line="41" column="28" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanainformacion.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classventana_informacion_1af1301cb82a55a092564016eb7408868d" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ventanaInformacion::ventanaInformacion</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>ventanaInformacion</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new ventana Informacion object by parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Widget padre de la ventada. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanainformacion.h" line="32" column="14" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanainformacion.cpp" bodystart="4" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classventana_informacion_1a02c99dec4ccae7e8fe1ac091a66e25fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ventanaInformacion::~ventanaInformacion</definition>
+        <argsstring>()</argsstring>
+        <name>~ventanaInformacion</name>
+        <briefdescription>
+<para>Destroy the ventana Informacion object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanainformacion.h" line="38" column="5" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanainformacion.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+      <node id="1">
+        <label>ventanaInformacion</label>
+        <link refid="classventana_informacion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+      <node id="1">
+        <label>ventanaInformacion</label>
+        <link refid="classventana_informacion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanainformacion.h" line="22" column="1" bodyfile="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/ventanainformacion.h" bodystart="23" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classventana_informacion_1a3e51753cc2e8948765a62e1d1678d94a" prot="private" virt="non-virtual"><scope>ventanaInformacion</scope><name>ui</name></member>
+      <member refid="classventana_informacion_1af1301cb82a55a092564016eb7408868d" prot="public" virt="non-virtual"><scope>ventanaInformacion</scope><name>ventanaInformacion</name></member>
+      <member refid="classventana_informacion_1a02c99dec4ccae7e8fe1ac091a66e25fc" prot="public" virt="non-virtual"><scope>ventanaInformacion</scope><name>~ventanaInformacion</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

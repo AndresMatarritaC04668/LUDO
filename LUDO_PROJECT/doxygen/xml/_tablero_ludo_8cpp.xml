@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_tablero_ludo_8cpp" kind="file" language="C++">
+    <compoundname>TableroLudo.cpp</compoundname>
+    <includes refid="tablero_l_u_d_o_8h" local="yes">tableroLUDO.h</includes>
+    <includes refid="_jugador_ludo_8h" local="yes">JugadorLudo.h</includes>
+    <includes refid="_jugador_8h" local="yes">Jugador.h</includes>
+    <includes refid="_validador_8h" local="yes">Validador.h</includes>
+    <includes refid="_validador_ludo_8h" local="yes">ValidadorLudo.h</includes>
+    <includes refid="controlador__ventanas_8h" local="yes">controlador_ventanas.h</includes>
+    <includes local="no">qinputdialog.h</includes>
+    <includes local="no">qstring.h</includes>
+    <includes local="no">qmessagebox.h</includes>
+    <includes refid="_hilera_8h" local="yes">Hilera.h</includes>
+    <includes refid="_controlador___memento_8h" local="no">Controlador_Memento.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>stdbool.h</label>
+      </node>
+      <node id="19">
+        <label>ObtAsg.h</label>
+        <link refid="_obt_asg_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>qstring.h</label>
+      </node>
+      <node id="23">
+        <label>stdlib.h</label>
+      </node>
+      <node id="21">
+        <label>qmessagebox.h</label>
+      </node>
+      <node id="13">
+        <label>Objeto.h</label>
+        <link refid="_objeto_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>TableroAbstracto.h</label>
+        <link refid="_tablero_abstracto_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>FichaLudo.h</label>
+        <link refid="_ficha_ludo_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>tableroLUDO.h</label>
+        <link refid="tablero_l_u_d_o_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="28">
+        <label>QMainWindow</label>
+      </node>
+      <node id="14">
+        <label>map</label>
+      </node>
+      <node id="22">
+        <label>Dado.h</label>
+        <link refid="_dado_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>ControladorLudo.h</label>
+        <link refid="_controlador_ludo_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>DeserializadorAbstracto.h</label>
+        <link refid="_deserializador_abstracto_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>ControladorAbstracto.h</label>
+        <link refid="_controlador_abstracto_8h"/>
+      </node>
+      <node id="36">
+        <label>Controlador_Memento.h</label>
+        <link refid="_controlador___memento_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Validador.h</label>
+        <link refid="_validador_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroLudo.cpp</label>
+        <link refid="_tablero_ludo_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>ConstructorSerializadorAbstracto.h</label>
+        <link refid="_constructor_serializador_abstracto_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Hilera.h</label>
+        <link refid="_hilera_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>ValidadorLudo.h</label>
+        <link refid="_validador_ludo_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="8">
+        <label>Regla.h</label>
+        <link refid="_regla_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>utility</label>
+      </node>
+      <node id="11">
+        <label>FichaAbstracta.h</label>
+        <link refid="_ficha_abstracta_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>sstream</label>
+      </node>
+      <node id="10">
+        <label>Jugador.h</label>
+        <link refid="_jugador_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>time.h</label>
+      </node>
+      <node id="29">
+        <label>QLabel</label>
+      </node>
+      <node id="20">
+        <label>iosfwd</label>
+      </node>
+      <node id="16">
+        <label>tipo.h</label>
+        <link refid="tipo_8h_source"/>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="27">
+        <label>ventanainformacion.h</label>
+        <link refid="ventanainformacion_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>qinputdialog.h</label>
+      </node>
+      <node id="32">
+        <label>JugadorLudo.h</label>
+        <link refid="_jugador_ludo_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>controlador_ventanas.h</label>
+        <link refid="controlador__ventanas_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Valor.h</label>
+        <link refid="_valor_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tablero_l_u_d_o_8h" kindref="compound">tableroLUDO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_jugador_ludo_8h" kindref="compound">JugadorLudo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_jugador_8h" kindref="compound">Jugador.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_validador_8h" kindref="compound">Validador.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_validador_ludo_8h" kindref="compound">ValidadorLudo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;controlador_ventanas.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qinputdialog.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qstring.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qmessagebox.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_hilera_8h" kindref="compound">Hilera.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_controlador___memento_8h" kindref="compound">Controlador_Memento.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><ref refid="class_tablero_ludo_1a07cb9054f999fcabdeedb65bf2742a91" kindref="member">TableroLudo::TableroLudo</ref>(){</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0<sp/>;<sp/>i<sp/>&lt;<sp/>52<sp/>;<sp/>i++){</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;tablero[0][i]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;tablero[1][i]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>this-&gt;validador<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_validador_ludo" kindref="compound">ValidadorLudo</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="class_tablero_ludo_1a5b4b6a0304dd1da7011ab92466578230" kindref="member">TableroLudo::~TableroLudo</ref>(){</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0<sp/>;<sp/>i<sp/>&lt;<sp/><ref refid="class_tablero_abstracto_1ac633f2b502332f61a110ceb471d6bc04" kindref="member">getCantidadJugadores</ref>();<sp/>i++){</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>jugadores[i];</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tablero_ludo_1a12aac5262a7f00c626e1b39c76e25c84" kindref="member">TableroLudo::setControlador</ref>(<ref refid="classcontrolador___ventanas" kindref="compound">controlador_Ventanas</ref>*<sp/>controlador<sp/>,<sp/><ref refid="class_controlador_abstracto" kindref="compound">ControladorAbstracto</ref><sp/>*<sp/>controladorJuego){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/>this-&gt;controlador<sp/>=<sp/>controlador;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/>this-&gt;controladorJuego<sp/>=<sp/>controladorJuego;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tablero_ludo_1a827d3aea0b0f72121ef7e8accf7369a2" kindref="member">TableroLudo::ubicarJugadores</ref>(){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/>QString<sp/>nombre<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/>nombre<sp/>=<sp/>QInputDialog::getText(controlador-&gt;input,</highlight><highlight class="stringliteral">&quot;Nombre<sp/>jugador&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Ingrese<sp/>el<sp/>nombre<sp/>del<sp/>jugador<sp/>rojo&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/></highlight><highlight class="comment">//cin&gt;&gt;getCantidadJugadores();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><ref refid="class_jugador_ludo" kindref="compound">JugadorLudo</ref><sp/>*<sp/>jugador1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_jugador_ludo" kindref="compound">JugadorLudo</ref>(</highlight><highlight class="stringliteral">&quot;ROJO&quot;</highlight><highlight class="normal">,10,nombre.toStdString());</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/>jugadores.push_back(jugador1);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/>nombre<sp/>=<sp/>QInputDialog::getText(controlador-&gt;input,</highlight><highlight class="stringliteral">&quot;Nombre<sp/>jugador&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Ingrese<sp/>el<sp/>nombre<sp/>del<sp/>jugador<sp/>azul&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><ref refid="class_jugador_ludo" kindref="compound">JugadorLudo</ref><sp/>*<sp/>jugador2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_jugador_ludo" kindref="compound">JugadorLudo</ref>(</highlight><highlight class="stringliteral">&quot;AZUL&quot;</highlight><highlight class="normal">,23,nombre.toStdString());</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/>jugadores.push_back(jugador2);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_tablero_abstracto_1ac633f2b502332f61a110ceb471d6bc04" kindref="member">getCantidadJugadores</ref>()<sp/>&gt;=3){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>nombre<sp/>=<sp/>QInputDialog::getText(controlador-&gt;input,</highlight><highlight class="stringliteral">&quot;Nombre<sp/>jugador&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Ingrese<sp/>el<sp/>nombre<sp/>del<sp/>jugador<sp/>amarillo&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_jugador_ludo" kindref="compound">JugadorLudo</ref><sp/>*<sp/>jugador3<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_jugador_ludo" kindref="compound">JugadorLudo</ref>(</highlight><highlight class="stringliteral">&quot;AMARILLO&quot;</highlight><highlight class="normal">,36,nombre.toStdString());</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/>jugadores.push_back(jugador3);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>jugadores.push_back(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_tablero_abstracto_1ac633f2b502332f61a110ceb471d6bc04" kindref="member">getCantidadJugadores</ref>()<sp/>==<sp/>4){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>nombre<sp/>=<sp/>QInputDialog::getText(controlador-&gt;input,</highlight><highlight class="stringliteral">&quot;Nombre<sp/>jugador&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Ingrese<sp/>el<sp/>nombre<sp/>del<sp/>jugador<sp/>verde&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_jugador_ludo" kindref="compound">JugadorLudo</ref><sp/>*<sp/>jugador4<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_jugador_ludo" kindref="compound">JugadorLudo</ref>(</highlight><highlight class="stringliteral">&quot;VERDE&quot;</highlight><highlight class="normal">,49,nombre.toStdString());</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/>jugadores.push_back(jugador4);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>jugadores.push_back(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/>controlador-&gt;<ref refid="classcontrolador___ventanas_1a33b12c5a97662a9866c737d5e69d12be" kindref="member">graficarCarcel</ref>(jugadores);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_tablero_ludo_1ad8b80b6080fb8e56992521247946afc4" kindref="member">TableroLudo::jugarTurno</ref>(){</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>jugadorActual<sp/>=<sp/>jugadores[this-&gt;<ref refid="class_tablero_abstracto_1ac07e39d83240a0e808766bd579e51399" kindref="member">getNumeroJugadorActual</ref>()];</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>seguir<sp/>=<sp/>jugadorActual-&gt;<ref refid="class_jugador_1a58269958d36a7e04903d540392662b60" kindref="member">jugarTurno</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>seguir;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tablero_ludo_1abf37b69c04f5696673278b789abcb525" kindref="member">TableroLudo::asignarPrimerJugador</ref>(){</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numeroCorrecto<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!numeroCorrecto){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prueba<sp/>=<sp/><ref refid="class_tablero_abstracto_1a47ea9dbe0756537b8a3becc8114b0ae7" kindref="member">lanzarDado</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(prueba<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>prueba<sp/>&lt;<sp/><ref refid="class_tablero_abstracto_1ac633f2b502332f61a110ceb471d6bc04" kindref="member">getCantidadJugadores</ref>()<sp/>){</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>numeroCorrecto<sp/>=<sp/>prueba;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>jugadorActual<sp/>=<sp/>jugadores[numeroCorrecto];</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><ref refid="class_tablero_abstracto_1ad9717214c399678e131d25e60a39aa47" kindref="member">setNumeroJugadorActual</ref>(<sp/>numeroCorrecto);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><ref refid="class_jugador_ludo" kindref="compound">JugadorLudo</ref><sp/>*<sp/>jugadorActualLudo<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="class_jugador_ludo" kindref="compound">JugadorLudo</ref>*<sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(jugadorActual);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>mensaje<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>mensaje<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Comienza<sp/>el<sp/>jugador:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>jugadorActualLudo-&gt;<ref refid="class_jugador_1ab6c7de8724019fa98431bf0ca656d55f" kindref="member">getNombre</ref>();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><ref refid="class_tablero_ludo_1a1b41226aee3f62796265b0cb15015cdc" kindref="member">graficarInformacion</ref>(mensaje);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_tablero_ludo_1a80baa66eb36c7f1a15e631a56d491fd2" kindref="member">TableroLudo::hayGanador</ref>(){<sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opcion<sp/>=<sp/><sp/>validador-&gt;<ref refid="class_validador_1a52baec11f22a8cb5db6ebb8916ad61e4" kindref="member">esGanador</ref>(jugadorActual-&gt;<ref refid="class_jugador_1aaef5a3b792e1fccfc083ae034ecc3068" kindref="member">getFichas</ref>());</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(opcion<sp/>==<sp/>1){</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>mensaje<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Ganador:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>jugadorActual-&gt;<ref refid="class_jugador_1ab6c7de8724019fa98431bf0ca656d55f" kindref="member">getNombre</ref>()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;felicidades<sp/><sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;gracias<sp/>por<sp/>jugar&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>controlador-&gt;<ref refid="classcontrolador___ventanas_1adb4ba6678eeb683fdc47ce2f9fb60947" kindref="member">mensajeGrafico</ref>(mensaje);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>opcion;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tablero_ludo_1aaba6edc9c056dcfea2e532be385bef2e" kindref="member">TableroLudo::toString</ref>(){</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0<sp/>;<sp/>i<sp/>&lt;<sp/>52<sp/>;<sp/>i++){</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>this-&gt;tablero[0][i]){</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;tablero[0][i]-&gt;<ref refid="class_ficha_abstracta_1a096f14c45bcba475a7115b3bdecb6133" kindref="member">getColor</ref>()&lt;&lt;tablero[0][i]-&gt;<ref refid="class_ficha_abstracta_1afb819a234dde51f0122c0f5e9e92456c" kindref="member">getNumeroFicha</ref>()&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>pasos<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>tablero[0][i]-&gt;<ref refid="class_ficha_abstracta_1a09265b809136cee54ad93095750164cc" kindref="member">getPasosDados</ref>()&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>Vacio<sp/><sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>this-&gt;tablero[1][i]){</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;tablero[1][i]-&gt;<ref refid="class_ficha_abstracta_1a096f14c45bcba475a7115b3bdecb6133" kindref="member">getColor</ref>()&lt;&lt;tablero[1][i]-&gt;<ref refid="class_ficha_abstracta_1afb819a234dde51f0122c0f5e9e92456c" kindref="member">getNumeroFicha</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>pasos<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>tablero[1][i]-&gt;<ref refid="class_ficha_abstracta_1a09265b809136cee54ad93095750164cc" kindref="member">getPasosDados</ref>()&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>Vacio<sp/><sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>cout&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="class_tablero_ludo_1a1b41226aee3f62796265b0cb15015cdc" kindref="member">TableroLudo::graficarInformacion</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>mensaje){</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>controlador-&gt;<ref refid="classcontrolador___ventanas_1adb4ba6678eeb683fdc47ce2f9fb60947" kindref="member">mensajeGrafico</ref>(mensaje);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_tablero_ludo_1ad8892dc6ff69197210e2cf3f7e8f8978" kindref="member">TableroLudo::graficoElejirFicha</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>mensaje){</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>controlador-&gt;<ref refid="classcontrolador___ventanas_1a31ed9140c7986c0def1ee5ef3403059f" kindref="member">elegirFicha</ref>(mensaje);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tablero_ludo_1a4cc8877104f4387abaf9d48fd5641fc0" kindref="member">TableroLudo::rellenarMesa</ref>(){</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref><sp/>*<sp/>ficha<sp/>:<sp/>jugadores[0]-&gt;getFichas()){</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ficha-&gt;getEstado()<sp/>==<sp/>1<sp/>&amp;&amp;<sp/>ficha-&gt;getPasosDados()<sp/>&lt;=<sp/>54){</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;tablero[ficha-&gt;getX()][ficha-&gt;getY()]<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="class_ficha_ludo" kindref="compound">FichaLudo</ref>*<sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(ficha);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref><sp/>*<sp/>ficha<sp/>:<sp/>jugadores[1]-&gt;getFichas()){</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ficha-&gt;getEstado()<sp/>==<sp/>1<sp/>&amp;&amp;<sp/>ficha-&gt;getPasosDados()<sp/>&lt;=<sp/>54){</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;tablero[ficha-&gt;getX()][ficha-&gt;getY()]<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="class_ficha_ludo" kindref="compound">FichaLudo</ref>*<sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(ficha);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;<ref refid="class_tablero_abstracto_1ac633f2b502332f61a110ceb471d6bc04" kindref="member">getCantidadJugadores</ref>()<sp/>&gt;=<sp/>3){</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref><sp/>*<sp/>ficha<sp/>:<sp/>jugadores[2]-&gt;getFichas()){</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ficha-&gt;getEstado()<sp/>==<sp/>1<sp/>&amp;&amp;<sp/>ficha-&gt;getPasosDados()<sp/>&lt;=<sp/>54){</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;tablero[ficha-&gt;getX()][ficha-&gt;getY()]<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="class_ficha_ludo" kindref="compound">FichaLudo</ref>*<sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(ficha);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;<ref refid="class_tablero_abstracto_1ac633f2b502332f61a110ceb471d6bc04" kindref="member">getCantidadJugadores</ref>()<sp/>==4<sp/>){</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="class_ficha_abstracta" kindref="compound">FichaAbstracta</ref><sp/>*<sp/>ficha<sp/>:<sp/>jugadores[3]-&gt;getFichas()){</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ficha-&gt;getEstado()<sp/>==<sp/>1<sp/>&amp;&amp;<sp/>ficha-&gt;getPasosDados()<sp/>&lt;=<sp/>54){</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;tablero[ficha-&gt;getX()][ficha-&gt;getY()]<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="class_ficha_ludo" kindref="compound">FichaLudo</ref>*<sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(ficha);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/UCR/2022/Segundo semestre/Diseño de Software/Proyecto/LUDO/LUDO/LUDO_PROJECT/TableroLudo.cpp"/>
+  </compounddef>
+</doxygen>

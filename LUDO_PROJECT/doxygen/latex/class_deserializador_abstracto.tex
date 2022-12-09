@@ -1,0 +1,121 @@
+\hypertarget{class_deserializador_abstracto}{}\doxysection{Deserializador\+Abstracto Class Reference}
+\label{class_deserializador_abstracto}\index{DeserializadorAbstracto@{DeserializadorAbstracto}}
+Inheritance diagram for Deserializador\+Abstracto\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_deserializador_abstracto}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_deserializador_abstracto_a8e66ff108f636d48c8382ac67697a5d9}\label{class_deserializador_abstracto_a8e66ff108f636d48c8382ac67697a5d9}} 
+\mbox{\hyperlink{class_deserializador_abstracto_a8e66ff108f636d48c8382ac67697a5d9}{Deserializador\+Abstracto}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Deserializador Abstracto object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_deserializador_abstracto_a661e9c0d627a4227d86505bfd163b2e3}\label{class_deserializador_abstracto_a661e9c0d627a4227d86505bfd163b2e3}} 
+\mbox{\hyperlink{class_deserializador_abstracto_a661e9c0d627a4227d86505bfd163b2e3}{$\sim$\+Deserializador\+Abstracto}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Deserializador Abstracto object. \end{DoxyCompactList}\item 
+virtual std\+::map$<$ std\+::string, \mbox{\hyperlink{class_valor}{Valor}} $\ast$ $>$ \mbox{\hyperlink{class_deserializador_abstracto_acf891403209d1bef17941d43f664e6a7}{deserializar\+Objeto}} (std\+::string)=0
+\begin{DoxyCompactList}\small\item\em Deserializa un objeto en relación al formato que se esté implementando. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ std\+::map$<$ std\+::string, \mbox{\hyperlink{class_valor}{Valor}} $\ast$ $>$ $>$ \mbox{\hyperlink{class_deserializador_abstracto_ac5f5a054d0d5aa728c095a9a8c26f14d}{deserializar\+Lista\+Objetos}} (std\+::string)=0
+\begin{DoxyCompactList}\small\item\em Deserializa todos los objetos en la hilera serializada que se pasa por parametro y los guarda en un vector de objetos map cuya key es una string y su contenido es un puntero a un objeto \mbox{\hyperlink{class_valor}{Valor}}. Continuar deserializando los objetos de la hilera hasta que esta se termine. Usar la implementación particular adecuada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_deserializador_abstracto_ad2b876e40fbcac5e3ca3d457aeb30c5a}{eliminar\+Inicio\+Fin\+Objeto}} (std\+::string \&)=0
+\begin{DoxyCompactList}\small\item\em Elimina el inicio y el fin de un objeto de acuerdo con el formato que se esté utilizando. \end{DoxyCompactList}\item 
+virtual std\+::pair$<$ std\+::string, \mbox{\hyperlink{class_valor}{Valor}} $\ast$ $>$ \mbox{\hyperlink{class_deserializador_abstracto_a459cdf76513a40de48529bb03693a6e8}{extraer\+Llave\+Valor}} (std\+::string)=0
+\begin{DoxyCompactList}\small\item\em Extrae la \char`\"{}\+Llave mayor\char`\"{} de la hilera proveída. La llave mayor es diferente dependiendo del formato y se utiliza normalmente con cada objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_deserializador_abstracto_ac5f5a054d0d5aa728c095a9a8c26f14d}\label{class_deserializador_abstracto_ac5f5a054d0d5aa728c095a9a8c26f14d}} 
+\index{DeserializadorAbstracto@{DeserializadorAbstracto}!deserializarListaObjetos@{deserializarListaObjetos}}
+\index{deserializarListaObjetos@{deserializarListaObjetos}!DeserializadorAbstracto@{DeserializadorAbstracto}}
+\doxysubsubsection{\texorpdfstring{deserializarListaObjetos()}{deserializarListaObjetos()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$std\+::map$<$ std\+::string, \mbox{\hyperlink{class_valor}{Valor}}$\ast$ $>$ $>$ Deserializador\+Abstracto\+::deserializar\+Lista\+Objetos (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Deserializa todos los objetos en la hilera serializada que se pasa por parametro y los guarda en un vector de objetos map cuya key es una string y su contenido es un puntero a un objeto \mbox{\hyperlink{class_valor}{Valor}}. Continuar deserializando los objetos de la hilera hasta que esta se termine. Usar la implementación particular adecuada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & La hilera con la información de los objetos serializada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::map$<$ std\+::string, Valor$\ast$ $>$$>$ Este vector contiene la información de todos los objetos de la hilera deserializados. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_deserializador_j_s_o_n_a4220f258a8068094f505aad84ca33572}{Deserializador\+JSON}}.
+
+\mbox{\Hypertarget{class_deserializador_abstracto_acf891403209d1bef17941d43f664e6a7}\label{class_deserializador_abstracto_acf891403209d1bef17941d43f664e6a7}} 
+\index{DeserializadorAbstracto@{DeserializadorAbstracto}!deserializarObjeto@{deserializarObjeto}}
+\index{deserializarObjeto@{deserializarObjeto}!DeserializadorAbstracto@{DeserializadorAbstracto}}
+\doxysubsubsection{\texorpdfstring{deserializarObjeto()}{deserializarObjeto()}}
+{\footnotesize\ttfamily virtual std\+::map$<$ std\+::string, \mbox{\hyperlink{class_valor}{Valor}}$\ast$$>$ Deserializador\+Abstracto\+::deserializar\+Objeto (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Deserializa un objeto en relación al formato que se esté implementando. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & La string con la información del objeto serializada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::map$<$ std\+::string, Valor$\ast$$>$ Este par contiene la información deserializada es un objeto en particular, debe implementarse en relación al formato escogido. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_deserializador_j_s_o_n_ab338661720d87c3b9682e05c98fb6388}{Deserializador\+JSON}}.
+
+\mbox{\Hypertarget{class_deserializador_abstracto_ad2b876e40fbcac5e3ca3d457aeb30c5a}\label{class_deserializador_abstracto_ad2b876e40fbcac5e3ca3d457aeb30c5a}} 
+\index{DeserializadorAbstracto@{DeserializadorAbstracto}!eliminarInicioFinObjeto@{eliminarInicioFinObjeto}}
+\index{eliminarInicioFinObjeto@{eliminarInicioFinObjeto}!DeserializadorAbstracto@{DeserializadorAbstracto}}
+\doxysubsubsection{\texorpdfstring{eliminarInicioFinObjeto()}{eliminarInicioFinObjeto()}}
+{\footnotesize\ttfamily virtual void Deserializador\+Abstracto\+::eliminar\+Inicio\+Fin\+Objeto (\begin{DoxyParamCaption}\item[{std\+::string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Elimina el inicio y el fin de un objeto de acuerdo con el formato que se esté utilizando. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Es la hilera en un formato particular a la que se le va a eliminar su inicio y su fin. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_deserializador_j_s_o_n_a4512ff3c9f511b36cc49bda16ceb7aef}{Deserializador\+JSON}}.
+
+\mbox{\Hypertarget{class_deserializador_abstracto_a459cdf76513a40de48529bb03693a6e8}\label{class_deserializador_abstracto_a459cdf76513a40de48529bb03693a6e8}} 
+\index{DeserializadorAbstracto@{DeserializadorAbstracto}!extraerLlaveValor@{extraerLlaveValor}}
+\index{extraerLlaveValor@{extraerLlaveValor}!DeserializadorAbstracto@{DeserializadorAbstracto}}
+\doxysubsubsection{\texorpdfstring{extraerLlaveValor()}{extraerLlaveValor()}}
+{\footnotesize\ttfamily virtual std\+::pair$<$std\+::string, \mbox{\hyperlink{class_valor}{Valor}}$\ast$$>$ Deserializador\+Abstracto\+::extraer\+Llave\+Valor (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Extrae la \char`\"{}\+Llave mayor\char`\"{} de la hilera proveída. La llave mayor es diferente dependiendo del formato y se utiliza normalmente con cada objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & La string a la que hay que extraerle la llave mayor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$std\+::string, Valor$\ast$$>$ El par construído con la información del objeto deserializado. Pensado para ser regresado a \mbox{\hyperlink{class_deserializador_abstracto_acf891403209d1bef17941d43f664e6a7}{deserializar\+Objeto()}}, así que hay que usar la misma lógica. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_deserializador_j_s_o_n_a954c9fe8f9650423e065944db397d092}{Deserializador\+JSON}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+UCR/2022/\+Segundo semestre/\+Diseño de Software/\+Proyecto/\+LUDO/\+LUDO/\+LUDO\+\_\+\+PROJECT/\mbox{\hyperlink{_deserializador_abstracto_8h}{Deserializador\+Abstracto.\+h}}\end{DoxyCompactItemize}
