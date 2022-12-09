@@ -41,7 +41,7 @@ class FichaAbstracta : public Objeto{
          * 
          * @return std::string Indica el color de la ficha.
          */
-        std::string getColor(){
+        virtual std::string getColor(){
           std::string color = "";
           Valor* valor = obtenerAtributo("color");
           if (valor != nullptr) {
@@ -57,7 +57,7 @@ class FichaAbstracta : public Objeto{
          * 
          * @return int Entero que representa el atributo X.
          */
-        int getX(){
+        virtual int getX(){
           std::string x = "";
           Valor* valor = obtenerAtributo("x");
           if (valor != nullptr) {
@@ -72,7 +72,7 @@ class FichaAbstracta : public Objeto{
          * 
          * @return int Entero que representa el atributo Y.
          */
-        int getY(){
+        virtual int getY(){
           std::string y = "";
           Valor* valor = obtenerAtributo("y");
           if (valor != nullptr) {
@@ -87,7 +87,7 @@ class FichaAbstracta : public Objeto{
          * 
          * @return int Indica el estado de la ficha en el juego. 
          */
-        int getEstado(){
+        virtual int getEstado(){
           std::string activo = "";
           Valor* valor = obtenerAtributo("activo");
           if (valor != nullptr) {
@@ -102,7 +102,7 @@ class FichaAbstracta : public Objeto{
          * @return true 
          * @return false 
          */
-        bool getFinalizado(){
+        virtual bool getFinalizado(){
           std::string finalizado = "";
           Valor* valor = obtenerAtributo("finalizado");
           if (valor != nullptr) {
@@ -117,7 +117,7 @@ class FichaAbstracta : public Objeto{
          * @param x Posición en el eje x.
          * @param y Posición en el eje y.
          */
-        void setPosicion(int x , int y){
+        virtual void setPosicion(int x , int y){
           agregarAtributo("x",new Hilera(to_string(x)));
           agregarAtributo("y",new Hilera(to_string(y)));
         }
@@ -127,7 +127,7 @@ class FichaAbstracta : public Objeto{
          * 
          * @return int El número de ficha.
          */
-        int getNumeroFicha(){
+        virtual int getNumeroFicha(){
             std::string numeroFicha = "";
             Valor* valor = obtenerAtributo("numeroFicha");
             if (valor != nullptr) {
@@ -142,7 +142,7 @@ class FichaAbstracta : public Objeto{
          * 
          * @param color Es el color que tendrá la ficha. Se guarda en atributos.
          */
-        void setColor(std::string color){
+        virtual void setColor(std::string color){
           agregarAtributo("color",new Hilera(color));
         }
 
@@ -152,7 +152,7 @@ class FichaAbstracta : public Objeto{
          * 
          * @return int Los pasos dados.
          */
-        int getPasosDados(){
+        virtual int getPasosDados(){
           std::string pasosDados = "";
           Valor* valor = obtenerAtributo("pasosDados");
           if (valor != nullptr) {
@@ -166,7 +166,7 @@ class FichaAbstracta : public Objeto{
          * 
          * @param pasosDados Los pasos que se guardaran en los atributos.
          */
-        void setPasosDados(int pasosDados){
+        virtual void setPasosDados(int pasosDados){
           agregarAtributo("pasosDados",new Hilera(to_string(pasosDados)));
         }
 

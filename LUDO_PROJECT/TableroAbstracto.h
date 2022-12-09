@@ -42,7 +42,7 @@ public:
      * 
      * @param cantidadJugadores Es el numero de jugadores que tendra el juego.
      */
-    void asignarCantidadJugadores(int cantidadJugadores){
+    virtual void asignarCantidadJugadores(int cantidadJugadores){
         setCantidadJugadores(cantidadJugadores);
     }
 
@@ -65,7 +65,7 @@ public:
      * @brief Termina el juego.
      * 
      */
-    void finalizarJuego(){
+    virtual void finalizarJuego(){
         string mensaje = "";
         mensaje += "Gracias por jugar\n";
         mensaje += "El ganador es: " + jugadorActual->getNombre();
@@ -75,7 +75,7 @@ public:
      * @brief Detiene la partida pausandola, mas no la termina.
      * 
      */
-    void detenerPartida(){
+    virtual void detenerPartida(){
        this->controladorJuego->pausarPartida();
     }
 
@@ -84,7 +84,7 @@ public:
      * 
      * @param jugadores se guarda en el atributo de jugadores.
      */
-    void setJugadores(vector<Jugador*> jugadores){
+    virtual void setJugadores(vector<Jugador*> jugadores){
         this->jugadores = jugadores;
     }
 
@@ -118,7 +118,7 @@ public:
      * @brief Pasa al siguiente turno.Cambia al jugador actual
      * 
      */
-    void pasarTurno(){
+    virtual void pasarTurno(){
         jugadorActual = jugadores[(getNumeroJugadorActual()+1)%getCantidadJugadores()];
         int siguiente =  (getNumeroJugadorActual()+1)%getCantidadJugadores();
         setNumeroJugadorActual(siguiente);
@@ -142,7 +142,7 @@ public:
      * 
      * @return Jugador* el jugador actual. 
      */
-	Jugador * getJugadorActual(){
+	virtual Jugador * getJugadorActual(){
         return this->jugadorActual;
     }
 
@@ -151,7 +151,7 @@ public:
      * 
      * @return vector<Jugador*> el atributo jugadores.
      */
-    vector<Jugador*> getjugadores(){
+    virtual vector<Jugador*> getjugadores(){
       return this->jugadores;
     }
 
@@ -160,7 +160,7 @@ public:
      * 
      * @return int la cantidad de jugadores.
      */
-    int getCantidadJugadores(){
+    virtual int getCantidadJugadores(){
         std::string cantidadJugadores = "";
         Valor* valor = obtenerAtributo("cantidadJugadores");
         if (valor != nullptr) {
@@ -174,7 +174,7 @@ public:
      * 
      * @param cantidadJugadores El numero de jugadores.
      */
-    void setCantidadJugadores(int cantidadJugadores){
+    virtual void setCantidadJugadores(int cantidadJugadores){
         agregarAtributo("cantidadJugadores",new Hilera(to_string(cantidadJugadores)));
     }
 
@@ -183,7 +183,7 @@ public:
      * 
      * @return int El numero del jugador actual.
      */
-    int getNumeroJugadorActual(){
+    virtual int getNumeroJugadorActual(){
         std::string jugadorPresente = "";
         Valor* valor = obtenerAtributo("jugadorPresente");
         if (valor != nullptr) {
@@ -198,7 +198,7 @@ public:
      * 
      * @param jugadorPresente El numero que correspondera al jugador actual.
      */
-    void setNumeroJugadorActual(int jugadorPresente){
+    virtual void setNumeroJugadorActual(int jugadorPresente){
             agregarAtributo("jugadorPresente",new Hilera(to_string(jugadorPresente)));
     }
 
@@ -207,7 +207,7 @@ public:
      * 
      * @return int el numero resultante del lanzamiento.
      */
-	int lanzarDado(){
+	virtual int lanzarDado(){
       return dado.lanzar();
 	}
     
@@ -216,7 +216,7 @@ public:
      * 
      * @return Validador* El parametro validador.
      */
-	Validador* getValidador() {
+	virtual Validador* getValidador() {
 		return this->validador;
 	}
 
@@ -225,7 +225,7 @@ public:
      * 
      * @return vector<Jugador *> El parametro jugadores.
      */
-    vector<Jugador *> getJugadores() {
+    virtual vector<Jugador *> getJugadores() {
         return this->jugadores;
 	}
 

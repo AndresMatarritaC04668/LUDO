@@ -80,7 +80,7 @@ class Validador {
      * 
      * @return vector<Regla *>* El artributo reglas.
      */
-    vector<Regla *> * obtenerReglas() { return &reglas; };
+    virtual vector<Regla *> * obtenerReglas() { return &reglas; };
 
     /**
      * @brief Devuelve una string con todas las reglas separadas por un cambio
@@ -88,7 +88,7 @@ class Validador {
      * 
      * @return string La hilera con las reglas.
      */
-    string toStringReglas(){
+    virtual string toStringReglas(){
       string theRules;
       ostringstream ossReglas;
       int reglasSize = this->reglas.size();

@@ -45,7 +45,7 @@ class Jugador :public Objeto{
          * 
          * @param nombre La string que se guardara en los atributos.
          */
-        void  setNombre(std::string nombre){
+        virtual void  setNombre(std::string nombre){
           agregarAtributo("nombre",new Hilera(nombre));
         }
 
@@ -54,7 +54,7 @@ class Jugador :public Objeto{
          * 
          * @return std::string El nombre del jugador.
          */
-        std::string getNombre(){
+        virtual std::string getNombre(){
           std::string nombre = "";
           Valor* valor = obtenerAtributo("nombre");
             if (valor != nullptr) {
@@ -70,7 +70,7 @@ class Jugador :public Objeto{
          * @param color La string que se guardara como el color en sus
          * atributos.
          */
-        void  setColor(std::string color){
+        virtual void  setColor(std::string color){
           agregarAtributo("color",new Hilera(color));
         }
         
@@ -79,7 +79,7 @@ class Jugador :public Objeto{
          * 
          * @return std::string El color del jugador.
          */
-        std::string getColor(){
+        virtual std::string getColor(){
           std::string color = "";
           Valor* valor = obtenerAtributo("color");
           if (valor != nullptr) {
@@ -95,7 +95,7 @@ class Jugador :public Objeto{
          * @return true 
          * @return false 
          */
-        bool getEsGanador(){
+        virtual bool getEsGanador(){
           return this->esGanador;
         }
         
@@ -125,7 +125,7 @@ class Jugador :public Objeto{
          * 
          * @return int El resultado de lanzar el dado.
          */
-        int lanzarDado(){
+        virtual int lanzarDado(){
           Dado  dado;
           int darPasos = 0;
           darPasos = dado.lanzar();
@@ -139,7 +139,7 @@ class Jugador :public Objeto{
          * @param vector<FichaAbstracta *> Lo guarda en el vector de fichas
          * abstractas que se tiene como atributo.
          */
-        void setFichas(std::vector<FichaAbstracta *> fichas){
+        virtual void setFichas(std::vector<FichaAbstracta *> fichas){
           this->fichas = fichas;
         }
         
@@ -148,7 +148,7 @@ class Jugador :public Objeto{
          * 
          * @return std::vector<FichaAbstracta *> El atributo fichas.
          */
-        std::vector<FichaAbstracta *> getFichas(){
+        virtual std::vector<FichaAbstracta *> getFichas(){
           return this->fichas;
         }
 
